@@ -1,0 +1,67 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core" height="100%"
+	controllerName="lrs.ui5.controller.MapaComparativoLista">
+	<Page title="Mapa Comparativo" class="sapUiContentPadding"
+		showNavButton="true">
+		<headerContent>
+			<Button icon="sap-icon://action" tooltip="Share" />
+		</headerContent>
+		<content>
+			<MessageStrip text="Tela com filtros para consulta de RFQs"
+				showIcon="true" showCloseButton="true">
+			</MessageStrip>
+			<VBox>
+				<fb:FilterBar reset="onReset" search="onSearch"
+					showRestoreButton="true" showClearButton="true">
+					<fb:filterItems>
+						<fb:FilterItem name="A" label="Data Criação">
+							<fb:control>
+								<DateRangeSelection id="DRS1" delimiter="-"
+									displayFormat="dd/MM/yyyy" change="handleChange" />
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="B" label="Núm. RFQ">
+							<fb:control>
+								<Input type="Text" placeholder="Núm RFQ"></Input>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="C" label="Núm. Requisição">
+							<fb:control>
+								<Input type="Text" placeholder="Núm Req"></Input>
+							</fb:control>
+						</fb:FilterItem>
+					</fb:filterItems>
+				</fb:FilterBar>
+				<List headerText="RFQs">
+					<items>
+						<ObjectListItem title="600010020" type="Active"
+							press="onListItemPress" number="1.000.000,20" numberUnit="BRL">
+							<firstStatus>
+								<ObjectStatus text="2 rodada(s)" />
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="" />
+								<ObjectAttribute text="Última atualização: 21/10/2017" />
+							</attributes>
+						</ObjectListItem>
+						<ObjectListItem title="600289020" type="Active"
+							press="onListItemPress" number="75.230,90" numberUnit="BRL">
+							<firstStatus>
+								<ObjectStatus text="5 rodada(s)" />
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="" />
+								<ObjectAttribute text="Última atualização: 15/09/2017" />
+							</attributes>
+						</ObjectListItem>
+					</items>
+				</List>
+			</VBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

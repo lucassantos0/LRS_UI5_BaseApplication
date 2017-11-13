@@ -15,7 +15,9 @@ sap.ui.define(
 		},
 		navToTile1Action2 : function(){
 			this.getRouter().navTo("Tile1Action2");
+		},
+		navToMapaComparativo : function(){
+			this.getRouter().navTo("MapaComparativoLista");
 		}
-		
 	});
 });

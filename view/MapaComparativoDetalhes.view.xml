@@ -1,0 +1,119 @@
+<mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhes"
+	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:mc="sap.suite.ui.microchart"
+	xmlns:tnt="sap.tnt">
+	<tnt:ToolHeader>
+		<Button icon="sap-icon://add" type="Transparent" text="Adicionar rodada">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<Button icon="sap-icon://refresh" type="Transparent" text="Atualizar rodadas">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<ToolbarSpacer />
+		<Label text="Detalhes RFQ 600010020" design="Bold" />
+		<ToolbarSpacer />
+	</tnt:ToolHeader>
+	<l:VerticalLayout id="containerLayout" width="100%">
+		<l:BlockLayout id="BlockLayout" background="Dashboard">
+			<l:BlockLayoutRow accentCells="Accent1">
+				<l:BlockLayoutCell id="Accent1">
+					<form:SimpleForm editable="false" backgroundDesign="Transparent">
+						<Label text="Empresa" />
+						<Text text="Cia Paulista de Força Luz (D001)" />
+						<Label text="Grupo de compradores" />
+						<Link text="MATHEUS P. COSTA (070)" />
+						<Label text="Organização de compras" />
+						<Text text="Org.Compras Central (OC01)" />
+						<Label text="Data solicitação da cotação" />
+						<Text text="20/10/2017" />
+					</form:SimpleForm>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell width="2" titleAlignment="End"
+					title="Itens">
+					<Table id="idProductsTable" inset="false" items="{/itens}">
+						<columns>
+							<Column width="16em">
+								<Text text="Item" />
+							</Column>
+							<Column width="4em">
+								<Text text="UOM" />
+							</Column>
+							<Column width="4em">
+								<Text text="Dt.Remessa" />
+							</Column>
+							<Column width="4em">
+								<Text text="Centro" />
+							</Column>
+							<Column width="4em" minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Qtde" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{nome}" text="{id}" />
+									<Text text="{uom}" />
+									<Text text="{dataremessa}" />
+									<Link text="{centro}" />
+									<Text text="{quantidade}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow scrollable="true">
+				<l:BlockLayoutCell width="75" title="Rodada 3">
+					<Label text="Comparativo média (3 preços mais baixos): R$ 1.733.000,00"
+						class="sapUiTinyMargin" />
+					<mc:ComparisonMicroChart view="Wide"
+						class="sapUiSmallMargin" width="32rem">
+						<mc:data>
+							<mc:ComparisonMicroChartData title="Fornecedor 1"
+								value="-12" color="Good" displayValue="1.290.998,00" />
+							<mc:ComparisonMicroChartData title="Fornecedor 2"
+								value="-2" color="Good" displayValue="1.500.000,10" />
+							<mc:ComparisonMicroChartData title="Fornecedor 4"
+								value="18" color="Error" displayValue="2.600.000,00" />
+						</mc:data>
+					</mc:ComparisonMicroChart>
+					<Table inset="false" items="{/rodada3forns}">
+						<columns>
+							<Column width="12em">
+								<Text text="Fornecedor" />
+							</Column>
+							<Column width="6em">
+								<Text text="Valor" />
+							</Column>
+							<Column width="2em"></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{nome}" text="{id}" />
+									<Link text="{valor}" press="onDialogWithSizePress" />
+									<core:Icon visible="{erro}" src="sap-icon://message-error"
+										class="size1" color="red">
+										<core:layoutData>
+											<FlexItemData growFactor="1" />
+										</core:layoutData>
+									</core:Icon>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell width="75" title="Rodada 2">
+					<Label text="Dados da Rodada 2" />
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell width="75" title="Rodada 1">
+					<Label text="Dados da Rodada 1" />
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+	</l:VerticalLayout>
+</mvc:View>
