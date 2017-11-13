@@ -1,0 +1,67 @@
+{
+	"navigation": [
+		{
+			"title": "Home",
+			"icon": "sap-icon://home",
+			"expanded": true,
+			"key": "home"
+		},
+		{
+			"title": "Título 1",
+			"icon": "sap-icon://area-chart",
+			"key": "Categoria1",
+			"items": [
+				{
+					"title": "Sintético",
+					"key": "Tile1Action1"
+				},
+				{
+					"title": "Analítico",
+					"key": "Tile1Action2"
+				}
+			]
+		},
+		{
+			"title": "Título 2",
+			"icon": "sap-icon://inspection",
+			"key": "Categoria2"
+		},
+		{
+			"title": "Título 3",
+			"icon": "sap-icon://my-sales-order",
+			"key": "Categoria3"
+		},
+		{
+			"title": "Título 4",
+			"icon": "sap-icon://map-2",
+			"key": "Categoria4"
+		}
+	],
+	"masterSettings": [
+		{
+			"title": "System Settings",
+			"key": "systemSettings",
+			"selected": true
+		},
+		{
+			"title": "Order Settings",
+			"key": "orderSettings",
+			"selected": false
+		},
+		{
+			"title": "Supplier Settings",
+			"key": "supplierSettings",
+			"selected": false
+		},
+		{
+			"title": "Campaign Settings",
+			"key": "campaignSettings",
+			"selected": false
+		},
+		{
+			"title": "Shipping Settings",
+			"key": "shipping Settings",
+			"selected": false
+		}
+	]
+}
