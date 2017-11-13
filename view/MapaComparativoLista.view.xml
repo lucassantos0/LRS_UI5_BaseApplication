@@ -32,14 +32,14 @@
 					</fb:filterItems>
 				</fb:FilterBar>
 				<List headerText="RFQs" items="{listaRfqs>/listaRfqs}" >
-					<ObjectListItem title="{id}" type="Active"
-						press="onListItemPress" number="{amount}" numberUnit="{currency}">
+					<ObjectListItem title="{listaRfqs>id}" type="Active"
+						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}">
 						<firstStatus>
-							<ObjectStatus text="{numberOfRounds} rodada(s)" />
+							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" />
 						</firstStatus>
 						<attributes>
 							<ObjectAttribute text="" />
-							<ObjectAttribute text="Última atualização: {lastUpdate}" />
+							<ObjectAttribute text="Última atualização: {listaRfqs>lastUpdate}" />
 						</attributes>
 					</ObjectListItem>
 				</List>
