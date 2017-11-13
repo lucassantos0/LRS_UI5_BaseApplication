@@ -125,6 +125,11 @@
 					"target": [
 						"MapaComparativoLista"
 					]
+				},
+				{
+					"pattern" : "MapaComparativoDetalhes/:rfq:",
+					"name" : "MapaComparativoDetalhes",
+					"target" : "MaraComparativoDetalhes"
 				}
 			],
 			"targets": {
@@ -154,6 +159,9 @@
 				},
 				"MapaComparativoLista": {
 					"viewName": "MapaComparativoLista"
+				},
+				"MaraComparativoDetalhes" : {
+					"viewName" : "MaraComparativoDetalhes"
 				}
 			}
 		}
