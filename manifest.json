@@ -119,8 +119,7 @@
 					"pattern": "MapaComparativoLista",
 					"name": "MapaComparativoLista",
 					"target": [
-						"MapaComparativoLista",
-						"MapaComparativoDetalhes"
+						"MapaComparativoLista"
 					]
 				}
 			],
