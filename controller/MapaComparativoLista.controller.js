@@ -8,6 +8,9 @@ sap.ui.define(
 	{
 		onInit : function()
 		{
+		},
+		onListItemPress : function(oEvent) {
+			this.getRouter().navTo("MapaComparativoDetalhes",{ rfq : "600289020" });
 		}
 	});
 });
