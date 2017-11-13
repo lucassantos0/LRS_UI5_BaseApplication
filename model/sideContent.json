@@ -27,9 +27,9 @@
 			"key": "Categoria2"
 		},
 		{
-			"title": "Título 3",
+			"title": "Mapa Comparativo",
 			"icon": "sap-icon://my-sales-order",
-			"key": "Categoria3"
+			"key": "MapaComparativo"
 		},
 		{
 			"title": "Título 4",
