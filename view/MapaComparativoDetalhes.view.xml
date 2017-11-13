@@ -3,6 +3,7 @@
 	xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:mc="sap.suite.ui.microchart"
 	xmlns:tnt="sap.tnt">
 	<tnt:ToolHeader>
+		<Button icon="sap-icon://back" type="Transparent" press="onNavBack" />
 		<Button icon="sap-icon://add" type="Transparent" text="Adicionar rodada">
 			<layoutData>
 				<OverflowToolbarLayoutData priority="NeverOverflow" />

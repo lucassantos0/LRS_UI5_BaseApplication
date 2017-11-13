@@ -14,6 +14,10 @@ sap.ui.define([
 				return sap.ui.core.UIComponent.getRouterFor(this);
 			},
 
+			onNavBack : function() {
+				//this.getRouter()
+			},
+			
 			/**
 			 * Convenience method for getting the view model by name.
 			 * @public

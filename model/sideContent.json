@@ -29,7 +29,7 @@
 		{
 			"title": "Mapa Comparativo",
 			"icon": "sap-icon://my-sales-order",
-			"key": "MapaComparativo"
+			"key": "MapaComparativoLista"
 		},
 		{
 			"title": "Título 4",
