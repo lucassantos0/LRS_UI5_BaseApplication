@@ -31,7 +31,7 @@
 						</fb:FilterItem>
 					</fb:filterItems>
 				</fb:FilterBar>
-				<List headerText="RFQs" item="{/listaRfqs}" >
+				<List headerText="RFQs" items="{/listaRfqs}" >
 					<items>
 						<ObjectListItem title="{id}" type="Active"
 							press="onListItemPress" number="{amount}" numberUnit="{currency}">
