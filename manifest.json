@@ -73,6 +73,10 @@
 			"customer": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/customers.json"
+			},
+			"listaRfqs": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/mapaComparativoLista.json"
 			}
 		},
 		"resources": {

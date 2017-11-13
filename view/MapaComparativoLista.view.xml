@@ -31,26 +31,16 @@
 						</fb:FilterItem>
 					</fb:filterItems>
 				</fb:FilterBar>
-				<List headerText="RFQs">
+				<List headerText="RFQs" item="{/listaRfqs}" >
 					<items>
-						<ObjectListItem title="600010020" type="Active"
-							press="onListItemPress" number="1.000.000,20" numberUnit="BRL">
+						<ObjectListItem title="{id}" type="Active"
+							press="onListItemPress" number="{amount}" numberUnit="{currency}">
 							<firstStatus>
-								<ObjectStatus text="2 rodada(s)" />
+								<ObjectStatus text="{numberOfRounds} rodada(s)" />
 							</firstStatus>
 							<attributes>
 								<ObjectAttribute text="" />
-								<ObjectAttribute text="Última atualização: 21/10/2017" />
-							</attributes>
-						</ObjectListItem>
-						<ObjectListItem title="600289020" type="Active"
-							press="onListItemPress" number="75.230,90" numberUnit="BRL">
-							<firstStatus>
-								<ObjectStatus text="5 rodada(s)" />
-							</firstStatus>
-							<attributes>
-								<ObjectAttribute text="" />
-								<ObjectAttribute text="Última atualização: 15/09/2017" />
+								<ObjectAttribute text="Última atualização: {lastUpdate}" />
 							</attributes>
 						</ObjectListItem>
 					</items>
