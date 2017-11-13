@@ -32,18 +32,16 @@
 					</fb:filterItems>
 				</fb:FilterBar>
 				<List headerText="RFQs" items="{/listaRfqs}" >
-					<items>
-						<ObjectListItem title="{id}" type="Active"
-							press="onListItemPress" number="{amount}" numberUnit="{currency}">
-							<firstStatus>
-								<ObjectStatus text="{numberOfRounds} rodada(s)" />
-							</firstStatus>
-							<attributes>
-								<ObjectAttribute text="" />
-								<ObjectAttribute text="Última atualização: {lastUpdate}" />
-							</attributes>
-						</ObjectListItem>
-					</items>
+					<ObjectListItem title="{id}" type="Active"
+						press="onListItemPress" number="{amount}" numberUnit="{currency}">
+						<firstStatus>
+							<ObjectStatus text="{numberOfRounds} rodada(s)" />
+						</firstStatus>
+						<attributes>
+							<ObjectAttribute text="" />
+							<ObjectAttribute text="Última atualização: {lastUpdate}" />
+						</attributes>
+					</ObjectListItem>
 				</List>
 			</VBox>
 		</content>
