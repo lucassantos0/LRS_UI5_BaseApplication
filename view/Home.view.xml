@@ -47,7 +47,7 @@
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
 					<l:VerticalLayout>
-						<core:Icon src="sap-icon://map-2" size="2.5rem" color="#346187" />
+						<core:Icon src="sap-icon://order-status" size="2.5rem" color="#346187" />
 						<Title text="{i18n>tile4Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
 						<Text text="{i18n>tile4Content}" class="sapUiTinyMarginBottom" />
