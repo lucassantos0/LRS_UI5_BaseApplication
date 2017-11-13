@@ -18,49 +18,40 @@
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://area-chart" size="2.5rem"
 							color="#346187" />
-						<Title text="{i18n>
-							tile1Title}" titleStyle="H2"
+						<Title text="{i18n>tile1Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
-							<Text text="{i18n>
-								tile1Content}" class="sapUiTinyMarginBottom" />
-								<Link text="{i18n>
-									tile1Action1}" press="navToTile1Action1" />
-									<Link text="{i18n>tile1Action2}" press="navToTile1Action2" />
+						<Text text="{i18n>tile1Content}" class="sapUiTinyMarginBottom" />
+						<Link text="{i18n>tile1Action1}" press="navToTile1Action1" />
+						<Link text="{i18n>tile1Action2}" press="navToTile1Action2" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://inspection" size="2.5rem"
 							color="#346187" />
-						<Title text="{i18n>
-							tile2Title}" titleStyle="H2"
+						<Title text="{i18n>tile2Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
-							<Text text="{i18n>
-								tile2Content}" class="sapUiTinyMarginBottom" />
-								<Link text="{i18n>tile2Action1}" press="navToNotasServicoVisualizar" />
+						<Text text="{i18n>tile2Content}" class="sapUiTinyMarginBottom" />
+						<Link text="{i18n>tile2Action1}" press="navToNotasServicoVisualizar" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://my-sales-order" size="2.5rem"
 							color="#346187" />
-						<Title text="{i18n>
-							tile3Title}" titleStyle="H2"
+						<Title text="{i18n>tile3Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
-							<Text text="{i18n>
-								tile3Content}" class="sapUiTinyMarginBottom" />
-								<Link text="{i18n>tile3Action1}" press="navToMapaComparativo" />
+						<Text text="{i18n>tile3Content}" class="sapUiTinyMarginBottom" />
+						<Link text="{i18n>tile3Action1}" press="navToMapaComparativo" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://map-2" size="2.5rem" color="#346187" />
-						<Title text="{i18n>
-							tile4Title}" titleStyle="H2"
+						<Title text="{i18n>tile4Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
-							<Text text="{i18n>
-								tile4Content}" class="sapUiTinyMarginBottom" />
-								<Link text="{i18n>tile4Action1}" />
+						<Text text="{i18n>tile4Content}" class="sapUiTinyMarginBottom" />
+						<Link text="{i18n>tile4Action1}" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
@@ -72,10 +63,9 @@
 					text="{i18n>learnLink}" /> </l:VerticalLayout> </l:BlockLayoutCell> -->
 				<l:BlockLayoutCell class="sapUiNoContentPadding"
 					width="3">
-					<Table items="{path: ' customer>
-						/customers', templateShareable: false}"
-						class="customerTable
-						sapUiContentPadding">
+					<Table
+						items="{path: 'customer>/customers', templateShareable: false}"
+						class="customerTablesapUiContentPadding">
 						<headerToolbar>
 							<Toolbar design="Transparent">
 								<Title text="{i18n>customerOverviewTitle}" />
@@ -104,15 +94,15 @@
 									<Text text="{customer>name}" />
 									<Text text="{customer>productId}" />
 									<Text text="{customer>lastPurchase}" />
-									<ObjectNumber number="{customer>
-										payment}" state="{customer>state}" />
-										<ObjectNumber
-											number="{
+									<ObjectNumber number="{customer>payment}"
+										state="{customer>state}" />
+									<ObjectNumber
+										number="{
 												parts:[{path:'customer>amount'},{path:'customer>currencyCode'}],
 												type: 'sap.ui.model.type.Currency',
 												formatOptions: {showMeasure: false}
 											}"
-											unit="{customer>currencyCode}" />
+										unit="{customer>currencyCode}" />
 								</cells>
 							</ColumnListItem>
 						</items>
