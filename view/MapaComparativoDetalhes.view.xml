@@ -21,7 +21,7 @@
 	<l:VerticalLayout id="containerLayout" width="100%">
 		<l:BlockLayout id="BlockLayout" background="Dashboard">
 			<l:BlockLayoutRow accentCells="Accent1">
-				<l:BlockLayoutCell width="25%" id="Accent1">
+				<l:BlockLayoutCell width="35%" id="Accent1">
 					<form:SimpleForm editable="false" backgroundDesign="Transparent">
 						<Label text="Empresa" />
 						<Text text="Empresa compradora (0001)" />
@@ -33,7 +33,7 @@
 						<Text text="20/10/2017" />
 					</form:SimpleForm>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell width="75%" titleAlignment="End"
+				<l:BlockLayoutCell width="65%" titleAlignment="End"
 					title="Itens">
 					<Table id="idProductsTable" inset="false" items="{/itens}">
 						<columns>
