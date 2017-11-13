@@ -161,7 +161,7 @@
 					"viewName": "MapaComparativoLista"
 				},
 				"MaraComparativoDetalhes" : {
-					"viewName" : "MaraComparativoDetalhes"
+					"viewName" : "MapaComparativoDetalhes"
 				}
 			}
 		}
