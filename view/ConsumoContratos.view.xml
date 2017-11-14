@@ -100,6 +100,55 @@
 							<Text text="{consumoContratos>ktwrt}" />
 						</f:content>
 					</f:SimpleForm>
+					<Table 
+						inset="false"
+						items="{
+							path: 'consumoContratos>/items/'
+						}">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Itens" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column
+								width="12em">
+								<Text text="Material" />
+							</Column>
+							<Column
+								minScreenWidth="Tablet"
+								demandPopin="true">
+								<Text text="Item" />
+							</Column>
+							<Column
+								minScreenWidth="Tablet"
+								demandPopin="true">
+								<Text text="Grupo de mercadorias" />
+							</Column>
+							<Column
+								minScreenWidth="Tablet"
+								demandPopin="true"
+								hAlign="Center">
+								<Text text="Quantidade prevista" />
+							</Column>
+							<Column>
+								<Text text="Qtd.do pedido" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier
+										title="{consumoContratos>txz01}"
+										text="{consumoContratos>matnr}"/>
+									<Text text="{consumoContratos>ebelp}" />
+									<Text text="{consumoContratos>matkl}" />
+									<Text text="{consumoContratos>ktmng}" />
+									<Text text="{consumoContratos>menge}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
 				</VBox>
 				</semantic:content>
 				<semantic:customFooterContent>
