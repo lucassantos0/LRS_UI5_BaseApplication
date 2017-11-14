@@ -33,7 +33,7 @@
 								press="onListItemPress">
 								<firstStatus>
 									<ObjectStatus
-										visible="{= ${consumoContratos>itemsPorcentagemConsumo} === '' ? false : true }"
+										visible="{= ${consumoContratos>itemsPorcentagemConsumo} ? true : false }"
 										text="{consumoContratos>itemsPorcentagemConsumo}%"
 										state="{
 											path : 'consumoContratos>itemsPorcentagemConsumo',
