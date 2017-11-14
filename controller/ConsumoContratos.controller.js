@@ -9,7 +9,7 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 							var str = sDate;
 							return str.substring(6, 8) + "/"
 									+ str.substring(4, 6) + "/"
-									+ substring(1, 4);
+									+ str.substring(0, 4);
 						}
 					});
 		});
