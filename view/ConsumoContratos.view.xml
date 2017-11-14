@@ -134,6 +134,9 @@
 							<Column>
 								<Text text="Qtd.do pedido" />
 							</Column>
+							<Column>
+								<Text text="% consumido" />
+							</Column>
 						</columns>
 						<items>
 							<ColumnListItem>
@@ -145,6 +148,7 @@
 									<Text text="{consumoContratos>matkl}" />
 									<Text text="{consumoContratos>ktmng}" />
 									<Text text="{consumoContratos>menge}" />
+									<Text text="0%" />
 								</cells>
 							</ColumnListItem>
 						</items>
