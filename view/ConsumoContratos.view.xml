@@ -103,7 +103,7 @@
 					<Table 
 						inset="false"
 						items="{
-							path: 'consumoContratos>/items/'
+							path: 'consumoContratos>items/'
 						}">
 						<headerToolbar>
 							<Toolbar>
