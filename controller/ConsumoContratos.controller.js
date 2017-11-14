@@ -6,8 +6,9 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 						onInit : function() {
 						},
 						formatterMasterListDate : function(sDate) {
-							return sDate.substring(6, 8) + "/"
-									+ sDate.substring(4, 6) + "/"
+							var str = sDate;
+							return str.substring(6, 8) + "/"
+									+ str.substring(4, 6) + "/"
 									+ substring(1, 4);
 						}
 					});
