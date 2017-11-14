@@ -53,7 +53,7 @@
 			</semantic:MasterPage>
 		</masterPages>
 		<detailPages>
-			<semantic:DetailPage title="Contrato" id="detailPageContratos">
+			<semantic:DetailPage title="{consumoContratos>ebeln}" id="detailPageContratos">
 				<semantic:content>
 				
 				</semantic:content>
