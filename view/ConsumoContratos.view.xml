@@ -112,7 +112,7 @@
 						</headerToolbar>
 						<columns>
 							<Column
-								width="12em">
+								width="14em">
 								<Text text="Material" />
 							</Column>
 							<Column
