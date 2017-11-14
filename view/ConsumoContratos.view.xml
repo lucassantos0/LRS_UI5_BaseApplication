@@ -40,7 +40,10 @@
 										}" />
 								</firstStatus>
 								<attributes>
-									<ObjectAttribute text="{consumoContratos>kdate}" />
+									<ObjectAttribute text="{
+										path: 'consumoContratos>kdate',
+										formatter: '.formatterMasterListDate'
+									}" />
 								</attributes>
 							</ObjectListItem>
 						</items>

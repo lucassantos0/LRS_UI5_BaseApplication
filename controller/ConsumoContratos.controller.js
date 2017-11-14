@@ -9,5 +9,8 @@ sap.ui.define(
 		onInit : function()
 		{
 		}
+		formatterMasterListDate : function(sDate) {
+			return sDate.substring(6,8) + "/" + sDate.substring(4,6) + "/" + substring(1,4);
+		}
 	});
 });
