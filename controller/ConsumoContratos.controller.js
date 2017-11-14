@@ -16,6 +16,11 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 							if(iPorcentagem < 40) { return 'None'; }
 							if(iPorcentagem < 80) { return 'Warning'; }
 							return 'Error';
+						},
+						onSelecionarContrato : function(oEvent){
+							var sPath = oEvent.getSource().getBindingContextPath();
+							var oModel = this.getModel("consumoContratos").getObject(sPath);
+							sap.m.MessageToast("Contrato selecionado: " + oModel.ebeln);
 						}
 					});
 		});

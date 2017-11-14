@@ -30,7 +30,7 @@
 							<ObjectListItem
 								title="{consumoContratos>ebeln}"
 								type="Active"
-								press="onListItemPress">
+								press="onSelecionarContrato">
 								<firstStatus>
 									<ObjectStatus
 										visible="{= ${consumoContratos>itemsPorcentagemConsumo} ? true : false }"
@@ -53,7 +53,10 @@
 			</semantic:MasterPage>
 		</masterPages>
 		<detailPages>
-			<semantic:DetailPage title="Contrato">
+			<semantic:DetailPage title="Contrato" id="detailPageContratos">
+				<semantic:content>
+				
+				</semantic:content>
 				<semantic:customFooterContent>
 					<Button text="Reajuste" icon="sap-icon://action" press="onPress"/>
 					<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
