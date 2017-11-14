@@ -9,7 +9,7 @@
 
 	<SplitContainer>
 		<masterPages>
-			<semantic:MasterPage title="Master Page Title">
+			<semantic:MasterPage title="Contratos">
 				<semantic:sort>
 					<semantic:SortSelect>
 					</semantic:SortSelect>
@@ -23,13 +23,9 @@
 				<semantic:addAction>
 					<semantic:AddAction press="onSemanticButtonPress"/>
 				</semantic:addAction>
-				<semantic:multiSelectAction>
-					<semantic:MultiSelectAction press="onMultiSelectPress"/>
-				</semantic:multiSelectAction>
 				<semantic:content>
 					<List
-						items="{consumoContratos>/}"
-						headerText="Contratos">
+						items="{consumoContratos>/}">
 						<items>
 							<ObjectListItem
 								title="{consumoContratos>ebeln}"
@@ -53,59 +49,14 @@
 			</semantic:MasterPage>
 		</masterPages>
 		<detailPages>
-			<semantic:DetailPage
-					title="Detail Page Title">
-				<semantic:positiveAction>
-					<semantic:PositiveAction text="Positive" press="onSemanticButtonPress"/>
-				</semantic:positiveAction>
-				<semantic:negativeAction>
-					<semantic:NegativeAction text="Negative" press="onSemanticButtonPress"/>
-				</semantic:negativeAction>
-				<semantic:forwardAction>
-					<semantic:ForwardAction press="onSemanticButtonPress"/>
-				</semantic:forwardAction>
-				<semantic:flagAction>
-					<semantic:FlagAction press="onSemanticButtonPress"/>
-				</semantic:flagAction>
-				<semantic:favoriteAction>
-					<semantic:FavoriteAction press="onSemanticButtonPress"/>
-				</semantic:favoriteAction>
-				<semantic:sendEmailAction>
-					<semantic:SendEmailAction press="onSemanticButtonPress"/>
-				</semantic:sendEmailAction>
-				<semantic:sendMessageAction>
-					<semantic:SendMessageAction press="onSemanticButtonPress"/>
-				</semantic:sendMessageAction>
-				<semantic:discussInJamAction>
-					<semantic:DiscussInJamAction press="onSemanticButtonPress"/>
-				</semantic:discussInJamAction>
-				<semantic:shareInJamAction>
-					<semantic:ShareInJamAction press="onSemanticButtonPress"/>
-				</semantic:shareInJamAction>
-				<semantic:printAction>
-					<semantic:PrintAction press="onSemanticButtonPress"/>
-				</semantic:printAction>
-				<semantic:messagesIndicator>
-					<semantic:MessagesIndicator press="onMessagesButtonPress"/>
-				</semantic:messagesIndicator>
-				<semantic:pagingAction>
-					<PagingButton count="5" positionChange="onPositionChange"/>
-				</semantic:pagingAction>
-
+			<semantic:DetailPage title="Contrato">
 				<semantic:customFooterContent>
-					<OverflowToolbarButton icon="sap-icon://settings" text="Settings" press="onPress"/>
-					<OverflowToolbarButton icon="sap-icon://video" text="Video" press="onPress"/>
+					<Button text="Reajuste" icon="sap-icon://action" press="onPress"/>
+					<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
+					<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
 				</semantic:customFooterContent>
-
-				<semantic:customShareMenuContent>
-					<Button text="CustomShareBtn1" icon="sap-icon://color-fill" press="onPress"/>
-					<Button text="CustomShareBtn2" icon="sap-icon://crop" press="onPress"/>
-				</semantic:customShareMenuContent>
-
 			</semantic:DetailPage>
-
 		</detailPages>
-
 	</SplitContainer>
 
 </mvc:View>
