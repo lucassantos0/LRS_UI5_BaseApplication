@@ -21,6 +21,7 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 							var sPath = oEvent.getSource().getBindingContextPath();
 							var oModel = this.getModel("consumoContratos").getObject(sPath);
 							sap.m.MessageToast.show("Contrato selecionado: " + oModel.ebeln);
+							this.byId("detailPageContratos").setBindingContext(sPath);
 						}
 					});
 		});
