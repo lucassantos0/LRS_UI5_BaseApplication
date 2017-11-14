@@ -56,10 +56,9 @@
 			<semantic:DetailPage title="{consumoContratos>ebeln}" id="detailPageContratos">
 				<semantic:content>
 				<VBox class="sapUiSmallMargin">
-					<f:SimpleForm id="SimpleFormDisplay480_Trial"
+					<f:SimpleForm 
 						editable="false"
 						layout="ResponsiveGridLayout"
-						title="Address"
 						labelSpanXL="4"
 						labelSpanL="4"
 						labelSpanM="4"
