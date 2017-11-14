@@ -17,7 +17,6 @@
 		"bedat": "20171110",
 		"kdatb": "20101101",
 		"kdate": "20180430",
-		"itemsConsumoVencendo" : true,
 		"itemsPorcentagemConsumo" : "98",
 		"items": [
 			{
@@ -59,6 +58,7 @@
 		"bedat": "20171110",
 		"kdatb": "20091004",
 		"kdate": "20181105",
+		"itemsPorcentagemConsumo" : "49",
 		"items": [
 			{
 				"ebeln": "4600031317",
@@ -175,6 +175,7 @@
 		"bedat": "20171110",
 		"kdatb": "20170921",
 		"kdate": "20171030",
+		"itemsPorcentagemConsumo" : "37",
 		"items": [
 			{
 				"ebeln": "4600031316",
@@ -291,6 +292,7 @@
 		"bedat": "20171110",
 		"kdatb": "20091019",
 		"kdate": "99991231",
+		"itemsPorcentagemConsumo" : "5",
 		"items": [
 			{
 				"ebeln": "4600031313",

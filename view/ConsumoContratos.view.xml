@@ -33,10 +33,11 @@
 								press="onListItemPress">
 								<firstStatus>
 									<ObjectStatus
-										visible="{= ${consumoContratos>itemsConsumoVencendo} === true ? true : false }"
+										visible="{= ${consumoContratos>itemsPorcentagemConsumo} === '' ? false : true }"
 										text="{consumoContratos>itemsPorcentagemConsumo}%"
-										state="{=
-											${consumoContratos>itemsConsumoVencendo} === true ? 'Warning' : 'None'
+										state="{
+											path : 'consumoContratos>itemsPorcentagemConsumo',
+											formatter : '.formatterMasterListConsumoStatus'
 										}" />
 								</firstStatus>
 								<attributes>
