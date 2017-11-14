@@ -32,9 +32,9 @@
 			"key": "MapaComparativoLista"
 		},
 		{
-			"title": "Título 4",
-			"icon": "sap-icon://map-2",
-			"key": "Categoria4"
+			"title": "Consumo contratos",
+			"icon": "sap-icon://order-status",
+			"key": "ConsumoContratos"
 		}
 	],
 	"masterSettings": [

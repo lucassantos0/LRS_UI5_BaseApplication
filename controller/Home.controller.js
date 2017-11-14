@@ -18,6 +18,9 @@ sap.ui.define(
 		},
 		navToMapaComparativo : function(){
 			this.getRouter().navTo("MapaComparativoLista");
+		},
+		navToConsumoContratos : function(){
+			this.getRouter().navTo("ConsumoContratos");
 		}
 	});
 });

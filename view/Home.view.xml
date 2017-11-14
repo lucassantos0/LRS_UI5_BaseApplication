@@ -51,7 +51,7 @@
 						<Title text="{i18n>tile4Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
 						<Text text="{i18n>tile4Content}" class="sapUiTinyMarginBottom" />
-						<Link text="{i18n>tile4Action1}" />
+						<Link text="{i18n>tile4Action1}" press="navToConsumoContratos" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
