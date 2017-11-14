@@ -17,6 +17,8 @@
 		"bedat": "20171110",
 		"kdatb": "20101101",
 		"kdate": "20180430",
+		"itemsConsumoVencendo" : true,
+		"itemsPorcentagemConsumo" : "98",
 		"items": [
 			{
 				"ebeln": "4600031315",
@@ -196,7 +198,7 @@
 			{
 				"ebeln": "4600031316",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -234,7 +236,7 @@
 			{
 				"ebeln": "4600031316",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -293,7 +295,7 @@
 			{
 				"ebeln": "4600031313",
 				"ebelp": "00010",
-				"txz01": "NÃOUSAR-MÃO-DE-OBRACONTRATADAAVULSA",
+				"txz01": "Nï¿½OUSAR-Mï¿½O-DE-OBRACONTRATADAAVULSA",
 				"matnr": "000000030000000654",
 				"ematn": "000000030000000654",
 				"bukrs": "D006",
@@ -333,7 +335,7 @@
 			{
 				"ebeln": "4600031314",
 				"ebelp": "00010",
-				"txz01": "SERVIÇOSDEINFORMÁTICA-DIVERSOS",
+				"txz01": "SERVIï¿½OSDEINFORMï¿½TICA-DIVERSOS",
 				"matnr": "000000030000015529",
 				"ematn": "000000030000015529",
 				"bukrs": "D006",
@@ -666,7 +668,7 @@
 			{
 				"ebeln": "4600031269",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -685,7 +687,7 @@
 			{
 				"ebeln": "4600031269",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -896,7 +898,7 @@
 			{
 				"ebeln": "4600031306",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -934,7 +936,7 @@
 			{
 				"ebeln": "4600031306",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -1149,7 +1151,7 @@
 			{
 				"ebeln": "4600031273",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -1168,7 +1170,7 @@
 			{
 				"ebeln": "4600031273",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -1594,7 +1596,7 @@
 			{
 				"ebeln": "4600031277",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -1613,7 +1615,7 @@
 			{
 				"ebeln": "4600031277",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -1999,7 +2001,7 @@
 			{
 				"ebeln": "4600031282",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -2018,7 +2020,7 @@
 			{
 				"ebeln": "4600031282",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -2210,7 +2212,7 @@
 			{
 				"ebeln": "4600031283",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -2229,7 +2231,7 @@
 			{
 				"ebeln": "4600031283",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -2440,7 +2442,7 @@
 			{
 				"ebeln": "4600031302",
 				"ebelp": "00020",
-				"txz01": "Materiais e Serviços para a Obram",
+				"txz01": "Materiais e Serviï¿½os para a Obram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D003",
@@ -2478,7 +2480,7 @@
 			{
 				"ebeln": "4600031302",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D003",
@@ -2556,7 +2558,7 @@
 			{
 				"ebeln": "4600031304",
 				"ebelp": "00020",
-				"txz01": "Materiais e Serviços para a Obram",
+				"txz01": "Materiais e Serviï¿½os para a Obram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2594,7 +2596,7 @@
 			{
 				"ebeln": "4600031304",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2672,7 +2674,7 @@
 			{
 				"ebeln": "4600031307",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2710,7 +2712,7 @@
 			{
 				"ebeln": "4600031307",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2788,7 +2790,7 @@
 			{
 				"ebeln": "4600031308",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2826,7 +2828,7 @@
 			{
 				"ebeln": "4600031308",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2904,7 +2906,7 @@
 			{
 				"ebeln": "4600031309",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2942,7 +2944,7 @@
 			{
 				"ebeln": "4600031309",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3020,7 +3022,7 @@
 			{
 				"ebeln": "4600031310",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3058,7 +3060,7 @@
 			{
 				"ebeln": "4600031310",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3136,7 +3138,7 @@
 			{
 				"ebeln": "4600031311",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3174,7 +3176,7 @@
 			{
 				"ebeln": "4600031311",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3233,7 +3235,7 @@
 			{
 				"ebeln": "4600031279",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3252,7 +3254,7 @@
 			{
 				"ebeln": "4600031279",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -3522,7 +3524,7 @@
 			{
 				"ebeln": "4600031284",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3541,7 +3543,7 @@
 			{
 				"ebeln": "4600031284",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -3733,7 +3735,7 @@
 			{
 				"ebeln": "4600031285",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3752,7 +3754,7 @@
 			{
 				"ebeln": "4600031285",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -3944,7 +3946,7 @@
 			{
 				"ebeln": "4600031286",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3963,7 +3965,7 @@
 			{
 				"ebeln": "4600031286",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -4389,7 +4391,7 @@
 			{
 				"ebeln": "4600031290",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -4408,7 +4410,7 @@
 			{
 				"ebeln": "4600031290",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -4834,7 +4836,7 @@
 			{
 				"ebeln": "4600031294",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -4853,7 +4855,7 @@
 			{
 				"ebeln": "4600031294",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -5279,7 +5281,7 @@
 			{
 				"ebeln": "4600031298",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -5298,7 +5300,7 @@
 			{
 				"ebeln": "4600031298",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -5743,7 +5745,7 @@
 			{
 				"ebeln": "4600031305",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServiçosparaaObram",
+				"txz01": "MateriaiseServiï¿½osparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -5781,7 +5783,7 @@
 			{
 				"ebeln": "4600031305",
 				"ebelp": "00040",
-				"txz01": "SERVIÇO",
+				"txz01": "SERVIï¿½O",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -6074,7 +6076,7 @@
 			{
 				"ebeln": "4600031257",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -6093,7 +6095,7 @@
 			{
 				"ebeln": "4600031257",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -6403,7 +6405,7 @@
 			{
 				"ebeln": "4600031265",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -6422,7 +6424,7 @@
 			{
 				"ebeln": "4600031265",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -7044,7 +7046,7 @@
 			{
 				"ebeln": "4600031224",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -7063,7 +7065,7 @@
 			{
 				"ebeln": "4600031224",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -7489,7 +7491,7 @@
 			{
 				"ebeln": "4600031236",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -7508,7 +7510,7 @@
 			{
 				"ebeln": "4600031236",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -7934,7 +7936,7 @@
 			{
 				"ebeln": "4600031240",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -7953,7 +7955,7 @@
 			{
 				"ebeln": "4600031240",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -8379,7 +8381,7 @@
 			{
 				"ebeln": "4600031244",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -8398,7 +8400,7 @@
 			{
 				"ebeln": "4600031244",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -8824,7 +8826,7 @@
 			{
 				"ebeln": "4600031250",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -8843,7 +8845,7 @@
 			{
 				"ebeln": "4600031250",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -9035,7 +9037,7 @@
 			{
 				"ebeln": "4600031252",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -9054,7 +9056,7 @@
 			{
 				"ebeln": "4600031252",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -9518,7 +9520,7 @@
 			{
 				"ebeln": "4600031261",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -9537,7 +9539,7 @@
 			{
 				"ebeln": "4600031261",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -10399,7 +10401,7 @@
 			{
 				"ebeln": "4600031228",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -10418,7 +10420,7 @@
 			{
 				"ebeln": "4600031228",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -10610,7 +10612,7 @@
 			{
 				"ebeln": "4600031229",
 				"ebelp": "00010",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO12ATIPOK",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -10629,7 +10631,7 @@
 			{
 				"ebeln": "4600031229",
 				"ebelp": "00020",
-				"txz01": "ELOFUSÍVELDISTRIBUIÇÃO1ATIPOH",
+				"txz01": "ELOFUSï¿½VELDISTRIBUIï¿½ï¿½O1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",

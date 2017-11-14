@@ -29,29 +29,21 @@
 				<semantic:content>
 					<List
 						items="{consumoContratos>/}"
-						headerText="Products">
+						headerText="Contratos">
 						<items>
 							<ObjectListItem
 								title="{consumoContratos>ebeln}"
 								type="Active"
-								press="onListItemPress"
-								number="{
-									parts:[{path:'Price'},{path:'CurrencyCode'}],
-									type: 'sap.ui.model.type.Currency',
-									formatOptions: {showMeasure: false}
-								}"
-								numberUnit="{CurrencyCode}">
+								press="onListItemPress">
 								<firstStatus>
 									<ObjectStatus
-										text="{Status}"
-										state="{
-											path: 'Status',
-											formatter: 'sap.m.sample.ObjectListItem.Formatter.status'
+										text="{consumoContratos>itemsPorcentagemConsumo}%"
+										state="{=
+											${consumoContratos>itemsConsumoVencendo} === true ? 'Warning' : 'None'
 										}" />
 								</firstStatus>
 								<attributes>
-									<ObjectAttribute text="{WeightMeasure} {WeightUnit}" />
-									<ObjectAttribute text="{Width} x {Depth} x {Height} {DimUnit}" />
+									<ObjectAttribute text="{consumoContratos>kdate}" />
 								</attributes>
 							</ObjectListItem>
 						</items>
