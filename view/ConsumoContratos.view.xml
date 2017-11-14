@@ -27,7 +27,7 @@
 					<semantic:MultiSelectAction press="onMultiSelectPress"/>
 				</semantic:multiSelectAction>
 			</semantic:MasterPage>
-			<content>
+			<semantic:content>
 				<List
 					items="{consumoContratos>/}"
 					headerText="Products">
@@ -57,7 +57,7 @@
 						</ObjectListItem>
 					</items>
 				</List>
-			</content>
+			</semantic:content>
 		</masterPages>
 		<detailPages>
 			<semantic:DetailPage
