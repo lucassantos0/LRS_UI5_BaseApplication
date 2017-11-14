@@ -37,6 +37,7 @@
 								press="onListItemPress">
 								<firstStatus>
 									<ObjectStatus
+										visible="{consumoContratos>itemsConsumoVencendo}"
 										text="{consumoContratos>itemsPorcentagemConsumo}%"
 										state="{=
 											${consumoContratos>itemsConsumoVencendo} === true ? 'Warning' : 'None'
