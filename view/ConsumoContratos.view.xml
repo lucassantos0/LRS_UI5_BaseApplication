@@ -59,9 +59,9 @@
 					<f:SimpleForm 
 						editable="false"
 						layout="ResponsiveGridLayout"
-						labelSpanXL="4"
-						labelSpanL="4"
-						labelSpanM="4"
+						labelSpanXL="6"
+						labelSpanL="6"
+						labelSpanM="6"
 						labelSpanS="12"
 						adjustLabelSpan="false"
 						emptySpanXL="0"
@@ -69,8 +69,8 @@
 						emptySpanM="0"
 						emptySpanS="0"
 						columnsXL="3"
-						columnsL="2"
-						columnsM="2"
+						columnsL="3"
+						columnsM="3"
 						singleContainerFullSize="false" >
 						<f:content>
 							<core:Title text="" />
