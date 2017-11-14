@@ -77,6 +77,10 @@
 			"listaRfqs": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/mapaComparativoLista.json"
+			},
+			"consumoContratos": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/consumoContratos.json"
 			}
 		},
 		"resources": {
@@ -127,9 +131,14 @@
 					]
 				},
 				{
-					"pattern" : "MapaComparativoDetalhes/:rfq:",
-					"name" : "MapaComparativoDetalhes",
-					"target" : "MaraComparativoDetalhes"
+					"pattern": "MapaComparativoDetalhes/:rfq:",
+					"name": "MapaComparativoDetalhes",
+					"target": "MaraComparativoDetalhes"
+				},
+				{
+					"pattern": "ConsumoContratos",
+					"name": "ConsumoContratos",
+					"target": "ConsumoContratos"
 				}
 			],
 			"targets": {
@@ -160,8 +169,11 @@
 				"MapaComparativoLista": {
 					"viewName": "MapaComparativoLista"
 				},
-				"MaraComparativoDetalhes" : {
-					"viewName" : "MapaComparativoDetalhes"
+				"MaraComparativoDetalhes": {
+					"viewName": "MapaComparativoDetalhes"
+				},
+				"ConsumoContratos": {
+					"viewName": "ConsumoContratos"
 				}
 			}
 		}
