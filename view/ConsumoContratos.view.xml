@@ -80,7 +80,7 @@
 							<Text text="{consumoContratos>bstyp}" />
 							<Label text="Tp.doc.compras" />
 							<Text text="{consumoContratos>bsart}" />
-							<core:Title text="" />
+							<core:Title text="" /> 
 							<Label text="Data de criação" />
 							<Text text="{consumoContratos>aedat}" />
 							<Label text="Organiz.compras" />
