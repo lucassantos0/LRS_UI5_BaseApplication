@@ -74,9 +74,7 @@
 						singleContainerFullSize="false" >
 						<f:content>
 							<core:Title text="" />
-							<Label text="Documento de compras" />
-							<Text text="{consumoContratos>ebeln}" />
-							<Label text="Empresa" />
+							<Link text="Empresa" />
 							<Text text="{consumoContratos>bukrs}" />
 							<Label text="Ctg.doc.compras" />
 							<Text text="{consumoContratos>bstyp}" />
@@ -86,9 +84,9 @@
 							<Label text="Data de criação" />
 							<Text text="{consumoContratos>aedat}" />
 							<Label text="Organiz.compras" />
-							<Text text="{consumoContratos>ekorg}" />
+							<Link text="{consumoContratos>ekorg}" />
 							<Label text="Grupo de compradores" />
-							<Text text="{consumoContratos>ekgrp}" />
+							<Link text="{consumoContratos>ekgrp}" />
 							<core:Title text="" />
 							<Label text="Moeda" />
 							<Text text="{consumoContratos>waers}" />
