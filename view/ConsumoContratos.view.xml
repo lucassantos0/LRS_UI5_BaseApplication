@@ -74,8 +74,8 @@
 						singleContainerFullSize="false" >
 						<f:content>
 							<core:Title text="" />
-							<Link text="Empresa" />
-							<Text text="{consumoContratos>bukrs}" />
+							<Label text="Empresa" />
+							<Link text="{consumoContratos>bukrs}" />
 							<Label text="Ctg.doc.compras" />
 							<Text text="{consumoContratos>bstyp}" />
 							<Label text="Tp.doc.compras" />
