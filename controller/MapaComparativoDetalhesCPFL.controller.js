@@ -24,7 +24,7 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ], function(BaseController,
 						},
 						handleTableSelectDialogPress: function(oEvent) {
 							if (!this._oDialog) {
-								this._oDialog = sap.ui.xmlfragment("lrs.ui5.dialogs.MapaComparativoDetalhesFiltro", this);
+								this._oDialog = sap.ui.xmlfragment("lrs.ui5.view.dialogs.MapaComparativoDetalhesFiltro", this);
 							}
 
 							this._oDialog.setMultiSelect(true);
