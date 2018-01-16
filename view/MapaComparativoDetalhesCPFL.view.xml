@@ -102,7 +102,7 @@
 					</Toolbar>
 				</headerToolbar>
 				<columns>
-					<Column width="18em">
+					<Column width="28em">
 						<Text text="Fornecedor" />
 					</Column>
 					<Column width="10em">
