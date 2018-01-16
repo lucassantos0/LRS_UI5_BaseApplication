@@ -3,7 +3,7 @@
 	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
 		showNavButton="true" navButtonPress="onNavBack">
 		<content>
-			<ScrollContainer width="2048px">
+			<ScrollContainer width="100%">
 				<Table
 					items="{
 						path: 'eventosSourcing>items',
@@ -12,52 +12,52 @@
 						}
 					}">
 					<columns>
-						<Column mergeDuplicates="true">
+						<Column width="10em" mergeDuplicates="true">
 							<Text text="Material" />
 						</Column>
-						<Column mergeDuplicates="true">
+						<Column width="10em" mergeDuplicates="true">
 							<Text text="Qtde.Anual" />
 						</Column>
-						<Column mergeDuplicates="true">
+						<Column width="10em" mergeDuplicates="true">
 							<Text text="Fornecedor" />
 						</Column>
-						<Column mergeDuplicates="true">
+						<Column width="10em" mergeDuplicates="true">
 							<Text text="R$ Reaj." />
 						</Column>
-						<Column mergeDuplicates="true">
+						<Column width="10em" mergeDuplicates="true">
 							<Text text="R$ Total" />
 						</Column>
-						<Column mergeDuplicates="true">
+						<Column width="10em" mergeDuplicates="true">
 							<Text text="ICMS Oficial" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="Fornecedor" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="Preço Original" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="Preço Rodada Atual" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="IPI" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="ICMS" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="R$ Total" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="Negociado c/ Impostos" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="% Ref" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="%Dif. 1°" />
 						</Column>
-						<Column>
+						<Column width="10em">
 							<Text text="Obs" />
 						</Column>
 					</columns>
