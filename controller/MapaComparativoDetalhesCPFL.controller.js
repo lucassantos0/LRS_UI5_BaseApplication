@@ -8,15 +8,19 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ], function(BaseController,
 							this.getRouter().getRoute("MapaComparativoDetalhesCPFL").attachMatched(this.onRouteMatched, this);
 						},
 						onRouteMatched : function(oEvent) {
-							var sPath = decodeURIComponent(oEvent
-									.getParameters().arguments.rfq);
-							if (!sPath) {
+							var sRfq = oEvent.getParameters().arguments.rfq;
+							if (!sRfq) {
 								return false;
 							}
-							var oModel = this.getModel("eventosSourcing")
-									.getObject(sPath);
-							this.byId("mapaComparativoDetalhesCPFL")
-									.bindContext("eventosSourcing>" + sPath);
+							var oModel = this.getModel("eventosSourcing");
+							var oEntry = null;
+							for(var nEntry in oModel.getData().eventosSourcing){
+								oEntry = oModel.getData().eventosSourcing[nEntry];
+								if(oEntry.rfq === sRfq){
+									break;
+								}
+							}
+							this.byId("mapaComparativoDetalhesCPFL").bindContext("eventosSourcing>eventosSourcing/" + nEntry);
 						}
 					});
 });

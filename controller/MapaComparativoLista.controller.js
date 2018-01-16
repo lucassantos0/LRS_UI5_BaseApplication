@@ -10,8 +10,8 @@ sap.ui.define(
 		{
 		},
 		onListItemPress : function(oEvent) {
-			//var sId = this.getModel("listaRfqs").getObject().id;
-			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : encodeURIComponent(oEvent.getSource().getBindingContextPath()) });
+			var sId = this.getModel("listaRfqs").getObject(oEvent.getSource().getBindingContextPath()).id;
+			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : sId });
 		}
 	});
 });
