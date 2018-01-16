@@ -26,28 +26,28 @@
 						<Column width="10em" mergeDuplicates="true">
 							<Text text="Fornecedor" />
 						</Column>
-						<Column width="10em" mergeDuplicates="true">
+						<Column width="4em" mergeDuplicates="true">
 							<Text text="R$ Reaj." />
 						</Column>
-						<Column width="10em" mergeDuplicates="true">
+						<Column width="4em" mergeDuplicates="true">
 							<Text text="R$ Total" />
 						</Column>
-						<Column width="10em" mergeDuplicates="true">
+						<Column width="6em" mergeDuplicates="true">
 							<Text text="ICMS Oficial" />
 						</Column>
 						<Column width="10em">
 							<Text text="Fornecedor" />
 						</Column>
-						<Column width="10em">
+						<Column width="6em">
 							<Text text="Preço Original" />
 						</Column>
 						<Column width="10em">
 							<Text text="Preço Rodada Atual" />
 						</Column>
-						<Column width="10em">
+						<Column width="4em">
 							<Text text="IPI" />
 						</Column>
-						<Column width="10em">
+						<Column width="4em">
 							<Text text="ICMS" />
 						</Column>
 						<Column width="10em">
@@ -56,7 +56,7 @@
 						<Column width="10em">
 							<Text text="Negociado c/ Impostos" />
 						</Column>
-						<Column width="10em">
+						<Column width="4em">
 							<Text text="% Ref" />
 						</Column>
 						<Column width="10em">
