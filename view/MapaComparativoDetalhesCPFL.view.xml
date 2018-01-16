@@ -14,6 +14,17 @@
 					<headerToolbar>
 						<Toolbar>
 							<Title text="Mapa Comparativo de Preços" level="H2" />
+							<ToolbarSpacer />
+							<Button icon="sap-icon://add" type="Transparent" text="Adicionar rodada">
+								<layoutData>
+									<OverflowToolbarLayoutData priority="NeverOverflow" />
+								</layoutData>
+							</Button>
+							<Button icon="sap-icon://refresh" type="Transparent" text="Atualizar">
+								<layoutData>
+									<OverflowToolbarLayoutData priority="NeverOverflow" />
+								</layoutData>
+							</Button>
 						</Toolbar>
 					</headerToolbar>
 					<columns>
