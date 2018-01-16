@@ -46,6 +46,7 @@
 					"requisitionItemNumber": "10",
 					"materialCode": "000000050000001004",
 					"materialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+					"unitOfMeasure" : "PCE",
 					"quantidadeAnual": "100",
 					"plantCode": "DA01",
 					"plantName": "DA01 - Atend. Paulista",

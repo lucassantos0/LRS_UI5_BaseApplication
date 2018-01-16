@@ -164,7 +164,13 @@
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell width="70%"
 										titleAlignment="End" title="Itens">
-										<Table id="idProductsTable" inset="false" items="{/itens}">
+										<Table id="idProductsTable" inset="false"
+											items="{
+													path: 'eventosSourcing>items',
+													sorter: {
+														path: 'itemNumber'
+													}
+												}">
 											<columns>
 												<Column width="16em">
 													<Text text="Item" />
@@ -186,11 +192,11 @@
 											<items>
 												<ColumnListItem>
 													<cells>
-														<ObjectIdentifier title="{nome}" text="{id}" />
-														<Text text="{uom}" />
+														<ObjectIdentifier title="{eventosSourcing>materialName}" text="{eventosSourcing>materialCode}" />
+														<Text text="{eventosSourcing>unitOfMeasure}" />
 														<Text text="{dataremessa}" />
-														<Link text="{centro}" />
-														<Text text="{quantidade}" />
+														<Link text="{eventosSourcing>plantCode}" />
+														<Text text="{eventosSourcing>quantidade}" />
 													</cells>
 												</ColumnListItem>
 											</items>
