@@ -11,7 +11,7 @@ sap.ui.define(
 		},
 		onListItemPress : function(oEvent) {
 			//var sId = this.getModel("listaRfqs").getObject().id;
-			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : oEvent.getSource().getBindingContextPath() });
+			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : encodeURI(oEvent.getSource().getBindingContextPath()) });
 		}
 	});
 });
