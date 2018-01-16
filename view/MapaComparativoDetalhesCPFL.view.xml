@@ -5,9 +5,12 @@
 		showNavButton="true"
 		navButtonPress="onNavBack">
 		<content>
-			<Table inset="true"
+			<Table inset="false"
 				items="{
-					path: 'eventosSourcing>/items'
+					path: 'eventosSourcing>items',
+					sorter: {
+						path: 'itemNumber'
+					}
 				}">
 				<columns>
 					<Column minScreenWidth="Tablet" demandPopin="true">
@@ -31,7 +34,6 @@
 					</ColumnListItem>
 				</items>
 			</Table>
-
 		</content>
 	</Page>
 </mvc:View>
