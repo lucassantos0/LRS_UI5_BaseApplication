@@ -1,0 +1,49 @@
+<mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page id="mapaComparativoDetalhesCPFL">
+		<content>
+			<Table inset="false"
+				items="{
+					path: 'rfqs>items',
+					sorter: {
+						path: 'Name'
+					}
+				}">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="{rfqs>projectId} " level="H2" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="Product" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Supplier" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+						<Text text="Dimensions" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+						<Text text="Weight" />
+					</Column>
+					<Column hAlign="End">
+						<Text text="Price" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{Name}" text="{ProductId}" />
+							<Text text="{SupplierName}" />
+							<Text text="{Width} x {Depth} x {Height} {DimUnit}" />
+							<ObjectNumber number="{WeightMeasure}" unit="{WeightUnit}" />
+							<ObjectNumber unit="{CurrencyCode}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+
+		</content>
+	</Page>
+</mvc:View>

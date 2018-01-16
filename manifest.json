@@ -81,6 +81,10 @@
 			"consumoContratos": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/consumoContratos.json"
+			},
+			"rfqs" : {
+				"type" : "sap.ui.model.json.JSONModel",
+				"uri" : "model/mapaComparativoDetalhesCPFL.json"
 			}
 		},
 		"resources": {
@@ -136,6 +140,11 @@
 					"target": "MaraComparativoDetalhes"
 				},
 				{
+					"pattern": "MapaComparativoDetalhesCPFL/:rfq:",
+					"name": "MapaComparativoDetalhesCPFL",
+					"target": "MaraComparativoDetalhesCPFL"
+				},
+				{
 					"pattern": "ConsumoContratos",
 					"name": "ConsumoContratos",
 					"target": "ConsumoContratos"
@@ -171,6 +180,9 @@
 				},
 				"MaraComparativoDetalhes": {
 					"viewName": "MapaComparativoDetalhes"
+				},
+				"MaraComparativoDetalhesCPFL": {
+					"viewName": "MapaComparativoDetalhesCPFL"
 				},
 				"ConsumoContratos": {
 					"viewName": "ConsumoContratos"
