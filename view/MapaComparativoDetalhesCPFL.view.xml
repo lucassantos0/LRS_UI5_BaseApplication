@@ -12,7 +12,7 @@
 						}
 					}">
 					<columns>
-						<Column width="10em" mergeDuplicates="true">
+						<Column width="14em" mergeDuplicates="true">
 							<Text text="Material" />
 						</Column>
 						<Column width="10em" mergeDuplicates="true">
