@@ -68,7 +68,7 @@
 								text="{eventosSourcing>materialCode}" />
 							<Text text="{eventosSourcing>informacoesReferencia/quantidadeAnual}" />
 							<Text text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
-							<Text text="{eventosSourcing>informacoesReferencia/valorReajuste" />
+							<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
 							<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
 							<ObjectIdentifier title="{eventosSourcing>oferta/participant}" text="{eventosSourcing>oferta/externalsystemsupplierid}" />
 							<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada" />
