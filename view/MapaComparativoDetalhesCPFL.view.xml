@@ -1,5 +1,6 @@
 <mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
-	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mc="sap.suite.ui.microchart">
 	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
 		showNavButton="true" navButtonPress="onNavBack">
 		<headerContent>
@@ -7,136 +8,255 @@
 			<Button icon="sap-icon://refresh" type="Transparent" text="Atualizar" />
 		</headerContent>
 		<content>
-			<ScrollContainer width="100%">
-				<Table
-					items="{
-						path: 'eventosSourcing>items',
-						sorter: {
-							path: 'itemNumber'
-						}
-					}">
-					<headerToolbar>
-						<Toolbar>
-							<Title text="Mapa Comparativo de Preços" level="H2" />
-							<ToolbarSpacer />
-							<Button tooltip="Visualização" icon="sap-icon://filter" press="handleTableSelectDialogPress" />
-						</Toolbar>
-					</headerToolbar>
-					<columns>
-						<Column width="14em" mergeDuplicates="true">
-							<Text text="Material" />
-						</Column>
-						<Column width="6em" mergeDuplicates="true">
-							<Text text="Qtde.Anual" />
-						</Column>
-						<Column width="10em" mergeDuplicates="true">
-							<Text text="Fornecedor" />
-						</Column>
-						<Column width="4em" mergeDuplicates="true">
-							<Text text="R$ Reaj." />
-						</Column>
-						<Column width="4em" mergeDuplicates="true">
-							<Text text="R$ Total" />
-						</Column>
-						<Column width="6em" mergeDuplicates="true">
-							<Text text="ICMS Oficial" />
-						</Column>
-						<Column width="10em">
-							<Text text="Fornecedor" />
-						</Column>
-						<Column width="6em">
-							<Text text="Preço Original" />
-						</Column>
-						<Column width="10em">
-							<Text text="Preço Rodada Atual" />
-						</Column>
-						<Column width="4em">
-							<Text text="IPI" />
-						</Column>
-						<Column width="4em">
-							<Text text="ICMS" />
-						</Column>
-						<Column width="10em">
-							<Text text="R$ Total" />
-						</Column>
-						<Column width="10em">
-							<Text text="Negociado c/ Impostos" />
-						</Column>
-						<Column width="4em">
-							<Text text="% Ref" />
-						</Column>
-						<Column width="10em">
-							<Text text="%Dif. 1°" />
-						</Column>
-						<Column width="10em">
-							<Text text="Obs" />
-						</Column>
-					</columns>
-					<items>
-						<ColumnListItem>
-							<cells>
-								<ObjectIdentifier title="{eventosSourcing>materialName}"
-									text="{eventosSourcing>materialCode}" />
-								<Text text="{eventosSourcing>quantidadeAnual}" />
-								<Text
-									text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
-								<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
-								<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
-								<Text text="{eventosSourcing>informacoesReferencia/ICMSoficial}" />
-								<ObjectIdentifier title="{eventosSourcing>oferta/participant}"
-									text="{eventosSourcing>oferta/externalsystemsupplierid}" />
-								<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
-								<Text text="{eventosSourcing>oferta/bidPrice}" />
-								<Text text="{eventosSourcing>oferta/aliquotaIPI}" />
-								<Text text="{eventosSourcing>oferta/aliquotaICMS}" />
-								<Text
-									text="{= ${eventosSourcing>oferta/bidPrice} * ${eventosSourcing>oferta/quantidade} }" />
-								<Text text="" />
-								<Text text="" />
-								<Text text="" />
-							</cells>
-						</ColumnListItem>
-					</items>
-				</Table>
-			</ScrollContainer>
-			<Table items="{
-					path: 'eventosSourcing>totaisPorFornecedor'
-				}">
-				<headerToolbar>
-					<Toolbar>
-						<Title text="Comparativo por fornecedor" level="H2" />
-					</Toolbar>
-				</headerToolbar>
-				<columns>
-					<Column width="28em">
-						<Text text="Fornecedor" />
-					</Column>
-					<Column width="10em">
-						<Text text="Valor Referência" />
-					</Column>
-					<Column width="10em">
-						<Text text="Valor Primeira Rodada" />
-					</Column>
-					<Column width="10em">
-						<Text text="Valor atual negociado" />
-					</Column>
-					<Column widht="8em">
-						<Text text="Total líquido" />
-					</Column>
-				</columns>
+
+			<IconTabBar expanded="true" class="sapUiResponsiveContentPadding">
 				<items>
-					<ColumnListItem>
-						<cells>
-							<ObjectIdentifier title="{eventosSourcing>participant}"
-								text="{eventosSourcing>externalsystemsupplierid}" />
-							<Text text="{eventosSourcing>valorReferencia}" />
-							<Text text="{eventosSourcing>valorPrimeiraRodada}" />
-							<Text text="{eventosSourcing>valorAtualNegociado}" />
-							<Text text="{eventosSourcing>totalLiquido}" />
-						</cells>
-					</ColumnListItem>
+					<IconTabFilter text="Analítico">
+						<ScrollContainer width="100%">
+							<Table
+								items="{
+									path: 'eventosSourcing>items',
+									sorter: {
+										path: 'itemNumber'
+									}
+								}">
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Mapa Comparativo de Preços" level="H2" />
+										<ToolbarSpacer />
+										<Button tooltip="Visualização" icon="sap-icon://filter"
+											press="handleTableSelectDialogPress" />
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column width="14em" mergeDuplicates="true">
+										<Text text="Material" />
+									</Column>
+									<Column width="6em" mergeDuplicates="true">
+										<Text text="Qtde.Anual" />
+									</Column>
+									<Column width="10em" mergeDuplicates="true">
+										<Text text="Fornecedor" />
+									</Column>
+									<Column width="4em" mergeDuplicates="true">
+										<Text text="R$ Reaj." />
+									</Column>
+									<Column width="4em" mergeDuplicates="true">
+										<Text text="R$ Total" />
+									</Column>
+									<Column width="6em" mergeDuplicates="true">
+										<Text text="ICMS Oficial" />
+									</Column>
+									<Column width="10em">
+										<Text text="Fornecedor" />
+									</Column>
+									<Column width="6em">
+										<Text text="Preço Original" />
+									</Column>
+									<Column width="10em">
+										<Text text="Preço Rodada Atual" />
+									</Column>
+									<Column width="4em">
+										<Text text="IPI" />
+									</Column>
+									<Column width="4em">
+										<Text text="ICMS" />
+									</Column>
+									<Column width="10em">
+										<Text text="R$ Total" />
+									</Column>
+									<Column width="10em">
+										<Text text="Negociado c/ Impostos" />
+									</Column>
+									<Column width="4em">
+										<Text text="% Ref" />
+									</Column>
+									<Column width="10em">
+										<Text text="%Dif. 1°" />
+									</Column>
+									<Column width="10em">
+										<Text text="Obs" />
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<ObjectIdentifier title="{eventosSourcing>materialName}"
+												text="{eventosSourcing>materialCode}" />
+											<Text text="{eventosSourcing>quantidadeAnual}" />
+											<Text
+												text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
+											<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
+											<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
+											<Text text="{eventosSourcing>informacoesReferencia/ICMSoficial}" />
+											<ObjectIdentifier title="{eventosSourcing>oferta/participant}"
+												text="{eventosSourcing>oferta/externalsystemsupplierid}" />
+											<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
+											<Text text="{eventosSourcing>oferta/bidPrice}" />
+											<Text text="{eventosSourcing>oferta/aliquotaIPI}" />
+											<Text text="{eventosSourcing>oferta/aliquotaICMS}" />
+											<Text
+												text="{= ${eventosSourcing>oferta/bidPrice} * ${eventosSourcing>oferta/quantidade} }" />
+											<Text text="" />
+											<Text text="" />
+											<Text text="" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>
+						<Table
+							items="{
+								path: 'eventosSourcing>totaisPorFornecedor'
+							}">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Comparativo por fornecedor" level="H2" />
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="28em">
+									<Text text="Fornecedor" />
+								</Column>
+								<Column width="10em">
+									<Text text="Valor Referência" />
+								</Column>
+								<Column width="10em">
+									<Text text="Valor Primeira Rodada" />
+								</Column>
+								<Column width="10em">
+									<Text text="Valor atual negociado" />
+								</Column>
+								<Column widht="8em">
+									<Text text="Total líquido" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="{eventosSourcing>participant}"
+											text="{eventosSourcing>externalsystemsupplierid}" />
+										<Text text="{eventosSourcing>valorReferencia}" />
+										<Text text="{eventosSourcing>valorPrimeiraRodada}" />
+										<Text text="{eventosSourcing>valorAtualNegociado}" />
+										<Text text="{eventosSourcing>totalLiquido}" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</IconTabFilter>
+					<IconTabFilter text="Sintético">
+						<l:VerticalLayout id="containerLayout" width="100%">
+							<l:BlockLayout id="BlockLayout" background="Dashboard">
+								<l:BlockLayoutRow accentCells="Accent1">
+									<l:BlockLayoutCell width="30%" id="Accent1">
+										<form:SimpleForm editable="false"
+											backgroundDesign="Transparent">
+											<Label text="Empresa" />
+											<Text text="Empresa compradora (0001)" />
+											<Label text="Grupo de compradores" />
+											<Link text="GRP COMPRADORES (070)" />
+											<Label text="Organização de compras" />
+											<Text text="Org.Compras centralizado (0001)" />
+											<Label text="Data solicitação da cotação" />
+											<Text text="20/10/2017" />
+										</form:SimpleForm>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell width="70%"
+										titleAlignment="End" title="Itens">
+										<Table id="idProductsTable" inset="false" items="{/itens}">
+											<columns>
+												<Column width="16em">
+													<Text text="Item" />
+												</Column>
+												<Column width="4em">
+													<Text text="UOM" />
+												</Column>
+												<Column width="4em">
+													<Text text="Dt.Remessa" />
+												</Column>
+												<Column width="4em">
+													<Text text="Centro" />
+												</Column>
+												<Column width="4em" minScreenWidth="Tablet"
+													demandPopin="true">
+													<Text text="Qtde" />
+												</Column>
+											</columns>
+											<items>
+												<ColumnListItem>
+													<cells>
+														<ObjectIdentifier title="{nome}" text="{id}" />
+														<Text text="{uom}" />
+														<Text text="{dataremessa}" />
+														<Link text="{centro}" />
+														<Text text="{quantidade}" />
+													</cells>
+												</ColumnListItem>
+											</items>
+										</Table>
+									</l:BlockLayoutCell>
+								</l:BlockLayoutRow>
+								<l:BlockLayoutRow scrollable="true">
+									<l:BlockLayoutCell width="75" title="Rodada 3">
+										<Label
+											text="Comparativo média (3 preços mais baixos): R$ 1.733.000,00"
+											class="sapUiTinyMargin" />
+										<mc:ComparisonMicroChart view="Wide"
+											class="sapUiSmallMargin" width="32rem">
+											<mc:data>
+												<mc:ComparisonMicroChartData
+													title="Fornecedor 1" value="-12" color="Good" displayValue="1.290.998,00" />
+												<mc:ComparisonMicroChartData
+													title="Fornecedor 2" value="-2" color="Good" displayValue="1.500.000,10" />
+												<mc:ComparisonMicroChartData
+													title="Fornecedor 4" value="18" color="Error" displayValue="2.600.000,00" />
+											</mc:data>
+										</mc:ComparisonMicroChart>
+										<Table inset="false" items="{/rodada3forns}">
+											<columns>
+												<Column width="12em">
+													<Text text="Fornecedor" />
+												</Column>
+												<Column width="6em">
+													<Text text="Valor" />
+												</Column>
+												<Column width="2em"></Column>
+											</columns>
+											<items>
+												<ColumnListItem>
+													<cells>
+														<ObjectIdentifier title="{nome}" text="{id}" />
+														<Link text="{valor}" press="onDialogWithSizePress" />
+														<core:Icon visible="{erro}" src="sap-icon://message-error"
+															class="size1" color="red">
+															<core:layoutData>
+																<FlexItemData growFactor="1" />
+															</core:layoutData>
+														</core:Icon>
+													</cells>
+												</ColumnListItem>
+											</items>
+										</Table>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell width="75" title="Rodada 2">
+										<Label text="Dados da Rodada 2" />
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell width="75" title="Rodada 1">
+										<Label text="Dados da Rodada 1" />
+									</l:BlockLayoutCell>
+								</l:BlockLayoutRow>
+							</l:BlockLayout>
+						</l:VerticalLayout>
+					</IconTabFilter>
+					<IconTabFilter text="Simulação">
+						<Text text="Notes go here ..." />
+					</IconTabFilter>
 				</items>
-			</Table>
+			</IconTabBar>
+
+
+
 		</content>
 	</Page>
 </mvc:View>
