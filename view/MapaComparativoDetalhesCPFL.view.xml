@@ -1,7 +1,8 @@
 <mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
-		showNavButton="true">
+		showNavButton="true"
+		navButtonPress="onNavBack">
 		<content>
 			<Table inset="false"
 				items="{
