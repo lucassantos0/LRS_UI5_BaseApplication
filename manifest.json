@@ -82,7 +82,7 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/consumoContratos.json"
 			},
-			"rfqs" : {
+			"eventosSourcing" : {
 				"type" : "sap.ui.model.json.JSONModel",
 				"uri" : "model/mapaComparativoDetalhesCPFL.json"
 			}
