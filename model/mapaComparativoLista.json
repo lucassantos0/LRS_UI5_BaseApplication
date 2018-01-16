@@ -1,14 +1,14 @@
 {
 	"listaRfqs" : [
 		{
-			"id" : "600010020",
+			"id" : "6000104537",
 			"amount" : "1000000.20",
 			"currency" : "BRL",
 			"lastUpdate" : "20172210",
 			"numberOfRounds" : "3"
 		},
 		{
-			"id" : "600289020",
+			"id" : "6000104531",
 			"amount" : "75230.90",
 			"currency" : "BRL",
 			"lastUpdate" : "20171910",
