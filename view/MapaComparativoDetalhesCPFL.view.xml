@@ -3,7 +3,7 @@
 	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
 		showNavButton="true" navButtonPress="onNavBack">
 		<content>
-			<ScrollContainer width="1024px">
+			<ScrollContainer width="2048px">
 				<Table
 					items="{
 						path: 'eventosSourcing>items',
