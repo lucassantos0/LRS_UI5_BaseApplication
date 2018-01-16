@@ -20,18 +20,19 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ], function(BaseController,
 									break;
 								}
 							}
-							this.byId("mapaComparativoDetalhesCPFL").bindContext("eventosSourcing>/eventosSourcing/" + nEntry);
+							this._bindingPath = "eventosSourcing>/eventosSourcing/" + nEntry;
+							this.byId("mapaComparativoDetalhesCPFL").bindContext(this._bindingPath);
 						},
 						handleTableSelectDialogPress: function(oEvent) {
 							if (!this._oDialog) {
 								this._oDialog = sap.ui.xmlfragment("lrs.ui5.view.dialogs.MapaComparativoDetalhesFiltro", this);
 							}
-
+							this._oDialog.bindContext(this._bindingPath);
 							this._oDialog.setMultiSelect(true);
 							this._oDialog.setRememberSelections(true);
 
 							this.getView().addDependent(this._oDialog);
-
+							
 							// toggle compact style
 							jQuery.sap.syncStyleClass("sapUiSizeCompact", this.getView(), this._oDialog);
 							this._oDialog.open();
