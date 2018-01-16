@@ -6,11 +6,11 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ], function(BaseController,
 				onInit : function() {
 				},
 				onRouteMatched : function(oEvent) {
-					var sRfq = decodeURI(oEvent.getParameters().arguments.rfq);
+					var sRfq = decodeURIComponent(oEvent.getParameters().arguments.rfq);
 					if (!sRfq)
 						return false;
 					
-					this.byId("mapaComparativoDetalhesCPFL").setBindingContext();
+					//this.byId("mapaComparativoDetalhesCPFL").setBindingContext();
 				/*	var oBinding = this.byId("tableTodosTrechos").getBinding(
 							"rows");
 					var aFilters = [];
