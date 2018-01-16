@@ -5,18 +5,10 @@
 		showNavButton="true"
 		navButtonPress="onNavBack">
 		<content>
-			<Table inset="false"
+			<Table inset="true"
 				items="{
-					path: 'eventosSourcing>/items',
-					sorter: {
-						path: 'itemNumber'
-					}
+					path: 'eventosSourcing>/items'
 				}">
-				<headerToolbar>
-					<Toolbar>
-						<Title text=" " level="H2" />
-					</Toolbar>
-				</headerToolbar>
 				<columns>
 					<Column minScreenWidth="Tablet" demandPopin="true">
 						<Text text="Material" />
