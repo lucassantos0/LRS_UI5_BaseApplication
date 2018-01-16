@@ -1,7 +1,7 @@
 <core:FragmentDefinition xmlns="sap.m"
 	xmlns:core="sap.ui.core">
 	<TableSelectDialog noDataText="No Products Found"
-		title="Select Product" search="handleSearch" confirm="handleClose"
+		title="Selecionar rodadas para comparação" search="handleSearch" confirm="handleClose"
 		cancel="handleClose"
 		items="{
 			path: 'eventosSourcing>rodadas'
