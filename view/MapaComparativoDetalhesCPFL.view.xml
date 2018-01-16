@@ -119,11 +119,16 @@
 					</Column>
 				</columns>
 				<items>
-					<ObjectIdentifier title="{eventosSourcing>participant}" text="{eventosSourcing>externalsystemsupplierid}" />
-					<Text text="{eventosSourcing>valorReferencia}" />
-					<Text text="{eventosSourcing>valorPrimeiraRodada}" />
-					<Text text="{eventosSourcing>valorAtualNegociado}" />
-					<Text text="{eventosSourcing>totalLiquido}" />
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{eventosSourcing>participant}"
+								text="{eventosSourcing>externalsystemsupplierid}" />
+							<Text text="{eventosSourcing>valorReferencia}" />
+							<Text text="{eventosSourcing>valorPrimeiraRodada}" />
+							<Text text="{eventosSourcing>valorAtualNegociado}" />
+							<Text text="{eventosSourcing>totalLiquido}" />
+						</cells>
+					</ColumnListItem>
 				</items>
 			</Table>
 		</content>
