@@ -20,7 +20,7 @@
 						<Column width="14em" mergeDuplicates="true">
 							<Text text="Material" />
 						</Column>
-						<Column width="10em" mergeDuplicates="true">
+						<Column width="6em" mergeDuplicates="true">
 							<Text text="Qtde.Anual" />
 						</Column>
 						<Column width="10em" mergeDuplicates="true">
@@ -71,7 +71,7 @@
 							<cells>
 								<ObjectIdentifier title="{eventosSourcing>materialName}"
 									text="{eventosSourcing>materialCode}" />
-								<Text text="{eventosSourcing>informacoesReferencia/quantidadeAnual}" />
+								<Text text="{eventosSourcing>quantidadeAnual}" />
 								<Text
 									text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
 								<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
