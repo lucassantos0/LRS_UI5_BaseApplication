@@ -11,7 +11,7 @@
 				}">
 				<headerToolbar>
 					<Toolbar>
-						<Title text="{rfqs>projectId} " level="H2" />
+						<Title text="{eventosSourcing>projectId} " level="H2" />
 					</Toolbar>
 				</headerToolbar>
 				<columns>
