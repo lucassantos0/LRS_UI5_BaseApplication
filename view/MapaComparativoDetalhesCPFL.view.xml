@@ -11,6 +11,11 @@
 							path: 'itemNumber'
 						}
 					}">
+					<headerToolbar>
+						<Toolbar>
+							<Title text="Mapa Comparativo de Preços" level="H2"/>
+						</Toolbar>
+					</headerToolbar>
 					<columns>
 						<Column width="14em" mergeDuplicates="true">
 							<Text text="Material" />
