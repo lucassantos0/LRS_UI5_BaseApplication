@@ -16,6 +16,7 @@
 					"itemNumber" : "5",
 					"requisitionId" : "11789661",
 					"requisitionItemNumber" : "10",
+					"quantidadeAnual" : "100",
 					"materialCode": "000000050000001004",
 					"materialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
 					"plantCode": "DA01",

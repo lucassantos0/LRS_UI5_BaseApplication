@@ -6,7 +6,7 @@
 				items="{
 					path: 'eventosSourcing>items',
 					sorter: {
-						path: 'Name'
+						path: 'itemNumber'
 					}
 				}">
 				<headerToolbar>
@@ -15,30 +15,22 @@
 					</Toolbar>
 				</headerToolbar>
 				<columns>
-					<Column width="12em">
-						<Text text="Product" />
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Material" />
 					</Column>
 					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Supplier" />
+						<Text text="Qtde.Anual" />
 					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">
-						<Text text="Dimensions" />
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
-						<Text text="Weight" />
-					</Column>
-					<Column hAlign="End">
-						<Text text="Price" />
+					<Column>
+						<Text text="Fornecedor" />
 					</Column>
 				</columns>
 				<items>
 					<ColumnListItem>
 						<cells>
-							<ObjectIdentifier title="{Name}" text="{ProductId}" />
-							<Text text="{SupplierName}" />
-							<Text text="{Width} x {Depth} x {Height} {DimUnit}" />
-							<ObjectNumber number="{WeightMeasure}" unit="{WeightUnit}" />
-							<ObjectNumber unit="{CurrencyCode}" />
+							<ObjectIdentifier title="{eventosSourcing>materialName}" text="{eventosSourcing>materialCode}" />
+							<Text text="{eventosSourcing>quantidadeAnual}" />
+							<Text text="{eventosSourcing>participant}" />
 						</cells>
 					</ColumnListItem>
 				</items>
