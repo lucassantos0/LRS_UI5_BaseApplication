@@ -20,7 +20,7 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ], function(BaseController,
 									break;
 								}
 							}
-							this.byId("mapaComparativoDetalhesCPFL").bindContext("eventosSourcing>eventosSourcing/" + nEntry);
+							this.byId("mapaComparativoDetalhesCPFL").bindContext("eventosSourcing>/eventosSourcing/" + nEntry);
 						}
 					});
 });

@@ -42,6 +42,7 @@
 		{
 			"docId" : "docId",
 			"rfq": "6000104531",
+			"projectId" : "projectId",
 			"items": []
 		}
 	]

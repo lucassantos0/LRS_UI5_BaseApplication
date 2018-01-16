@@ -4,7 +4,7 @@
 		<content>
 			<Table inset="false"
 				items="{
-					path: 'rfqs>items',
+					path: 'eventosSourcing>items',
 					sorter: {
 						path: 'Name'
 					}
