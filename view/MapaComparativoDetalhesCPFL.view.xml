@@ -71,7 +71,7 @@
 							<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
 							<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
 							<ObjectIdentifier title="{eventosSourcing>oferta/participant}" text="{eventosSourcing>oferta/externalsystemsupplierid}" />
-							<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada" />
+							<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
 							<Text text="{eventosSourcing>oferta/bidPrice}" />
 							<Text text="{eventosSourcing>oferta/aliquotaIPI}" />
 							<Text text="{eventosSourcing>oferta/aliquotaICMS}" />
