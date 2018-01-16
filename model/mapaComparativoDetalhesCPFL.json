@@ -11,6 +11,24 @@
 			"codigoCondicaoPagamento": "0001",
 			"nomeCondicaoPagamento": "Pagto vista sem desconto",
 			"suaReferencia": "M001",
+			"totaisPorFornecedor": [
+				{
+					"participant": "3M DO BRASIL LTDA(3M LTDA)",
+					"externalsystemsupplierid": "0001000141",
+					"valorReferencia" : "1850",
+					"valorPrimeiraRodada" : "1650",
+					"valorAtualNegociado" : "1550",
+					"totalLiquido" : "1300"
+				},
+				{
+					"participant": "RAS INDUSTRIAL COMERCIAL LTDA",
+					"externalsystemsupplierid": "0001019992",
+					"valorReferencia" : "1850",
+					"valorPrimeiraRodada" : "1850",
+					"valorAtualNegociado" : "1650",
+					"totalLiquido" : "1500"
+				}
+			],
 			"items": [
 				{
 					"itemNumber": "5",
@@ -33,7 +51,7 @@
 						"externalsystemsupplierid": "0001000141",
 						"networkid": "an01059420932-t",
 						"materialUsage": "Imobilizado",
-						"submissionDate" : "Mon, 4 Sep, 2017",
+						"submissionDate": "Mon, 4 Sep, 2017",
 						"codigoImpostoIva": "Y0",
 						"nomeImpostoIva": "Investimento sem impostos",
 						"quantidade": "1",
@@ -45,7 +63,7 @@
 						"baseICMS": "0",
 						"bidCurrency": "BRL",
 						"bidPrice": "10",
-						"bidPricePrimeiraRodada" : "15",
+						"bidPricePrimeiraRodada": "15",
 						"bidValorTotalComICMSeIPI": "10"
 					}
 				},
@@ -70,7 +88,7 @@
 						"externalsystemsupplierid": "0001019992",
 						"networkid": "an01059420932-t",
 						"materialUsage": "Imobilizado",
-						"submissionDate" : "Mon, 4 Sep, 2017",
+						"submissionDate": "Mon, 4 Sep, 2017",
 						"codigoImpostoIva": "Y0",
 						"nomeImpostoIva": "Investimento sem impostos",
 						"quantidade": "1",
@@ -82,7 +100,7 @@
 						"baseICMS": "0",
 						"bidCurrency": "BRL",
 						"bidPrice": "12",
-						"bidPricePrimeiraRodada" : "18",
+						"bidPricePrimeiraRodada": "18",
 						"bidValorTotalComICMSeIPI": "12"
 					}
 				}

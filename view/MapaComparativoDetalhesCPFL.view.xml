@@ -13,7 +13,7 @@
 					}">
 					<headerToolbar>
 						<Toolbar>
-							<Title text="Mapa Comparativo de Preços" level="H2"/>
+							<Title text="Mapa Comparativo de Preços" level="H2" />
 						</Toolbar>
 					</headerToolbar>
 					<columns>
@@ -93,6 +93,39 @@
 					</items>
 				</Table>
 			</ScrollContainer>
+			<Table items="{
+					path: 'totaisPorFornecedor>items'
+				}">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="Comparativo por fornecedor" level="H2" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="10em">
+						<Text text="Fornecedor" />
+					</Column>
+					<Column width="10em">
+						<Text text="Valor Referência" />
+					</Column>
+					<Column width="10em">
+						<Text text="Valor Primeira Rodada" />
+					</Column>
+					<Column width="10em">
+						<Text text="Valor atual negociado" />
+					</Column>
+					<Column widht="8em">
+						<Text text="Total líquido" />
+					</Column>
+				</columns>
+				<items>
+					<ObjectIdentifier title="{eventosSourcing>participant}" text="{eventosSourcing>externalsystemsupplierid}" />
+					<Text text="{eventosSourcing>valorReferencia}" />
+					<Text text="{eventosSourcing>valorPrimeiraRodada}" />
+					<Text text="{eventosSourcing>valorAtualNegociado}" />
+					<Text text="{eventosSourcing>totalLiquido}" />
+				</items>
+			</Table>
 		</content>
 	</Page>
 </mvc:View>
