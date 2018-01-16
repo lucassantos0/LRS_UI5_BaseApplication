@@ -1,6 +1,7 @@
 <mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Page id="mapaComparativoDetalhesCPFL">
+	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
+		showNavButton="true">
 		<content>
 			<Table inset="false"
 				items="{
@@ -11,7 +12,7 @@
 				}">
 				<headerToolbar>
 					<Toolbar>
-						<Title text="{eventosSourcing>projectId} " level="H2" />
+						<Title text=" " level="H2" />
 					</Toolbar>
 				</headerToolbar>
 				<columns>
@@ -28,7 +29,8 @@
 				<items>
 					<ColumnListItem>
 						<cells>
-							<ObjectIdentifier title="{eventosSourcing>materialName}" text="{eventosSourcing>materialCode}" />
+							<ObjectIdentifier title="{eventosSourcing>materialName}"
+								text="{eventosSourcing>materialCode}" />
 							<Text text="{eventosSourcing>quantidadeAnual}" />
 							<Text text="{eventosSourcing>participant}" />
 						</cells>
