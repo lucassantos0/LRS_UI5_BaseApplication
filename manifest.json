@@ -142,7 +142,7 @@
 				{
 					"pattern": "MapaComparativoDetalhesCPFL/:rfq:",
 					"name": "MapaComparativoDetalhesCPFL",
-					"target": "MaraComparativoDetalhesCPFL"
+					"target": "MapaComparativoDetalhesCPFL"
 				},
 				{
 					"pattern": "ConsumoContratos",
@@ -178,10 +178,10 @@
 				"MapaComparativoLista": {
 					"viewName": "MapaComparativoLista"
 				},
-				"MaraComparativoDetalhes": {
+				"MapaComparativoDetalhes": {
 					"viewName": "MapaComparativoDetalhes"
 				},
-				"MaraComparativoDetalhesCPFL": {
+				"MapaComparativoDetalhesCPFL": {
 					"viewName": "MapaComparativoDetalhesCPFL"
 				},
 				"ConsumoContratos": {
