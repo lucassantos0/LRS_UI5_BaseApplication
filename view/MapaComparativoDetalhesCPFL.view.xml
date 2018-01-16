@@ -94,7 +94,7 @@
 				</Table>
 			</ScrollContainer>
 			<Table items="{
-					path: 'totaisPorFornecedor>items'
+					path: 'eventosSourcing>totaisPorFornecedor'
 				}">
 				<headerToolbar>
 					<Toolbar>
