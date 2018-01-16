@@ -70,6 +70,7 @@
 							<Text text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
 							<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
 							<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
+							<Text text="{eventosSourcing>informacoesReferencia/ICMSoficial}" />
 							<ObjectIdentifier title="{eventosSourcing>oferta/participant}" text="{eventosSourcing>oferta/externalsystemsupplierid}" />
 							<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
 							<Text text="{eventosSourcing>oferta/bidPrice}" />
