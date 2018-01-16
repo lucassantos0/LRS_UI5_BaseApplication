@@ -1,7 +1,6 @@
 {
 	"eventosSourcing": [
 		{
-			"docId": "Doc1112096723",
 			"projectId": "WS1112096720",
 			"projectTitle": "Projeto de solicitação de provisão 6000104537",
 			"rfq": "6000104537",
@@ -15,23 +14,34 @@
 				{
 					"participant": "3M DO BRASIL LTDA(3M LTDA)",
 					"externalsystemsupplierid": "0001000141",
-					"valorReferencia" : "1850",
-					"valorPrimeiraRodada" : "1650",
-					"valorAtualNegociado" : "1550",
-					"totalLiquido" : "1300"
+					"valorReferencia": "1850",
+					"valorPrimeiraRodada": "1650",
+					"valorAtualNegociado": "1550",
+					"totalLiquido": "1300"
 				},
 				{
 					"participant": "RAS INDUSTRIAL COMERCIAL LTDA",
 					"externalsystemsupplierid": "0001019992",
-					"valorReferencia" : "1850",
-					"valorPrimeiraRodada" : "1850",
-					"valorAtualNegociado" : "1650",
-					"totalLiquido" : "1500"
+					"valorReferencia": "1850",
+					"valorPrimeiraRodada": "1850",
+					"valorAtualNegociado": "1650",
+					"totalLiquido": "1500"
+				}
+			],
+			"rodadas": [
+				{
+					"docId": "Doc1112096723",
+					"numeroNegociacao": "1"
+				},
+				{
+					"docId": "Doc1112092890",
+					"numeroRodada": "2"
 				}
 			],
 			"items": [
 				{
 					"itemNumber": "5",
+					"docId": "Doc1112096723",
 					"requisitionId": "11789661",
 					"requisitionItemNumber": "10",
 					"materialCode": "000000050000001004",
@@ -69,6 +79,7 @@
 				},
 				{
 					"itemNumber": "5",
+					"docId": "Doc1112096723",
 					"requisitionId": "11789661",
 					"requisitionItemNumber": "10",
 					"materialCode": "000000050000001004",

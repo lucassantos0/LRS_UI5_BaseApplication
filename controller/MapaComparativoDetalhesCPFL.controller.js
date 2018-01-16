@@ -21,6 +21,27 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ], function(BaseController,
 								}
 							}
 							this.byId("mapaComparativoDetalhesCPFL").bindContext("eventosSourcing>/eventosSourcing/" + nEntry);
+						},
+						handleTableSelectDialogPress: function(oEvent) {
+							if (!this._oDialog) {
+								this._oDialog = sap.ui.xmlfragment("lrs.ui5.dialogs.MapaComparativoDetalhesFiltro", this);
+							}
+
+							this._oDialog.setMultiSelect(true);
+							this._oDialog.setRememberSelections(true);
+
+							this.getView().addDependent(this._oDialog);
+
+							// toggle compact style
+							jQuery.sap.syncStyleClass("sapUiSizeCompact", this.getView(), this._oDialog);
+							this._oDialog.open();
+						},
+						handleClose: function(oEvent) {
+							var aContexts = oEvent.getParameter("selectedContexts");
+							if (aContexts && aContexts.length) {
+								MessageToast.show("You have chosen " + aContexts.map(function(oContext) { return oContext.getObject().Name; }).join(", "));
+							}
+							oEvent.getSource().getBinding("items").filter([]);
 						}
 					});
 });

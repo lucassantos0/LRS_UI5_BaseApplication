@@ -2,6 +2,10 @@
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout">
 	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
 		showNavButton="true" navButtonPress="onNavBack">
+		<headerContent>
+			<Button icon="sap-icon://add" type="Transparent" text="Adicionar rodada" />
+			<Button icon="sap-icon://refresh" type="Transparent" text="Atualizar" />
+		</headerContent>
 		<content>
 			<ScrollContainer width="100%">
 				<Table
@@ -15,8 +19,7 @@
 						<Toolbar>
 							<Title text="Mapa Comparativo de Preços" level="H2" />
 							<ToolbarSpacer />
-							<Button icon="sap-icon://add" type="Transparent" text="Adicionar rodada" />
-							<Button icon="sap-icon://refresh" type="Transparent" text="Atualizar" />
+							<Button tooltip="Visualização" icon="sap-icon://filter" press="mapaComparativoDetalhesFiltroRodadas" />
 						</Toolbar>
 					</headerToolbar>
 					<columns>

@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<TableSelectDialog noDataText="No Products Found"
+		title="Select Product" search="handleSearch" confirm="handleClose"
+		cancel="handleClose"
+		items="{
+			path: 'eventosSourcing>rodadas'
+		}">
+		<ColumnListItem>
+			<cells>
+				<Text text="{eventosSourcing>docId}" />
+				<Text text="{eventosSourcing>numeroRodada}" />
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column>
+				<header>
+					<Text text="DocId" />
+				</header>
+			</Column>
+			<Column >
+				<header>
+					<Text text="Núm.Rodada" />
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>
