@@ -1,89 +1,93 @@
 <mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
-	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Page id="mapaComparativoDetalhesCPFL" 
-		title="{eventosSourcing>projectId}"
-		showNavButton="true"
-		navButtonPress="onNavBack">
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
+		showNavButton="true" navButtonPress="onNavBack">
 		<content>
-			<Table items="{
-					path: 'eventosSourcing>items',
-					sorter: {
-						path: 'itemNumber'
-					}
-				}">
-				<columns>
-					<Column mergeDuplicates="true">
-						<Text text="Material" />
-					</Column>
-					<Column mergeDuplicates="true">
-						<Text text="Qtde.Anual" />
-					</Column>
-					<Column mergeDuplicates="true">
-						<Text text="Fornecedor" />
-					</Column>
-					<Column mergeDuplicates="true">
-						<Text text="R$ Reaj." />
-					</Column>
-					<Column mergeDuplicates="true">
-						<Text text="R$ Total" />
-					</Column>
-					<Column mergeDuplicates="true">
-						<Text text="ICMS Oficial" />
-					</Column>
-					<Column>
-						<Text text="Fornecedor" />
-					</Column>
-					<Column>
-						<Text text="Preço Original" />
-					</Column>
-					<Column>
-						<Text text="Preço Rodada Atual" />
-					</Column>
-					<Column>
-						<Text text="IPI" />
-					</Column>
-					<Column>
-						<Text text="ICMS" />
-					</Column>
-					<Column>
-						<Text text="R$ Total" />
-					</Column>
-					<Column>
-						<Text text="Negociado c/ Impostos" />
-					</Column>
-					<Column>
-						<Text text="% Ref" />
-					</Column>
-					<Column>
-						<Text text="%Dif. 1°" />
-					</Column>
-					<Column>
-						<Text text="Obs" />
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<ObjectIdentifier title="{eventosSourcing>materialName}"
-								text="{eventosSourcing>materialCode}" />
-							<Text text="{eventosSourcing>informacoesReferencia/quantidadeAnual}" />
-							<Text text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
-							<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
-							<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
-							<Text text="{eventosSourcing>informacoesReferencia/ICMSoficial}" />
-							<ObjectIdentifier title="{eventosSourcing>oferta/participant}" text="{eventosSourcing>oferta/externalsystemsupplierid}" />
-							<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
-							<Text text="{eventosSourcing>oferta/bidPrice}" />
-							<Text text="{eventosSourcing>oferta/aliquotaIPI}" />
-							<Text text="{eventosSourcing>oferta/aliquotaICMS}" />
-							<Text text="{= ${eventosSourcing>oferta/bidPrice} * ${eventosSourcing>oferta/quantidade} }" />
-							<Text text="" />
-							<Text text="" />
-							<Text text="" />
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
+			<ScrollContainer width="1024px">
+				<Table
+					items="{
+						path: 'eventosSourcing>items',
+						sorter: {
+							path: 'itemNumber'
+						}
+					}">
+					<columns>
+						<Column mergeDuplicates="true">
+							<Text text="Material" />
+						</Column>
+						<Column mergeDuplicates="true">
+							<Text text="Qtde.Anual" />
+						</Column>
+						<Column mergeDuplicates="true">
+							<Text text="Fornecedor" />
+						</Column>
+						<Column mergeDuplicates="true">
+							<Text text="R$ Reaj." />
+						</Column>
+						<Column mergeDuplicates="true">
+							<Text text="R$ Total" />
+						</Column>
+						<Column mergeDuplicates="true">
+							<Text text="ICMS Oficial" />
+						</Column>
+						<Column>
+							<Text text="Fornecedor" />
+						</Column>
+						<Column>
+							<Text text="Preço Original" />
+						</Column>
+						<Column>
+							<Text text="Preço Rodada Atual" />
+						</Column>
+						<Column>
+							<Text text="IPI" />
+						</Column>
+						<Column>
+							<Text text="ICMS" />
+						</Column>
+						<Column>
+							<Text text="R$ Total" />
+						</Column>
+						<Column>
+							<Text text="Negociado c/ Impostos" />
+						</Column>
+						<Column>
+							<Text text="% Ref" />
+						</Column>
+						<Column>
+							<Text text="%Dif. 1°" />
+						</Column>
+						<Column>
+							<Text text="Obs" />
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier title="{eventosSourcing>materialName}"
+									text="{eventosSourcing>materialCode}" />
+								<Text text="{eventosSourcing>informacoesReferencia/quantidadeAnual}" />
+								<Text
+									text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
+								<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
+								<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
+								<Text text="{eventosSourcing>informacoesReferencia/ICMSoficial}" />
+								<ObjectIdentifier title="{eventosSourcing>oferta/participant}"
+									text="{eventosSourcing>oferta/externalsystemsupplierid}" />
+								<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
+								<Text text="{eventosSourcing>oferta/bidPrice}" />
+								<Text text="{eventosSourcing>oferta/aliquotaIPI}" />
+								<Text text="{eventosSourcing>oferta/aliquotaICMS}" />
+								<Text
+									text="{= ${eventosSourcing>oferta/bidPrice} * ${eventosSourcing>oferta/quantidade} }" />
+								<Text text="" />
+								<Text text="" />
+								<Text text="" />
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</ScrollContainer>
 		</content>
 	</Page>
 </mvc:View>
