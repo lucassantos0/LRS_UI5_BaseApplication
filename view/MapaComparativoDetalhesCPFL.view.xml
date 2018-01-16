@@ -5,7 +5,7 @@
 		showNavButton="true"
 		navButtonPress="onNavBack">
 		<content>
-			<Table inset="false"
+			<Table inset="true"
 				items="{
 					path: 'eventosSourcing>items',
 					sorter: {
