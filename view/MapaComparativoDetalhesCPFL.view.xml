@@ -216,7 +216,9 @@
 											}">
 											<mc:data>
 												<mc:ComparisonMicroChartData
-													title="{eventosSourcing>participant}" value="{eventosSourcing>valorcalculado}" color="Good" displayValue="10,00" />
+													title="{eventosSourcing>participant}" 
+													value="{= ${eventosSourcing>valorcalculado} - ${eventosSourcing>sintetico/ultimaRodada/valormedio} }" 
+													color="Good" displayValue="{eventosSourcing>valorcalculado}" />
 											</mc:data>
 										</mc:ComparisonMicroChart>
 										<Table inset="false"
