@@ -207,10 +207,10 @@
 								<l:BlockLayoutRow scrollable="true">
 									<l:BlockLayoutCell width="50" title="Negociação atual">
 										<Label
-											text="Comparativo média (3 preços mais baixos): R$ 11,00"
+											text="Comparativo média: R$ {eventosSourcing>sintetico/ultimaRodada/valormedio}"
 											class="sapUiTinyMargin" />
 										<mc:ComparisonMicroChart 
-											size="M" scale="M" 
+											size="M" scale="BRL"
 											class="sapUiSmallMargin" width="24rem"
 											data="{
 												path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores'
