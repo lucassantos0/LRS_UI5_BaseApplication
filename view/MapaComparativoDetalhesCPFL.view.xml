@@ -245,7 +245,7 @@
 														<ObjectIdentifier title="{eventosSourcing>participant}"
 															text="{eventosSourcing>externalsystemsupplierid}" />
 														<Link text="{eventosSourcing>valorcalculado}" press="onDialogWithSizePress" />
-														<core:Icon visible="{erro}" src="sap-icon://message-error"
+														<core:Icon visible="{eventosSourcing>erro}" src="sap-icon://message-error"
 															class="size1" color="red">
 															<core:layoutData>
 																<FlexItemData growFactor="1" />
