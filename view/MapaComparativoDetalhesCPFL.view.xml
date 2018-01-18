@@ -207,22 +207,22 @@
 								<l:BlockLayoutRow scrollable="true">
 									<l:BlockLayoutCell width="50" title="Negociação atual">
 										<Label
-											text="Comparativo média (3 preços mais baixos): R$ 1.733.000,00"
+											text="Comparativo média (3 preços mais baixos): R$ 11,00"
 											class="sapUiTinyMargin" />
 										<mc:ComparisonMicroChart view="Wide"
 											class="sapUiSmallMargin" width="32rem">
 											<mc:data>
 												<mc:ComparisonMicroChartData
-													title="Fornecedor 1" value="-12" color="Good" displayValue="1.290.998,00" />
+													title="{eventosSourcing>ultimaRodada/fornecedores/0/participant}" value="10" color="Good" displayValue="10,00" />
 												<mc:ComparisonMicroChartData
-													title="Fornecedor 2" value="-2" color="Good" displayValue="1.500.000,10" />
+													title="{eventosSourcing>ultimaRodada/fornecedores/1/participant}" value="12" color="Bad" displayValue="12,00" />
 												<mc:ComparisonMicroChartData
-													title="Fornecedor 4" value="18" color="Error" displayValue="2.600.000,00" />
+													title="{eventosSourcing>ultimaRodada/fornecedores/2/participant}" visible="false" value="0" color="Good" displayValue="12,00" />
 											</mc:data>
 										</mc:ComparisonMicroChart>
 										<Table inset="false"
 											items="{
-													path: 'eventosSourcing>sintetico/items',
+													path: 'eventosSourcing>ultimaRodada/fornecedores',
 													sorter: {
 														path: 'itemNumber'
 													}
