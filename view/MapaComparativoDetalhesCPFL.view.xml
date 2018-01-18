@@ -212,7 +212,7 @@
 										<mc:ComparisonMicroChart view="Wide"
 											class="sapUiSmallMargin" width="24rem"
 											data="{
-												path: 'eventosSourcing>ultimaRodada/fornecedores'
+												path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores'
 											}">
 											<mc:data>
 												<mc:ComparisonMicroChartData
