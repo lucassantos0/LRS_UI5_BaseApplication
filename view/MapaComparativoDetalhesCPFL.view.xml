@@ -256,8 +256,8 @@
 											</items>
 										</Table>
 									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="75" title="Rodada 2">
-										<Label text="Dados da Rodada 2" />
+									<l:BlockLayoutCell width="50">
+										<Label text="outros dados! anuncie aqui!" />
 									</l:BlockLayoutCell>
 								</l:BlockLayoutRow>
 							</l:BlockLayout>
