@@ -225,7 +225,7 @@
 										</mc:ComparisonMicroChart>
 										<Table inset="false"
 											items="{
-													path: 'eventosSourcing>ultimaRodada/fornecedores',
+													path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores',
 													sorter: {
 														path: 'itemNumber'
 													}
