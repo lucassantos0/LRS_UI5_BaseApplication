@@ -205,9 +205,9 @@
 									</l:BlockLayoutCell>
 								</l:BlockLayoutRow>
 								<l:BlockLayoutRow scrollable="true">
-									<l:BlockLayoutCell width="50" title="Negociação atual">
+									<l:BlockLayoutCell width="50">
 										<Label
-											text="Comparativo média: R$ {eventosSourcing>sintetico/ultimaRodada/valormedio}"
+											text="Média negociação atual: R$ {eventosSourcing>sintetico/ultimaRodada/valormedio}"
 											class="sapUiTinyMargin" />
 										<mc:ComparisonMicroChart 
 											size="M" scale="BRL"
