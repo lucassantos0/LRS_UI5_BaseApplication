@@ -24,8 +24,8 @@
 									<Toolbar>
 										<Title text="Mapa Comparativo de Preços" level="H2" />
 										<ToolbarSpacer />
-										<Button tooltip="Visualização" icon="sap-icon://filter"
-											press="handleTableSelectDialogPress" />
+										<!-- <Button tooltip="Visualização" icon="sap-icon://filter"
+											press="handleTableSelectDialogPress" /> -->
 									</Toolbar>
 								</headerToolbar>
 								<columns>
