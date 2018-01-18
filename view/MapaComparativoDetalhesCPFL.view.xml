@@ -209,7 +209,8 @@
 										<Label
 											text="Comparativo média (3 preços mais baixos): R$ 11,00"
 											class="sapUiTinyMargin" />
-										<mc:ComparisonMicroChart view="Wide"
+										<mc:ComparisonMicroChart 
+											size="M" scale="M" 
 											class="sapUiSmallMargin" width="24rem"
 											data="{
 												path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores'
@@ -217,8 +218,9 @@
 											<mc:data>
 												<mc:ComparisonMicroChartData
 													title="{eventosSourcing>participant}" 
-													value="{= ${eventosSourcing>valorcalculado} - ${eventosSourcing>sintetico/ultimaRodada/valormedio} }" 
-													color="Good" displayValue="{eventosSourcing>valorcalculado}" />
+													value="{eventosSourcing>valorcomparativomedia}" 
+													color="{= ${eventosSourcing>valorcomparativomedia} > 0 ? 'Error' : 'Good' }"
+													displayValue="{eventosSourcing>valorcalculado}" />
 											</mc:data>
 										</mc:ComparisonMicroChart>
 										<Table inset="false"

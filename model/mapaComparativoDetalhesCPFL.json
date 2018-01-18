@@ -59,12 +59,14 @@
 							"participant": "3M DO BRASIL LTDA(3M LTDA)",
 							"externalsystemsupplierid": "0001000141",
 							"valorcalculado": 10.00,
+							"valorcomparativomedia" : -1.00,
 							"erro": false
 						},
 						{
 							"participant": "RAS INDUSTRIAL COMERCIAL LTDA",
 							"externalsystemsupplierid": "0001019992",
 							"valorcalculado": 12.00,
+							"valorcomparativomedia" : 1.00,
 							"erro": false
 						}
 					]
