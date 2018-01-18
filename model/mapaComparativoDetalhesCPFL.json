@@ -53,17 +53,18 @@
 					}
 				],
 				"ultimaRodada": {
+					"valormedio" : 11.00,
 					"fornecedores": [
 						{
 							"participant": "3M DO BRASIL LTDA(3M LTDA)",
 							"externalsystemsupplierid": "0001000141",
-							"valorcalculado": "10",
+							"valorcalculado": 10.00,
 							"erro": false
 						},
 						{
 							"participant": "RAS INDUSTRIAL COMERCIAL LTDA",
 							"externalsystemsupplierid": "0001019992",
-							"valorcalculado": "12",
+							"valorcalculado": 12.00,
 							"erro": false
 						}
 					]
