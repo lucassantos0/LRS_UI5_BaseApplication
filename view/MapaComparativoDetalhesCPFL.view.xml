@@ -15,7 +15,7 @@
 						<ScrollContainer width="100%">
 							<Table
 								items="{
-									path: 'eventosSourcing>items',
+									path: 'eventosSourcing>analitico/items',
 									sorter: {
 										path: 'itemNumber'
 									}
@@ -166,7 +166,7 @@
 										titleAlignment="End" title="Itens">
 										<Table id="idProductsTable" inset="false"
 											items="{
-													path: 'eventosSourcing>items',
+													path: 'eventosSourcing>sintetico/items',
 													sorter: {
 														path: 'itemNumber'
 													}
@@ -192,7 +192,8 @@
 											<items>
 												<ColumnListItem>
 													<cells>
-														<ObjectIdentifier title="{eventosSourcing>materialName}" text="{eventosSourcing>materialCode}" />
+														<ObjectIdentifier title="{eventosSourcing>materialName}"
+															text="{eventosSourcing>materialCode}" />
 														<Text text="{eventosSourcing>unitOfMeasure}" />
 														<Text text="{dataremessa}" />
 														<Link text="{eventosSourcing>plantCode}" />
@@ -204,7 +205,7 @@
 									</l:BlockLayoutCell>
 								</l:BlockLayoutRow>
 								<l:BlockLayoutRow scrollable="true">
-									<l:BlockLayoutCell width="75" title="Rodada 3">
+									<l:BlockLayoutCell width="50" title="Negociação atual">
 										<Label
 											text="Comparativo média (3 preços mais baixos): R$ 1.733.000,00"
 											class="sapUiTinyMargin" />
@@ -219,7 +220,13 @@
 													title="Fornecedor 4" value="18" color="Error" displayValue="2.600.000,00" />
 											</mc:data>
 										</mc:ComparisonMicroChart>
-										<Table inset="false" items="{/rodada3forns}">
+										<Table inset="false"
+											items="{
+													path: 'eventosSourcing>sintetico/items',
+													sorter: {
+														path: 'itemNumber'
+													}
+												}">
 											<columns>
 												<Column width="12em">
 													<Text text="Fornecedor" />
@@ -232,8 +239,9 @@
 											<items>
 												<ColumnListItem>
 													<cells>
-														<ObjectIdentifier title="{nome}" text="{id}" />
-														<Link text="{valor}" press="onDialogWithSizePress" />
+														<ObjectIdentifier title="{eventosSourcing>participant}"
+															text="{eventosSourcing>externalsystemsupplierid}" />
+														<Link text="{eventosSourcing>valorcalculado}" press="onDialogWithSizePress" />
 														<core:Icon visible="{erro}" src="sap-icon://message-error"
 															class="size1" color="red">
 															<core:layoutData>
@@ -247,9 +255,6 @@
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell width="75" title="Rodada 2">
 										<Label text="Dados da Rodada 2" />
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="75" title="Rodada 1">
-										<Label text="Dados da Rodada 1" />
 									</l:BlockLayoutCell>
 								</l:BlockLayoutRow>
 							</l:BlockLayout>
