@@ -4,7 +4,7 @@
 		<l:BlockLayout id="BlockLayout" background="Light">
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell class="sapUiNoContentPadding">
-					<Image src="./images/homeImage.png" width="100%" />
+					<Image src="./images/homeImage_v2.png" width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow rowColorSet="ColorSet1"
