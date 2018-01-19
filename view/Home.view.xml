@@ -3,14 +3,14 @@
 	<Page showHeader="false">
 		<l:BlockLayout id="BlockLayout" background="Light">
 			<l:BlockLayoutRow>
-				<l:BlockLayoutCell class="sapUiNoContentPadding">
+				<l:BlockLayoutCell class="sapUiNoContentPadding sapUiNoMargin">
 					<Image src="./images/homeImage_v2.png" width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow rowColorSet="ColorSet1"
 				class="shopAdministrationTitle">
 				<l:BlockLayoutCell
-					class="sapUiResponsiveContentPadding sapUiSmallMarginBegin" title="{i18n>shopAdminTitle}"
+					class="sapUiNoContentPadding sapUiNoMargin" title="{i18n>shopAdminTitle}"
 					titleAlignment="Left" />
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow rowColorSet="ColorSet2">
