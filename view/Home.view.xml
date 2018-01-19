@@ -7,12 +7,6 @@
 					<Image src="./images/homeImage_v2.png" width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow rowColorSet="ColorSet1"
-				class="shopAdministrationTitle">
-				<l:BlockLayoutCell
-					class="sapUiNoContentPadding sapUiNoMargin" title="{i18n>shopAdminTitle}"
-					titleAlignment="Left" />
-			</l:BlockLayoutRow>
 			<l:BlockLayoutRow rowColorSet="ColorSet2">
 				<l:BlockLayoutCell>
 					<l:VerticalLayout>
