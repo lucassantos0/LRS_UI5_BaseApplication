@@ -1,15 +1,33 @@
-<mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
-	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
-	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mc="sap.suite.ui.microchart">
-	<Page id="mapaComparativoDetalhesCPFL" title="{eventosSourcing>projectId}"
-		showNavButton="true" navButtonPress="onNavBack">
+<mvc:View
+	controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:mc="sap.suite.ui.microchart"
+>
+	<Page
+		id="mapaComparativoDetalhesCPFL"
+		title="{eventosSourcing>projectId}"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+	>
 		<headerContent>
-			<Button icon="sap-icon://add" type="Transparent" text="Adicionar rodada" />
-			<Button icon="sap-icon://refresh" type="Transparent" text="Atualizar" />
+			<Button
+				icon="sap-icon://add"
+				type="Transparent"
+				text="Adicionar rodada" />
+			<Button
+				icon="sap-icon://refresh"
+				type="Transparent"
+				text="Atualizar" />
 		</headerContent>
 		<content>
-
-			<IconTabBar expanded="true" class="sapUiResponsiveContentPadding">
+			<IconTabBar
+				expanded="true"
+				class="sapUiResponsiveContentPadding"
+			>
 				<items>
 					<IconTabFilter text="Analítico">
 						<ScrollContainer width="100%">
@@ -19,32 +37,53 @@
 									sorter: {
 										path: 'itemNumber'
 									}
-								}">
+								}"
+							>
 								<headerToolbar>
 									<Toolbar>
-										<Title text="Mapa Comparativo de Preços" level="H2" />
+										<Title
+											text="Mapa Comparativo de Preços"
+											level="H2" />
 										<ToolbarSpacer />
-										<!-- <Button tooltip="Visualização" icon="sap-icon://filter"
-											press="handleTableSelectDialogPress" /> -->
+										<!-- <Button tooltip="Visualização" icon="sap-icon://filter" press="handleTableSelectDialogPress" 
+											/> -->
 									</Toolbar>
 								</headerToolbar>
 								<columns>
-									<Column width="14em" mergeDuplicates="true">
+									<Column
+										width="14em"
+										mergeDuplicates="true"
+									>
 										<Text text="Material" />
 									</Column>
-									<Column width="6em" mergeDuplicates="true">
+									<Column
+										width="6em"
+										mergeDuplicates="true"
+									>
 										<Text text="Qtde.Anual" />
 									</Column>
-									<Column width="10em" mergeDuplicates="true">
+									<Column
+										width="10em"
+										mergeDuplicates="true"
+									>
 										<Text text="Fornecedor" />
 									</Column>
-									<Column width="4em" mergeDuplicates="true">
+									<Column
+										width="4em"
+										mergeDuplicates="true"
+									>
 										<Text text="R$ Reaj." />
 									</Column>
-									<Column width="4em" mergeDuplicates="true">
+									<Column
+										width="4em"
+										mergeDuplicates="true"
+									>
 										<Text text="R$ Total" />
 									</Column>
-									<Column width="6em" mergeDuplicates="true">
+									<Column
+										width="6em"
+										mergeDuplicates="true"
+									>
 										<Text text="ICMS Oficial" />
 									</Column>
 									<Column width="10em">
@@ -81,7 +120,8 @@
 								<items>
 									<ColumnListItem>
 										<cells>
-											<ObjectIdentifier title="{eventosSourcing>materialName}"
+											<ObjectIdentifier
+												title="{eventosSourcing>materialName}"
 												text="{eventosSourcing>materialCode}" />
 											<Text text="{eventosSourcing>quantidadeAnual}" />
 											<Text
@@ -89,7 +129,8 @@
 											<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
 											<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
 											<Text text="{eventosSourcing>informacoesReferencia/ICMSoficial}" />
-											<ObjectIdentifier title="{eventosSourcing>oferta/participant}"
+											<ObjectIdentifier
+												title="{eventosSourcing>oferta/participant}"
 												text="{eventosSourcing>oferta/externalsystemsupplierid}" />
 											<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
 											<Text text="{eventosSourcing>oferta/bidPrice}" />
@@ -108,10 +149,13 @@
 						<Table
 							items="{
 								path: 'eventosSourcing>totaisPorFornecedor'
-							}">
+							}"
+						>
 							<headerToolbar>
 								<Toolbar>
-									<Title text="Comparativo por fornecedor" level="H2" />
+									<Title
+										text="Comparativo por fornecedor"
+										level="H2" />
 								</Toolbar>
 							</headerToolbar>
 							<columns>
@@ -134,7 +178,8 @@
 							<items>
 								<ColumnListItem>
 									<cells>
-										<ObjectIdentifier title="{eventosSourcing>participant}"
+										<ObjectIdentifier
+											title="{eventosSourcing>participant}"
 											text="{eventosSourcing>externalsystemsupplierid}" />
 										<Text text="{eventosSourcing>valorReferencia}" />
 										<Text text="{eventosSourcing>valorPrimeiraRodada}" />
@@ -146,12 +191,23 @@
 						</Table>
 					</IconTabFilter>
 					<IconTabFilter text="Sintético">
-						<l:VerticalLayout id="containerLayout" width="100%">
-							<l:BlockLayout id="BlockLayout" background="Dashboard">
+						<l:VerticalLayout
+							id="containerLayout"
+							width="100%"
+						>
+							<l:BlockLayout
+								id="BlockLayout"
+								background="Dashboard"
+							>
 								<l:BlockLayoutRow accentCells="Accent1">
-									<l:BlockLayoutCell width="30%" id="Accent1">
-										<form:SimpleForm editable="false"
-											backgroundDesign="Transparent">
+									<l:BlockLayoutCell
+										width="30%"
+										id="Accent1"
+									>
+										<form:SimpleForm
+											editable="false"
+											backgroundDesign="Transparent"
+										>
 											<Label text="Empresa" />
 											<Text text="Empresa compradora (0001)" />
 											<Label text="Grupo de compradores" />
@@ -162,15 +218,21 @@
 											<Text text="20/10/2017" />
 										</form:SimpleForm>
 									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="70%"
-										titleAlignment="End" title="Itens">
-										<Table id="idProductsTable" inset="false"
+									<l:BlockLayoutCell
+										width="70%"
+										titleAlignment="End"
+										title="Itens"
+									>
+										<Table
+											id="idProductsTable"
+											inset="false"
 											items="{
 													path: 'eventosSourcing>sintetico/items',
 													sorter: {
 														path: 'itemNumber'
 													}
-												}">
+												}"
+										>
 											<columns>
 												<Column width="16em">
 													<Text text="Item" />
@@ -184,15 +246,19 @@
 												<Column width="4em">
 													<Text text="Centro" />
 												</Column>
-												<Column width="4em" minScreenWidth="Tablet"
-													demandPopin="true">
+												<Column
+													width="4em"
+													minScreenWidth="Tablet"
+													demandPopin="true"
+												>
 													<Text text="Qtde" />
 												</Column>
 											</columns>
 											<items>
 												<ColumnListItem>
 													<cells>
-														<ObjectIdentifier title="{eventosSourcing>materialName}"
+														<ObjectIdentifier
+															title="{eventosSourcing>materialName}"
 															text="{eventosSourcing>materialCode}" />
 														<Text text="{eventosSourcing>unitOfMeasure}" />
 														<Text text="{dataremessa}" />
@@ -205,31 +271,40 @@
 									</l:BlockLayoutCell>
 								</l:BlockLayoutRow>
 								<l:BlockLayoutRow scrollable="true">
-									<l:BlockLayoutCell width="50">
+									<l:BlockLayoutCell
+										width="75"
+										title="Rodada 3"
+									>
 										<Label
-											text="Média negociação atual: R$ {eventosSourcing>sintetico/ultimaRodada/valormedio}"
+											text="Comparativo média (3 preços mais baixos): R$ 1.733.000,00"
 											class="sapUiTinyMargin" />
-										<mc:ComparisonMicroChart 
-											size="M" scale="BRL"
-											class="sapUiSmallMargin" width="24rem"
-											data="{
-												path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores'
-											}">
+										<mc:ComparisonMicroChart
+											view="Wide"
+											class="sapUiSmallMargin"
+											width="32rem"
+										>
 											<mc:data>
 												<mc:ComparisonMicroChartData
-													title="{eventosSourcing>participant}" 
-													value="{eventosSourcing>valorcomparativomedia}" 
-													color="{= ${eventosSourcing>valorcomparativomedia} > 0 ? 'Error' : 'Good' }"
-													displayValue="{eventosSourcing>valorcalculado}" />
+													title="Fornecedor 1"
+													value="-12"
+													color="Good"
+													displayValue="1.290.998,00" />
+												<mc:ComparisonMicroChartData
+													title="Fornecedor 2"
+													value="-2"
+													color="Good"
+													displayValue="1.500.000,10" />
+												<mc:ComparisonMicroChartData
+													title="Fornecedor 4"
+													value="18"
+													color="Error"
+													displayValue="2.600.000,00" />
 											</mc:data>
 										</mc:ComparisonMicroChart>
-										<Table inset="false"
-											items="{
-													path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores',
-													sorter: {
-														path: 'itemNumber'
-													}
-												}">
+										<Table
+											inset="false"
+											items="{/rodada3forns}"
+										>
 											<columns>
 												<Column width="12em">
 													<Text text="Fornecedor" />
@@ -242,11 +317,18 @@
 											<items>
 												<ColumnListItem>
 													<cells>
-														<ObjectIdentifier title="{eventosSourcing>participant}"
-															text="{eventosSourcing>externalsystemsupplierid}" />
-														<Link text="{eventosSourcing>valorcalculado}" press="onDialogWithSizePress" />
-														<core:Icon visible="{eventosSourcing>erro}" src="sap-icon://message-error"
-															class="size1" color="red">
+														<ObjectIdentifier
+															title="{nome}"
+															text="{id}" />
+														<Link
+															text="{valor}"
+															press="onDialogWithSizePress" />
+														<core:Icon
+															visible="{erro}"
+															src="sap-icon://message-error"
+															class="size1"
+															color="red"
+														>
 															<core:layoutData>
 																<FlexItemData growFactor="1" />
 															</core:layoutData>
@@ -256,10 +338,38 @@
 											</items>
 										</Table>
 									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="50">
-										<Label text="outros dados! anuncie aqui!" />
+									<l:BlockLayoutCell
+										width="75"
+										title="Rodada 2"
+									>
+										<Label text="Dados da Rodada 2" />
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell
+										width="75"
+										title="Rodada 1"
+									>
+										<Label text="Dados da Rodada 1" />
 									</l:BlockLayoutCell>
 								</l:BlockLayoutRow>
+								<!-- <l:BlockLayoutRow scrollable="true"> <l:BlockLayoutCell width="50"> 
+									<Label text="Média negociação atual: R$ {eventosSourcing>sintetico/ultimaRodada/valormedio}" 
+									class="sapUiTinyMargin" /> <mc:ComparisonMicroChart size="M" scale="BRL" 
+									class="sapUiSmallMargin" width="24rem" data="{ path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores' 
+									}"> <mc:data> <mc:ComparisonMicroChartData title="{eventosSourcing>participant}" 
+									value="{eventosSourcing>valorcomparativomedia}" color="{= ${eventosSourcing>valorcomparativomedia} 
+									> 0 ? 'Error' : 'Good' }" displayValue="{eventosSourcing>valorcalculado}" 
+									/> </mc:data> </mc:ComparisonMicroChart> <Table inset="false" items="{ path: 
+									'eventosSourcing>sintetico/ultimaRodada/fornecedores', sorter: { path: 'itemNumber' 
+									} }"> <columns> <Column width="12em"> <Text text="Fornecedor" /> </Column> 
+									<Column width="6em"> <Text text="Valor" /> </Column> <Column width="2em"></Column> 
+									</columns> <items> <ColumnListItem> <cells> <ObjectIdentifier title="{eventosSourcing>participant}" 
+									text="{eventosSourcing>externalsystemsupplierid}" /> <Link text="{eventosSourcing>valorcalculado}" 
+									press="onDialogWithSizePress" /> <core:Icon visible="{eventosSourcing>erro}" 
+									src="sap-icon://message-error" class="size1" color="red"> <core:layoutData> 
+									<FlexItemData growFactor="1" /> </core:layoutData> </core:Icon> </cells> 
+									</ColumnListItem> </items> </Table> </l:BlockLayoutCell> <l:BlockLayoutCell 
+									width="50"> <Label text="outros dados! anuncie aqui!" /> </l:BlockLayoutCell> 
+									</l:BlockLayoutRow> -->
 							</l:BlockLayout>
 						</l:VerticalLayout>
 					</IconTabFilter>
@@ -268,9 +378,6 @@
 					</IconTabFilter>
 				</items>
 			</IconTabBar>
-
-
-
 		</content>
 	</Page>
 </mvc:View>
