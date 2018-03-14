@@ -301,10 +301,7 @@
 													displayValue="2.600.000,00" />
 											</mc:data>
 										</mc:ComparisonMicroChart>
-										<Table
-											inset="false"
-											items="{/rodada3forns}"
-										>
+										<Table inset="false">
 											<columns>
 												<Column width="12em">
 													<Text text="Fornecedor" />
@@ -318,13 +315,73 @@
 												<ColumnListItem>
 													<cells>
 														<ObjectIdentifier
-															title="{nome}"
-															text="{id}" />
+															title="Fornecedor 1"
+															text="001" />
 														<Link
-															text="{valor}"
+															text="R$ 1.290.998,00"
 															press="onDialogWithSizePress" />
 														<core:Icon
-															visible="{erro}"
+															visible="false"
+															src="sap-icon://message-error"
+															class="size1"
+															color="red"
+														>
+															<core:layoutData>
+																<FlexItemData growFactor="1" />
+															</core:layoutData>
+														</core:Icon>
+													</cells>
+												</ColumnListItem>
+												<ColumnListItem>
+													<cells>
+														<ObjectIdentifier
+															title="Fornecedor 2"
+															text="002" />
+														<Link
+															text="R$ 1.500.000,10"
+															press="onDialogWithSizePress" />
+														<core:Icon
+															visible="false"
+															src="sap-icon://message-error"
+															class="size1"
+															color="red"
+														>
+															<core:layoutData>
+																<FlexItemData growFactor="1" />
+															</core:layoutData>
+														</core:Icon>
+													</cells>
+												</ColumnListItem>
+												<ColumnListItem>
+													<cells>
+														<ObjectIdentifier
+															title="Fornecedor 3"
+															text="003" />
+														<Link
+															text="R$ 0,00"
+															press="onDialogWithSizePress" />
+														<core:Icon
+															visible="true"
+															src="sap-icon://message-error"
+															class="size1"
+															color="red"
+														>
+															<core:layoutData>
+																<FlexItemData growFactor="1" />
+															</core:layoutData>
+														</core:Icon>
+													</cells>
+												</ColumnListItem>
+												<ColumnListItem>
+													<cells>
+														<ObjectIdentifier
+															title="Fornecedor 4"
+															text="004" />
+														<Link
+															text="R$ 2.600.000,00"
+															press="onDialogWithSizePress" />
+														<core:Icon
+															visible="false"
 															src="sap-icon://message-error"
 															class="size1"
 															color="red"
