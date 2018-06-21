@@ -1,0 +1,13 @@
+<mvc:View
+	controllerName="lrs.ui5.controller.Previas"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<ObjectHeader
+		title="Portal Fornecedores"
+		condensed="true">
+		<attributes>
+			<ObjectAttribute text="Seja bem-vindo ao Portal do Fornecedor, uma área com vários serviços a sua disposição!" />
+		</attributes>
+	</ObjectHeader>
+</mvc:View>

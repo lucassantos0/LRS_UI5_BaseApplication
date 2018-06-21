@@ -153,7 +153,12 @@
 					"pattern": "PortalFornecedor",
 					"name": "PortalFornecedor",
 					"target": "PortalFornecedor"
-				}				
+				},
+				{
+					"pattern": "Previas",
+					"name": "Previas",
+					"target": "Previas"
+				}	
 			],
 			"targets": {
 				"home": {
@@ -194,7 +199,10 @@
 				},
 				"PortalFornecedor": {
 					"viewName": "PortalFornecedor"
-				}				
+				},
+				"Previas": {
+					"viewName": "Previas"
+				}									
 			}
 		}
 	}

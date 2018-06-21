@@ -24,7 +24,7 @@
 			</ObjectListItem>
 			<ObjectListItem id="FornApp2"
 				title="Aplicativo 2"
-				intro="Possibilidade de colocar apps do cliente"
+				intro="Possibilidade de colocar apps/links do cliente"
 				icon="sap-icon://bar-code" 
 				type="Active"
 				press="onAppsPress">

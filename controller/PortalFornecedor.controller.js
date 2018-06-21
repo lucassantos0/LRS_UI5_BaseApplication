@@ -6,8 +6,11 @@ sap.ui.define(
 	"use strict";
 	return BaseController.extend("lrs.ui5.controller.PortalFornecedores",
 	{
-		onInit : function()
-		{
+		onInit : function(){
+			
 		},
+		onPreviaPress: function(){
+			this.getRouter().navTo("Previas");
+		}
 	});
 });
