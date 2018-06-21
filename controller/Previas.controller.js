@@ -7,6 +7,7 @@ sap.ui.define(
 	return BaseController.extend("lrs.ui5.controller.Previas",
 	{
 		onInit : function(){
+			this.byId("detailPageEmbarques").setModel(this.getModel("embarquesFornecedor"),"embarquesFornecedor");
 		},
 		formatterMasterListDate : function(sDate) {
 			var str = sDate;
