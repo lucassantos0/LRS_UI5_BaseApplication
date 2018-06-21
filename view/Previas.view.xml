@@ -33,6 +33,7 @@
 						<items>
 							<ObjectListItem
 								title="{embarquesFornecedor>ebeln}"
+								icon="sap-icon://shipping-status"
 								type="Active"
 								press="onSelecionarContrato">
 								<firstStatus>
