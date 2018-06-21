@@ -6,8 +6,7 @@ sap.ui.define(
 	"use strict";
 	return BaseController.extend("lrs.ui5.controller.Previas",
 	{
-		onInit : function()
-		{
+		onInit : function(){
 		},
 	});
 });
