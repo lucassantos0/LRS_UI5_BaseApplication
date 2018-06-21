@@ -8,7 +8,9 @@
 			<ObjectListItem id="FornApp1"
 				title="Prévias"
 				intro="Central de Prévias"
-				icon="sap-icon://shipping-status" >
+				icon="sap-icon://shipping-status" 
+				type="Active"
+				press="onPreviaPress">
 				<layoutData>
 					<l:GridData span="L6 M12 S12" />
 				</layoutData>				
@@ -16,33 +18,45 @@
 			<ObjectListItem id="FornApp2"
 				title="Aplicativo 2"
 				intro="Possibilidade de colocar apps do cliente"
-				icon="sap-icon://bar-code" >
+				icon="sap-icon://bar-code" 
+				type="Active"
+				press="onAppsPress">
 				<layoutData>
 					<l:GridData span="L6 M12 S12" />
 				</layoutData>				
 			</ObjectListItem>
 			<ObjectListItem id="FornApp3"
 				title="Aplicativo 3"
-				icon="sap-icon://customer-view" >
+				icon="sap-icon://customer-view" 
+				type="Active"
+				press="onAppsPress">				
 			</ObjectListItem>
 			<ObjectListItem id="FornApp4"
 				title="Aplicativo 4"
-				icon="sap-icon://machine" >
+				icon="sap-icon://machine" 
+				type="Active"
+				press="onAppsPress">				
 			</ObjectListItem>
 			<ObjectListItem id="FornApp5"
 				title="Aplicativo 5"
-				icon="sap-icon://simulate" >
+				icon="sap-icon://simulate" 
+				type="Active"
+				press="onAppsPress">				
 			</ObjectListItem>
 			<ObjectListItem id="FornApp6"
 				title="Aplicativo 6"
-				icon="sap-icon://tools-opportunity" >
+				icon="sap-icon://tools-opportunity" 
+				type="Active"
+				press="onAppsPress">				
 				<layoutData>
 					<l:GridData span="L6 M12 S12" />
 				</layoutData>
 			</ObjectListItem>
 			<ObjectListItem id="FornApp7"
 				title="Aplicativo 7"
-				icon="sap-icon://database" >
+				icon="sap-icon://database" 
+				type="Active"
+				press="onAppsPress">				
 				<layoutData>
 					<l:GridData span="L6 M12 S12" />
 				</layoutData>
