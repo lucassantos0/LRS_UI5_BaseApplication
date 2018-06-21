@@ -1,0 +1,43 @@
+[
+	{
+		"ebeln": "4600031315",
+		"bukrs": "D006",
+		"bstyp": "K",
+		"bsart": "WK",
+		"aedat": "20171110",
+		"pincr": "00010",
+		"lponr": "00010",
+		"lifnr": "0001008072",
+		"spras": "P",
+		"zterm": "015A",
+		"ekorg": "OC01",
+		"ekgrp": "007",
+		"waers": "BRL",
+		"wkurs": "1.00000 ",
+		"bedat": "20171110",
+		"kdatb": "20101101",
+		"kdate": "20180430",
+		"itemsPorcentagemConsumo" : "98",
+		"items": [
+			{
+				"ebeln": "4600031315",
+				"ebelp": "00010",
+				"txz01": "SERVINSTALACAOEQUIPAMENTOINFORMATICA",
+				"matnr": "000000030000016838",
+				"ematn": "000000030000016838",
+				"bukrs": "D006",
+				"bednr": "ASC",
+				"matkl": "S08009009",
+				"ktmng": "54628.400 ",
+				"menge": "0.000 ",
+				"meins": "URS",
+				"netpr": "1.00 ",
+				"peinh": "1 ",
+				"netwr": "0.00 ",
+				"brtwr": "54628.40 ",
+				"anfnr": "",
+				"anfps": "00000"
+			}
+		]
+	}
+]
