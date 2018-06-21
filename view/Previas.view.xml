@@ -162,7 +162,6 @@
 					<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
 				</semantic:customFooterContent>
 			</semantic:DetailPage>
-		</detailPages>
-				
+		</detailPages>	
 	</Page>
 </mvc:View>
