@@ -1,0 +1,51 @@
+<mvc:View
+	controllerName="lrs.ui5.controller.PortalFornecedor"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<l:Grid defaultSpan="L4 M6 S6" class="sapUiSmallMarginTop">
+		<l:content>
+			<ObjectListItem id="FornApp1"
+				title="Prévias"
+				icon="sap-icon://shipping-status" >
+				<layoutData>
+					<l:GridData span="L6 M12 S12" />
+				</layoutData>				
+			</ObjectListItem>
+			<ObjectListItem id="FornApp2"
+				title="Aplicativo 2"
+				intro="Pode ser parametrizado apps do cliente"
+				icon="sap-icon://bar-code" >
+				<layoutData>
+					<l:GridData span="L6 M12 S12" />
+				</layoutData>				
+			</ObjectListItem>
+			<ObjectListItem id="FornApp3"
+				title="Aplicativo 3"
+				icon="sap-icon://customer-view" >
+			</ObjectListItem>
+			<ObjectListItem id="FornApp4"
+				title="Aplicativo 4"
+				icon="sap-icon://machine" >
+			</ObjectListItem>
+			<ObjectListItem id="FornApp5"
+				title="Aplicativo 5"
+				icon="sap-icon://simulate" >
+			</ObjectListItem>
+			<ObjectListItem id="FornApp6"
+				title="Aplicativo 6"
+				icon="sap-icon://tools-opportunity" >
+				<layoutData>
+					<l:GridData span="L6 M12 S12" />
+				</layoutData>
+			</ObjectListItem>
+			<ObjectListItem id="FornApp7"
+				title="Aplicativo 7"
+				icon="sap-icon://database" >
+				<layoutData>
+					<l:GridData span="L6 M12 S12" />
+				</layoutData>
+			</ObjectListItem>
+		</l:content>
+	</l:Grid>
+</mvc:View>

@@ -21,6 +21,9 @@ sap.ui.define(
 		},
 		navToConsumoContratos : function(){
 			this.getRouter().navTo("ConsumoContratos");
-		}
+		},
+		navToPortalFornecedor : function(){
+			this.getRouter().navTo("PortalFornecedor");
+		}		
 	});
 });
