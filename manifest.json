@@ -82,6 +82,10 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/consumoContratos.json"
 			},
+			"embarquesFornecedor": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/embarquesFornecedor.json"
+			},			
 			"eventosSourcing" : {
 				"type" : "sap.ui.model.json.JSONModel",
 				"uri" : "model/mapaComparativoDetalhesCPFL.json"
