@@ -148,7 +148,12 @@
 					"pattern": "ConsumoContratos",
 					"name": "ConsumoContratos",
 					"target": "ConsumoContratos"
-				}
+				},
+				{
+					"pattern": "PortalFornecedor",
+					"name": "PortalFornecedor",
+					"target": "PortalFornecedor"
+				}				
 			],
 			"targets": {
 				"home": {
@@ -186,7 +191,10 @@
 				},
 				"ConsumoContratos": {
 					"viewName": "ConsumoContratos"
-				}
+				},
+				"PortalFornecedor": {
+					"viewName": "PortalFornecedor"
+				}				
 			}
 		}
 	}
