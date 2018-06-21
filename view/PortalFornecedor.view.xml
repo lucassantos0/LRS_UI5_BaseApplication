@@ -3,6 +3,28 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
 	xmlns="sap.m">
+	<ObjectPageHeader id="headerForTest"
+					  headerDesign="Light"
+					  objectTitle="Denise Smith"
+					  showTitleSelector="true"
+					  showMarkers="true"
+					  markFavorite="true"
+					  markFlagged="true"
+					  markChanges="true"
+					  markChangesPress="handleMarkChangesPress"
+					  objectSubtitle="Senior Developer"
+					  objectImageURI="test-resources/sap/uxap/images/imageID_273624.png"
+					  objectImageShape="Circle"
+					  isObjectIconAlwaysVisible="false"
+					  isObjectTitleAlwaysVisible="false"
+					  isObjectSubtitleAlwaysVisible="false"
+					  isActionAreaAlwaysVisible="true"
+					  showPlaceholder="true">
+		<actions>
+			<ObjectPageHeaderActionButton text="Public Profile" iconFirst="true" icon="sap-icon://edit" press="handlePress"/>
+			<ObjectPageHeaderActionButton text="Take Action" iconFirst="true" icon="sap-icon://action"/>
+		</actions>
+	</ObjectPageHeader>	
 	<l:Grid defaultSpan="L4 M6 S6" class="sapUiSmallMarginTop">
 		<l:content>
 			<ObjectListItem id="FornApp1"
