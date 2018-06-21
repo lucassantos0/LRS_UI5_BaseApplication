@@ -9,7 +9,7 @@
 		displayBlock="true">
 	<SplitContainer>
 		<masterPages>
-			<semantic:MasterPage title="Contratos6">
+			<semantic:MasterPage title="Contratos">
 				<semantic:sort>
 					<semantic:SortSelect>
 					</semantic:SortSelect>
