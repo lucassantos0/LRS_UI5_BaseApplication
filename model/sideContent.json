@@ -35,7 +35,12 @@
 			"title": "Consumo contratos",
 			"icon": "sap-icon://order-status",
 			"key": "ConsumoContratos"
-		}
+		},
+		{
+			"title": "Portal fornecedor",
+			"icon": "sap-icon://supplier",
+			"key": "PortalFornecedor"
+		}		
 	],
 	"masterSettings": [
 		{
