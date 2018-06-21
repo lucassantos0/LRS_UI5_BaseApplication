@@ -10,7 +10,8 @@
 		id="idPrevias"
 		title="Central de Prévias"
 		showNavButton="true"
-		navButtonPress="onNavBack">		
+		navButtonPress="onNavBack">	
+		<SplitContainer>	
 		<masterPages>
 			<semantic:MasterPage title="Embarques">
 				<semantic:sort>
@@ -67,5 +68,6 @@
 				</semantic:customFooterContent>
 			</semantic:DetailPage>
 		</detailPages>	
+		</SplitContainer>
 	</Page>
 </mvc:View>
