@@ -32,22 +32,16 @@
 						items="{embarquesFornecedor>/}">
 						<items>
 							<ObjectListItem
-								title="{embarquesFornecedor>ebeln}"
+								title="{embarquesFornecedor>id}"
 								icon="sap-icon://shipping-status"
 								type="Active"
 								press="onSelecionarContrato">
 								<firstStatus>
-									<ObjectStatus
-										visible="{= ${embarquesFornecedor>itemsPorcentagemConsumo} ? true : false }"
-										text="{embarquesFornecedor>itemsPorcentagemConsumo}%"
-										state="{
-											path : 'embarquesFornecedor>itemsPorcentagemConsumo',
-											formatter : '.formatterMasterListConsumoStatus'
-										}" />
+									<ObjectStatus text="Remessa: {embarquesFornecedor>remessa}" />
 								</firstStatus>
 								<attributes>
 									<ObjectAttribute text="{
-										path: 'embarquesFornecedor>kdate',
+										path: 'embarquesFornecedor>data',
 										formatter: '.formatterMasterListDate'
 									}" />
 								</attributes>
