@@ -55,11 +55,12 @@
 			<semantic:DetailPage title="{embarquesFornecedor>ebeln}" id="detailPageEmbarques">
 				<semantic:content>
 					<List
-						headerText="Products"
+						headerText="Notas Fiscais"
 						items="{
 							path: 'embarquesFornecedor>items/'
 						}">
 						<StandardListItem
+						    icon="sap-icon://bar-code"
 							title="{embarquesFornecedor>nf}"
 							counter="{embarquesFornecedor>status}"/>
 					</List>				
