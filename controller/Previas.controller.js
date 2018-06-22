@@ -15,16 +15,10 @@ sap.ui.define(
 					+ str.substring(4, 6) + "/"
 					+ str.substring(0, 4);
 		},
-		formatterMasterListConsumoStatus : function(sConsumo) {
-			var iPorcentagem = parseInt(sConsumo);
-			if(iPorcentagem < 40) { return 'None'; }
-			if(iPorcentagem < 80) { return 'Warning'; }
-			return 'Error';
-		},
-		onSelecionarContrato : function(oEvent){
+		onSelecionarEmbarque : function(oEvent){
 			var sPath = oEvent.getSource().getBindingContextPath();
-			var oModel = this.getModel("consumoContratos").getObject(sPath);
-			this.byId("detailPageContratos").bindContext("consumoContratos>" + sPath);
+			var oModel = this.getModel("embarquesFornecedor").getObject(sPath);
+			this.byId("detailPageEmbarques").bindContext("embarquesFornecedor>" + sPath);
 		}		
 	});
 });
