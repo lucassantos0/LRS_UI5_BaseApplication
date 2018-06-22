@@ -54,13 +54,16 @@
 		<detailPages>
 			<semantic:DetailPage title="{embarquesFornecedor>ebeln}" id="detailPageEmbarques">
 				<semantic:content>
-				
+					<List
+						headerText="Products"
+						items="{
+							path: 'embarquesFornecedor>items/'
+						}">
+						<StandardListItem
+							title="{nf}"
+							counter="{status}"/>
+					</List>				
 				</semantic:content>
-				<semantic:customFooterContent>
-					<Button text="Reajuste" icon="sap-icon://action" press="onPress"/>
-					<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
-					<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
-				</semantic:customFooterContent>
 			</semantic:DetailPage>
 		</detailPages>	
 		</SplitContainer>
