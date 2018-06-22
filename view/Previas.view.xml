@@ -60,8 +60,8 @@
 							path: 'embarquesFornecedor>items/'
 						}">
 						<StandardListItem
-							title="{nf}"
-							counter="{status}"/>
+							title="{embarquesFornecedor>nf}"
+							counter="{embarquesFornecedor>status}"/>
 					</List>				
 				</semantic:content>
 			</semantic:DetailPage>
