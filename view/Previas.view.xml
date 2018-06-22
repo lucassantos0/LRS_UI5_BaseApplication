@@ -35,7 +35,7 @@
 								title="{embarquesFornecedor>id}"
 								icon="sap-icon://shipping-status"
 								type="Active"
-								press="onSelecionarContrato">
+								press="onSelecionarEmbarque">
 								<firstStatus>
 									<ObjectStatus text="Remessa: {embarquesFornecedor>remessa}" />
 								</firstStatus>
