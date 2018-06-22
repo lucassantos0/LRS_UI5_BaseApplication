@@ -15,7 +15,7 @@
 			{
 				"nf": "155222-1",
 				"state": "Error",
-				"status": "Divergênvia",
+				"status": "Divergência",
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
 				"valor":"12311"				
@@ -23,7 +23,7 @@
 			{
 				"nf": "85555-3",
 				"state": "Error",
-				"status": "Divergênvia",
+				"status": "Divergência",
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
 				"valor":"988"				
@@ -54,7 +54,7 @@
 			{
 				"nf": "73263-1",
 				"state": "Error",
-				"status": "Divergênvia",
+				"status": "Divergência",
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
 				"valor":"444"				
@@ -77,7 +77,7 @@
 			{
 				"nf": "96478-1",
 				"state": "Error",
-				"status": "Divergênvia",
+				"status": "Divergência",
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
 				"valor":"665"				
@@ -85,7 +85,7 @@
 			{
 				"nf": "44177-3",
 				"state": "Error",
-				"status": "Divergênvia",
+				"status": "Divergência",
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
 				"valor":"7445"				
