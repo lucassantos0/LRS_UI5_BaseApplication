@@ -9,14 +9,14 @@
 				"status": "Success",
 				"obs": "Nota Fiscal OK",
 				"moeda":"BRL",
-				"valor":"19.522,00"
+				"valor":"191"
 			},
 			{
 				"nf": "155222-1",
 				"status": "Error",
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
-				"valor":"12.155,02"				
+				"valor":"12311"				
 			}			
 		]
 	}
