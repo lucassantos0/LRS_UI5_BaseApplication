@@ -19,7 +19,85 @@
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
 				"valor":"12311"				
-			}			
+			},
+			{
+				"nf": "85555-3",
+				"state": "Error",
+				"status": "Divergênvia",
+				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
+				"moeda":"BRL",
+				"valor":"988"				
+			},
+			{
+				"nf": "12223-3",
+				"state": "Success",
+				"status": "OK",
+				"obs": "Nota Fiscal OK",
+				"moeda":"BRL",
+				"valor":"6523"				
+			}											
+		]
+	},
+	{
+		"id": "M2018102985",
+		"remessa": "2018102985",
+		"data": "20180231",
+		"items": [
+			{
+				"nf": "34332-4",
+				"state": "Success",
+				"status": "OK",
+				"obs": "Nota Fiscal OK",
+				"moeda":"BRL",
+				"valor":"2344"
+			},
+			{
+				"nf": "73263-1",
+				"state": "Error",
+				"status": "Divergênvia",
+				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
+				"moeda":"BRL",
+				"valor":"444"				
+			}											
+		]
+	},	
+	{
+		"id": "M2018102255",
+		"remessa": "2018102255",
+		"data": "20180320",
+		"items": [
+			{
+				"nf": "558542-4",
+				"state": "Success",
+				"status": "OK",
+				"obs": "Nota Fiscal OK",
+				"moeda":"BRL",
+				"valor":"8554"
+			},
+			{
+				"nf": "96478-1",
+				"state": "Error",
+				"status": "Divergênvia",
+				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
+				"moeda":"BRL",
+				"valor":"665"				
+			},
+			{
+				"nf": "44177-3",
+				"state": "Error",
+				"status": "Divergênvia",
+				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
+				"moeda":"BRL",
+				"valor":"7445"				
+			},
+			{
+				"nf": "445558-3",
+				"state": "Success",
+				"status": "OK",
+				"obs": "Nota Fiscal OK",
+				"moeda":"BRL",
+				"valor":"4514"				
+			}											
 		]
 	}
 ]
