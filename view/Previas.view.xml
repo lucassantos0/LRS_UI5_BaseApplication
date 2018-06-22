@@ -52,7 +52,7 @@
 			</semantic:MasterPage>
 		</masterPages>
 		<detailPages>
-			<semantic:DetailPage title="{embarquesFornecedor>ebeln}" id="detailPageEmbarques">
+			<semantic:DetailPage title="{embarquesFornecedor>id}" id="detailPageEmbarques">
 				<semantic:content>
 					<List
 						headerText="Notas Fiscais"
