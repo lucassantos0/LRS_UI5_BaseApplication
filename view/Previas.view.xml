@@ -62,7 +62,8 @@
 						<StandardListItem
 						    icon="sap-icon://bar-code"
 							title="{embarquesFornecedor>nf}"
-							counter="{embarquesFornecedor>status}"/>
+							infoState="{embarquesFornecedor>status}"
+							description="{embarquesFornecedor>obs}"/>
 					</List>				
 				</semantic:content>
 			</semantic:DetailPage>
