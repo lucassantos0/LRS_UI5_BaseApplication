@@ -59,11 +59,27 @@
 						items="{
 							path: 'embarquesFornecedor>items/'
 						}">
-						<StandardListItem
+						<ObjectListItem
 						    icon="sap-icon://bar-code"
 							title="{embarquesFornecedor>nf}"
-							infoState="{embarquesFornecedor>status}"
-							description="{embarquesFornecedor>obs}"/>
+							number="{
+								parts:[{path:'embarquesFornecedor>valor'},{path:'embarquesFornecedor>moeda'}],
+								type: 'sap.ui.model.type.Currency',
+								formatOptions: {showMeasure: false}
+							}"
+							numberUnit="{embarquesFornecedor>moeda}">	
+							<firstStatus>
+								<ObjectStatus
+									text="{embarquesFornecedor>status}"
+									state="{
+										path: 'embarquesFornecedor>status',
+										formatter: 'sap.m.sample.ObjectListItem.Formatter.status'
+									}" />		
+							</firstStatus>												
+							<attributes>
+								<ObjectAttribute text="{embarquesFornecedor>obs}" />
+							</attributes>		
+						</ObjectListItem>
 					</List>				
 				</semantic:content>
 			</semantic:DetailPage>

@@ -7,12 +7,16 @@
 			{
 				"nf": "158844-4",
 				"status": "Success",
-				"obs": "Nota Fiscal OK"
+				"obs": "Nota Fiscal OK",
+				"moeda":"BRL",
+				"valor":"19.522,00"
 			},
 			{
 				"nf": "155222-1",
 				"status": "Error",
-				"obs": "A empresa responável irá entrar em contato para tratar o assunto"
+				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
+				"moeda":"BRL",
+				"valor":"12.155,02"				
 			}			
 		]
 	}
