@@ -72,7 +72,7 @@
 								<ObjectStatus
 									text="{embarquesFornecedor>status}"
 									state="{
-										path: 'embarquesFornecedor>status',
+										path: 'embarquesFornecedor>state',
 										formatter: 'sap.m.sample.ObjectListItem.Formatter.status'
 									}" />		
 							</firstStatus>												
