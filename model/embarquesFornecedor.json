@@ -6,14 +6,16 @@
 		"items": [
 			{
 				"nf": "158844-4",
-				"status": "Success",
+				"state": "Success",
+				"status": "OK",
 				"obs": "Nota Fiscal OK",
 				"moeda":"BRL",
 				"valor":"191"
 			},
 			{
 				"nf": "155222-1",
-				"status": "Error",
+				"state": "Error",
+				"status": "Divergênvia",
 				"obs": "A empresa responável irá entrar em contato para tratar o assunto",
 				"moeda":"BRL",
 				"valor":"12311"				
