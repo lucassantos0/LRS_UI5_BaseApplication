@@ -68,7 +68,7 @@
 											}" />
 						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" />
 							<ObjectAttribute text="Última atualização: {
-												path: 'listaRfqs2>lastUpdate',
+												path: 'listaRfqs>lastUpdate',
 												type: 'sap.ui.model.type.DateTime',
 												formatOptions : {
 													pattern: 'dd/MM/yyyy'
