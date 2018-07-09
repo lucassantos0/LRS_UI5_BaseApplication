@@ -1,438 +1,522 @@
-<mvc:View
-	controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m"
-	xmlns:l="sap.ui.layout"
-	xmlns:form="sap.ui.layout.form"
-	xmlns:core="sap.ui.core"
-	xmlns:mc="sap.suite.ui.microchart"
->
-	<Page
-		id="mapaComparativoDetalhesCPFL"
-		title="{eventosSourcing>projectId}"
-		showNavButton="true"
-		navButtonPress="onNavBack"
-	>
-		<headerContent>
-			<Button
-				icon="sap-icon://add"
-				type="Transparent"
-				text="Adicionar rodada" />
-			<Button
-				icon="sap-icon://refresh"
-				type="Transparent"
-				text="Atualizar" />
-		</headerContent>
+<mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mc="sap.suite.ui.microchart">
+	<Page id="mapaComparativoDetalhesCPFL" title=""
+		showNavButton="true" navButtonPress="onNavBack">
 		<content>
-			<IconTabBar
-				expanded="true"
-				class="sapUiResponsiveContentPadding"
-			>
+			<OverflowToolbar id="otb1">
+				<ToolbarSpacer />
+				<Title id="titleMapa" text="" level="H2" />
+				<ToolbarSpacer />
+				<Button	text="Salvar Dados" icon="sap-icon://save" press="onSaveMapa" />		
+			</OverflowToolbar>		
+			<IconTabBar expanded="true" class="sapUiResponsiveContentPadding">
 				<items>
-					<IconTabFilter text="Analítico">
-						<ScrollContainer width="100%">
-							<Table
-								items="{
-									path: 'eventosSourcing>analitico/items',
-									sorter: {
-										path: 'itemNumber'
-									}
-								}"
-							>
+					<IconTabFilter text="Detalhe por Item">
+							<Table id="tableItems"
+								items="{ZMMARIBA>ItemCompRfqNavigation}" >								
 								<headerToolbar>
 									<Toolbar>
-										<Title
-											text="Mapa Comparativo de Preços"
-											level="H2" />
-										<ToolbarSpacer />
-										<!-- <Button tooltip="Visualização" icon="sap-icon://filter" press="handleTableSelectDialogPress" 
-											/> -->
+										<Title text="Histórico da Última Compra" level="H2" />
 									</Toolbar>
-								</headerToolbar>
+								</headerToolbar>								
 								<columns>
-									<Column
-										width="14em"
-										mergeDuplicates="true"
-									>
+									<Column width="3.3em">
+										<Text text="Item" />
+									</Column>								
+									<Column width="6em">
 										<Text text="Material" />
 									</Column>
-									<Column
-										width="6em"
-										mergeDuplicates="true"
-									>
-										<Text text="Qtde.Anual" />
+									<Column width="4.7em">
+										<Text text="Qtde.Atual" />
 									</Column>
-									<Column
-										width="10em"
-										mergeDuplicates="true"
-									>
-										<Text text="Fornecedor" />
-									</Column>
-									<Column
-										width="4em"
-										mergeDuplicates="true"
-									>
-										<Text text="R$ Reaj." />
-									</Column>
-									<Column
-										width="4em"
-										mergeDuplicates="true"
-									>
-										<Text text="R$ Total" />
-									</Column>
-									<Column
-										width="6em"
-										mergeDuplicates="true"
-									>
-										<Text text="ICMS Oficial" />
-									</Column>
-									<Column width="10em">
-										<Text text="Fornecedor" />
+									<Column width="14em">
+										<Text text="Descrição" />
 									</Column>
 									<Column width="6em">
-										<Text text="Preço Original" />
+										<Text text="Última compra" />
 									</Column>
-									<Column width="10em">
-										<Text text="Preço Rodada Atual" />
+									<Column width="16em">
+										<Text text="Fornecedor" />
 									</Column>
-									<Column width="4em">
-										<Text text="IPI" />
-									</Column>
-									<Column width="4em">
-										<Text text="ICMS" />
-									</Column>
-									<Column width="10em">
+									<Column width="7em">
+										<Text text="R$ Reaj." />
+									</Column>										
+									<Column width="7em">
 										<Text text="R$ Total" />
-									</Column>
-									<Column width="10em">
-										<Text text="Negociado c/ Impostos" />
-									</Column>
-									<Column width="4em">
-										<Text text="% Ref" />
-									</Column>
-									<Column width="10em">
-										<Text text="%Dif. 1°" />
-									</Column>
-									<Column width="10em">
-										<Text text="Obs" />
-									</Column>
+									</Column>																		
 								</columns>
 								<items>
 									<ColumnListItem>
-										<cells>
-											<ObjectIdentifier
-												title="{eventosSourcing>materialName}"
-												text="{eventosSourcing>materialCode}" />
-											<Text text="{eventosSourcing>quantidadeAnual}" />
-											<Text
-												text="{eventosSourcing>informacoesReferencia/nomeFornecedorUltimaCompra}" />
-											<Text text="{eventosSourcing>informacoesReferencia/valorReajuste}" />
-											<Text text="{eventosSourcing>informacoesReferencia/valorTotal}" />
-											<Text text="{eventosSourcing>informacoesReferencia/ICMSoficial}" />
-											<ObjectIdentifier
-												title="{eventosSourcing>oferta/participant}"
-												text="{eventosSourcing>oferta/externalsystemsupplierid}" />
-											<Text text="{eventosSourcing>oferta/bidPricePrimeiraRodada}" />
-											<Text text="{eventosSourcing>oferta/bidPrice}" />
-											<Text text="{eventosSourcing>oferta/aliquotaIPI}" />
-											<Text text="{eventosSourcing>oferta/aliquotaICMS}" />
-											<Text
-												text="{= ${eventosSourcing>oferta/bidPrice} * ${eventosSourcing>oferta/quantidade} }" />
-											<Text text="" />
-											<Text text="" />
-											<Text text="" />
+										<cells>										
+											<Text text="{ZMMARIBA>Item}" />
+											<Text text="{ZMMARIBA>MaterialCode}" />
+											<Text text="{ZMMARIBA>QuantidadeAtual}" />
+											<ObjectIdentifier title="{ZMMARIBA>MaterialName}" />
+											<Text text="{
+															path: 'ZMMARIBA>DataUltimaCompra',
+															type: 'sap.ui.model.type.DateTime',
+															formatOptions : {
+																pattern: 'dd/MM/yyyy'
+															}
+														}" />
+											<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />	
+											<Input id="inpVlrReaj" liveChange="onLive" change="onVlrReaj" value="{ZMMARIBA>ValorReajuste}"/>									
+											<Text text="{ZMMARIBA>ValorTotal}" />
 										</cells>
 									</ColumnListItem>
 								</items>
 							</Table>
-						</ScrollContainer>
-						<Table
-							items="{
-								path: 'eventosSourcing>totaisPorFornecedor'
-							}"
-						>
-							<headerToolbar>
-								<Toolbar>
-									<Title
-										text="Comparativo por fornecedor"
-										level="H2" />
-								</Toolbar>
-							</headerToolbar>
-							<columns>
-								<Column width="28em">
-									<Text text="Fornecedor" />
-								</Column>
-								<Column width="10em">
-									<Text text="Valor Referência" />
-								</Column>
-								<Column width="10em">
-									<Text text="Valor Primeira Rodada" />
-								</Column>
-								<Column width="10em">
-									<Text text="Valor atual negociado" />
-								</Column>
-								<Column widht="8em">
-									<Text text="Total líquido" />
-								</Column>
-							</columns>
-							<items>
-								<ColumnListItem>
-									<cells>
-										<ObjectIdentifier
-											title="{eventosSourcing>participant}"
-											text="{eventosSourcing>externalsystemsupplierid}" />
-										<Text text="{eventosSourcing>valorReferencia}" />
-										<Text text="{eventosSourcing>valorPrimeiraRodada}" />
-										<Text text="{eventosSourcing>valorAtualNegociado}" />
-										<Text text="{eventosSourcing>totalLiquido}" />
-									</cells>
-								</ColumnListItem>
-							</items>
-						</Table>
+							<ScrollContainer width="100%">					
+								<Table id="tableSelectItems" 
+								       items="{ZMMARIBA>ItemRfqNavigation}">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="Comparativo items" level="H2" />
+										</Toolbar>
+									</headerToolbar>
+									<columns>
+										<Column width="4em">
+											<Text text="Item" />
+										</Column>										
+										<Column width="5.2em">
+											<Text text="ICMS Forn." />
+										</Column>
+										<Column width="5.2em">
+											<Text text="IPI Forn." />
+										</Column>
+										<Column width="4em">
+											<Text text="UF" />
+										</Column>	
+										<Column width="7em">
+											<Text text="Utilz. Material" />
+										</Column>	
+										<Column width="8em">
+											<Text text="Ncm Cadastro" />
+										</Column>
+										<Column width="8em">
+											<Text text="Ncm Fornecedor" />
+										</Column>																																							
+										<Column width="16em">
+											<Text text="Fornecedor" />
+										</Column>																			
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. c/ ICMS 1ª Rodada" />
+										</Column>
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. Bruto (ICMS + IPI + ST + DIFAL) 1ª Rodada" />
+										</Column>											
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. c/ ICMS Última rodada" />
+										</Column>
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. Bruto (ICMS + IPI)" />
+										</Column>										
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. Bruto (ICMS + IPI + ST + DIFAL)" />
+										</Column>																											
+										<Column width="5em" hAlign="Center">
+											<Text text="IPI (SAP)" />
+										</Column>
+										<Column width="5em" hAlign="Center">
+											<Text text="ICMS (SAP)" />
+										</Column>	
+										<Column width="5em" hAlign="Center">
+											<Text text="ST (SAP)" />
+										</Column>	
+										<Column width="5em" hAlign="Center">
+											<Text text="DIFAL (SAP)" />
+										</Column>											
+										<Column width="6em" hAlign="Center">
+											<Text text="Conditions" />
+										</Column>																					
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor Total Bruto (simulação SAP última rodada)" />
+										</Column>		
+										<Column width="9em" hAlign="Center">
+											<Text text="Despesa / Consumo" />
+										</Column>	
+										<Column width="9em" hAlign="Center">
+											<Text text="Investimento / Ativo" />
+										</Column>			
+										<Column width="9em" hAlign="Center">
+											<Text text="Industrialização / Revenda" />
+										</Column>		
+										<Column width="4em" hAlign="Center">
+											<Text text="IVA" />
+										</Column>																																						
+										<Column width="9em" hAlign="Center">
+											<Text text="% Negociado X Referência" />
+										</Column>	
+										<Column width="9em" hAlign="Center">
+											<Text text="% Negociado X Melhor Proposta" />
+										</Column>																																								
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text="{ZMMARIBA>Item}" />											
+												<Text text="{ZMMARIBA>IcmsForn}%" />
+												<Text text="{ZMMARIBA>IpiForn}%" />
+												<Text text="{ZMMARIBA>UF}" />
+												<Text text="{ZMMARIBA>UtilizMaterial}" />
+												<Text text="{ZMMARIBA>NcmCad}" />
+												<HBox justifyContent="SpaceAround">												
+													<Text
+														text="{ZMMARIBA>NcmForn}"/>				
+												    <core:Icon
+														src="sap-icon://color-fill"
+														color="#f33334"
+													    visible="{= ${ZMMARIBA>Cor} ? true : false }" />																																				
+												</HBox>	
+												<HBox justifyContent="SpaceAround">												
+													<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />
+												    <core:Icon
+														src="sap-icon://bookmark"
+														color="#84caec"
+													    visible="{= ${ZMMARIBA>Winner} ? true : false }" />	
+												</HBox>	
+												<Text text="{ZMMARIBA>AribaPrimeira}" />
+												<Text text="{ZMMARIBA>ValorUnitOriginal}" />
+												<Text text="{ZMMARIBA>AribaUltima}" />
+												<Text text="{ZMMARIBA>ValorBruto}" />
+												<Text text="{ZMMARIBA>ValorUnitNegociado}" />
+												<Text text="{ZMMARIBA>IPI}%" />
+												<Text text="{ZMMARIBA>ICMS}%" />
+												<Text text="{ZMMARIBA>ST}%" />		
+												<Text text="{ZMMARIBA>DIFAL}%" />	
+												<Button	icon="sap-icon://waiver" type="Accept" press="onConditions" />																						
+												<Text text="{ZMMARIBA>ValorTotalNegociadoComImpostos}" />
+												<Text text="{ZMMARIBA>ValorUnitNegociado}" />
+												<Text text="{ZMMARIBA>ValorLiquidoIPI}" />
+												<Text text="{ZMMARIBA>ValorLiquido}" />
+												<Text text="{ZMMARIBA>IVA}" />
+												<Text text="{ZMMARIBA>PercRef}" />
+												<Text text="{ZMMARIBA>PercDif1}" />
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</ScrollContainer>
+							<Button	text="Exportar Comparativo Items para Excel" icon="sap-icon://excel-attachment" press="onExportXLS2" />													
 					</IconTabFilter>
-					<IconTabFilter text="Sintético">
-						<l:VerticalLayout
-							id="containerLayout"
-							width="100%"
-						>
-							<l:BlockLayout
-								id="BlockLayout"
-								background="Dashboard"
-							>
-								<l:BlockLayoutRow accentCells="Accent1">
-									<l:BlockLayoutCell
-										width="30%"
-										id="Accent1"
-									>
-										<form:SimpleForm
-											editable="false"
-											backgroundDesign="Transparent"
-										>
-											<Label text="Empresa" />
-											<Text text="Empresa compradora (0001)" />
-											<Label text="Grupo de compradores" />
-											<Link text="GRP COMPRADORES (070)" />
-											<Label text="Organização de compras" />
-											<Text text="Org.Compras centralizado (0001)" />
-											<Label text="Data solicitação da cotação" />
-											<Text text="20/10/2017" />
-										</form:SimpleForm>
+					<IconTabFilter text="Resumo por Item">
+						<ScrollContainer width="100%">					
+								<Table id="tableFechamentoItem" 
+								       items="{ZMMARIBA>FechamentoItemNavigation}" >
+									<headerToolbar>
+										<Toolbar>
+											<Title text="Relatório de Fechamento por Item com Menor Preço" level="H2" />
+										</Toolbar>
+									</headerToolbar>
+									<columns>
+										<Column width="4em">
+											<Text text="Item" />
+										</Column>
+										<Column width="8em">
+											<Text text="Material" />
+										</Column>
+										<Column width="4em">
+											<Text text="IVA" />
+										</Column>										
+										<Column width="4em">
+											<Text text="Qtde. Atual"/>
+										</Column>
+										<Column width="14em">
+											<Text text="Descrição" />
+										</Column>
+										<Column width="16em">
+											<Text text="Fornecedor" />
+										</Column>
+										<Column width="7em">
+											<Text text="R$ Unit. Neg." />
+										</Column>	
+										<Column width="6em">
+											<Text text="IPI" />
+										</Column>	
+										<Column width="6em">
+											<Text text="ICMS" />
+										</Column>		
+										<Column width="7em">
+											<Text text="R$ Tot. (ICMS + IPI)" />
+										</Column>
+										<Column width="7em">
+											<Text text="Desembolso" />
+										</Column>										
+										<Column width="4em">
+											<Text text="% Negociado X Referência" />
+										</Column>													
+										<Column width="7em">
+											<Text text="% Negociado X Melhor Proposta" />
+										</Column>																																							
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text="{ZMMARIBA>Item}" />
+												<Text text="{ZMMARIBA>MaterialCode}" />
+												<Text text="{ZMMARIBA>IVA}" />
+												<Text text="{ZMMARIBA>QuantidadeAtual}" />
+												<ObjectIdentifier title="{ZMMARIBA>MaterialName}" />
+												<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />
+												<Text text="{ZMMARIBA>ValorUnitNegociado}" />
+												<Text text="{ZMMARIBA>IPI}" />
+												<Text text="{ZMMARIBA>ICMS}" />
+												<Text text="{ZMMARIBA>ValorTotal}" />
+												<Text text="{ZMMARIBA>Desembolso}" />
+												<Text text="{ZMMARIBA>PercRef}" />
+												<Text text="{ZMMARIBA>PercDif1}" />
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</ScrollContainer>
+							<l:VerticalLayout width="100%" >
+								<l:BlockLayout>
+									<l:BlockLayoutRow>
+										<l:BlockLayoutCell>
+											<Text text=""/>
+										</l:BlockLayoutCell>
+										<l:BlockLayoutCell>	
+											<Button	text="Exportar Items para Excel" icon="sap-icon://excel-attachment" press="onExportXLS" />					
+											<List
+											    id="listTotais"
+												headerText="Totais da Última Rodada" >
+												<DisplayListItem
+													label="Total de Referencia com Impostos"
+													value="{ZMMARIBA>TotalRefImp}"/>
+												<DisplayListItem
+													label="Total 1ª Rodada com impostos"
+													value="{ZMMARIBA>TotalOrigImp}" />
+												<DisplayListItem
+													label="Total Última Rodada com Impostos"
+													value="{ZMMARIBA>TotalNegImp}" />
+												<DisplayListItem
+													label="Total Última Rodada Líquido"
+													value="{ZMMARIBA>TotalLiquido}" />		
+												<DisplayListItem
+													label="Total Requisição (Orçamento)"
+													value="{ZMMARIBA>ValorOrcamentario}" />																																							
+											</List>
+										</l:BlockLayoutCell>
+									</l:BlockLayoutRow>
+								</l:BlockLayout>
+							</l:VerticalLayout>
+					</IconTabFilter>
+					<IconTabFilter text="Resumo Global">
+							<Table id="tableFechamentoFornecedor"
+								items="{ZMMARIBA>FechamentoFornecedorNavigation}" >
+								<headerToolbar>
+									<Toolbar>
+										<content>
+											<Title text="Relatório de Fechamento da Última Rodada por Fornecedor" level="H2"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>								
+								<columns>
+									<Column width="20em">
+										<Text text="Fornecedor" />
+									</Column>
+									<Column width="12em">
+										<Text text="Referencia com Impostos" />
+									</Column>										
+									<Column width="10em">
+										<Text text="Original com Impostos" />
+									</Column>	
+									<Column width="12em">
+										<Text text="Negociado com Impostos (ICMS + IPI + DIFAL)" />
+									</Column>												
+									<Column width="6em">
+										<Text text="Total Líquido" />
+									</Column>																										
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>										
+											<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />											
+											<Text text="{ZMMARIBA>ReferenciaImpostos}" />
+											<Text text="{ZMMARIBA>OriginalImpostos}" />
+											<Text text="{ZMMARIBA>NegociadoImpostos}" />
+											<Text text="{ZMMARIBA>TotalLiquido}" />											
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+							<l:VerticalLayout id="containerLayout" width="100%">
+								<Text text="" />
+								<Text text="Observações" />
+								<Text text="* Os valores negociados ficaram {ZMMARIBA>PercRef}% dos preços de referência." />
+								<Text text="* Os valores negociados ficaram {ZMMARIBA>PercOrig}% dos preços da 1ª rodada" />
+								<Text text="* Os valores negociados ficaram {ZMMARIBA>PercOrc}% do orçamento (requisição)" />
+							</l:VerticalLayout>						
+					</IconTabFilter>	
+					<IconTabFilter text="Sumário Executivo" id="sumarioTab">											
+						<f:SimpleForm id="sumarioHeader"
+							editable="true"
+							layout="ResponsiveGridLayout"
+							labelSpanXL="4"
+							labelSpanL="4"
+							labelSpanM="12"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="0"
+							emptySpanL="0"
+							emptySpanM="0"
+							emptySpanS="0"
+							columnsXL="1"
+							columnsL="1"
+							columnsM="1"
+							singleContainerFullSize="false" >
+							<f:content>
+								<Label text="Descrição do Projeto" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/DescProjeto}" />
+								<Label text="Código do Projeto" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Projeto}" />
+								<Label text="Área Requisitante" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Area}" />
+								<Label text="Comprador Responsável" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Comprador}" />
+								<Label text="Nº RFQ" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Id}" />
+								<Label text="Tipo de Formalização" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Formalizacao}" />
+								<Label text="Modalidade" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Modalidade}" />
+								<Label text="Condição de Pagamento" />
+								<Text text="{ZMMARIBA>SumarioHeaderNavigation/CondPagamento}" />
+							</f:content>
+						</f:SimpleForm>
+					 	<ScrollContainer width="100%">		
+						<Table id="tableSumario"
+								items="{ZMMARIBA>SumarioItemNavigation}" >							
+								<columns>
+									<Column width="16em">
+										<Text text="Fornecedores Consultados" />
+									</Column>
+									<Column width="13em" hAlign="Center">
+										<Text text="Valor da Proposta Inicial (IPI + ICMS + ST + DIFAL)" />
+									</Column>										
+									<Column width="12em" hAlign="Center">
+										<Text text="Valor da Proposta Final (IPI + ICMS + ST + DIFAL)" />
+									</Column>	
+									<Column width="12em" hAlign="Center">
+										<Text text="Valor da Melhor Proposta (ICMS + IPI)" />
+									</Column>																					
+									<Column width="12em" hAlign="Center">
+										<Text text="Valor Negociado" />									     
+									</Column>	
+									<Column width="8em" hAlign="Center">			
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">
+											<core:Icon src="sap-icon://competitor" visible="true" />
+										    <Text text="Premiado(s)" />			
+										</VBox>																									 	
+									</Column>		
+									<Column width="8em" hAlign="Center">
+										<Text text="Número Contrato Ariba" />
+									</Column>
+									<Column width="8em" hAlign="Center">
+										<Text text="Número Pedido SAP" />
+									</Column>																																																			
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>										
+											<ObjectIdentifier title="{ZMMARIBA>Fornecedor}" />											
+											<Text text="{ZMMARIBA>ValorInicial}" />
+											<Text text="{ZMMARIBA>ValorFinal}" />
+											<Text text="{ZMMARIBA>ValorMelhorIPI}" />
+											<Text text="{ZMMARIBA>ValorContratado}" />	
+											<Text text="{ZMMARIBA>Premiado}" />	
+											<Text text="{ZMMARIBA>Contrato}" />	
+											<Text text="{ZMMARIBA>Pedido}" />											
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>						
+						<l:VerticalLayout id="containerLayout2" width="100%" >
+							<l:BlockLayout id="BlockLayout2">						
+								<l:BlockLayoutRow class="MapaComparativoDetalhesCPFL_Bloco1">
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">									
+											<ObjectIdentifier title="Total Orçamento"/>
+											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalOrcamento}"/>
+										</VBox>
 									</l:BlockLayoutCell>
-									<l:BlockLayoutCell
-										width="70%"
-										titleAlignment="End"
-										title="Itens"
-									>
-										<Table
-											id="idProductsTable"
-											inset="false"
-											items="{
-													path: 'eventosSourcing>sintetico/items',
-													sorter: {
-														path: 'itemNumber'
-													}
-												}"
-										>
-											<columns>
-												<Column width="16em">
-													<Text text="Item" />
-												</Column>
-												<Column width="4em">
-													<Text text="UOM" />
-												</Column>
-												<Column width="4em">
-													<Text text="Dt.Remessa" />
-												</Column>
-												<Column width="4em">
-													<Text text="Centro" />
-												</Column>
-												<Column
-													width="4em"
-													minScreenWidth="Tablet"
-													demandPopin="true"
-												>
-													<Text text="Qtde" />
-												</Column>
-											</columns>
-											<items>
-												<ColumnListItem>
-													<cells>
-														<ObjectIdentifier
-															title="{eventosSourcing>materialName}"
-															text="{eventosSourcing>materialCode}" />
-														<Text text="{eventosSourcing>unitOfMeasure}" />
-														<Text text="{dataremessa}" />
-														<Link text="{eventosSourcing>plantCode}" />
-														<Text text="{eventosSourcing>quantidade}" />
-													</cells>
-												</ColumnListItem>
-											</items>
-										</Table>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Total Referência"/>
+											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalRef}"/>	
+										</VBox>
 									</l:BlockLayoutCell>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Total Melhor 1ª Proposta"/>									
+											<Text text="{ZMMARIBA>SumarioHeaderNavigation/MelhorPrimeira}"/>
+										</VBox>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Total Valor Final"/>									
+											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalFinal}"/>
+										</VBox>
+									</l:BlockLayoutCell>																												
 								</l:BlockLayoutRow>
-								<l:BlockLayoutRow scrollable="true">
-									<l:BlockLayoutCell
-										width="75"
-										title="Rodada 3"
-									>
-										<Label
-											text="Comparativo média (3 preços mais baixos): R$ 1.733.000,00"
-											class="sapUiTinyMargin" />
-										<mc:ComparisonMicroChart
-											view="Wide"
-											class="sapUiSmallMargin"
-											width="32rem"
-										>
-											<mc:data>
-												<mc:ComparisonMicroChartData
-													title="Fornecedor 1"
-													value="-12"
-													color="Good"
-													displayValue="1.290.998,00" />
-												<mc:ComparisonMicroChartData
-													title="Fornecedor 2"
-													value="-2"
-													color="Good"
-													displayValue="1.500.000,10" />
-												<mc:ComparisonMicroChartData
-													title="Fornecedor 4"
-													value="18"
-													color="Error"
-													displayValue="2.600.000,00" />
-											</mc:data>
-										</mc:ComparisonMicroChart>
-										<Table inset="false">
-											<columns>
-												<Column width="12em">
-													<Text text="Fornecedor" />
-												</Column>
-												<Column width="6em">
-													<Text text="Valor" />
-												</Column>
-												<Column width="2em"></Column>
-											</columns>
-											<items>
-												<ColumnListItem>
-													<cells>
-														<ObjectIdentifier
-															title="Fornecedor 1"
-															text="001" />
-														<Link
-															text="R$ 1.290.998,00"
-															press="onDialogWithSizePress" />
-														<core:Icon
-															visible="false"
-															src="sap-icon://message-error"
-															class="size1"
-															color="red"
-														>
-															<core:layoutData>
-																<FlexItemData growFactor="1" />
-															</core:layoutData>
-														</core:Icon>
-													</cells>
-												</ColumnListItem>
-												<ColumnListItem>
-													<cells>
-														<ObjectIdentifier
-															title="Fornecedor 2"
-															text="002" />
-														<Link
-															text="R$ 1.500.000,10"
-															press="onDialogWithSizePress" />
-														<core:Icon
-															visible="false"
-															src="sap-icon://message-error"
-															class="size1"
-															color="red"
-														>
-															<core:layoutData>
-																<FlexItemData growFactor="1" />
-															</core:layoutData>
-														</core:Icon>
-													</cells>
-												</ColumnListItem>
-												<ColumnListItem>
-													<cells>
-														<ObjectIdentifier
-															title="Fornecedor 3"
-															text="003" />
-														<Link
-															text="R$ 0,00"
-															press="onDialogWithSizePress" />
-														<core:Icon
-															visible="true"
-															src="sap-icon://message-error"
-															class="size1"
-															color="red"
-														>
-															<core:layoutData>
-																<FlexItemData growFactor="1" />
-															</core:layoutData>
-														</core:Icon>
-													</cells>
-												</ColumnListItem>
-												<ColumnListItem>
-													<cells>
-														<ObjectIdentifier
-															title="Fornecedor 4"
-															text="004" />
-														<Link
-															text="R$ 2.600.000,00"
-															press="onDialogWithSizePress" />
-														<core:Icon
-															visible="false"
-															src="sap-icon://message-error"
-															class="size1"
-															color="red"
-														>
-															<core:layoutData>
-																<FlexItemData growFactor="1" />
-															</core:layoutData>
-														</core:Icon>
-													</cells>
-												</ColumnListItem>
-											</items>
-										</Table>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell
-										width="75"
-										title="Rodada 2"
-									>
-										<Label text="Dados da Rodada 2" />
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell
-										width="75"
-										title="Rodada 1"
-									>
-										<Label text="Dados da Rodada 1" />
-									</l:BlockLayoutCell>
-								</l:BlockLayoutRow>
-								<!-- <l:BlockLayoutRow scrollable="true"> <l:BlockLayoutCell width="50"> 
-									<Label text="Média negociação atual: R$ {eventosSourcing>sintetico/ultimaRodada/valormedio}" 
-									class="sapUiTinyMargin" /> <mc:ComparisonMicroChart size="M" scale="BRL" 
-									class="sapUiSmallMargin" width="24rem" data="{ path: 'eventosSourcing>sintetico/ultimaRodada/fornecedores' 
-									}"> <mc:data> <mc:ComparisonMicroChartData title="{eventosSourcing>participant}" 
-									value="{eventosSourcing>valorcomparativomedia}" color="{= ${eventosSourcing>valorcomparativomedia} 
-									> 0 ? 'Error' : 'Good' }" displayValue="{eventosSourcing>valorcalculado}" 
-									/> </mc:data> </mc:ComparisonMicroChart> <Table inset="false" items="{ path: 
-									'eventosSourcing>sintetico/ultimaRodada/fornecedores', sorter: { path: 'itemNumber' 
-									} }"> <columns> <Column width="12em"> <Text text="Fornecedor" /> </Column> 
-									<Column width="6em"> <Text text="Valor" /> </Column> <Column width="2em"></Column> 
-									</columns> <items> <ColumnListItem> <cells> <ObjectIdentifier title="{eventosSourcing>participant}" 
-									text="{eventosSourcing>externalsystemsupplierid}" /> <Link text="{eventosSourcing>valorcalculado}" 
-									press="onDialogWithSizePress" /> <core:Icon visible="{eventosSourcing>erro}" 
-									src="sap-icon://message-error" class="size1" color="red"> <core:layoutData> 
-									<FlexItemData growFactor="1" /> </core:layoutData> </core:Icon> </cells> 
-									</ColumnListItem> </items> </Table> </l:BlockLayoutCell> <l:BlockLayoutCell 
-									width="50"> <Label text="outros dados! anuncie aqui!" /> </l:BlockLayoutCell> 
-									</l:BlockLayoutRow> -->
 							</l:BlockLayout>
 						</l:VerticalLayout>
-					</IconTabFilter>
-					<IconTabFilter text="Simulação">
-						<Text text="Notes go here ..." />
-					</IconTabFilter>
+						<l:VerticalLayout id="containerLayout3" width="100%" >
+							<l:BlockLayout id="BlockLayout3">						
+								<l:BlockLayoutRow class="MapaComparativoDetalhesCPFL_Bloco1">																												
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Saving (%) Negociado X Referência"/>									
+											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingFinal}%"/>
+										</VBox>
+									</l:BlockLayoutCell>									
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Saving (%) Negociado X Melhor Proposta"/>	
+											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingMelhor}%"/>
+										</VBox>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Saving (%) Negociado X Orçamento"/>	
+											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingInicial}%"/>
+										</VBox>
+									</l:BlockLayoutCell>									
+								</l:BlockLayoutRow>
+							</l:BlockLayout>
+						</l:VerticalLayout>					
+							<Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
+								<headerToolbar>
+									<Toolbar height="3rem">
+										<Title text="Observações do Comprador (max. 700 caracteres)"/>
+									</Toolbar>
+								</headerToolbar>
+								<content>
+									<l:VerticalLayout class="sapUiContentPadding" width="100%">
+										<TextArea id="inpObservacao" liveChange="onLiveMapa" width="100%" value="{ZMMARIBA>Observacao}" rows="8" maxLength="700"/>																		
+									</l:VerticalLayout>									
+								</content>
+							</Panel>							
+					</IconTabFilter>								
 				</items>
 			</IconTabBar>
 		</content>

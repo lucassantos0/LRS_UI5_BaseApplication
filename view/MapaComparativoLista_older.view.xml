@@ -1,0 +1,51 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core" height="100%"
+	controllerName="lrs.ui5.controller.MapaComparativoLista">
+	<Page title="Mapa Comparativo" showNavButton="false">
+		<content>
+			<MessageStrip text="Tela com filtros para consulta de RFQs"
+				showIcon="true" showCloseButton="true">
+			</MessageStrip>
+			<VBox>
+				<fb:FilterBar reset="onReset" search="onSearch"
+					showRestoreButton="true" showClearButton="true">
+					<fb:filterItems>
+						<fb:FilterItem name="A" label="Data Criação">
+							<fb:control>
+								<DateRangeSelection id="DRS1" delimiter="-"
+									displayFormat="dd/MM/yyyy" change="handleChange" />
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="B" label="Núm. RFQ">
+							<fb:control>
+								<Input type="Text" placeholder="Núm RFQ"></Input>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="C" label="Núm. Requisição">
+							<fb:control>
+								<Input type="Text" placeholder="Núm Req"></Input>
+							</fb:control>
+						</fb:FilterItem>
+					</fb:filterItems>
+				</fb:FilterBar>
+				<List headerText="RFQs" items="{listaRfqs>/listaRfqs}" >
+					<ObjectListItem title="{listaRfqs>id}" type="Active"
+						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}">
+						<firstStatus>
+							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" />
+						</firstStatus>
+						<attributes>
+							<ObjectAttribute text="" />
+							<ObjectAttribute text="Última atualização: {listaRfqs>lastUpdate}" />
+						</attributes>
+					</ObjectListItem>
+				</List>
+			</VBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
