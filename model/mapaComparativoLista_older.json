@@ -5,9 +5,6 @@
 			"amount" : "1000000.20",
 			"currency" : "BRL",
 			"lastUpdate" : "20172210",
-			"dateCreation" : "20171110",
-			"numReq": "0010000123",
-			"workspace" : "WS25654554",
 			"numberOfRounds" : "3"
 		},
 		{
@@ -15,9 +12,6 @@
 			"amount" : "75230.90",
 			"currency" : "BRL",
 			"lastUpdate" : "20171910",
-			"dateCreation" : "20171010",
-			"numReq": "0010000220",
-			"workspace" : "WS85484844",
 			"numberOfRounds" : "5"
 		}
 	]
