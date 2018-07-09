@@ -3,81 +3,81 @@
 	controllerName="lrs.ui5.controller.MapaComparativoLista">
 	<Page title="Mapa Comparativo" showNavButton="false">
 		<content>
-			<VBox>
-		<l:VerticalLayout id="containerLayout" width="100%" >
-			<l:BlockLayout id="BlockLayout" background="Light">			
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell
-							title="Consultar Eventos Premiados"
-							width="3">
-					<fb:FilterBar search="onSearch" showFilterConfiguration="false">
-						<fb:filterItems>
-							<fb:FilterItem name="A" label="Data Criação">
-								<fb:control>
-									<DateRangeSelection id="filtroDataCriacao" displayFormat="dd/MM/yyyy" />
-								</fb:control>
-							</fb:FilterItem>
-							<fb:FilterItem name="B" label="Núm. RFQ">
-								<fb:control>
-									<Input type="Text" placeholder="Núm RFQ" id="filtroNumRfq"></Input>
-								</fb:control>
-							</fb:FilterItem>
-							<fb:FilterItem name="C" label="Núm. Requisição">
-								<fb:control>
-									<Input type="Text" placeholder="Núm Req" id="filtroNumReq"></Input>
-								</fb:control>
-							</fb:FilterItem>
-							<fb:FilterItem name="D" label="WorkspaceId">
-								<fb:control>
-									<Input type="Text" placeholder="WorkspaceId" id="filtroWsId"></Input>
-								</fb:control>
-							</fb:FilterItem>	
-							<fb:FilterItem name="E" label="DocumentId">
-								<fb:control>
-									<Input type="Text" placeholder="DocId" id="filtroDocId"></Input>
-								</fb:control>
-							</fb:FilterItem>	
-						</fb:filterItems>
-					</fb:FilterBar>				
-					</l:BlockLayoutCell>
-					<l:BlockLayoutCell
-							title="Consultar Evento Não Concluído">
-						<label text="DocumentId"/>	
-						<Input type="Text" placeholder="DocId Evt.Aberto" id="newDocId"/>
-						<Button	text="Buscar" icon="sap-icon://search" press="onSearchAberto" />	
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>			
-				</l:BlockLayout>
-				</l:VerticalLayout>
-				<List id="listaRfqs"
-				      headerText="RFQs" 
-				      items="{listaRfqs>/listaRfqs}">	
-					<ObjectListItem title="{listaRfqs>id}" type="Active" 
-						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}">
-						<firstStatus>
-							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" />
-						</firstStatus>
-						<attributes>
-						    <ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}" />
-						    <ObjectAttribute text="Data Criação: {
-												path: 'listaRfqs>dateCreation',
-												type: 'sap.ui.model.type.DateTime',
-												formatOptions : {
-													pattern: 'dd/MM/yyyy'
-												}
-											}" />
-						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" />
-							<ObjectAttribute text="Última atualização: {
-												path: 'listaRfqs>lastUpdate',
-												type: 'sap.ui.model.type.DateTime',
-												formatOptions : {
-													pattern: 'dd/MM/yyyy'
-												}
-											}" />
-						</attributes>
-					</ObjectListItem>
-				</List>
-			</VBox>
+<!-- 			<VBox> -->
+<!-- 		<l:VerticalLayout id="containerLayout" width="100%" > -->
+<!-- 			<l:BlockLayout id="BlockLayout" background="Light">			 -->
+<!-- 				<l:BlockLayoutRow> -->
+<!-- 					<l:BlockLayoutCell -->
+<!-- 							title="Consultar Eventos Premiados" -->
+<!-- 							width="3"> -->
+<!-- 					<fb:FilterBar search="onSearch" showFilterConfiguration="false"> -->
+<!-- 						<fb:filterItems> -->
+<!-- 							<fb:FilterItem name="A" label="Data Criação"> -->
+<!-- 								<fb:control> -->
+<!-- 									<DateRangeSelection id="filtroDataCriacao" displayFormat="dd/MM/yyyy" /> -->
+<!-- 								</fb:control> -->
+<!-- 							</fb:FilterItem> -->
+<!-- 							<fb:FilterItem name="B" label="Núm. RFQ"> -->
+<!-- 								<fb:control> -->
+<!-- 									<Input type="Text" placeholder="Núm RFQ" id="filtroNumRfq"></Input> -->
+<!-- 								</fb:control> -->
+<!-- 							</fb:FilterItem> -->
+<!-- 							<fb:FilterItem name="C" label="Núm. Requisição"> -->
+<!-- 								<fb:control> -->
+<!-- 									<Input type="Text" placeholder="Núm Req" id="filtroNumReq"></Input> -->
+<!-- 								</fb:control> -->
+<!-- 							</fb:FilterItem> -->
+<!-- 							<fb:FilterItem name="D" label="WorkspaceId"> -->
+<!-- 								<fb:control> -->
+<!-- 									<Input type="Text" placeholder="WorkspaceId" id="filtroWsId"></Input> -->
+<!-- 								</fb:control> -->
+<!-- 							</fb:FilterItem>	 -->
+<!-- 							<fb:FilterItem name="E" label="DocumentId"> -->
+<!-- 								<fb:control> -->
+<!-- 									<Input type="Text" placeholder="DocId" id="filtroDocId"></Input> -->
+<!-- 								</fb:control> -->
+<!-- 							</fb:FilterItem>	 -->
+<!-- 						</fb:filterItems> -->
+<!-- 					</fb:FilterBar>				 -->
+<!-- 					</l:BlockLayoutCell> -->
+<!-- 					<l:BlockLayoutCell -->
+<!-- 							title="Consultar Evento Não Concluído"> -->
+<!-- 						<label text="DocumentId"/>	 -->
+<!-- 						<Input type="Text" placeholder="DocId Evt.Aberto" id="newDocId"/> -->
+<!-- 						<Button	text="Buscar" icon="sap-icon://search" press="onSearchAberto" />	 -->
+<!-- 					</l:BlockLayoutCell> -->
+<!-- 				</l:BlockLayoutRow>			 -->
+<!-- 				</l:BlockLayout> -->
+<!-- 				</l:VerticalLayout> -->
+<!-- 				<List id="listaRfqs" -->
+<!-- 				      headerText="RFQs"  -->
+<!-- 				      items="{listaRfqs>/listaRfqs}">	 -->
+<!-- 					<ObjectListItem title="{listaRfqs>id}" type="Active"  -->
+<!-- 						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}"> -->
+<!-- 						<firstStatus> -->
+<!-- 							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" /> -->
+<!-- 						</firstStatus> -->
+<!-- 						<attributes> -->
+<!-- 						    <ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}" /> -->
+<!-- 						    <ObjectAttribute text="Data Criação: { -->
+<!-- 												path: 'listaRfqs>dateCreation', -->
+<!-- 												type: 'sap.ui.model.type.DateTime', -->
+<!-- 												formatOptions : { -->
+<!-- 													pattern: 'dd/MM/yyyy' -->
+<!-- 												} -->
+<!-- 											}" /> -->
+<!-- 						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" /> -->
+<!-- 							<ObjectAttribute text="Última atualização: { -->
+<!-- 												path: 'listaRfqs>lastUpdate', -->
+<!-- 												type: 'sap.ui.model.type.DateTime', -->
+<!-- 												formatOptions : { -->
+<!-- 													pattern: 'dd/MM/yyyy' -->
+<!-- 												} -->
+<!-- 											}" /> -->
+<!-- 						</attributes> -->
+<!-- 					</ObjectListItem> -->
+<!-- 				</List> -->
+<!-- 			</VBox> -->
 		</content>
 		<footer>
 			<Toolbar>
