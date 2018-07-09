@@ -51,29 +51,24 @@
 				</l:VerticalLayout>
 				<List id="listaRfqs"
 				      headerText="RFQs" 
-				      items="{
-						path: 'ZMMARIBA>/ListaRfqSet',
-						parameters: {
-							operationMode : 'Server'
-						}
-					}" >	
-					<ObjectListItem title="{ZMMARIBA>Id}" type="Active" 
-						press="onListItemPress" number="{ZMMARIBA>Amount}" numberUnit="{ZMMARIBA>Currency}">
+				      items="{listaRfqs2>/listaRfqs}">	
+					<ObjectListItem title="{listaRfqs>Id}" type="Active" 
+						press="onListItemPress" number="{listaRfqs>Amount}" numberUnit="{listaRfqs>Currency}">
 						<firstStatus>
-							<ObjectStatus text="{ZMMARIBA>NumberOfRounds} rodada(s)" />
+							<ObjectStatus text="{listaRfqs>NumberOfRounds} rodada(s)" />
 						</firstStatus>
 						<attributes>
-						    <ObjectAttribute text="WorkspaceId: {ZMMARIBA>Workspace}" />
+						    <ObjectAttribute text="WorkspaceId: {listaRfqs>Workspace}" />
 						    <ObjectAttribute text="Data Criação: {
-												path: 'ZMMARIBA>DateCreation',
+												path: 'listaRfqs>DateCreation',
 												type: 'sap.ui.model.type.DateTime',
 												formatOptions : {
 													pattern: 'dd/MM/yyyy'
 												}
 											}" />
-						    <ObjectAttribute text="Núm Req: {ZMMARIBA>NumReq}" />
+						    <ObjectAttribute text="Núm Req: {listaRfqs>NumReq}" />
 							<ObjectAttribute text="Última atualização: {
-												path: 'ZMMARIBA>LastUpdate',
+												path: 'listaRfqs>LastUpdate',
 												type: 'sap.ui.model.type.DateTime',
 												formatOptions : {
 													pattern: 'dd/MM/yyyy'
