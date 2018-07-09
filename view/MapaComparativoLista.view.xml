@@ -51,24 +51,24 @@
 				</l:VerticalLayout>
 				<List id="listaRfqs"
 				      headerText="RFQs" 
-				      items="{listaRfqs2>/listaRfqs}">	
-					<ObjectListItem title="{listaRfqs>Id}" type="Active" 
-						press="onListItemPress" number="{listaRfqs>Amount}" numberUnit="{listaRfqs>Currency}">
+				      items="{listaRfqs>/listaRfqs}">	
+					<ObjectListItem title="{listaRfqs>id}" type="Active" 
+						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}">
 						<firstStatus>
-							<ObjectStatus text="{listaRfqs>NumberOfRounds} rodada(s)" />
+							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" />
 						</firstStatus>
 						<attributes>
-						    <ObjectAttribute text="WorkspaceId: {listaRfqs>Workspace}" />
+						    <ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}" />
 						    <ObjectAttribute text="Data Criação: {
-												path: 'listaRfqs>DateCreation',
+												path: 'listaRfqs>dateCreation',
 												type: 'sap.ui.model.type.DateTime',
 												formatOptions : {
 													pattern: 'dd/MM/yyyy'
 												}
 											}" />
-						    <ObjectAttribute text="Núm Req: {listaRfqs>NumReq}" />
+						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" />
 							<ObjectAttribute text="Última atualização: {
-												path: 'listaRfqs>LastUpdate',
+												path: 'listaRfqs2>lastUpdate',
 												type: 'sap.ui.model.type.DateTime',
 												formatOptions : {
 													pattern: 'dd/MM/yyyy'
