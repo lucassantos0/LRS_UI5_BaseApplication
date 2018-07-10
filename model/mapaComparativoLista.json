@@ -8,6 +8,7 @@
 			"dateCreation" : "20171110",
 			"numReq": "0010000123",
 			"workspace" : "WS25654554",
+			"docid" : "Doc92212311",
 			"numberOfRounds" : "3"
 		},
 		{
@@ -18,6 +19,7 @@
 			"dateCreation" : "20171010",
 			"numReq": "0010000220",
 			"workspace" : "WS85484844",
+			"docid" : "Doc00221231",		
 			"numberOfRounds" : "5"
 		}
 	]
