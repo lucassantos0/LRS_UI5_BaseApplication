@@ -43,7 +43,7 @@
 <!-- 					<l:BlockLayoutCell -->
 <!-- 							title="Consultar Evento Não Concluído"> -->
 <!-- 						<label text="DocumentId"/>	 -->
-<!-- 						<Input type="Text" placeholder="DocId Evt.Aberto" id="newDocId"/> -->
+<!-- 						<Input  type="Text" placeholder="DocId Evt.Aberto" id="newDocId"/> -->
 <!-- 						<Button	text="Buscar" icon="sap-icon://search" press="onSearchAberto" />	 -->
 <!-- 					</l:BlockLayoutCell> -->
 <!-- 				</l:BlockLayoutRow>			 -->
