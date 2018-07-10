@@ -59,13 +59,7 @@
 						</firstStatus>
 						<attributes>
 						    <ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}" />
-<!-- 						    <ObjectAttribute text="Data Criação: { -->
-<!-- 												path: 'listaRfqs>dateCreation', -->
-<!-- 												type: 'sap.ui.model.type.DateTime', -->
-<!-- 												formatOptions : { -->
-<!-- 													pattern: 'dd/MM/yyyy' -->
-<!-- 												} -->
-<!-- 											}" /> -->
+						    <ObjectAttribute text="Data Criação: {listaRfqs>dateCreation}"/>
 						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" />
 <!-- 							<ObjectAttribute text="Última atualização: { -->
 <!-- 												path: 'listaRfqs>lastUpdate', -->
