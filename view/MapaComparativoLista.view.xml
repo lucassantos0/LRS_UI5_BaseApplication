@@ -4,12 +4,12 @@
 	<Page title="Mapa Comparativo" showNavButton="false">
 		<content>
 			<VBox>
-		<l:VerticalLayout id="containerLayout" width="100%" >
-			<l:BlockLayout id="BlockLayout" background="Light">			
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell
-							title="Consultar Eventos Premiados"
-							width="3">
+<!-- 		<l:VerticalLayout id="containerLayout" width="100%" > -->
+<!-- 			<l:BlockLayout id="BlockLayout" background="Light">			 -->
+<!-- 				<l:BlockLayoutRow> -->
+<!-- 					<l:BlockLayoutCell -->
+<!-- 							title="Consultar Eventos Premiados" -->
+<!-- 							width="3"> -->
 					<fb:FilterBar search="onSearch" showFilterConfiguration="false">
 						<fb:filterItems>
 							<fb:FilterItem name="A" label="Data Criação">
@@ -39,16 +39,16 @@
 							</fb:FilterItem>	
 						</fb:filterItems>
 					</fb:FilterBar>				
-					</l:BlockLayoutCell>
-					<l:BlockLayoutCell
-							title="Consultar Evento Não Concluído">
-						<label text="DocumentId"/>	
-						<Input type="Text" placeholder="DocId Evt.Aberto" id="newDocId"/>
-						<Button	text="Buscar" icon="sap-icon://search" press="onSearchAberto" />	
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>			
-				</l:BlockLayout>
-				</l:VerticalLayout>
+<!-- 					</l:BlockLayoutCell> -->
+<!-- 					<l:BlockLayoutCell -->
+<!-- 							title="Consultar Evento Não Concluído"> -->
+<!-- 						<label text="DocumentId"/>	 -->
+<!-- 						<Input type="Text" placeholder="DocId Evt.Aberto" id="newDocId"/> -->
+<!-- 						<Button	text="Buscar" icon="sap-icon://search" press="onSearchAberto" />	 -->
+<!-- 					</l:BlockLayoutCell> -->
+<!-- 				</l:BlockLayoutRow>			 -->
+<!-- 				</l:BlockLayout> -->
+<!-- 				</l:VerticalLayout> -->
 <!-- 				<List id="listaRfqs" -->
 <!-- 				      headerText="RFQs"  -->
 <!-- 				      items="{listaRfqs>/listaRfqs}">	 -->
