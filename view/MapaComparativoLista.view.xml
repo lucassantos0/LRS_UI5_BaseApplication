@@ -49,34 +49,34 @@
 <!-- 				</l:BlockLayoutRow>			 -->
 <!-- 				</l:BlockLayout> -->
 <!-- 				</l:VerticalLayout> -->
-<!-- 				<List id="listaRfqs" -->
-<!-- 				      headerText="RFQs"  -->
-<!-- 				      items="{listaRfqs>/listaRfqs}">	 -->
-<!-- 					<ObjectListItem title="{listaRfqs>id}" type="Active"  -->
-<!-- 						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}"> -->
-<!-- 						<firstStatus> -->
-<!-- 							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" /> -->
-<!-- 						</firstStatus> -->
-<!-- 						<attributes> -->
-<!-- 						    <ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}" /> -->
-<!-- 						    <ObjectAttribute text="Data Criação: { -->
-<!-- 												path: 'listaRfqs>dateCreation', -->
-<!-- 												type: 'sap.ui.model.type.DateTime', -->
-<!-- 												formatOptions : { -->
-<!-- 													pattern: 'dd/MM/yyyy' -->
-<!-- 												} -->
-<!-- 											}" /> -->
-<!-- 						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" /> -->
-<!-- 							<ObjectAttribute text="Última atualização: { -->
-<!-- 												path: 'listaRfqs>lastUpdate', -->
-<!-- 												type: 'sap.ui.model.type.DateTime', -->
-<!-- 												formatOptions : { -->
-<!-- 													pattern: 'dd/MM/yyyy' -->
-<!-- 												} -->
-<!-- 											}" /> -->
-<!-- 						</attributes> -->
-<!-- 					</ObjectListItem> -->
-<!-- 				</List> -->
+				<List id="listaRfqs"
+				      headerText="RFQs" 
+				      items="{listaRfqs>/listaRfqs}">	
+					<ObjectListItem title="{listaRfqs>id}" type="Active" 
+						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}">
+						<firstStatus>
+							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" />
+						</firstStatus>
+						<attributes>
+						    <ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}" />
+						    <ObjectAttribute text="Data Criação: {
+												path: 'listaRfqs>dateCreation',
+												type: 'sap.ui.model.type.DateTime',
+												formatOptions : {
+													pattern: 'dd/MM/yyyy'
+												}
+											}" />
+						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" />
+							<ObjectAttribute text="Última atualização: {
+												path: 'listaRfqs>lastUpdate',
+												type: 'sap.ui.model.type.DateTime',
+												formatOptions : {
+													pattern: 'dd/MM/yyyy'
+												}
+											}" />
+						</attributes>
+					</ObjectListItem>
+				</List>
 			</VBox>
 		</content>
 		<footer>
