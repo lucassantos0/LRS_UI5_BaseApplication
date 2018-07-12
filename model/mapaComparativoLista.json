@@ -2,7 +2,7 @@
 	"listaRfqs" : [
 		{
 			"id" : "6000104537",
-			"amount" : "1000000.20",
+			"amount" : "1.000.000,20",
 			"currency" : "BRL",
 			"lastUpdate" : "22/10/2017",
 			"dateCreation" : "10/11/2017",
@@ -13,7 +13,7 @@
 		},
 		{
 			"id" : "6000104531",
-			"amount" : "75230.90",
+			"amount" : "75.230,90",
 			"currency" : "BRL",
 			"lastUpdate" : "19/10/2017",
 			"dateCreation" : "10/10/2017",
