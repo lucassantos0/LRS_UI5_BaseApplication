@@ -125,7 +125,7 @@
 						"MaterialCode": "50000001004",
 						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
 						"DataUltimaCompra": "20/04/2015",
-						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
 						"ValorReajuste": "12,50",
 						"ValorTotal": "120,00",
 						"unitOfMeasure": "PCE",
@@ -186,7 +186,32 @@
 						"IVA": "C1",
 						"PercRef": "2,1",
 						"PercDif1": "5,2"
-					}
+					},
+					{
+						"Item": "5",
+						"IcmsForn": "18",
+						"IpiForn": "8",
+						"UF": "SP",
+						"UtilizMaterial": "Z0",
+						"NcmCad": "7109.15",
+						"NcmForn": "7109.15",
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"AribaPrimeira": "150,00",
+						"ValorUnitOriginal": "15,00",
+						"AribaUltima": "151,50",
+						"ValorBruto": "17,80",
+						"ValorUnitNegociado": "14,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ST": "5",
+						"DIFAL": "0",
+						"ValorTotalNegociadoComImpostos": "155,80",
+						"ValorLiquidoIPI": "145,00",
+						"ValorLiquido": "140,00",
+						"IVA": "C1",
+						"PercRef": "2,1",
+						"PercDif1": "5,2"
+					}					
 				]				
 			}			
 		},
