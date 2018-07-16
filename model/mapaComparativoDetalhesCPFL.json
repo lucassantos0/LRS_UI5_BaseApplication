@@ -79,16 +79,16 @@
 				"global": [
 					{
 						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
-						"ReferenciaImpostos": "13,80",
-						"OriginalImpostos": "8",
-						"NegociadoImpostos": "18",
+						"ReferenciaImpostos": "15,00",
+						"OriginalImpostos": "17,00",
+						"NegociadoImpostos": "13,80",
 						"TotalLiquido": "145,80"						
 					},
 					{
 						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
-						"ReferenciaImpostos": "14,80",
-						"OriginalImpostos": "8",
-						"NegociadoImpostos": "18",
+						"ReferenciaImpostos": "15,00",
+						"OriginalImpostos": "17,00",
+						"NegociadoImpostos": "14,80",
 						"TotalLiquido": "155,80"						
 					}					
 				],				
