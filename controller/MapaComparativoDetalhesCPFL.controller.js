@@ -6,8 +6,24 @@ sap.ui.define([ "lrs/ui5/controller/BaseController", 'sap/ui/model/json/JSONMode
 					{
 				
 				onInit : function() {
-							//this.getRouter().getRoute("MapaComparativoDetalhesCPFL").attachMatched(this.onRouteMatched, this);
+					this.getRouter().getRoute("MapaComparativoDetalhesCPFL").attachMatched(this.onRouteMatched, this);
+				},
+				onRouteMatched : function(oEvent) {
+					var sRfq = oEvent.getParameters().arguments.rfq;
+					if (!sRfq) {
+						return false;
+					}
+					var oModel = this.getModel("eventosSourcing");
+					var oEntry = null;
+					for(var nEntry in oModel.getData().eventosSourcing){
+						oEntry = oModel.getData().eventosSourcing[nEntry];
+						if(oEntry.rfq === sRfq){
+							break;
 						}
+					}
+					this._bindingPath = "eventosSourcing>/eventosSourcing/" + nEntry;
+					this.byId("mapaComparativoDetalhesCPFL").bindContext(this._bindingPath);
+				}
 			
 //						onRouteMatched : function(oEvent) {
 //							  
