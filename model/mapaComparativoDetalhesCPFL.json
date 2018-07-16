@@ -192,7 +192,7 @@
 						"IpiForn": "8",
 						"UF": "SP",
 						"UtilizMaterial": "ROH",
-						"NcmCad": "7209.15",
+						"NcmCad": "7109.15",
 						"NcmForn": "7209.15",
 						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
 						"AribaPrimeira": "150,00",
@@ -210,7 +210,8 @@
 						"IVA": "Z0",
 						"PercRef": "2,1",
 						"PercDif1": "5,2",
-						"Winner":"X"
+						"Winner":"X",
+						"Cor":"X"
 					},
 					{
 						"Item": "5",
@@ -236,7 +237,8 @@
 						"IVA": "Z0",
 						"PercRef": "2,1",
 						"PercDif1": "5,2",
-						"Winner": ""
+						"Winner": "",
+						"Cor":""
 					}					
 				]				
 			}			
