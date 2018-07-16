@@ -76,6 +76,22 @@
 						"PercDif1": "5,2"
 					}					
 				],
+				"global": [
+					{
+						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ReferenciaImpostos": "13,80",
+						"OriginalImpostos": "8",
+						"NegociadoImpostos": "18",
+						"TotalLiquido": "145,80"						
+					},
+					{
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ReferenciaImpostos": "14,80",
+						"OriginalImpostos": "8",
+						"NegociadoImpostos": "18",
+						"TotalLiquido": "155,80"						
+					}					
+				],				
 				"ultimaRodada": {
 					"valormedio" : 11.00,
 					"fornecedores": [

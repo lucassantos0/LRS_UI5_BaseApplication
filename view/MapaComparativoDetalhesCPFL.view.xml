@@ -299,7 +299,7 @@
 					</IconTabFilter>
 					<IconTabFilter text="Resumo Global">
 							<Table id="tableFechamentoFornecedor"
-								items="{eventosSourcing>FechamentoFornecedorNavigation}" >
+								items="{eventosSourcing>resumo/global}" >
 								<headerToolbar>
 									<Toolbar>
 										<content>
