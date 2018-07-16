@@ -197,7 +197,7 @@
 					<IconTabFilter text="Resumo por Item">
 						<ScrollContainer width="100%">					
 								<Table id="tableFechamentoItem" 
-								       items="{eventosSourcing>FechamentoItemNavigation}" >
+								       items="{eventosSourcing>resumo/items}" >
 									<headerToolbar>
 										<Toolbar>
 											<Title text="Relatório de Fechamento por Item com Menor Preço" level="H2" />

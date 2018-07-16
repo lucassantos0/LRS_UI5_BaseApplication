@@ -38,19 +38,38 @@
 					"numeroRodada": "2"
 				}
 			],
-			"sintetico": {
+			"resumo": {
 				"items": [
 					{
-						"docId": "Doc1112096723",
-						"requisitionId": "11789661",
-						"requisitionItemNumber": "10",
-						"materialCode": "50000001004",
-						"materialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
-						"unitOfMeasure": "PCE",
-						"quantidadeAnual": "100",
-						"plantCode": "DA01",
-						"plantName": "DA01 - Atend. Paulista"
-					}
+						"Item": "5",
+						"MaterialCode": "50000001004",
+						"IVA": "Z0",
+						"QuantidadeAtual": "100",
+						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ValorUnitNegociado": "13,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ValorTotal": "145,80",						
+						"Desembolso": "148,50",
+						"PercRef": "2,1",
+						"PercDif1": "5,2"
+					},
+					{
+						"Item": "5",
+						"MaterialCode": "50000001004",
+						"IVA": "Z0",
+						"QuantidadeAtual": "100",
+						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ValorUnitNegociado": "14,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ValorTotal": "155,80",						
+						"Desembolso": "158,50",
+						"PercRef": "2,1",
+						"PercDif1": "5,2"
+					}					
 				],
 				"ultimaRodada": {
 					"valormedio" : 11.00,
