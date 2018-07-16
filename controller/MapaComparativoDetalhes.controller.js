@@ -7,4 +7,4 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ], function(BaseController,
 				}
 
 			});
-});
+}); 
