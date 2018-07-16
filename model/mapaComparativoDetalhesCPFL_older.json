@@ -72,21 +72,17 @@
 					]
 				}
 			},
-			"detalhe": {
+			"analitico": {
 				"items": [
 					{
-						"Item": "5",
+						"itemNumber": "5",
 						"docId": "Doc1112096723",
 						"requisitionId": "11789661",
 						"requisitionItemNumber": "10",
-						"MaterialCode": "000000050000001004",
-						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
-						"DataUltimaCompra": "19/10/2016",
-						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
-						"ValorReajuste": "14,20",
-						"ValorTotal": "150,00",
+						"materialCode": "000000050000001004",
+						"materialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
 						"unitOfMeasure": "PCE",
-						"QuantidadeAtual": "100",
+						"quantidadeAnual": "100",
 						"plantCode": "DA01",
 						"plantName": "DA01 - Atend. Paulista",
 						"informacoesReferencia": {
@@ -118,18 +114,13 @@
 						}
 					},
 					{
-						"Item": "5",
+						"itemNumber": "5",
 						"docId": "Doc1112096723",
 						"requisitionId": "11789661",
 						"requisitionItemNumber": "10",
-						"MaterialCode": "000000050000001004",
-						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
-						"DataUltimaCompra": "20/04/2015",
-						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
-						"ValorReajuste": "12,50",
-						"ValorTotal": "120,00",
-						"unitOfMeasure": "PCE",
-						"QuantidadeAtual": "100",						
+						"materialCode": "000000050000001004",
+						"materialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+						"quantidadeAnual": "100",
 						"plantCode": "DA01",
 						"plantName": "DA01 - Atend. Paulista",
 						"informacoesReferencia": {

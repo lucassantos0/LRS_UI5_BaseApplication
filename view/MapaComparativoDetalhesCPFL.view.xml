@@ -14,7 +14,7 @@
 				<items>
 					<IconTabFilter text="Detalhe por Item">
 							<Table id="tableItems"
-								items="{ZMMARIBA>ItemCompRfqNavigation}" >								
+								items="{eventosSourcing>detalhe/items}" >								
 								<headerToolbar>
 									<Toolbar>
 										<Title text="Histórico da Última Compra" level="H2" />
@@ -49,27 +49,21 @@
 								<items>
 									<ColumnListItem>
 										<cells>										
-											<Text text="{ZMMARIBA>Item}" />
-											<Text text="{ZMMARIBA>MaterialCode}" />
-											<Text text="{ZMMARIBA>QuantidadeAtual}" />
-											<ObjectIdentifier title="{ZMMARIBA>MaterialName}" />
-											<Text text="{
-															path: 'ZMMARIBA>DataUltimaCompra',
-															type: 'sap.ui.model.type.DateTime',
-															formatOptions : {
-																pattern: 'dd/MM/yyyy'
-															}
-														}" />
-											<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />	
-											<Input id="inpVlrReaj" liveChange="onLive" change="onVlrReaj" value="{ZMMARIBA>ValorReajuste}"/>									
-											<Text text="{ZMMARIBA>ValorTotal}" />
+											<Text text="{eventosSourcing>Item}" />
+											<Text text="{eventosSourcing>MaterialCode}" />
+											<Text text="{eventosSourcing>QuantidadeAtual}" />
+											<ObjectIdentifier title="{eventosSourcing>MaterialName}" />
+											<Text text="{eventosSourcing>DataUltimaCompra}"/>
+											<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />	
+											<Input id="inpVlrReaj" liveChange="onLive" change="onVlrReaj" value="{eventosSourcing>ValorReajuste}"/>									
+											<Text text="{eventosSourcing>ValorTotal}" />
 										</cells>
 									</ColumnListItem>
 								</items>
 							</Table>
 							<ScrollContainer width="100%">					
 								<Table id="tableSelectItems" 
-								       items="{ZMMARIBA>ItemRfqNavigation}">
+								       items="{eventosSourcing>ItemRfqNavigation}">
 									<headerToolbar>
 										<Toolbar>
 											<Title text="Comparativo items" level="H2" />
@@ -155,44 +149,44 @@
 									<items>
 										<ColumnListItem>
 											<cells>
-												<Text text="{ZMMARIBA>Item}" />											
-												<Text text="{ZMMARIBA>IcmsForn}%" />
-												<Text text="{ZMMARIBA>IpiForn}%" />
-												<Text text="{ZMMARIBA>UF}" />
-												<Text text="{ZMMARIBA>UtilizMaterial}" />
-												<Text text="{ZMMARIBA>NcmCad}" />
+												<Text text="{eventosSourcing>Item}" />											
+												<Text text="{eventosSourcing>IcmsForn}%" />
+												<Text text="{eventosSourcing>IpiForn}%" />
+												<Text text="{eventosSourcing>UF}" />
+												<Text text="{eventosSourcing>UtilizMaterial}" />
+												<Text text="{eventosSourcing>NcmCad}" />
 												<HBox justifyContent="SpaceAround">												
 													<Text
-														text="{ZMMARIBA>NcmForn}"/>				
+														text="{eventosSourcing>NcmForn}"/>				
 												    <core:Icon
 														src="sap-icon://color-fill"
 														color="#f33334"
-													    visible="{= ${ZMMARIBA>Cor} ? true : false }" />																																				
+													    visible="{= ${eventosSourcing>Cor} ? true : false }" />																																				
 												</HBox>	
 												<HBox justifyContent="SpaceAround">												
-													<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />
+													<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />
 												    <core:Icon
 														src="sap-icon://bookmark"
 														color="#84caec"
-													    visible="{= ${ZMMARIBA>Winner} ? true : false }" />	
+													    visible="{= ${eventosSourcing>Winner} ? true : false }" />	
 												</HBox>	
-												<Text text="{ZMMARIBA>AribaPrimeira}" />
-												<Text text="{ZMMARIBA>ValorUnitOriginal}" />
-												<Text text="{ZMMARIBA>AribaUltima}" />
-												<Text text="{ZMMARIBA>ValorBruto}" />
-												<Text text="{ZMMARIBA>ValorUnitNegociado}" />
-												<Text text="{ZMMARIBA>IPI}%" />
-												<Text text="{ZMMARIBA>ICMS}%" />
-												<Text text="{ZMMARIBA>ST}%" />		
-												<Text text="{ZMMARIBA>DIFAL}%" />	
+												<Text text="{eventosSourcing>AribaPrimeira}" />
+												<Text text="{eventosSourcing>ValorUnitOriginal}" />
+												<Text text="{eventosSourcing>AribaUltima}" />
+												<Text text="{eventosSourcing>ValorBruto}" />
+												<Text text="{eventosSourcing>ValorUnitNegociado}" />
+												<Text text="{eventosSourcing>IPI}%" />
+												<Text text="{eventosSourcing>ICMS}%" />
+												<Text text="{eventosSourcing>ST}%" />		
+												<Text text="{eventosSourcing>DIFAL}%" />	
 												<Button	icon="sap-icon://waiver" type="Accept" press="onConditions" />																						
-												<Text text="{ZMMARIBA>ValorTotalNegociadoComImpostos}" />
-												<Text text="{ZMMARIBA>ValorUnitNegociado}" />
-												<Text text="{ZMMARIBA>ValorLiquidoIPI}" />
-												<Text text="{ZMMARIBA>ValorLiquido}" />
-												<Text text="{ZMMARIBA>IVA}" />
-												<Text text="{ZMMARIBA>PercRef}" />
-												<Text text="{ZMMARIBA>PercDif1}" />
+												<Text text="{eventosSourcing>ValorTotalNegociadoComImpostos}" />
+												<Text text="{eventosSourcing>ValorUnitNegociado}" />
+												<Text text="{eventosSourcing>ValorLiquidoIPI}" />
+												<Text text="{eventosSourcing>ValorLiquido}" />
+												<Text text="{eventosSourcing>IVA}" />
+												<Text text="{eventosSourcing>PercRef}" />
+												<Text text="{eventosSourcing>PercDif1}" />
 											</cells>
 										</ColumnListItem>
 									</items>
@@ -203,7 +197,7 @@
 					<IconTabFilter text="Resumo por Item">
 						<ScrollContainer width="100%">					
 								<Table id="tableFechamentoItem" 
-								       items="{ZMMARIBA>FechamentoItemNavigation}" >
+								       items="{eventosSourcing>FechamentoItemNavigation}" >
 									<headerToolbar>
 										<Toolbar>
 											<Title text="Relatório de Fechamento por Item com Menor Preço" level="H2" />
@@ -253,19 +247,19 @@
 									<items>
 										<ColumnListItem>
 											<cells>
-												<Text text="{ZMMARIBA>Item}" />
-												<Text text="{ZMMARIBA>MaterialCode}" />
-												<Text text="{ZMMARIBA>IVA}" />
-												<Text text="{ZMMARIBA>QuantidadeAtual}" />
-												<ObjectIdentifier title="{ZMMARIBA>MaterialName}" />
-												<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />
-												<Text text="{ZMMARIBA>ValorUnitNegociado}" />
-												<Text text="{ZMMARIBA>IPI}" />
-												<Text text="{ZMMARIBA>ICMS}" />
-												<Text text="{ZMMARIBA>ValorTotal}" />
-												<Text text="{ZMMARIBA>Desembolso}" />
-												<Text text="{ZMMARIBA>PercRef}" />
-												<Text text="{ZMMARIBA>PercDif1}" />
+												<Text text="{eventosSourcing>Item}" />
+												<Text text="{eventosSourcing>MaterialCode}" />
+												<Text text="{eventosSourcing>IVA}" />
+												<Text text="{eventosSourcing>QuantidadeAtual}" />
+												<ObjectIdentifier title="{eventosSourcing>MaterialName}" />
+												<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />
+												<Text text="{eventosSourcing>ValorUnitNegociado}" />
+												<Text text="{eventosSourcing>IPI}" />
+												<Text text="{eventosSourcing>ICMS}" />
+												<Text text="{eventosSourcing>ValorTotal}" />
+												<Text text="{eventosSourcing>Desembolso}" />
+												<Text text="{eventosSourcing>PercRef}" />
+												<Text text="{eventosSourcing>PercDif1}" />
 											</cells>
 										</ColumnListItem>
 									</items>
@@ -284,19 +278,19 @@
 												headerText="Totais da Última Rodada" >
 												<DisplayListItem
 													label="Total de Referencia com Impostos"
-													value="{ZMMARIBA>TotalRefImp}"/>
+													value="{eventosSourcing>TotalRefImp}"/>
 												<DisplayListItem
 													label="Total 1ª Rodada com impostos"
-													value="{ZMMARIBA>TotalOrigImp}" />
+													value="{eventosSourcing>TotalOrigImp}" />
 												<DisplayListItem
 													label="Total Última Rodada com Impostos"
-													value="{ZMMARIBA>TotalNegImp}" />
+													value="{eventosSourcing>TotalNegImp}" />
 												<DisplayListItem
 													label="Total Última Rodada Líquido"
-													value="{ZMMARIBA>TotalLiquido}" />		
+													value="{eventosSourcing>TotalLiquido}" />		
 												<DisplayListItem
 													label="Total Requisição (Orçamento)"
-													value="{ZMMARIBA>ValorOrcamentario}" />																																							
+													value="{eventosSourcing>ValorOrcamentario}" />																																							
 											</List>
 										</l:BlockLayoutCell>
 									</l:BlockLayoutRow>
@@ -305,7 +299,7 @@
 					</IconTabFilter>
 					<IconTabFilter text="Resumo Global">
 							<Table id="tableFechamentoFornecedor"
-								items="{ZMMARIBA>FechamentoFornecedorNavigation}" >
+								items="{eventosSourcing>FechamentoFornecedorNavigation}" >
 								<headerToolbar>
 									<Toolbar>
 										<content>
@@ -333,11 +327,11 @@
 								<items>
 									<ColumnListItem>
 										<cells>										
-											<ObjectIdentifier title="{ZMMARIBA>NomeFornecedor}" />											
-											<Text text="{ZMMARIBA>ReferenciaImpostos}" />
-											<Text text="{ZMMARIBA>OriginalImpostos}" />
-											<Text text="{ZMMARIBA>NegociadoImpostos}" />
-											<Text text="{ZMMARIBA>TotalLiquido}" />											
+											<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />											
+											<Text text="{eventosSourcing>ReferenciaImpostos}" />
+											<Text text="{eventosSourcing>OriginalImpostos}" />
+											<Text text="{eventosSourcing>NegociadoImpostos}" />
+											<Text text="{eventosSourcing>TotalLiquido}" />											
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -345,9 +339,9 @@
 							<l:VerticalLayout id="containerLayout" width="100%">
 								<Text text="" />
 								<Text text="Observações" />
-								<Text text="* Os valores negociados ficaram {ZMMARIBA>PercRef}% dos preços de referência." />
-								<Text text="* Os valores negociados ficaram {ZMMARIBA>PercOrig}% dos preços da 1ª rodada" />
-								<Text text="* Os valores negociados ficaram {ZMMARIBA>PercOrc}% do orçamento (requisição)" />
+								<Text text="* Os valores negociados ficaram {eventosSourcing>PercRef}% dos preços de referência." />
+								<Text text="* Os valores negociados ficaram {eventosSourcing>PercOrig}% dos preços da 1ª rodada" />
+								<Text text="* Os valores negociados ficaram {eventosSourcing>PercOrc}% do orçamento (requisição)" />
 							</l:VerticalLayout>						
 					</IconTabFilter>	
 					<IconTabFilter text="Sumário Executivo" id="sumarioTab">											
@@ -369,26 +363,26 @@
 							singleContainerFullSize="false" >
 							<f:content>
 								<Label text="Descrição do Projeto" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/DescProjeto}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/DescProjeto}" />
 								<Label text="Código do Projeto" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Projeto}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/Projeto}" />
 								<Label text="Área Requisitante" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Area}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/Area}" />
 								<Label text="Comprador Responsável" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Comprador}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/Comprador}" />
 								<Label text="Nº RFQ" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Id}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/Id}" />
 								<Label text="Tipo de Formalização" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Formalizacao}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/Formalizacao}" />
 								<Label text="Modalidade" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Modalidade}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/Modalidade}" />
 								<Label text="Condição de Pagamento" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/CondPagamento}" />
+								<Text text="{eventosSourcing>SumarioHeaderNavigation/CondPagamento}" />
 							</f:content>
 						</f:SimpleForm>
 					 	<ScrollContainer width="100%">		
 						<Table id="tableSumario"
-								items="{ZMMARIBA>SumarioItemNavigation}" >							
+								items="{eventosSourcing>SumarioItemNavigation}" >							
 								<columns>
 									<Column width="16em">
 										<Text text="Fornecedores Consultados" />
@@ -423,14 +417,14 @@
 								<items>
 									<ColumnListItem>
 										<cells>										
-											<ObjectIdentifier title="{ZMMARIBA>Fornecedor}" />											
-											<Text text="{ZMMARIBA>ValorInicial}" />
-											<Text text="{ZMMARIBA>ValorFinal}" />
-											<Text text="{ZMMARIBA>ValorMelhorIPI}" />
-											<Text text="{ZMMARIBA>ValorContratado}" />	
-											<Text text="{ZMMARIBA>Premiado}" />	
-											<Text text="{ZMMARIBA>Contrato}" />	
-											<Text text="{ZMMARIBA>Pedido}" />											
+											<ObjectIdentifier title="{eventosSourcing>Fornecedor}" />											
+											<Text text="{eventosSourcing>ValorInicial}" />
+											<Text text="{eventosSourcing>ValorFinal}" />
+											<Text text="{eventosSourcing>ValorMelhorIPI}" />
+											<Text text="{eventosSourcing>ValorContratado}" />	
+											<Text text="{eventosSourcing>Premiado}" />	
+											<Text text="{eventosSourcing>Contrato}" />	
+											<Text text="{eventosSourcing>Pedido}" />											
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -444,7 +438,7 @@
 											alignItems="Center"
 											justifyContent="Center">									
 											<ObjectIdentifier title="Total Orçamento"/>
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalOrcamento}"/>
+											<Text text="{eventosSourcing>SumarioHeaderNavigation/TotalOrcamento}"/>
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -452,7 +446,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Total Referência"/>
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalRef}"/>	
+											<Text text="{eventosSourcing>SumarioHeaderNavigation/TotalRef}"/>	
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -460,7 +454,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Total Melhor 1ª Proposta"/>									
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/MelhorPrimeira}"/>
+											<Text text="{eventosSourcing>SumarioHeaderNavigation/MelhorPrimeira}"/>
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -468,7 +462,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Total Valor Final"/>									
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalFinal}"/>
+											<Text text="{eventosSourcing>SumarioHeaderNavigation/TotalFinal}"/>
 										</VBox>
 									</l:BlockLayoutCell>																												
 								</l:BlockLayoutRow>
@@ -482,7 +476,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Saving (%) Negociado X Referência"/>									
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingFinal}%"/>
+											<Text text="{eventosSourcing>SumarioHeaderNavigation/SavingFinal}%"/>
 										</VBox>
 									</l:BlockLayoutCell>									
 									<l:BlockLayoutCell>
@@ -490,7 +484,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Saving (%) Negociado X Melhor Proposta"/>	
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingMelhor}%"/>
+											<Text text="{eventosSourcing>SumarioHeaderNavigation/SavingMelhor}%"/>
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -498,7 +492,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Saving (%) Negociado X Orçamento"/>	
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingInicial}%"/>
+											<Text text="{eventosSourcing>SumarioHeaderNavigation/SavingInicial}%"/>
 										</VBox>
 									</l:BlockLayoutCell>									
 								</l:BlockLayoutRow>
@@ -512,7 +506,7 @@
 								</headerToolbar>
 								<content>
 									<l:VerticalLayout class="sapUiContentPadding" width="100%">
-										<TextArea id="inpObservacao" liveChange="onLiveMapa" width="100%" value="{ZMMARIBA>Observacao}" rows="8" maxLength="700"/>																		
+										<TextArea id="inpObservacao" liveChange="onLiveMapa" width="100%" value="{eventosSourcing>Observacao}" rows="8" maxLength="700"/>																		
 									</l:VerticalLayout>									
 								</content>
 							</Panel>							
