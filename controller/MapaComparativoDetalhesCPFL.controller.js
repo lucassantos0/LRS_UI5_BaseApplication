@@ -6,8 +6,9 @@ sap.ui.define([ "lrs/ui5/controller/BaseController", 'sap/ui/model/json/JSONMode
 					{
 				
 				onInit : function() {
-							this.getRouter().getRoute("MapaComparativoDetalhesCPFL").attachMatched(this.onRouteMatched, this);
+							//this.getRouter().getRoute("MapaComparativoDetalhesCPFL").attachMatched(this.onRouteMatched, this);
 						}
+			
 //						onRouteMatched : function(oEvent) {
 //							  
 //							  this.sId = oEvent.getParameter("arguments").rfq;
@@ -309,5 +310,6 @@ sap.ui.define([ "lrs/ui5/controller/BaseController", 'sap/ui/model/json/JSONMode
 //							oPage.setTitle("Mapa Comparativo de Preços - " + sRfq + " - " + sEmpresa);
 //							this.byId("titleMapa").setText(sTitulo);
 //						}
+			
 					});
 });
