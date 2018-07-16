@@ -11,7 +11,7 @@ sap.ui.define(
 		},
 		
 		onListItemPress : function(oEvent) {					
-			var sId = this.byId("listaRfqs").getBinding("items").oModel.getObject(oEvent.getSource().getBindingContextPath()).Id;
+			var sId = this.getModel("listaRfqs").getObject(oEvent.getSource().getBindingContextPath()).id;
 			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : sId });
 		}
 		
