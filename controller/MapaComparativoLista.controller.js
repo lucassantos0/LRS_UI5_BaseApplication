@@ -12,7 +12,7 @@ sap.ui.define(
 		
 		onListItemPress : function(oEvent) {					
 			var sId = this.getModel("listaRfqs").getObject(oEvent.getSource().getBindingContextPath()).id;
-			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : sId });
+			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : sId }); 
 		}
 		
 	});
