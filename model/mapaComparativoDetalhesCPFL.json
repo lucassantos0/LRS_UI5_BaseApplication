@@ -160,8 +160,35 @@
 							"bidValorTotalComICMSeIPI": "12"
 						}
 					}
-				]
-			}
+				],
+			 	"comparativo": [
+					{
+						"Item": "5",
+						"IcmsForn": "18",
+						"IpiForn": "8",
+						"UF": "SP",
+						"UtilizMaterial": "Z0",
+						"NcmCad": "7209.15",
+						"NcmForn": "7209.15",
+						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"AribaPrimeira": "150,00",
+						"ValorUnitOriginal": "14,00",
+						"AribaUltima": "151,50",
+						"ValorBruto": "16,80",
+						"ValorUnitNegociado": "13,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ST": "5",
+						"DIFAL": "0",
+						"ValorTotalNegociadoComImpostos": "145,80",
+						"ValorLiquidoIPI": "135,00",
+						"ValorLiquido": "130,00",
+						"IVA": "C1",
+						"PercRef": "2,1",
+						"PercDif1": "5,2"
+					}
+				]				
+			}			
 		},
 		{
 			"docId": "docId",

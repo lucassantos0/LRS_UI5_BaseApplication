@@ -63,7 +63,7 @@
 							</Table>
 							<ScrollContainer width="100%">					
 								<Table id="tableSelectItems" 
-								       items="{eventosSourcing>ItemRfqNavigation}">
+								       items="{eventosSourcing>detalhe/comparativo}">
 									<headerToolbar>
 										<Toolbar>
 											<Title text="Comparativo items" level="H2" />
