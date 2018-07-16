@@ -10,6 +10,11 @@
 			"codigoCondicaoPagamento": "0001",
 			"nomeCondicaoPagamento": "Pagto vista sem desconto",
 			"suaReferencia": "M001",
+			"TotalRefImp": "150,00",
+			"TotalOrigImp": "152,00",
+			"TotalNegImp": "138,50",
+			"TotalLiquido": "158,80",
+			"ValorOrcamentario": "200,00",
 			"totaisPorFornecedor": [
 				{
 					"participant": "3M DO BRASIL LTDA(3M LTDA)",
@@ -204,7 +209,8 @@
 						"ValorLiquido": "130,00",
 						"IVA": "Z0",
 						"PercRef": "2,1",
-						"PercDif1": "5,2"
+						"PercDif1": "5,2",
+						"Winner":"X"
 					},
 					{
 						"Item": "5",
@@ -229,7 +235,8 @@
 						"ValorLiquido": "140,00",
 						"IVA": "Z0",
 						"PercRef": "2,1",
-						"PercDif1": "5,2"
+						"PercDif1": "5,2",
+						"Winner": ""
 					}					
 				]				
 			}			
