@@ -183,7 +183,7 @@
 						"ValorTotalNegociadoComImpostos": "145,80",
 						"ValorLiquidoIPI": "135,00",
 						"ValorLiquido": "130,00",
-						"IVA": "C1",
+						"IVA": "Z0",
 						"PercRef": "2,1",
 						"PercDif1": "5,2"
 					},
@@ -208,7 +208,7 @@
 						"ValorTotalNegociadoComImpostos": "155,80",
 						"ValorLiquidoIPI": "145,00",
 						"ValorLiquido": "140,00",
-						"IVA": "C1",
+						"IVA": "Z0",
 						"PercRef": "2,1",
 						"PercDif1": "5,2"
 					}					
