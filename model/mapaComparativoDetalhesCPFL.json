@@ -263,10 +263,266 @@
 			}			
 		},
 		{
-			"docId": "docId",
+			"projectId": "WS1112096720",
+			"projectTitle": "Projeto de solicitação de provisão 6000104531",
 			"rfq": "6000104531",
-			"projectId": "projectId",
-			"items": []
+			"valorOrcamento": "48585",
+			"TipoDocumento": "NB",
+			"Modalidade": "Aquisição Pedido",
+			"codigoCondicaoPagamento": "0001",
+			"nomeCondicaoPagamento": "Pagto vista sem desconto",
+			"suaReferencia": "M001",
+			"TotalRefImp": "150,00",
+			"TotalOrigImp": "152,00",
+			"TotalNegImp": "138,50",
+			"TotalLiquido": "158,80",
+			"ValorOrcamentario": "200,00",
+			"PercRef": "1,00",
+			"PercOrig": "1,03",
+			"PercOrc": "3,30",
+			"totaisPorFornecedor": [
+				{
+					"participant": "3M DO BRASIL LTDA(3M LTDA)",
+					"externalsystemsupplierid": "0001000141",
+					"valorReferencia": "1850",
+					"valorPrimeiraRodada": "1650",
+					"valorAtualNegociado": "1550",
+					"totalLiquido": "1300"
+				},
+				{
+					"participant": "RAS INDUSTRIAL COMERCIAL LTDA",
+					"externalsystemsupplierid": "0001019992",
+					"valorReferencia": "1850",
+					"valorPrimeiraRodada": "1850",
+					"valorAtualNegociado": "1650",
+					"totalLiquido": "1500"
+				}
+			],
+			"rodadas": [
+				{
+					"docId": "Doc1112096723",
+					"numeroRodada": "1"
+				},
+				{
+					"docId": "Doc1112092890",
+					"numeroRodada": "2"
+				}
+			],
+			"resumo": {
+				"items": [
+					{
+						"Item": "5",
+						"MaterialCode": "50000001004",
+						"IVA": "Z0",
+						"QuantidadeAtual": "100",
+						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ValorUnitNegociado": "13,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ValorTotal": "145,80",						
+						"Desembolso": "148,50",
+						"PercRef": "2,1",
+						"PercDif1": "5,2"
+					},
+					{
+						"Item": "5",
+						"MaterialCode": "50000001004",
+						"IVA": "Z0",
+						"QuantidadeAtual": "100",
+						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ValorUnitNegociado": "14,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ValorTotal": "155,80",						
+						"Desembolso": "158,50",
+						"PercRef": "2,1",
+						"PercDif1": "5,2"
+					}					
+				],
+				"global": [
+					{
+						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ReferenciaImpostos": "15,00",
+						"OriginalImpostos": "17,00",
+						"NegociadoImpostos": "13,80",
+						"TotalLiquido": "145,80"						
+					},
+					{
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ReferenciaImpostos": "15,00",
+						"OriginalImpostos": "17,00",
+						"NegociadoImpostos": "14,80",
+						"TotalLiquido": "155,80"						
+					}					
+				],				
+				"ultimaRodada": {
+					"valormedio" : 11.00,
+					"fornecedores": [
+						{
+							"participant": "3M DO BRASIL LTDA(3M LTDA)",
+							"externalsystemsupplierid": "0001000141",
+							"valorcalculado": 10.00,
+							"valorcomparativomedia" : -1.00,
+							"erro": false
+						},
+						{
+							"participant": "RAS INDUSTRIAL COMERCIAL LTDA",
+							"externalsystemsupplierid": "0001019992",
+							"valorcalculado": 12.00,
+							"valorcomparativomedia" : 1.00,
+							"erro": false
+						}
+					]
+				}
+			},
+			"detalhe": {
+				"items": [
+					{
+						"Item": "5",
+						"docId": "Doc1112096723",
+						"requisitionId": "11789661",
+						"requisitionItemNumber": "10",
+						"MaterialCode": "50000001004",
+						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+						"DataUltimaCompra": "19/10/2016",
+						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ValorReajuste": "14,20",
+						"ValorTotal": "150,00",
+						"unitOfMeasure": "PCE",
+						"QuantidadeAtual": "100",
+						"plantCode": "DA01",
+						"plantName": "DA01 - Atend. Paulista",
+						"informacoesReferencia": {
+							"codigoFornecedorUltimaCompra": "0001019992",
+							"nomeFornecedorUltimaCompra": "RAS INDUSTRIAL COMERCIAL LTDA",
+							"valorReajuste": "18.50",
+							"valorTotal": "1850",
+							"ICMSoficial": "18"
+						},
+						"oferta": {
+							"participant": "3M DO BRASIL LTDA(3M LTDA)",
+							"externalsystemsupplierid": "0001000141",
+							"networkid": "an01059420932-t",
+							"materialUsage": "Imobilizado",
+							"submissionDate": "Mon, 4 Sep, 2017",
+							"codigoImpostoIva": "Y0",
+							"nomeImpostoIva": "Investimento sem impostos",
+							"quantidade": "1",
+							"valorReferencia": "2.6",
+							"codigoNCM": "73121090",
+							"aliquotaIPI": "0",
+							"aliquotaST": "0",
+							"aliquotaICMS": "18",
+							"baseICMS": "0",
+							"bidCurrency": "BRL",
+							"bidPrice": "10",
+							"bidPricePrimeiraRodada": "15",
+							"bidValorTotalComICMSeIPI": "10"
+						}
+					},
+					{
+						"Item": "5",
+						"docId": "Doc1112096723",
+						"requisitionId": "11789661",
+						"requisitionItemNumber": "10",
+						"MaterialCode": "50000001004",
+						"MaterialName": "CORDOALHA AG 7,94MM EHS CABO GUARDA LT",
+						"DataUltimaCompra": "20/04/2015",
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ValorReajuste": "12,50",
+						"ValorTotal": "120,00",
+						"unitOfMeasure": "PCE",
+						"QuantidadeAtual": "100",						
+						"plantCode": "DA01",
+						"plantName": "DA01 - Atend. Paulista",
+						"informacoesReferencia": {
+							"codigoFornecedorUltimaCompra": "0001019992",
+							"nomeFornecedorUltimaCompra": "RAS INDUSTRIAL COMERCIAL LTDA",
+							"valorReajuste": "18.50",
+							"valorTotal": "1850",
+							"ICMSoficial": "18"
+						},
+						"oferta": {
+							"participant": "RAS INDUSTRIAL COMERCIAL LTDA",
+							"externalsystemsupplierid": "0001019992",
+							"networkid": "an01059420932-t",
+							"materialUsage": "Imobilizado",
+							"submissionDate": "Mon, 4 Sep, 2017",
+							"codigoImpostoIva": "Y0",
+							"nomeImpostoIva": "Investimento sem impostos",
+							"quantidade": "1",
+							"valorReferencia": "2.6",
+							"codigoNCM": "73121090",
+							"aliquotaIPI": "0",
+							"aliquotaST": "0",
+							"aliquotaICMS": "18",
+							"baseICMS": "0",
+							"bidCurrency": "BRL",
+							"bidPrice": "12",
+							"bidPricePrimeiraRodada": "18",
+							"bidValorTotalComICMSeIPI": "12"
+						}
+					}
+				],
+			 	"comparativo": [
+					{
+						"Item": "5",
+						"IcmsForn": "18",
+						"IpiForn": "8",
+						"UF": "SP",
+						"UtilizMaterial": "ROH",
+						"NcmCad": "7109.15",
+						"NcmForn": "7209.15",
+						"NomeFornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"AribaPrimeira": "150,00",
+						"ValorUnitOriginal": "14,00",
+						"AribaUltima": "151,50",
+						"ValorBruto": "16,80",
+						"ValorUnitNegociado": "13,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ST": "5",
+						"DIFAL": "0",
+						"ValorTotalNegociadoComImpostos": "145,80",
+						"ValorLiquidoIPI": "135,00",
+						"ValorLiquido": "130,00",
+						"IVA": "Z0",
+						"PercRef": "2,1",
+						"PercDif1": "5,2",
+						"Winner":"X",
+						"Cor":"X"
+					},
+					{
+						"Item": "5",
+						"IcmsForn": "18",
+						"IpiForn": "8",
+						"UF": "SP",
+						"UtilizMaterial": "ROH",
+						"NcmCad": "7109.15",
+						"NcmForn": "7109.15",
+						"NomeFornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"AribaPrimeira": "150,00",
+						"ValorUnitOriginal": "15,00",
+						"AribaUltima": "151,50",
+						"ValorBruto": "17,80",
+						"ValorUnitNegociado": "14,80",
+						"IPI": "8",
+						"ICMS": "18",
+						"ST": "5",
+						"DIFAL": "0",
+						"ValorTotalNegociadoComImpostos": "155,80",
+						"ValorLiquidoIPI": "145,00",
+						"ValorLiquido": "140,00",
+						"IVA": "Z0",
+						"PercRef": "2,1",
+						"PercDif1": "5,2",
+						"Winner": "",
+						"Cor":""
+					}					
+				]				
+			}			
 		}
 	]
 }
