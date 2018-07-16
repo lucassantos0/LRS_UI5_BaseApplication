@@ -15,6 +15,9 @@
 			"TotalNegImp": "138,50",
 			"TotalLiquido": "158,80",
 			"ValorOrcamentario": "200,00",
+			"PercRef": "1,00",
+			"PercOrig": "1,03",
+			"PercOrc": "3,30",
 			"totaisPorFornecedor": [
 				{
 					"participant": "3M DO BRASIL LTDA(3M LTDA)",
