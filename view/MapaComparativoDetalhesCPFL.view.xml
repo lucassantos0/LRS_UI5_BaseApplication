@@ -202,7 +202,7 @@
 								       items="{eventosSourcing>resumo/items}" >
 									<headerToolbar>
 										<Toolbar>
-											<Title text="Relatório de Fechamento por Item com Menor Preço" level="H2" />
+											<Title text="Fechamento por Item com Menor Preço" level="H2" />
 										</Toolbar>
 									</headerToolbar>
 									<columns>
@@ -279,19 +279,19 @@
 											    id="listTotais"
 												headerText="Totais da Última Rodada" >
 												<DisplayListItem
-													label="Total de Referencia com Impostos"
+													label="Total de Ref. com Imp."
 													value="{eventosSourcing>TotalRefImp}"/>
 												<DisplayListItem
-													label="Total 1ª Rodada com impostos"
+													label="Total 1ª Rodada com imp."
 													value="{eventosSourcing>TotalOrigImp}" />
 												<DisplayListItem
-													label="Total Última Rodada com Impostos"
+													label="Total Últ. Rodada c/ Imp."
 													value="{eventosSourcing>TotalNegImp}" />
 												<DisplayListItem
 													label="Total Última Rodada Líquido"
 													value="{eventosSourcing>TotalLiquido}" />		
 												<DisplayListItem
-													label="Total Requisição (Orçamento)"
+													label="Total Requisição (Orç.)"
 													value="{eventosSourcing>ValorOrcamentario}" />																																							
 											</List>
 										</l:BlockLayoutCell>
