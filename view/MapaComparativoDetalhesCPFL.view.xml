@@ -300,6 +300,7 @@
 							</l:VerticalLayout>
 					</IconTabFilter>
 					<IconTabFilter text="Resumo Global">
+					<ScrollContainer width="100%">	
 							<Table id="tableFechamentoFornecedor"
 								items="{eventosSourcing>resumo/global}" >
 								<headerToolbar>
@@ -338,181 +339,15 @@
 									</ColumnListItem>
 								</items>
 							</Table>
-							<l:VerticalLayout id="containerLayout" width="100%">
+						</ScrollContainer>								
+							<l:VerticalLayout id="containerLayout" width="95%">
 								<Text text="" />
 								<Text text="Observações" />
 								<Text text="* Os valores negociados ficaram {eventosSourcing>PercRef}% dos preços de referência." />
 								<Text text="* Os valores negociados ficaram {eventosSourcing>PercOrig}% dos preços da 1ª rodada" />
 								<Text text="* Os valores negociados ficaram {eventosSourcing>PercOrc}% do orçamento (requisição)" />
-							</l:VerticalLayout>						
-					</IconTabFilter>	
-<!-- 					<IconTabFilter text="Sumário Executivo" id="sumarioTab">											 -->
-<!-- 						<f:SimpleForm id="sumarioHeader" -->
-<!-- 							editable="true" -->
-<!-- 							layout="ResponsiveGridLayout" -->
-<!-- 							labelSpanXL="4" -->
-<!-- 							labelSpanL="4" -->
-<!-- 							labelSpanM="12" -->
-<!-- 							labelSpanS="12" -->
-<!-- 							adjustLabelSpan="false" -->
-<!-- 							emptySpanXL="0" -->
-<!-- 							emptySpanL="0" -->
-<!-- 							emptySpanM="0" -->
-<!-- 							emptySpanS="0" -->
-<!-- 							columnsXL="1" -->
-<!-- 							columnsL="1" -->
-<!-- 							columnsM="1" -->
-<!-- 							singleContainerFullSize="false" > -->
-<!-- 							<f:content> -->
-<!-- 								<Label text="Descrição do Projeto" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/DescProjeto}" /> -->
-<!-- 								<Label text="Código do Projeto" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/Projeto}" /> -->
-<!-- 								<Label text="Área Requisitante" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/Area}" /> -->
-<!-- 								<Label text="Comprador Responsável" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/Comprador}" /> -->
-<!-- 								<Label text="Nº RFQ" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/Id}" /> -->
-<!-- 								<Label text="Tipo de Formalização" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/Formalizacao}" /> -->
-<!-- 								<Label text="Modalidade" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/Modalidade}" /> -->
-<!-- 								<Label text="Condição de Pagamento" /> -->
-<!-- 								<Text text="{eventosSourcing>SumarioHeaderNavigation/CondPagamento}" /> -->
-<!-- 							</f:content> -->
-<!-- 						</f:SimpleForm> -->
-<!-- 					 	<ScrollContainer width="100%">		 -->
-<!-- 						<Table id="tableSumario" -->
-<!-- 								items="{eventosSourcing>SumarioItemNavigation}" >							 -->
-<!-- 								<columns> -->
-<!-- 									<Column width="16em"> -->
-<!-- 										<Text text="Fornecedores Consultados" /> -->
-<!-- 									</Column> -->
-<!-- 									<Column width="13em" hAlign="Center"> -->
-<!-- 										<Text text="Valor da Proposta Inicial (IPI + ICMS + ST + DIFAL)" /> -->
-<!-- 									</Column>										 -->
-<!-- 									<Column width="12em" hAlign="Center"> -->
-<!-- 										<Text text="Valor da Proposta Final (IPI + ICMS + ST + DIFAL)" /> -->
-<!-- 									</Column>	 -->
-<!-- 									<Column width="12em" hAlign="Center"> -->
-<!-- 										<Text text="Valor da Melhor Proposta (ICMS + IPI)" /> -->
-<!-- 									</Column>																					 -->
-<!-- 									<Column width="12em" hAlign="Center"> -->
-<!-- 										<Text text="Valor Negociado" />									      -->
-<!-- 									</Column>	 -->
-<!-- 									<Column width="8em" hAlign="Center">			 -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center"> -->
-<!-- 											<core:Icon src="sap-icon://competitor" visible="true" /> -->
-<!-- 										    <Text text="Premiado(s)" />			 -->
-<!-- 										</VBox>																									 	 -->
-<!-- 									</Column>		 -->
-<!-- 									<Column width="8em" hAlign="Center"> -->
-<!-- 										<Text text="Número Contrato Ariba" /> -->
-<!-- 									</Column> -->
-<!-- 									<Column width="8em" hAlign="Center"> -->
-<!-- 										<Text text="Número Pedido SAP" /> -->
-<!-- 									</Column>																																																			 -->
-<!-- 								</columns> -->
-<!-- 								<items> -->
-<!-- 									<ColumnListItem> -->
-<!-- 										<cells>										 -->
-<!-- 											<ObjectIdentifier title="{eventosSourcing>Fornecedor}" />											 -->
-<!-- 											<Text text="{eventosSourcing>ValorInicial}" /> -->
-<!-- 											<Text text="{eventosSourcing>ValorFinal}" /> -->
-<!-- 											<Text text="{eventosSourcing>ValorMelhorIPI}" /> -->
-<!-- 											<Text text="{eventosSourcing>ValorContratado}" />	 -->
-<!-- 											<Text text="{eventosSourcing>Premiado}" />	 -->
-<!-- 											<Text text="{eventosSourcing>Contrato}" />	 -->
-<!-- 											<Text text="{eventosSourcing>Pedido}" />											 -->
-<!-- 										</cells> -->
-<!-- 									</ColumnListItem> -->
-<!-- 								</items> -->
-<!-- 							</Table> -->
-<!-- 						</ScrollContainer>						 -->
-<!-- 						<l:VerticalLayout id="containerLayout2" width="100%" > -->
-<!-- 							<l:BlockLayout id="BlockLayout2">						 -->
-<!-- 								<l:BlockLayoutRow class="MapaComparativoDetalhesCPFL_Bloco1"> -->
-<!-- 									<l:BlockLayoutCell> -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center">									 -->
-<!-- 											<ObjectIdentifier title="Total Orçamento"/> -->
-<!-- 											<Text text="{eventosSourcing>SumarioHeaderNavigation/TotalOrcamento}"/> -->
-<!-- 										</VBox> -->
-<!-- 									</l:BlockLayoutCell> -->
-<!-- 									<l:BlockLayoutCell> -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center">		 -->
-<!-- 											<ObjectIdentifier title="Total Referência"/> -->
-<!-- 											<Text text="{eventosSourcing>SumarioHeaderNavigation/TotalRef}"/>	 -->
-<!-- 										</VBox> -->
-<!-- 									</l:BlockLayoutCell> -->
-<!-- 									<l:BlockLayoutCell> -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center">		 -->
-<!-- 											<ObjectIdentifier title="Total Melhor 1ª Proposta"/>									 -->
-<!-- 											<Text text="{eventosSourcing>SumarioHeaderNavigation/MelhorPrimeira}"/> -->
-<!-- 										</VBox> -->
-<!-- 									</l:BlockLayoutCell> -->
-<!-- 									<l:BlockLayoutCell> -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center">		 -->
-<!-- 											<ObjectIdentifier title="Total Valor Final"/>									 -->
-<!-- 											<Text text="{eventosSourcing>SumarioHeaderNavigation/TotalFinal}"/> -->
-<!-- 										</VBox> -->
-<!-- 									</l:BlockLayoutCell>																												 -->
-<!-- 								</l:BlockLayoutRow> -->
-<!-- 							</l:BlockLayout> -->
-<!-- 						</l:VerticalLayout> -->
-<!-- 						<l:VerticalLayout id="containerLayout3" width="100%" > -->
-<!-- 							<l:BlockLayout id="BlockLayout3">						 -->
-<!-- 								<l:BlockLayoutRow class="MapaComparativoDetalhesCPFL_Bloco1">																												 -->
-<!-- 									<l:BlockLayoutCell> -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center">		 -->
-<!-- 											<ObjectIdentifier title="Saving (%) Negociado X Referência"/>									 -->
-<!-- 											<Text text="{eventosSourcing>SumarioHeaderNavigation/SavingFinal}%"/> -->
-<!-- 										</VBox> -->
-<!-- 									</l:BlockLayoutCell>									 -->
-<!-- 									<l:BlockLayoutCell> -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center">		 -->
-<!-- 											<ObjectIdentifier title="Saving (%) Negociado X Melhor Proposta"/>	 -->
-<!-- 											<Text text="{eventosSourcing>SumarioHeaderNavigation/SavingMelhor}%"/> -->
-<!-- 										</VBox> -->
-<!-- 									</l:BlockLayoutCell> -->
-<!-- 									<l:BlockLayoutCell> -->
-<!-- 										<VBox -->
-<!-- 											alignItems="Center" -->
-<!-- 											justifyContent="Center">		 -->
-<!-- 											<ObjectIdentifier title="Saving (%) Negociado X Orçamento"/>	 -->
-<!-- 											<Text text="{eventosSourcing>SumarioHeaderNavigation/SavingInicial}%"/> -->
-<!-- 										</VBox> -->
-<!-- 									</l:BlockLayoutCell>									 -->
-<!-- 								</l:BlockLayoutRow> -->
-<!-- 							</l:BlockLayout> -->
-<!-- 						</l:VerticalLayout>					 -->
-<!-- 							<Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region"> -->
-<!-- 								<headerToolbar> -->
-<!-- 									<Toolbar height="3rem"> -->
-<!-- 										<Title text="Observações do Comprador (max. 700 caracteres)"/> -->
-<!-- 									</Toolbar> -->
-<!-- 								</headerToolbar> -->
-<!-- 								<content> -->
-<!-- 									<l:VerticalLayout class="sapUiContentPadding" width="100%"> -->
-<!-- 										<TextArea id="inpObservacao" liveChange="onLiveMapa" width="100%" value="{eventosSourcing>Observacao}" rows="8" maxLength="700"/>																		 -->
-<!-- 									</l:VerticalLayout>									 -->
-<!-- 								</content> -->
-<!-- 							</Panel>							 -->
-<!-- 					</IconTabFilter>								 -->
+							</l:VerticalLayout>					
+					</IconTabFilter>
 				</items>
 			</IconTabBar>
 		</content>
