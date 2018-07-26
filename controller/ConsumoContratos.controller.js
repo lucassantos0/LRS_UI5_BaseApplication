@@ -18,6 +18,12 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 							if(iPorcentagem < 80) { return 'Warning'; }
 							return 'Error';
 						},
+						
+						getSplitContObj : function() {
+							var result = this.byId("SplitContainer");
+							return result;
+						},
+						
 						onSelecionarContrato : function(oEvent){
 							var sPath = oEvent.getSource().getBindingContextPath();
 							var oModel = this.getModel("consumoContratos").getObject(sPath);
