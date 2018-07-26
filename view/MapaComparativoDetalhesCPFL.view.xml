@@ -340,12 +340,14 @@
 								</items>
 							</Table>
 						</ScrollContainer>								
-							<l:VerticalLayout  id="containerLayout" width="95%" class="sapUiResponsiveContentPadding">
+							<l:VerticalLayout id="containerLayout" width="100%">
+							<VBox class="sapUiSmallMargin">
 								<Text text="" />
 								<Text text="Observações" />
 								<Text text="* Os valores negociados ficaram {eventosSourcing>PercRef}% dos preços de referência." />
 								<Text text="* Os valores negociados ficaram {eventosSourcing>PercOrig}% dos preços da 1ª rodada" />
 								<Text text="* Os valores negociados ficaram {eventosSourcing>PercOrc}% do orçamento (requisição)" />
+							</VBox>
 							</l:VerticalLayout>					
 					</IconTabFilter>
 				</items>
