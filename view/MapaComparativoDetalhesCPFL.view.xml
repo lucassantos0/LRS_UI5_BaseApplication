@@ -306,7 +306,7 @@
 								<headerToolbar>
 									<Toolbar>
 										<content>
-											<Title text="Relatório de Fechamento da Última Rodada por Fornecedor" level="H2"/>
+											<Title text="Fechamento da Última Rodada por Fornecedor" level="H2"/>
 										</content>
 									</Toolbar>
 								</headerToolbar>								
