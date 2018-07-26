@@ -30,7 +30,6 @@
 								<core:Item key="None" text="None"/>
 							</m:items>
 						</m:Select>
-						<m:ToggleButton text="Toggle Highlights" pressed="true" press="onHighlightToggle"/>
 					</m:Toolbar>
 				</toolbar>
 				<rowSettingsTemplate>
