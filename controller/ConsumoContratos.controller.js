@@ -4,7 +4,7 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 			return BaseController.extend("lrs.ui5.controller.ConsumoContratos",
 					{
 						onInit : function() {
-							this.byId("detailPageContratos").setModel(this.getModel("consumoContratos"),"consumoContratos");
+						//	this.byId("detailPageContratos").setModel(this.getModel("consumoContratos"),"consumoContratos");
 						},
 						formatterMasterListDate : function(sDate) {
 							var str = sDate;
