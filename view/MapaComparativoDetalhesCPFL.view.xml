@@ -340,7 +340,7 @@
 								</items>
 							</Table>
 						</ScrollContainer>								
-							<l:VerticalLayout id="containerLayout" width="100%" class="sapUiResponsiveContentPadding">
+							<l:VerticalLayout id="containerLayout" width="95%" class="sapUiResponsiveContentPadding">
 								<Text text="" />
 								<Text text="Observações" />
 								<Text text="* Os valores negociados ficaram {eventosSourcing>PercRef}% dos preços de referência." />
