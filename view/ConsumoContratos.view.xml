@@ -5,11 +5,12 @@
 		xmlns="sap.m"
 		controllerName="lrs.ui5.controller.ConsumoContratos"
 		xmlns:semantic="sap.m.semantic"
-		xmlns:f="sap.ui.layout.form"
-		displayBlock="true">
-<!-- 	<SplitContainer> -->
+		xmlns:f="sap.ui.layout.form">
+		
+<SplitContainer initialDetail="detail" initialMaster="master">
 		<masterPages>
-			<semantic:MasterPage title="Contratos">
+		
+			<Page id="master" title="Contratos" navButtonPress="onPressVoltar" showNavButton="true">
 				<semantic:sort>
 					<semantic:SortSelect>
 					</semantic:SortSelect>
@@ -50,10 +51,10 @@
 						</items>
 					</List>
 				</semantic:content>
-			</semantic:MasterPage>
+			</Page>
 		</masterPages>
 		<detailPages>
-			<semantic:DetailPage title="{consumoContratos>ebeln}" id="detailPageContratos">
+		   			<Page id="detail"  title="{consumoContratos>ebeln}">
 				<semantic:content>
 				<VBox class="sapUiSmallMargin">
 					<f:SimpleForm 
@@ -158,8 +159,8 @@
 					<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
 					<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
 				</semantic:customFooterContent>
-			</semantic:DetailPage>
+			</Page>	
 		</detailPages>
-<!-- 	</SplitContainer> -->
+ 	</SplitContainer>
 
 </mvc:View>
