@@ -11,20 +11,7 @@
 		<masterPages>
 		
 			<Page id="master" title="Contratos" navButtonPress="onPressVoltar" showNavButton="true">
-				<semantic:sort>
-					<semantic:SortSelect>
-					</semantic:SortSelect>
-				</semantic:sort>
-				<semantic:filter>
-					<semantic:FilterAction press="onSemanticButtonPress"/>
-				</semantic:filter>
-				<semantic:group>
-					<semantic:GroupAction press="onSemanticButtonPress"/>
-				</semantic:group>
-				<semantic:addAction>
-					<semantic:AddAction press="onSemanticButtonPress"/>
-				</semantic:addAction>
-				<semantic:content>
+				<content>
 					<List
 						items="{consumoContratos>/}">
 						<items>
@@ -50,12 +37,12 @@
 							</ObjectListItem>
 						</items>
 					</List>
-				</semantic:content>
+				</content>
 			</Page>
 		</masterPages>
 		<detailPages>
 		   			<Page id="detail"  title="{consumoContratos>ebeln}">
-				<semantic:content>
+				<content>
 				<VBox class="sapUiSmallMargin">
 					<f:SimpleForm 
 						editable="false"
@@ -153,12 +140,12 @@
 						</items>
 					</Table>
 				</VBox>
-				</semantic:content>
-				<semantic:customFooterContent>
+				</content>
+				<customFooterContent>
 					<Button text="Reajuste" icon="sap-icon://action" press="onPress"/>
 					<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
 					<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
-				</semantic:customFooterContent>
+				</customFooterContent>
 			</Page>	
 		</detailPages>
  	</SplitContainer>
