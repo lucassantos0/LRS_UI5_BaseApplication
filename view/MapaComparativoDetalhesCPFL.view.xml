@@ -1,7 +1,7 @@
 <mvc:View controllerName="lrs.ui5.controller.MapaComparativoDetalhesCPFL"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
 	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mc="sap.suite.ui.microchart">
-	<Page id="mapaComparativoDetalhesCPFL" title=""
+	<Page id="mapaComparativoDetalhesCPFL" title="Mapa Comparativo"
 		showNavButton="true" navButtonPress="onNavBack">
 		<content>
 			<IconTabBar expanded="true" class="sapUiResponsiveContentPadding">
