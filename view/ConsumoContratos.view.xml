@@ -141,11 +141,11 @@
 					</Table>
 				</VBox>
 				</content>
-				<customFooterContent>
+				<footer>
 					<Button text="Reajuste" icon="sap-icon://action" press="onPress"/>
 					<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
 					<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
-				</customFooterContent>
+				</footer>
 			</Page>	
 		</detailPages>
  	</SplitContainer>
