@@ -22,6 +22,7 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 							var sPath = oEvent.getSource().getBindingContextPath();
 							var oModel = this.getModel("consumoContratos").getObject(sPath);
 							this.byId("detail").bindContext("consumoContratos>" + sPath);
+							this.getSplitContObj().to(this.createId("detail"));
 						}
 					});
 		});
