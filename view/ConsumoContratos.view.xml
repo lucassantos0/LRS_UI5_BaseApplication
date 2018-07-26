@@ -7,7 +7,7 @@
 		xmlns:semantic="sap.m.semantic"
 		xmlns:f="sap.ui.layout.form">
 		
-<SplitContainer initialDetail="detail" initialMaster="master">
+<SplitContainer id="SplitContainer" initialDetail="detail" initialMaster="master">
 		<masterPages>
 		
 			<Page id="master" title="Contratos" navButtonPress="onPressVoltar" showNavButton="true">
