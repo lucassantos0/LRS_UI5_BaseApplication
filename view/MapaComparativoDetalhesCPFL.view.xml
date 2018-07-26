@@ -13,6 +13,7 @@
 			<IconTabBar expanded="true" class="sapUiResponsiveContentPadding">
 				<items>
 					<IconTabFilter text="Detalhe por Item">
+					<ScrollContainer width="100%">	
 							<Table id="tableItems"
 								items="{eventosSourcing>detalhe/items}" >								
 								<headerToolbar>
@@ -61,7 +62,8 @@
 									</ColumnListItem>
 								</items>
 							</Table>
-<!-- 							<ScrollContainer width="100%">					 -->
+							</ScrollContainer> 
+ 							<ScrollContainer width="100%">					
 								<Table id="tableSelectItems" 
 								       items="{eventosSourcing>detalhe/comparativo}">
 									<headerToolbar>
@@ -191,7 +193,7 @@
 										</ColumnListItem>
 									</items>
 								</Table>
-<!-- 							</ScrollContainer> -->
+ 							</ScrollContainer> 
 							<Button	text="Exportar Comparativo Items para Excel" icon="sap-icon://excel-attachment" press="onExportXLS2" />													
 					</IconTabFilter>
 					<IconTabFilter text="Resumo por Item">
