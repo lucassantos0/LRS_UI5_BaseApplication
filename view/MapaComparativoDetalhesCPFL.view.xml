@@ -5,7 +5,6 @@
 		showNavButton="true" navButtonPress="onNavBack">
 		<content>
 			<OverflowToolbar id="otb1">
-				<ToolbarSpacer />
 				<Title id="titleMapa" text="Mapa Comparativo" level="H2" />
 <!-- 				<ToolbarSpacer /> --> 
 <!-- 				<Button	text="Salvar Dados" icon="sap-icon://save" press="onSaveMapa" />		 -->
