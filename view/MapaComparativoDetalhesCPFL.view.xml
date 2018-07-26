@@ -340,7 +340,7 @@
 								</items>
 							</Table>
 						</ScrollContainer>								
-							<l:VerticalLayout id="containerLayout" width="100%">
+							<l:VerticalLayout id="containerLayout" width="95%" class="sapUiResponsiveContentPadding">
 							<VBox class="sapUiSmallMargin">
 								<Text text="" />
 								<Text text="Observações" />
