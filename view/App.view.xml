@@ -38,7 +38,7 @@
 					<layoutData>
 						<OverflowToolbarLayoutData closeOverflowOnInteraction="false" />
 					</layoutData>
-				</Button> -->
+				</Button> 
 				<Button
 					id="userButton"
 					text="{i18n>userName}"
@@ -47,7 +47,7 @@
 					<layoutData>
 						<OverflowToolbarLayoutData closeOverflowOnInteraction="false" />
 					</layoutData>
-				</Button>
+				</Button>-->
 			</tnt:ToolHeader>
 		</tnt:header>
 		<tnt:sideContent>
