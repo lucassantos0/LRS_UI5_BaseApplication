@@ -7,7 +7,7 @@
 			<OverflowToolbar id="otb1">
 				<ToolbarSpacer />
 				<Title id="titleMapa" text="" level="H2" />
-<!-- 				<ToolbarSpacer /> -->
+<!-- 				<ToolbarSpacer /> --> 
 <!-- 				<Button	text="Salvar Dados" icon="sap-icon://save" press="onSaveMapa" />		 -->
 			</OverflowToolbar>		
 			<IconTabBar expanded="true" class="sapUiResponsiveContentPadding">
