@@ -4,11 +4,6 @@
 	<Page id="mapaComparativoDetalhesCPFL" title=""
 		showNavButton="true" navButtonPress="onNavBack">
 		<content>
-			<OverflowToolbar id="otb1">
-				<Title id="titleMapa" text="Mapa Comparativo" level="H2" />
-<!-- 				<ToolbarSpacer /> --> 
-<!-- 				<Button	text="Salvar Dados" icon="sap-icon://save" press="onSaveMapa" />		 -->
-			</OverflowToolbar>		
 			<IconTabBar expanded="true" class="sapUiResponsiveContentPadding">
 				<items>
 					<IconTabFilter text="Detalhe por Item">
