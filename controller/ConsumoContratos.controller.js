@@ -5,6 +5,18 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 					{
 						onInit : function() {
 						//	this.byId("detailPageContratos").setModel(this.getModel("consumoContratos"),"consumoContratos");
+							
+				            // Set device model
+				            var oDeviceModel = new sap.ui.model.json.JSONModel({
+					            isTouch: sap.ui.Device.support.touch,
+					            isNoTouch: !sap.ui.Device.support.touch,
+					            isPhone: sap.ui.Device.system.phone,
+					            isNoPhone: !sap.ui.Device.system.phone,
+					            listMode: sap.ui.Device.system.phone ? "None" : "SingleSelectMaster",
+					            listItemType: sap.ui.Device.system.phone ? "Active" : "Inactive"
+				            });
+				            this.setModel(oDeviceModel, "device");
+				            
 						},
 						formatterMasterListDate : function(sDate) {
 							var str = sDate;
