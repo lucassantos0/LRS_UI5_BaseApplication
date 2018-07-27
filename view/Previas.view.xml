@@ -11,23 +11,12 @@
 		title="Central de Prévias"
 		showNavButton="true"
 		navButtonPress="onNavBack">	
-		<SplitContainer>	
+		
+		<SplitContainer id="SplitContainer" initialDetail="detail" initialMaster="master">
+		
 		<masterPages>
-			<semantic:MasterPage title="Embarques">
-				<semantic:sort>
-					<semantic:SortSelect>
-					</semantic:SortSelect>
-				</semantic:sort>
-				<semantic:filter>
-					<semantic:FilterAction press="onSemanticButtonPress"/>
-				</semantic:filter>
-				<semantic:group>
-					<semantic:GroupAction press="onSemanticButtonPress"/>
-				</semantic:group>
-				<semantic:addAction>
-					<semantic:AddAction press="onSemanticButtonPress"/>
-				</semantic:addAction>
-				<semantic:content>
+			<Page id="master" title="Embarques" navButtonPress="onPressVoltar" showNavButton="true">
+				<content>
 					<List
 						items="{embarquesFornecedor>/}">
 						<items>
@@ -48,12 +37,12 @@
 							</ObjectListItem>
 						</items>
 					</List>
-				</semantic:content>
-			</semantic:MasterPage>
+				</content>
+			</Page>
 		</masterPages>
 		<detailPages>
-			<semantic:DetailPage title="{embarquesFornecedor>id}" id="detailPageEmbarques">
-				<semantic:content>
+   			<Page id="detail"  title="{embarquesFornecedor>id}" navButtonPress="onVoltarDevice" showNavButton="{device>/isPhone}">
+				<content>
 					<List
 						headerText="Notas Fiscais"
 						items="{
@@ -81,8 +70,8 @@
 							</attributes>		
 						</ObjectListItem>
 					</List>				
-				</semantic:content>
-			</semantic:DetailPage>
+				</content>
+			</Page>
 		</detailPages>	
 		</SplitContainer>
 	</Page>
