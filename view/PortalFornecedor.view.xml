@@ -3,6 +3,9 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
 	xmlns="sap.m">
+	<Page
+		showNavButton="true"
+		navButtonPress="onNavBack">	
 	<ObjectHeader
 		title="Portal do Fornecedor"
 		condensed="true">
@@ -70,4 +73,5 @@
 			</ObjectListItem>
 		</l:content>
 	</l:Grid>
+	</Page>	
 </mvc:View>
