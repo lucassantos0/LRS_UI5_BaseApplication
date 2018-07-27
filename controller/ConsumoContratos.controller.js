@@ -5,7 +5,6 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 					{
 						onInit : function() {
 						//	this.byId("detailPageContratos").setModel(this.getModel("consumoContratos"),"consumoContratos");
-							this.getRouter().getRoute("Main").attachMatched(this.onRouteMatched, this);  
 						},
 						formatterMasterListDate : function(sDate) {
 							var str = sDate;
