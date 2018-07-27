@@ -148,11 +148,13 @@
 					</Table>
 				</VBox>
 				</content>
-<!-- 				<footer> -->
-<!-- 					<Button text="Reajuste" icon="sap-icon://action" press="onPress"/> -->
-<!-- 					<Button text="Renegociação" icon="sap-icon://action" press="onPress"/> -->
-<!-- 					<Button text="Aditivo" icon="sap-icon://action" press="onPress"/> -->
-<!-- 				</footer> -->
+				<footer>
+					<Toolbar>
+						<Button text="Reajuste" icon="sap-icon://action" press="onPress"/>
+						<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
+						<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
+					</Toolbar>	
+				</footer>
 			</Page>	
 		</detailPages>
  	</SplitContainer>
