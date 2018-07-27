@@ -98,11 +98,11 @@
 						items="{
 							path: 'consumoContratos>items/'
 						}">
-<!-- 						<headerToolbar> -->
-<!-- 							<Toolbar> -->
-<!-- 								<Title text="Itens" level="H2"/> -->
-<!-- 							</Toolbar> -->
-<!-- 						</headerToolbar> -->
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Itens" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
 						<columns>
 							<Column
 								width="14em">
