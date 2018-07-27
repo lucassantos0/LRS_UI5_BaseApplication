@@ -24,6 +24,10 @@ sap.ui.define([ "lrs/ui5/controller/BaseController" ],
 							return result;
 						},
 						
+				        onVoltarDevice: function(){
+				        	this.getSplitContObj().to(this.createId("master"));
+				        },
+				        
 						onSelecionarContrato : function(oEvent){
 							var sPath = oEvent.getSource().getBindingContextPath();
 							var oModel = this.getModel("consumoContratos").getObject(sPath);

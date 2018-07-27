@@ -48,7 +48,7 @@
 			</Page>
 		</masterPages>
 		<detailPages>
-		   			<Page id="detail"  title="{consumoContratos>ebeln}">
+		   			<Page id="detail"  title="{consumoContratos>ebeln}" navButtonPress="onVoltarDevice" showNavButton="{device>/isPhone}">
 				<content>
 				<VBox class="sapUiSmallMargin">
 					<f:SimpleForm 
