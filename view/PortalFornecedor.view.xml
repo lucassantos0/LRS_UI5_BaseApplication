@@ -39,19 +39,28 @@
 				title="Aplicativo 3"
 				icon="sap-icon://customer-view" 
 				type="Active"
-				press="onAppsPress">				
+				press="onAppsPress">	
+				<layoutData>
+					<l:GridData span="L4 M6 S6" />
+				</layoutData>							
 			</ObjectListItem>
 			<ObjectListItem id="FornApp4"
 				title="Aplicativo 4"
 				icon="sap-icon://machine" 
 				type="Active"
-				press="onAppsPress">				
+				press="onAppsPress">
+				<layoutData>
+					<l:GridData span="L4 M6 S6" />
+				</layoutData>									
 			</ObjectListItem>
 			<ObjectListItem id="FornApp5"
 				title="Aplicativo 5"
 				icon="sap-icon://simulate" 
 				type="Active"
-				press="onAppsPress">				
+				press="onAppsPress">	
+				<layoutData>
+					<l:GridData span="L4 M6 S6" />
+				</layoutData>								
 			</ObjectListItem>
 			<ObjectListItem id="FornApp6"
 				title="Aplicativo 6"
