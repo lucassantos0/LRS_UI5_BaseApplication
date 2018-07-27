@@ -41,7 +41,7 @@
 				type="Active"
 				press="onAppsPress">	
 				<layoutData>
-					<l:GridData span="L4 M6 S6" />
+					<l:GridData span="L3 M3 S8" />
 				</layoutData>							
 			</ObjectListItem>
 			<ObjectListItem id="FornApp4"
@@ -50,7 +50,7 @@
 				type="Active"
 				press="onAppsPress">
 				<layoutData>
-					<l:GridData span="L4 M6 S6" />
+					<l:GridData span="L3 M3 S8" />
 				</layoutData>									
 			</ObjectListItem>
 			<ObjectListItem id="FornApp5"
@@ -59,7 +59,7 @@
 				type="Active"
 				press="onAppsPress">	
 				<layoutData>
-					<l:GridData span="L4 M6 S6" />
+					<l:GridData span="L3 M3 S8" />
 				</layoutData>								
 			</ObjectListItem>
 			<ObjectListItem id="FornApp6"
