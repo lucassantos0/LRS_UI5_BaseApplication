@@ -81,7 +81,7 @@
 				</layoutData>
 			</ObjectListItem>
 			<UploadCollection id="uploadCollection" 
-			                  items="{ZMMARIBA>AnexoContratoNavigation}"  
+			                  items="{anexos>/}"  
 			                  noDataText="Nenhum anexo"
 			                  sameFilenameAllowed="false"
 			                  instantUpload="false"
@@ -95,7 +95,7 @@
 				<items>
 					<UploadCollectionItem 
 					    id="idUploadListItems"
-                		documentId="{ZMMARIBA>NUM}" fileName="{ZMMARIBA>FILENAME}" mimeType="{ZMMARIBA>MIMETYPE}"				
+                		documentId="{anexos>ID}" fileName="{anexos>FILENAME}" mimeType="{anexos>MIMETYPE}"				
 						url="/sap/opu/odata/sap/ZMM_ARIBA_SRV/FileProcessSet(Id='{ZMMARIBA>Id}',NUM='{ZMMARIBA>NUM}')/$value"									
 						enableEdit="false" visibleDelete="true"	visibleEdit="false"/>
 				</items>
