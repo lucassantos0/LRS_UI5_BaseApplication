@@ -90,7 +90,8 @@
 			                  multiple="false"
 			                  terminationEnabled="true"
 			                  change="onAttachmentChange"
-			                  uploadEnabled="true" 
+			                  uploadEnabled="false" 
+			                  title="Teste"
 			                  uploadUrl="/sap/opu/odata/sap/ZMM_ARIBA_SRV/FileProcessSet">	
 			    <layoutData>
 					<l:GridData span="L6 M12 S12" />
