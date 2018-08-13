@@ -83,18 +83,14 @@
 			<UploadCollection id="uploadCollection" 
 			                  items="{ZMMARIBA>AnexoContratoNavigation}"  
 			                  noDataText="Nenhum anexo"
-			                  uploadComplete="onAttachmentUploadComplete" 										
-			                  fileDeleted="onAttachmentDeleted" 
 			                  sameFilenameAllowed="false"
 			                  instantUpload="false"
 			                  multiple="false"
 			                  terminationEnabled="false"
-			                  change="onAttachmentChange"
 			                  uploadEnabled="false" 
-			                  title="Teste"
-			                  uploadUrl="/sap/opu/odata/sap/ZMM_ARIBA_SRV/FileProcessSet">	
+			                  title="Teste">	
 			    <layoutData>
-					<l:GridData span="L6 M12 S12" />
+					<l:GridData span="L12 M12 S12" />
 				</layoutData>						   
 				<items>
 					<UploadCollectionItem 
