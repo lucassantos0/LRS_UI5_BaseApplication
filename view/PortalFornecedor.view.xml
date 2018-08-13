@@ -71,7 +71,7 @@
 					<l:GridData span="L6 M12 S12" />
 				</layoutData>
 			</ObjectListItem>
-			<ObjectListItem id="FornApp7"
+			<ObjectListItem id="FornApp7" 
 				title="Aplicativo 7"
 				icon="sap-icon://database" 
 				type="Active"
