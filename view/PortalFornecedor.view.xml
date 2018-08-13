@@ -97,7 +97,7 @@
 					    id="idUploadListItems"
                 		documentId="{anexos>ID}" fileName="{anexos>FILENAME}" mimeType="{anexos>MIMETYPE}"				
 						url="/sap/opu/odata/sap/ZMM_ARIBA_SRV/FileProcessSet(Id='{ZMMARIBA>Id}',NUM='{ZMMARIBA>NUM}')/$value"									
-						enableEdit="false" visibleDelete="true"	visibleEdit="false"/>
+						enableEdit="false" visibleDelete="false"	visibleEdit="false"/>
 				</items>
 				<parameters />						
 			</UploadCollection>   			
