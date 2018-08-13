@@ -91,7 +91,10 @@
 			                  terminationEnabled="true"
 			                  change="onAttachmentChange"
 			                  uploadEnabled="true" 
-			                  uploadUrl="/sap/opu/odata/sap/ZMM_ARIBA_SRV/FileProcessSet">							   
+			                  uploadUrl="/sap/opu/odata/sap/ZMM_ARIBA_SRV/FileProcessSet">	
+			    <layoutData>
+					<l:GridData span="L6 M12 S12" />
+				</layoutData>						   
 				<items>
 					<UploadCollectionItem 
 					    id="idUploadListItems"
