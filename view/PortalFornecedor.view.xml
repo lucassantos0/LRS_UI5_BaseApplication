@@ -88,7 +88,7 @@
 			                  multiple="false"
 			                  terminationEnabled="false"
 			                  uploadEnabled="false" 
-			                  title="Teste">	
+			                  numberOfAttachmentsText="Indicadores">	
 			    <layoutData>
 					<l:GridData span="L12 M12 S12" />
 				</layoutData>						   
