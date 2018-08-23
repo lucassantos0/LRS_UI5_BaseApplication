@@ -14,13 +14,13 @@
 			<Table
 					id="table"
 					rows="{/ProductCollection}"
-					selectionMode="MultiToggle"
+					selectionMode="Single"
 					visibleRowCount="7"
 					setEnableGrouping="true"
 					ariaLabelledBy="title">
 				<toolbar>
 					<m:Toolbar>
-						<m:Title id="title" text="Products" height="100%"/>
+						<m:Title id="title" text="Integrações Ariba" height="100%"/>
 						<m:ToolbarSpacer/>
 						<m:Label text="SelectionMode:"/>
 						<m:Select id="select" selectedKey="MultiToggle" change="onSelectionModeChange">
