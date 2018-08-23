@@ -85,14 +85,14 @@
 			"embarquesFornecedor": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/embarquesFornecedor.json"
-			},			
+			},
 			"anexos": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/anexos.json"
-			},				
-			"eventosSourcing" : {
-				"type" : "sap.ui.model.json.JSONModel",
-				"uri" : "model/mapaComparativoDetalhesCPFL.json"
+			},
+			"eventosSourcing": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/mapaComparativoDetalhesCPFL.json"
 			}
 		},
 		"resources": {
@@ -166,7 +166,12 @@
 					"pattern": "Previas",
 					"name": "Previas",
 					"target": "Previas"
-				}	
+				},
+				{
+					"pattern": "LogInterfaces",
+					"name": "LogInterfaces",
+					"target": "LogInterfaces"
+				}
 			],
 			"targets": {
 				"home": {
@@ -210,7 +215,10 @@
 				},
 				"Previas": {
 					"viewName": "Previas"
-				}									
+				},
+				"LogInterfaces": {
+					"viewName": "LogInterfaces"
+				}
 			}
 		}
 	}

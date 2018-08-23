@@ -16,7 +16,7 @@
 							class="sapUiTinyMarginTopBottom" />
 						<Text text="{i18n>tile1Content}" class="sapUiTinyMarginBottom" />
 						<Link text="{i18n>tile1Action1}" press="navToTile1Action1" />
-						<Link text="{i18n>tile1Action2}" press="navToTile1Action2" />
+						<Link text="{i18n>tile1Action2}" press="navToLogInterfaces" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>

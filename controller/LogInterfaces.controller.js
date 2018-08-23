@@ -5,7 +5,7 @@ sap.ui.define([
 ], function(Controller, JSONModel, RowSettings) {
 	"use strict";
 
-	return Controller.extend("lrs.ui5.controller.Tile1Action2", {
+	return Controller.extend("lrs.ui5.controller.LogInterfaces", {
 
 		onInit: function() {
 			// set explored app's demo model on this sample

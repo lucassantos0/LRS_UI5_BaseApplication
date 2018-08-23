@@ -13,8 +13,8 @@ sap.ui.define(
 		{
 			this.getRouter().navTo("Tile1Action1");
 		},
-		navToTile1Action2 : function(){
-			this.getRouter().navTo("Tile1Action2");
+		navToLogInterfaces : function(){
+			this.getRouter().navTo("LogInterfaces");
 		},
 		navToMapaComparativo : function(){
 			this.getRouter().navTo("MapaComparativoLista");
