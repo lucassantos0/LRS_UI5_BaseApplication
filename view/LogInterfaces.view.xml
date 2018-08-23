@@ -1,5 +1,5 @@
 <mvc:View
-		controllerName="lrs.ui5.controller.Tile1Action2"
+		controllerName="lrs.ui5.controller.LogInterfaces"
 		xmlns="sap.ui.table"
 		xmlns:mvc="sap.ui.core.mvc"
 		xmlns:unified="sap.ui.unified"
