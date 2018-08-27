@@ -10,7 +10,7 @@
 		title="Portal do Fornecedor"
 		condensed="true">
 		<attributes>
-			<ObjectAttribute text="Seja bem-vindo ao Portal do Fornecedor, uma área com vários serviços a sua disposição!" />
+			<ObjectAttribute text="Seja bem-vindo ao Portal do Fornecedor1, uma área com vários serviços a sua disposição!" />
 		</attributes>
 	</ObjectHeader>
 	<l:Grid defaultSpan="L4 M6 S6" class="sapUiSmallMarginTop">
