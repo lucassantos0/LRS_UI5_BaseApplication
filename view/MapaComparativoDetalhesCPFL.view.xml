@@ -190,6 +190,190 @@
  							</ScrollContainer> 
 							<Button	text="Exportar Comparativo Items para Excel" icon="sap-icon://excel-attachment" press="onExportXLS2" />													
 					</IconTabFilter>
+					<IconTabFilter text="Itens Comuns/Não Comuns">
+					<ScrollContainer width="100%">	
+							<Table id="tableItems"
+								items="{eventosSourcing>detalhe/items}" >								
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Itens Comuns" level="H2" />
+									</Toolbar>
+								</headerToolbar>								
+								<columns>
+									<Column width="3.3em">
+										<Text text="Item" />
+									</Column>								
+									<Column width="6em">
+										<Text text="Material" />
+									</Column>
+									<Column width="4.7em">
+										<Text text="Qtde.Atual" />
+									</Column>
+									<Column width="14em">
+										<Text text="Descrição" />
+									</Column>
+									<Column width="6em">
+										<Text text="Última compra" />
+									</Column>
+									<Column width="16em">
+										<Text text="Fornecedor" />
+									</Column>
+									<Column width="7em">
+										<Text text="R$ Reaj." />
+									</Column>										
+									<Column width="7em">
+										<Text text="R$ Total" />
+									</Column>																		
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>										
+											<Text text="{eventosSourcing>Item}" />
+											<Text text="{eventosSourcing>MaterialCode}" />
+											<Text text="{eventosSourcing>QuantidadeAtual}" />
+											<ObjectIdentifier title="{eventosSourcing>MaterialName}" />
+											<Text text="{eventosSourcing>DataUltimaCompra}"/>
+											<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />	
+											<Input id="inpVlrReaj" liveChange="onLive" change="onVlrReaj" value="{eventosSourcing>ValorReajuste}"/>									
+											<Text text="{eventosSourcing>ValorTotal}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+							</ScrollContainer> 
+ 							<ScrollContainer width="100%">					
+								<Table id="tableSelectItems" 
+								       items="{eventosSourcing>detalhe/comparativo}">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="Itens Não Comuns" level="H2" />
+										</Toolbar>
+									</headerToolbar>
+									<columns>
+										<Column width="4em">
+											<Text text="Item" />
+										</Column>										
+										<Column width="5.2em">
+											<Text text="ICMS Forn." />
+										</Column>
+										<Column width="5.2em">
+											<Text text="IPI Forn." />
+										</Column>
+										<Column width="4em">
+											<Text text="UF" />
+										</Column>	
+										<Column width="7em">
+											<Text text="Utilz. Material" />
+										</Column>	
+										<Column width="8em">
+											<Text text="Ncm Cadastro" />
+										</Column>
+										<Column width="8em">
+											<Text text="Ncm Fornecedor" />
+										</Column>																																							
+										<Column width="16em">
+											<Text text="Fornecedor" />
+										</Column>																			
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. c/ ICMS 1ª Rodada" />
+										</Column>
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. Bruto (ICMS + IPI + ST + DIFAL) 1ª Rodada" />
+										</Column>											
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. c/ ICMS Última rodada" />
+										</Column>
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. Bruto (ICMS + IPI)" />
+										</Column>										
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor unit. Bruto (ICMS + IPI + ST + DIFAL)" />
+										</Column>																											
+										<Column width="5em" hAlign="Center">
+											<Text text="IPI (SAP)" />
+										</Column>
+										<Column width="5em" hAlign="Center">
+											<Text text="ICMS (SAP)" />
+										</Column>	
+										<Column width="5em" hAlign="Center">
+											<Text text="ST (SAP)" />
+										</Column>	
+										<Column width="5em" hAlign="Center">
+											<Text text="DIFAL (SAP)" />
+										</Column>											
+										<Column width="6em" hAlign="Center">
+											<Text text="Conditions" />
+										</Column>																					
+										<Column width="9em" hAlign="Center">
+											<Text text="Valor Total Bruto (simulação SAP última rodada)" />
+										</Column>		
+										<Column width="9em" hAlign="Center">
+											<Text text="Despesa / Consumo" />
+										</Column>	
+										<Column width="9em" hAlign="Center">
+											<Text text="Investimento / Ativo" />
+										</Column>			
+										<Column width="9em" hAlign="Center">
+											<Text text="Industrialização / Revenda" />
+										</Column>		
+										<Column width="4em" hAlign="Center">
+											<Text text="IVA" />
+										</Column>																																						
+										<Column width="9em" hAlign="Center">
+											<Text text="% Negociado X Referência" />
+										</Column>	
+										<Column width="9em" hAlign="Center">
+											<Text text="% Negociado X Melhor Proposta" />
+										</Column>																																								
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text="{eventosSourcing>Item}" />											
+												<Text text="{eventosSourcing>IcmsForn}%" />
+												<Text text="{eventosSourcing>IpiForn}%" />
+												<Text text="{eventosSourcing>UF}" />
+												<Text text="{eventosSourcing>UtilizMaterial}" />
+												<Text text="{eventosSourcing>NcmCad}" />
+												<HBox justifyContent="SpaceAround">												
+													<Text
+														text="{eventosSourcing>NcmForn}"/>				
+												    <core:Icon
+														src="sap-icon://color-fill"
+														color="#f33334"
+													    visible="{= ${eventosSourcing>Cor} ? true : false }" />																																				
+												</HBox>	
+												<HBox justifyContent="SpaceAround">												
+													<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />
+												    <core:Icon
+														src="sap-icon://bookmark"
+														color="#84caec"
+													    visible="{= ${eventosSourcing>Winner} ? true : false }" />	
+												</HBox>	
+												<Text text="{eventosSourcing>AribaPrimeira}" />
+												<Text text="{eventosSourcing>ValorUnitOriginal}" />
+												<Text text="{eventosSourcing>AribaUltima}" />
+												<Text text="{eventosSourcing>ValorBruto}" />
+												<Text text="{eventosSourcing>ValorUnitNegociado}" />
+												<Text text="{eventosSourcing>IPI}%" />
+												<Text text="{eventosSourcing>ICMS}%" />
+												<Text text="{eventosSourcing>ST}%" />		
+												<Text text="{eventosSourcing>DIFAL}%" />	
+												<Button	icon="sap-icon://waiver" type="Accept" press="onConditions" />																						
+												<Text text="{eventosSourcing>ValorTotalNegociadoComImpostos}" />
+												<Text text="{eventosSourcing>ValorUnitNegociado}" />
+												<Text text="{eventosSourcing>ValorLiquidoIPI}" />
+												<Text text="{eventosSourcing>ValorLiquido}" />
+												<Text text="{eventosSourcing>IVA}" />
+												<Text text="{eventosSourcing>PercRef}" />
+												<Text text="{eventosSourcing>PercDif1}" />
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+ 							</ScrollContainer> 
+							<Button	text="Exportar Comparativo Items para Excel" icon="sap-icon://excel-attachment" press="onExportXLS2" />													
+					</IconTabFilter>					
 					<IconTabFilter text="Resumo por Item">
 						<ScrollContainer width="100%">					
 								<Table id="tableFechamentoItem" 
