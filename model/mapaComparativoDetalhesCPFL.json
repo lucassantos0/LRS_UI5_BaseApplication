@@ -18,6 +18,18 @@
 			"PercRef": "1,00",
 			"PercOrig": "1,03",
 			"PercOrc": "3,30",
+			"sumario": [
+				{
+					"DescProjeto": "RAS INDUSTRIAL COMERCIAL LTDA",
+					"Projeto": "15,00",
+					"Area": "17,00",
+					"Comprador": "13,80",
+					"Id": "145,80",
+					"Formalizacao": "145,80",
+					"Modalidade": "1",
+					"CondPagamento":"1"
+				},			
+			 ],		
 			"totaisPorFornecedor": [
 				{
 					"participant": "3M DO BRASIL LTDA(3M LTDA)",
@@ -280,6 +292,18 @@
 			"PercRef": "1,00",
 			"PercOrig": "1,03",
 			"PercOrc": "3,30",
+			"sumario": [
+				{
+					"DescProjeto": "RAS INDUSTRIAL COMERCIAL LTDA",
+					"Projeto": "15,00",
+					"Area": "17,00",
+					"Comprador": "13,80",
+					"Id": "145,80",
+					"Formalizacao": "145,80",
+					"Modalidade": "1",
+					"CondPagamento":"1"
+				},			
+			 ],					
 			"totaisPorFornecedor": [
 				{
 					"participant": "3M DO BRASIL LTDA(3M LTDA)",
