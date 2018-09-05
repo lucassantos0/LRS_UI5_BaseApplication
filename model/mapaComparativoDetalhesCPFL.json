@@ -15,9 +15,24 @@
 			"TotalNegImp": "138,50",
 			"TotalLiquido": "158,80",
 			"ValorOrcamentario": "200,00",
-			"PercRef": "1,00",
+			"PercRef": "1,00", 
 			"PercOrig": "1,03",
 			"PercOrc": "3,30",
+			"DescProjeto": "Projeto de Sourcing MAPA",
+			"Projeto": "WS20123111",
+			"Area": "Compras",
+			"Comprador": "Carlos",
+			"Id": "Doc1231444",
+			"Formalizacao": "Sim",
+			"Modalidade": "1",
+			"CondPagamento":"0001",	
+			"TotalOrcamento" : "4.000,00",
+			"TotalRef" : "2.000,00",
+			"MelhorPrimeira" : "1.200,00",
+			"TotalFinal" : "1.850,00",
+			"SavingFinal" : "10,00",
+			"SavingMelhor" : "12,00",
+			"SavingInicial" : "8,00",
 			"totaisPorFornecedor": [
 				{
 					"participant": "3M DO BRASIL LTDA(3M LTDA)",
@@ -46,6 +61,31 @@
 					"numeroRodada": "2"
 				}
 			],
+			"sumario": {
+				"item": [
+					{
+						"Fornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ValorInicial": "930,00",
+						"ValorFinal": "1.232,00",
+						"ValorMelhorIPI": "112,00",
+						"ValorContratado": "931,00",
+						"Premiado": "Sim",
+						"Contrato": "460000011",
+						"Pedido": "4500001442"
+
+					},
+					{
+						"Fornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ValorInicial": "1.230,00",
+						"ValorFinal": "1.332,00",
+						"ValorMelhorIPI": "212,00",
+						"ValorContratado": "831,00",
+						"Premiado": "",
+						"Contrato": "460004588",
+						"Pedido": "4500004411"
+					}					
+				]
+			},			
 			"resumo": {
 				"items": [
 					{
@@ -280,6 +320,21 @@
 			"PercRef": "1,00",
 			"PercOrig": "1,03",
 			"PercOrc": "3,30",
+			"DescProjeto": "Projeto de Sourcing MAPA",
+			"Projeto": "WS20123111",
+			"Area": "Compras",
+			"Comprador": "Carlos",
+			"Id": "Doc1231444",
+			"Formalizacao": "Sim",
+			"Modalidade": "1",
+			"CondPagamento":"0001",		
+			"TotalOrcamento" : "2000,00",
+			"TotalRef" : "2000,00",
+			"MelhorPrimeira" : "2000,00",
+			"TotalFinal" : "2000,00",
+			"SavingFinal" : "2000,00",
+			"SavingMelhor" : "2000,00",
+			"SavingInicial" : "2000,00",				
 			"totaisPorFornecedor": [
 				{
 					"participant": "3M DO BRASIL LTDA(3M LTDA)",
@@ -308,6 +363,31 @@
 					"numeroRodada": "2"
 				}
 			],
+			"sumario": {
+				"item": [
+					{
+						"Fornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ValorInicial": "930,00",
+						"ValorFinal": "1.232,00",
+						"ValorMelhorIPI": "112,00",
+						"ValorContratado": "931,00",
+						"Premiado": "Sim",
+						"Contrato": "460000011",
+						"Pedido": "4500001442"
+
+					},
+					{
+						"Fornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ValorInicial": "930,00",
+						"ValorFinal": "1.232,00",
+						"ValorMelhorIPI": "112,00",
+						"ValorContratado": "931,00",
+						"Premiado": "Sim",
+						"Contrato": "460000011",
+						"Pedido": "4500001442"
+					}					
+				]
+			},			
 			"resumo": {
 				"items": [
 					{
@@ -494,7 +574,7 @@
 						"Winner":"X",
 						"Cor":"X"
 					},
-					{
+					{ 
 						"Item": "5",
 						"IcmsForn": "18",
 						"IpiForn": "8",

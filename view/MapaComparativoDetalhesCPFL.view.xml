@@ -190,6 +190,116 @@
  							</ScrollContainer> 
 							<Button	text="Exportar Comparativo Items para Excel" icon="sap-icon://excel-attachment" press="onExportXLS2" />													
 					</IconTabFilter>
+					<IconTabFilter text="Itens Comuns/Não Comuns">
+					<ScrollContainer width="100%">	
+							<Table id="tableItensComuns"
+								items="{eventosSourcing>detalhe/items}" >								
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Itens Comuns" level="H2" />
+									</Toolbar>
+								</headerToolbar>								
+								<columns>
+									<Column width="10em">
+										<Text text="Fornecedor" />
+									</Column>	
+									<Column width="3em">
+										<core:Icon src="sap-icon://competitor" visible="true" />	
+									</Column>																	
+									<Column width="30em">
+										<Text text="Nome do Item" />
+									</Column>								
+									<Column width="6em">
+										<Text text="Qt." />
+									</Column>
+									<Column width="6em">
+										<Text text="Vl. Unit." />
+									</Column>
+									<Column width="6em">
+										<Text text="ICMS" />
+									</Column>
+									<Column width="6em">
+										<Text text="IPI" />
+									</Column>
+									<Column width="6em">
+										<Text text="ISS" />
+									</Column>
+									<Column width="6em">
+										<Text text="Vl. Total" />
+									</Column>																											
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>		
+											<Text text="{eventosSourcing>NomeFornecedor}" />		
+											<Text text="2º" />								
+											<ObjectIdentifier title="{eventosSourcing>MaterialCode} - {eventosSourcing>MaterialName}" />	
+											<Text text="{eventosSourcing>QuantidadeAtual}" />																												
+											<Text text="{eventosSourcing>ValorReajuste}" />
+											<Text text="18,00%" />
+											<Text text="10,00%" />
+											<Text text="Isento" />							
+											<Text text="{eventosSourcing>ValorTotal}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+							</ScrollContainer> 
+ 							<ScrollContainer width="100%">					
+								<Table id="tableItensNaoComuns" 
+								       items="{eventosSourcing>detalhe/comparativo}">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="Itens Não Comuns" level="H2" />
+										</Toolbar>
+									</headerToolbar>
+									<columns>
+										<Column width="10em">
+											<Text text="Fornecedor" />
+										</Column>	
+										<Column width="3em">
+											<core:Icon src="sap-icon://competitor" visible="true" />	
+										</Column>																	
+										<Column width="30em">
+											<Text text="Nome do Item" />
+										</Column>								
+										<Column width="6em">
+											<Text text="Qt." />
+										</Column>
+										<Column width="6em">
+											<Text text="Vl. Unit." />
+										</Column>
+										<Column width="6em">
+											<Text text="ICMS" />
+										</Column>
+										<Column width="6em">
+											<Text text="IPI" />
+										</Column>
+										<Column width="6em">
+											<Text text="ISS" />
+										</Column>
+										<Column width="6em">
+											<Text text="Vl. Total" />
+										</Column>																											
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>		
+												<Text text="{eventosSourcing>NomeFornecedor}" />		
+												<Text text="2º" />								
+												<ObjectIdentifier title="6200050 - CORREIA TRANS PERFIL V8" />	
+												<Text text="12" />																												
+												<Text text="{eventosSourcing>ValorLiquido}" />
+												<Text text="18,00%" />
+												<Text text="10,00%" />
+												<Text text="Isento" />							
+												<Text text="{eventosSourcing>ValorLiquidoIPI}" />
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+ 							</ScrollContainer> 											
+					</IconTabFilter>					
 					<IconTabFilter text="Resumo por Item">
 						<ScrollContainer width="100%">					
 								<Table id="tableFechamentoItem" 
@@ -344,6 +454,173 @@
 							</VBox>
 							</l:VerticalLayout>					
 					</IconTabFilter>
+					<IconTabFilter text="Sumário Executivo" id="sumarioTab">											
+						<f:SimpleForm id="sumarioHeader"
+							editable="true"
+							layout="ResponsiveGridLayout"
+							labelSpanXL="4"
+							labelSpanL="4"
+							labelSpanM="12"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="0"
+							emptySpanL="0"
+							emptySpanM="0"
+							emptySpanS="0"
+							columnsXL="1"
+							columnsL="1"
+							columnsM="1"
+							singleContainerFullSize="false" >
+							<f:content>
+								<Label text="Descrição do Projeto" />
+								<Text text="{eventosSourcing>DescProjeto}" />
+								<Label text="Código do Projeto" />
+								<Text text="{eventosSourcing>Projeto}" />
+								<Label text="Área Requisitante" />
+								<Text text="{eventosSourcing>Area}" />
+								<Label text="Comprador Responsável" />
+								<Text text="{eventosSourcing>Comprador}" />
+								<Label text="Nº RFQ" />
+								<Text text="{eventosSourcing>Id}" />
+								<Label text="Tipo de Formalização" />
+								<Text text="{eventosSourcing>Formalizacao}" />
+								<Label text="Modalidade" />
+								<Text text="{eventosSourcing>Modalidade}" />
+								<Label text="Condição de Pagamento" />
+								<Text text="{eventosSourcing>CondPagamento}" />
+							</f:content>
+						</f:SimpleForm>
+					 	<ScrollContainer width="100%">		
+						<Table id="tableSumario"
+								items="{eventosSourcing>sumario/item}" >							
+								<columns>
+									<Column width="16em">
+										<Text text="Fornecedores Consultados" />
+									</Column>
+									<Column width="13em" hAlign="Center">
+										<Text text="Valor da Proposta Inicial (IPI + ICMS + ST + DIFAL)" />
+									</Column>										
+									<Column width="12em" hAlign="Center">
+										<Text text="Valor da Proposta Final (IPI + ICMS + ST + DIFAL)" />
+									</Column>	
+									<Column width="12em" hAlign="Center">
+										<Text text="Valor da Melhor Proposta (ICMS + IPI)" />
+									</Column>																					
+									<Column width="12em" hAlign="Center">
+										<Text text="Valor Negociado" />									     
+									</Column>	
+									<Column width="8em" hAlign="Center">			
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">
+											<core:Icon src="sap-icon://competitor" visible="true" />
+										    <Text text="Premiado(s)" />			
+										</VBox>																									 	
+									</Column>		
+									<Column width="8em" hAlign="Center">
+										<Text text="Número Contrato Ariba" />
+									</Column>
+									<Column width="8em" hAlign="Center">
+										<Text text="Número Pedido SAP" />
+									</Column>																																																			
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>										
+											<ObjectIdentifier title="{eventosSourcing>Fornecedor}" />											
+											<Text text="{eventosSourcing>ValorInicial}" />
+											<Text text="{eventosSourcing>ValorFinal}" />
+											<Text text="{eventosSourcing>ValorMelhorIPI}" />
+											<Text text="{eventosSourcing>ValorContratado}" />	
+											<Text text="{eventosSourcing>Premiado}" />	
+											<Text text="{eventosSourcing>Contrato}" />	
+											<Text text="{eventosSourcing>Pedido}" />											
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>						
+						<l:VerticalLayout id="containerLayout2" width="100%" >
+							<l:BlockLayout id="BlockLayout2">						
+								<l:BlockLayoutRow class="MapaComparativoDetalhesCPFL_Bloco1">
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">									
+											<ObjectIdentifier title="Total Orçamento"/>
+											<Text text="{eventosSourcing>TotalOrcamento}"/>
+										</VBox>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Total Referência"/>
+											<Text text="{eventosSourcing>TotalRef}"/>	
+										</VBox>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Total Melhor 1ª Proposta"/>									
+											<Text text="{eventosSourcing>MelhorPrimeira}"/>
+										</VBox>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Total Valor Final"/>									
+											<Text text="{eventosSourcing>TotalFinal}"/>
+										</VBox>
+									</l:BlockLayoutCell>																												
+								</l:BlockLayoutRow>
+							</l:BlockLayout>
+						</l:VerticalLayout>
+						<l:VerticalLayout id="containerLayout3" width="100%" >
+							<l:BlockLayout id="BlockLayout3">						
+								<l:BlockLayoutRow class="MapaComparativoDetalhesCPFL_Bloco1">																												
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Saving (%) Negociado X Referência"/>									
+											<Text text="{eventosSourcing>SavingFinal}%"/>
+										</VBox>
+									</l:BlockLayoutCell>									
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Saving (%) Negociado X Melhor Proposta"/>	
+											<Text text="{eventosSourcing>SavingMelhor}%"/>
+										</VBox>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell>
+										<VBox
+											alignItems="Center"
+											justifyContent="Center">		
+											<ObjectIdentifier title="Saving (%) Negociado X Orçamento"/>	
+											<Text text="{eventosSourcing>SavingInicial}%"/>
+										</VBox>
+									</l:BlockLayoutCell>									
+								</l:BlockLayoutRow>
+							</l:BlockLayout>
+						</l:VerticalLayout>					
+							<Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
+								<headerToolbar>
+									<Toolbar height="3rem">
+										<Title text="Observações do Comprador (max. 700 caracteres)"/>
+									</Toolbar>
+								</headerToolbar>
+								<content>
+									<l:VerticalLayout class="sapUiContentPadding" width="100%">
+										<TextArea id="inpObservacao" liveChange="onLiveMapa" width="100%" value="{ZMMARIBA>Observacao}" rows="8" maxLength="700"/>																		
+									</l:VerticalLayout>									
+								</content>
+							</Panel>							
+					</IconTabFilter>					
 				</items>
 			</IconTabBar>
 		</content>
