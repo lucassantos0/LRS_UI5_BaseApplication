@@ -54,6 +54,31 @@
 					"numeroRodada": "2"
 				}
 			],
+			"sumario": {
+				"item": [
+					{
+						"Fornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ValorInicial": "930,00",
+						"ValorFinal": "1.232,00",
+						"ValorMelhorIPI": "112,00",
+						"ValorContratado": "931,00",
+						"Premiado": "Sim",
+						"Contrato": "460000011",
+						"Pedido": "4500001442",
+
+					},
+					{
+						"Fornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ValorInicial": "930,00",
+						"ValorFinal": "1.232,00",
+						"ValorMelhorIPI": "112,00",
+						"ValorContratado": "931,00",
+						"Premiado": "Sim",
+						"Contrato": "460000011",
+						"Pedido": "4500001442",
+					}					
+				]
+			},			
 			"resumo": {
 				"items": [
 					{
@@ -324,6 +349,31 @@
 					"numeroRodada": "2"
 				}
 			],
+			"sumario": {
+				"item": [
+					{
+						"Fornecedor": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"ValorInicial": "930,00",
+						"ValorFinal": "1.232,00",
+						"ValorMelhorIPI": "112,00",
+						"ValorContratado": "931,00",
+						"Premiado": "Sim",
+						"Contrato": "460000011",
+						"Pedido": "4500001442",
+
+					},
+					{
+						"Fornecedor": "3M DO BRASIL LTDA(3M LTDA)",
+						"ValorInicial": "930,00",
+						"ValorFinal": "1.232,00",
+						"ValorMelhorIPI": "112,00",
+						"ValorContratado": "931,00",
+						"Premiado": "Sim",
+						"Contrato": "460000011",
+						"Pedido": "4500001442",
+					}					
+				]
+			},			
 			"resumo": {
 				"items": [
 					{

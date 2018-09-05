@@ -382,7 +382,7 @@
 						</f:SimpleForm>
 					 	<ScrollContainer width="100%">		
 						<Table id="tableSumario"
-								items="{ZMMARIBA>SumarioItemNavigation}" >							
+								items="{eventosSourcing>sumario/item}" >							
 								<columns>
 									<Column width="16em">
 										<Text text="Fornecedores Consultados" />
