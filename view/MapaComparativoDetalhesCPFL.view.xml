@@ -192,7 +192,7 @@
 					</IconTabFilter>
 					<IconTabFilter text="Itens Comuns/Não Comuns">
 					<ScrollContainer width="100%">	
-							<Table id="tableItems"
+							<Table id="tableItensComuns"
 								items="{eventosSourcing>detalhe/items}" >								
 								<headerToolbar>
 									<Toolbar>
@@ -242,7 +242,7 @@
 							</Table>
 							</ScrollContainer> 
  							<ScrollContainer width="100%">					
-								<Table id="tableSelectItems" 
+								<Table id="tableItensNaoComuns" 
 								       items="{eventosSourcing>detalhe/comparativo}">
 									<headerToolbar>
 										<Toolbar>
