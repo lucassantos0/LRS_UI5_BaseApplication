@@ -417,14 +417,14 @@
 								<items>
 									<ColumnListItem>
 										<cells>										
-											<ObjectIdentifier title="{ZMMARIBA>Fornecedor}" />											
-											<Text text="{ZMMARIBA>ValorInicial}" />
-											<Text text="{ZMMARIBA>ValorFinal}" />
-											<Text text="{ZMMARIBA>ValorMelhorIPI}" />
-											<Text text="{ZMMARIBA>ValorContratado}" />	
-											<Text text="{ZMMARIBA>Premiado}" />	
-											<Text text="{ZMMARIBA>Contrato}" />	
-											<Text text="{ZMMARIBA>Pedido}" />											
+											<ObjectIdentifier title="{eventosSourcing>Fornecedor}" />											
+											<Text text="{eventosSourcing>ValorInicial}" />
+											<Text text="{eventosSourcing>ValorFinal}" />
+											<Text text="{eventosSourcing>ValorMelhorIPI}" />
+											<Text text="{eventosSourcing>ValorContratado}" />	
+											<Text text="{eventosSourcing>Premiado}" />	
+											<Text text="{eventosSourcing>Contrato}" />	
+											<Text text="{eventosSourcing>Pedido}" />											
 										</cells>
 									</ColumnListItem>
 								</items>
