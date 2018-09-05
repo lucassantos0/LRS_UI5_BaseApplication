@@ -254,123 +254,46 @@
 										</Toolbar>
 									</headerToolbar>
 									<columns>
-										<Column width="4em">
-											<Text text="Item" />
-										</Column>										
-										<Column width="5.2em">
-											<Text text="ICMS Forn." />
-										</Column>
-										<Column width="5.2em">
-											<Text text="IPI Forn." />
-										</Column>
-										<Column width="4em">
-											<Text text="UF" />
-										</Column>	
-										<Column width="7em">
-											<Text text="Utilz. Material" />
-										</Column>	
-										<Column width="8em">
-											<Text text="Ncm Cadastro" />
-										</Column>
-										<Column width="8em">
-											<Text text="Ncm Fornecedor" />
-										</Column>																																							
-										<Column width="16em">
+										<Column width="10em">
 											<Text text="Fornecedor" />
-										</Column>																			
-										<Column width="9em" hAlign="Center">
-											<Text text="Valor unit. c/ ICMS 1ª Rodada" />
+										</Column>	
+										<Column width="3em">
+											<core:Icon src="sap-icon://competitor" visible="true" />	
+										</Column>																	
+										<Column width="30em">
+											<Text text="Nome do Item" />
+										</Column>								
+										<Column width="6em">
+											<Text text="Qt." />
 										</Column>
-										<Column width="9em" hAlign="Center">
-											<Text text="Valor unit. Bruto (ICMS + IPI + ST + DIFAL) 1ª Rodada" />
-										</Column>											
-										<Column width="9em" hAlign="Center">
-											<Text text="Valor unit. c/ ICMS Última rodada" />
+										<Column width="6em">
+											<Text text="Vl. Unit." />
 										</Column>
-										<Column width="9em" hAlign="Center">
-											<Text text="Valor unit. Bruto (ICMS + IPI)" />
-										</Column>										
-										<Column width="9em" hAlign="Center">
-											<Text text="Valor unit. Bruto (ICMS + IPI + ST + DIFAL)" />
+										<Column width="6em">
+											<Text text="ICMS" />
+										</Column>
+										<Column width="6em">
+											<Text text="IPI" />
+										</Column>
+										<Column width="6em">
+											<Text text="ISS" />
+										</Column>
+										<Column width="6em">
+											<Text text="Vl. Total" />
 										</Column>																											
-										<Column width="5em" hAlign="Center">
-											<Text text="IPI (SAP)" />
-										</Column>
-										<Column width="5em" hAlign="Center">
-											<Text text="ICMS (SAP)" />
-										</Column>	
-										<Column width="5em" hAlign="Center">
-											<Text text="ST (SAP)" />
-										</Column>	
-										<Column width="5em" hAlign="Center">
-											<Text text="DIFAL (SAP)" />
-										</Column>											
-										<Column width="6em" hAlign="Center">
-											<Text text="Conditions" />
-										</Column>																					
-										<Column width="9em" hAlign="Center">
-											<Text text="Valor Total Bruto (simulação SAP última rodada)" />
-										</Column>		
-										<Column width="9em" hAlign="Center">
-											<Text text="Despesa / Consumo" />
-										</Column>	
-										<Column width="9em" hAlign="Center">
-											<Text text="Investimento / Ativo" />
-										</Column>			
-										<Column width="9em" hAlign="Center">
-											<Text text="Industrialização / Revenda" />
-										</Column>		
-										<Column width="4em" hAlign="Center">
-											<Text text="IVA" />
-										</Column>																																						
-										<Column width="9em" hAlign="Center">
-											<Text text="% Negociado X Referência" />
-										</Column>	
-										<Column width="9em" hAlign="Center">
-											<Text text="% Negociado X Melhor Proposta" />
-										</Column>																																								
 									</columns>
 									<items>
 										<ColumnListItem>
-											<cells>
-												<Text text="{eventosSourcing>Item}" />											
-												<Text text="{eventosSourcing>IcmsForn}%" />
-												<Text text="{eventosSourcing>IpiForn}%" />
-												<Text text="{eventosSourcing>UF}" />
-												<Text text="{eventosSourcing>UtilizMaterial}" />
-												<Text text="{eventosSourcing>NcmCad}" />
-												<HBox justifyContent="SpaceAround">												
-													<Text
-														text="{eventosSourcing>NcmForn}"/>				
-												    <core:Icon
-														src="sap-icon://color-fill"
-														color="#f33334"
-													    visible="{= ${eventosSourcing>Cor} ? true : false }" />																																				
-												</HBox>	
-												<HBox justifyContent="SpaceAround">												
-													<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />
-												    <core:Icon
-														src="sap-icon://bookmark"
-														color="#84caec"
-													    visible="{= ${eventosSourcing>Winner} ? true : false }" />	
-												</HBox>	
-												<Text text="{eventosSourcing>AribaPrimeira}" />
-												<Text text="{eventosSourcing>ValorUnitOriginal}" />
-												<Text text="{eventosSourcing>AribaUltima}" />
-												<Text text="{eventosSourcing>ValorBruto}" />
-												<Text text="{eventosSourcing>ValorUnitNegociado}" />
-												<Text text="{eventosSourcing>IPI}%" />
-												<Text text="{eventosSourcing>ICMS}%" />
-												<Text text="{eventosSourcing>ST}%" />		
-												<Text text="{eventosSourcing>DIFAL}%" />	
-												<Button	icon="sap-icon://waiver" type="Accept" press="onConditions" />																						
-												<Text text="{eventosSourcing>ValorTotalNegociadoComImpostos}" />
-												<Text text="{eventosSourcing>ValorUnitNegociado}" />
-												<Text text="{eventosSourcing>ValorLiquidoIPI}" />
-												<Text text="{eventosSourcing>ValorLiquido}" />
-												<Text text="{eventosSourcing>IVA}" />
-												<Text text="{eventosSourcing>PercRef}" />
-												<Text text="{eventosSourcing>PercDif1}" />
+											<cells>		
+												<Text text="{eventosSourcing>NomeFornecedor}" />		
+												<Text text="2º" />								
+												<ObjectIdentifier title="{eventosSourcing>MaterialCode} - {eventosSourcing>MaterialName}" />	
+												<Text text="{eventosSourcing>QuantidadeAtual}" />																												
+												<Text text="{eventosSourcing>ValorReajuste}" />
+												<Text text="18,00%" />
+												<Text text="10,00%" />
+												<Text text="Isento" />							
+												<Text text="{eventosSourcing>ValorTotal}" />
 											</cells>
 										</ColumnListItem>
 									</items>
