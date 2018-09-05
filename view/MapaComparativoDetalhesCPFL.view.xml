@@ -235,11 +235,11 @@
 											<Text text="2º" />								
 											<ObjectIdentifier title="{eventosSourcing>MaterialCode} - {eventosSourcing>MaterialName}" />	
 											<Text text="{eventosSourcing>QuantidadeAtual}" />																												
-											<Text text="{eventosSourcing>ValorReajuste}" />
+											<Text text="{eventosSourcing>ValorLiquido}" />
 											<Text text="18,00%" />
 											<Text text="10,00%" />
 											<Text text="Isento" />							
-											<Text text="{eventosSourcing>ValorTotal}" />
+											<Text text="{eventosSourcing>ValorLiquidoIPI}" />
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -287,8 +287,8 @@
 											<cells>		
 												<Text text="{eventosSourcing>NomeFornecedor}" />		
 												<Text text="2º" />								
-												<ObjectIdentifier title="{eventosSourcing>MaterialCode} - {eventosSourcing>MaterialName}" />	
-												<Text text="{eventosSourcing>QuantidadeAtual}" />																												
+												<ObjectIdentifier title="6200050 - CORREIA TRANS PERFIL V8" />	
+												<Text text="12" />																												
 												<Text text="{eventosSourcing>ValorReajuste}" />
 												<Text text="18,00%" />
 												<Text text="10,00%" />
