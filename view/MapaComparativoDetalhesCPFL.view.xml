@@ -201,39 +201,36 @@
 								</headerToolbar>								
 								<columns>
 									<Column width="3.3em">
-										<Text text="Item" />
+										<Text text="Nome do Item" />
 									</Column>								
 									<Column width="6em">
-										<Text text="Material" />
+										<Text text="Qt." />
 									</Column>
 									<Column width="4.7em">
-										<Text text="Qtde.Atual" />
+										<Text text="Vl. Unit." />
 									</Column>
 									<Column width="14em">
-										<Text text="Descrição" />
+										<Text text="ICMS" />
 									</Column>
 									<Column width="6em">
-										<Text text="Última compra" />
+										<Text text="IPI" />
 									</Column>
 									<Column width="16em">
-										<Text text="Fornecedor" />
+										<Text text="ISS" />
 									</Column>
 									<Column width="7em">
-										<Text text="R$ Reaj." />
-									</Column>										
-									<Column width="7em">
-										<Text text="R$ Total" />
-									</Column>																		
+										<Text text="Vl. Total" />
+									</Column>																											
 								</columns>
 								<items>
 									<ColumnListItem>
-										<cells>										
-											<Text text="{eventosSourcing>Item}" />
-											<Text text="{eventosSourcing>MaterialCode}" />
-											<Text text="{eventosSourcing>QuantidadeAtual}" />
-											<ObjectIdentifier title="{eventosSourcing>MaterialName}" />
-											<Text text="{eventosSourcing>DataUltimaCompra}"/>
-											<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />									
+										<cells>		
+											<ObjectIdentifier title="{eventosSourcing>MaterialCode} - {eventosSourcing>MaterialName}" />	
+											<Text text="{eventosSourcing>QuantidadeAtual}" />																												
+											<Text text="{eventosSourcing>ValorReajuste}" />
+											<Text text="18,00%" />
+											<Text text="10,00%" />
+											<Text text="Isento" />							
 											<Text text="{eventosSourcing>ValorTotal}" />
 										</cells>
 									</ColumnListItem>
