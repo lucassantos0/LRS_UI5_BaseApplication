@@ -363,7 +363,7 @@
 							singleContainerFullSize="false" >
 							<f:content>
 								<Label text="Descrição do Projeto" />
-								<Text text="{eventosSourcing>DescProjeto}" />
+								<Text text="{eventosSourcing>sumario/DescProjeto}" />
 								<Label text="Código do Projeto" />
 								<Text text="{eventosSourcing>Projeto}" />
 								<Label text="Área Requisitante" />
