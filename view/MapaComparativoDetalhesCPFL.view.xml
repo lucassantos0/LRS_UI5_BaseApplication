@@ -206,19 +206,19 @@
 									<Column width="6em">
 										<Text text="Qt." />
 									</Column>
-									<Column width="4.7em">
+									<Column width="6em">
 										<Text text="Vl. Unit." />
 									</Column>
-									<Column width="14em">
+									<Column width="6em">
 										<Text text="ICMS" />
 									</Column>
 									<Column width="6em">
 										<Text text="IPI" />
 									</Column>
-									<Column width="16em">
+									<Column width="6em">
 										<Text text="ISS" />
 									</Column>
-									<Column width="7em">
+									<Column width="6em">
 										<Text text="Vl. Total" />
 									</Column>																											
 								</columns>
