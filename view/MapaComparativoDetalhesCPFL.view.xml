@@ -202,7 +202,10 @@
 								<columns>
 									<Column width="10em">
 										<Text text="Fornecedor" />
-									</Column>									
+									</Column>	
+									<Column width="3em">
+										<core:Icon src="sap-icon://competitor" visible="true" />	
+									</Column>																	
 									<Column width="30em">
 										<Text text="Nome do Item" />
 									</Column>								
@@ -228,7 +231,8 @@
 								<items>
 									<ColumnListItem>
 										<cells>		
-											<Text text="{eventosSourcing>NomeFornecedor}" />										
+											<Text text="{eventosSourcing>NomeFornecedor}" />		
+											<Text text="2º" />								
 											<ObjectIdentifier title="{eventosSourcing>MaterialCode} - {eventosSourcing>MaterialName}" />	
 											<Text text="{eventosSourcing>QuantidadeAtual}" />																												
 											<Text text="{eventosSourcing>ValorReajuste}" />
