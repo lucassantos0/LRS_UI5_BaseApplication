@@ -438,7 +438,7 @@
 											alignItems="Center"
 											justifyContent="Center">									
 											<ObjectIdentifier title="Total Orçamento"/>
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalOrcamento}"/>
+											<Text text="{eventosSourcing>TotalOrcamento}"/>
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -446,7 +446,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Total Referência"/>
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalRef}"/>	
+											<Text text="{eventosSourcing>TotalRef}"/>	
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -454,7 +454,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Total Melhor 1ª Proposta"/>									
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/MelhorPrimeira}"/>
+											<Text text="{eventosSourcing>MelhorPrimeira}"/>
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -462,7 +462,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Total Valor Final"/>									
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/TotalFinal}"/>
+											<Text text="{eventosSourcing>TotalFinal}"/>
 										</VBox>
 									</l:BlockLayoutCell>																												
 								</l:BlockLayoutRow>
@@ -476,7 +476,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Saving (%) Negociado X Referência"/>									
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingFinal}%"/>
+											<Text text="{eventosSourcing>SavingFinal}%"/>
 										</VBox>
 									</l:BlockLayoutCell>									
 									<l:BlockLayoutCell>
@@ -484,7 +484,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Saving (%) Negociado X Melhor Proposta"/>	
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingMelhor}%"/>
+											<Text text="{eventosSourcing>SavingMelhor}%"/>
 										</VBox>
 									</l:BlockLayoutCell>
 									<l:BlockLayoutCell>
@@ -492,7 +492,7 @@
 											alignItems="Center"
 											justifyContent="Center">		
 											<ObjectIdentifier title="Saving (%) Negociado X Orçamento"/>	
-											<Text text="{ZMMARIBA>SumarioHeaderNavigation/SavingInicial}%"/>
+											<Text text="{eventosSourcing>SavingInicial}%"/>
 										</VBox>
 									</l:BlockLayoutCell>									
 								</l:BlockLayoutRow>
