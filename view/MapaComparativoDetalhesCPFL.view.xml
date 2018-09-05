@@ -233,8 +233,7 @@
 											<Text text="{eventosSourcing>QuantidadeAtual}" />
 											<ObjectIdentifier title="{eventosSourcing>MaterialName}" />
 											<Text text="{eventosSourcing>DataUltimaCompra}"/>
-											<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />	
-											<Input id="inpVlrReaj" liveChange="onLive" change="onVlrReaj" value="{eventosSourcing>ValorReajuste}"/>									
+											<ObjectIdentifier title="{eventosSourcing>NomeFornecedor}" />									
 											<Text text="{eventosSourcing>ValorTotal}" />
 										</cells>
 									</ColumnListItem>
