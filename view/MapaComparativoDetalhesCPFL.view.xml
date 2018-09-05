@@ -200,7 +200,7 @@
 									</Toolbar>
 								</headerToolbar>								
 								<columns>
-									<Column width="25em">
+									<Column width="30em">
 										<Text text="Nome do Item" />
 									</Column>								
 									<Column width="6em">
