@@ -356,7 +356,19 @@
 						"NegociadoImpostos": "14,80",
 						"TotalLiquido": "155,80"						
 					}					
-				],				
+				],			
+				"sumario": [
+					{
+						"DescProjeto": "RAS INDUSTRIAL COMERCIAL LTDA",
+						"Projeto": "15,00",
+						"Area": "17,00",
+						"Comprador": "13,80",
+						"Id": "145,80",
+						"Formalizacao": "145,80",
+						"Modalidade": "1",
+						"CondPagamento":"1"
+					},			
+				],						
 				"ultimaRodada": {
 					"valormedio" : 11.00,
 					"fornecedores": [

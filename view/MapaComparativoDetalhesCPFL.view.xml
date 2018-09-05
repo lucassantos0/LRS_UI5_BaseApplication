@@ -363,21 +363,21 @@
 							singleContainerFullSize="false" >
 							<f:content>
 								<Label text="Descrição do Projeto" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/DescProjeto}" />
+								<Text text="{eventosSourcing>DescProjeto}" />
 								<Label text="Código do Projeto" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Projeto}" />
+								<Text text="{eventosSourcing>Projeto}" />
 								<Label text="Área Requisitante" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Area}" />
+								<Text text="{eventosSourcing>Area}" />
 								<Label text="Comprador Responsável" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Comprador}" />
+								<Text text="{eventosSourcing>Comprador}" />
 								<Label text="Nº RFQ" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Id}" />
+								<Text text="{eventosSourcing>Id}" />
 								<Label text="Tipo de Formalização" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Formalizacao}" />
+								<Text text="{eventosSourcing>Formalizacao}" />
 								<Label text="Modalidade" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/Modalidade}" />
+								<Text text="{eventosSourcing>Modalidade}" />
 								<Label text="Condição de Pagamento" />
-								<Text text="{ZMMARIBA>SumarioHeaderNavigation/CondPagamento}" />
+								<Text text="{eventosSourcing>CondPagamento}" />
 							</f:content>
 						</f:SimpleForm>
 					 	<ScrollContainer width="100%">		
