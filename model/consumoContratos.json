@@ -199,7 +199,7 @@
 			{
 				"ebeln": "4600031316",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiçosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -237,7 +237,7 @@
 			{
 				"ebeln": "4600031316",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -297,7 +297,7 @@
 			{
 				"ebeln": "4600031313",
 				"ebelp": "00010",
-				"txz01": "N�OUSAR-M�O-DE-OBRACONTRATADAAVULSA",
+				"txz01": "MAO-DE-OBRACONTRATADAAVULSA",
 				"matnr": "000000030000000654",
 				"ematn": "000000030000000654",
 				"bukrs": "D006",
@@ -337,7 +337,7 @@
 			{
 				"ebeln": "4600031314",
 				"ebelp": "00010",
-				"txz01": "SERVI�OSDEINFORM�TICA-DIVERSOS",
+				"txz01": "SERVIÇOSDEINFORMÁTICA-DIVERSOS",
 				"matnr": "000000030000015529",
 				"ematn": "000000030000015529",
 				"bukrs": "D006",
@@ -670,7 +670,7 @@
 			{
 				"ebeln": "4600031269",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIB12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -689,7 +689,7 @@
 			{
 				"ebeln": "4600031269",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIB12ATIPOK",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -900,7 +900,7 @@
 			{
 				"ebeln": "4600031306",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiçosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -938,7 +938,7 @@
 			{
 				"ebeln": "4600031306",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIÇO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -1153,7 +1153,7 @@
 			{
 				"ebeln": "4600031273",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUS1VELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -1172,7 +1172,7 @@
 			{
 				"ebeln": "4600031273",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -1598,7 +1598,7 @@
 			{
 				"ebeln": "4600031277",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUI12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -1617,7 +1617,7 @@
 			{
 				"ebeln": "4600031277",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -2003,7 +2003,7 @@
 			{
 				"ebeln": "4600031282",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -2022,7 +2022,7 @@
 			{
 				"ebeln": "4600031282",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -2214,7 +2214,7 @@
 			{
 				"ebeln": "4600031283",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -2233,7 +2233,7 @@
 			{
 				"ebeln": "4600031283",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -2444,7 +2444,7 @@
 			{
 				"ebeln": "4600031302",
 				"ebelp": "00020",
-				"txz01": "Materiais e Servi�os para a Obram",
+				"txz01": "Materiais e Serviços para a Obram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D003",
@@ -2482,7 +2482,7 @@
 			{
 				"ebeln": "4600031302",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D003",
@@ -2560,7 +2560,7 @@
 			{
 				"ebeln": "4600031304",
 				"ebelp": "00020",
-				"txz01": "Materiais e Servi�os para a Obram",
+				"txz01": "Materiais e Servios para a Obram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2598,7 +2598,7 @@
 			{
 				"ebeln": "4600031304",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIÇO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2676,7 +2676,7 @@
 			{
 				"ebeln": "4600031307",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiçosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2714,7 +2714,7 @@
 			{
 				"ebeln": "4600031307",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2792,7 +2792,7 @@
 			{
 				"ebeln": "4600031308",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2830,7 +2830,7 @@
 			{
 				"ebeln": "4600031308",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2908,7 +2908,7 @@
 			{
 				"ebeln": "4600031309",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -2946,7 +2946,7 @@
 			{
 				"ebeln": "4600031309",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3024,7 +3024,7 @@
 			{
 				"ebeln": "4600031310",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiçosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3062,7 +3062,7 @@
 			{
 				"ebeln": "4600031310",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIÇO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3140,7 +3140,7 @@
 			{
 				"ebeln": "4600031311",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiçosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3178,7 +3178,7 @@
 			{
 				"ebeln": "4600031311",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIÇO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -3237,7 +3237,7 @@
 			{
 				"ebeln": "4600031279",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3256,7 +3256,7 @@
 			{
 				"ebeln": "4600031279",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -3526,7 +3526,7 @@
 			{
 				"ebeln": "4600031284",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3545,7 +3545,7 @@
 			{
 				"ebeln": "4600031284",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -3737,7 +3737,7 @@
 			{
 				"ebeln": "4600031285",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3756,7 +3756,7 @@
 			{
 				"ebeln": "4600031285",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -3948,7 +3948,7 @@
 			{
 				"ebeln": "4600031286",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -3967,7 +3967,7 @@
 			{
 				"ebeln": "4600031286",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -4393,7 +4393,7 @@
 			{
 				"ebeln": "4600031290",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -4412,7 +4412,7 @@
 			{
 				"ebeln": "4600031290",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -4838,7 +4838,7 @@
 			{
 				"ebeln": "4600031294",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -4857,7 +4857,7 @@
 			{
 				"ebeln": "4600031294",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -5283,7 +5283,7 @@
 			{
 				"ebeln": "4600031298",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -5302,7 +5302,7 @@
 			{
 				"ebeln": "4600031298",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -5747,7 +5747,7 @@
 			{
 				"ebeln": "4600031305",
 				"ebelp": "00020",
-				"txz01": "MateriaiseServi�osparaaObram",
+				"txz01": "MateriaiseServiosparaaObram",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -5785,7 +5785,7 @@
 			{
 				"ebeln": "4600031305",
 				"ebelp": "00040",
-				"txz01": "SERVI�O",
+				"txz01": "SERVIO",
 				"matnr": "",
 				"ematn": "",
 				"bukrs": "D006",
@@ -6078,7 +6078,7 @@
 			{
 				"ebeln": "4600031257",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -6097,7 +6097,7 @@
 			{
 				"ebeln": "4600031257",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -6407,7 +6407,7 @@
 			{
 				"ebeln": "4600031265",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -6426,7 +6426,7 @@
 			{
 				"ebeln": "4600031265",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -7048,7 +7048,7 @@
 			{
 				"ebeln": "4600031224",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -7067,7 +7067,7 @@
 			{
 				"ebeln": "4600031224",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -7493,7 +7493,7 @@
 			{
 				"ebeln": "4600031236",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -7512,7 +7512,7 @@
 			{
 				"ebeln": "4600031236",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -7938,7 +7938,7 @@
 			{
 				"ebeln": "4600031240",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -7957,7 +7957,7 @@
 			{
 				"ebeln": "4600031240",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -8383,7 +8383,7 @@
 			{
 				"ebeln": "4600031244",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -8402,7 +8402,7 @@
 			{
 				"ebeln": "4600031244",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -8828,7 +8828,7 @@
 			{
 				"ebeln": "4600031250",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -8847,7 +8847,7 @@
 			{
 				"ebeln": "4600031250",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -9039,7 +9039,7 @@
 			{
 				"ebeln": "4600031252",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -9058,7 +9058,7 @@
 			{
 				"ebeln": "4600031252",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -9522,7 +9522,7 @@
 			{
 				"ebeln": "4600031261",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -9541,7 +9541,7 @@
 			{
 				"ebeln": "4600031261",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -10403,7 +10403,7 @@
 			{
 				"ebeln": "4600031228",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -10422,7 +10422,7 @@
 			{
 				"ebeln": "4600031228",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
@@ -10614,7 +10614,7 @@
 			{
 				"ebeln": "4600031229",
 				"ebelp": "00010",
-				"txz01": "ELOFUS�VELDISTRIBUI��O12ATIPOK",
+				"txz01": "ELOFUSVELDISTRIBUIO12ATIPOK",
 				"matnr": "000000040000005973",
 				"ematn": "000000040000005973",
 				"bukrs": "D006",
@@ -10633,7 +10633,7 @@
 			{
 				"ebeln": "4600031229",
 				"ebelp": "00020",
-				"txz01": "ELOFUS�VELDISTRIBUI��O1ATIPOH",
+				"txz01": "ELOFUSVELDISTRIBUIO1ATIPOH",
 				"matnr": "000000040000003169",
 				"ematn": "000000040000003169",
 				"bukrs": "D006",
