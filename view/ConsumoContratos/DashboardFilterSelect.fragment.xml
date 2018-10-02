@@ -93,16 +93,16 @@
 								}">
 								<viz:dataset>
 									<viz.data:FlattenedDataset
-										data="{chart>/milk}">
+										data="{consumoContratos>/totals}">
 										<viz.data:dimensions>
 											<viz.data:DimensionDefinition
 												name="Material"
-												value="{chart>Material}" />
+												value="{consumoContratos>material}" />
 										</viz.data:dimensions>
 										<viz.data:measures>
 											<viz.data:MeasureDefinition
 												name="Consumo"
-												value="{chart>Consumo}" />
+												value="{consumoContratos>consumo}" />
 										</viz.data:measures>
 									</viz.data:FlattenedDataset>
 								</viz:dataset>
