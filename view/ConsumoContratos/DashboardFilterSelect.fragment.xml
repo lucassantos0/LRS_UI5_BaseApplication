@@ -1,7 +1,11 @@
 <core:FragmentDefinition
 	xmlns="sap.m"
 	xmlns:mc="sap.suite.ui.microchart"
-	xmlns:core="sap.ui.core">
+	xmlns:core="sap.ui.core"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns:layout="sap.ui.layout"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns:viz.data="sap.viz.ui5.data">
 	<Dialog
 		contentWidth="1024px"
 		contentHeight="720px"
@@ -11,7 +15,7 @@
 				expandable="true"
 				expanded="false"
 				width="auto"
-				headerText="Contratos vencendo nos próximos 90 dias: 100"
+				headerText="Programas de remessa vencendo nos próximos 90 dias: 100"
 				class="sapUiResponsiveMargin">
 				<content>
 					<GenericTile
@@ -59,27 +63,12 @@
 				</content>
 			</Panel>
 			<Panel
+				expandable="true"
+				expanded="false"
 				width="auto"
+				headerText="Materiais em programas de remessa expirando"
 				class="sapUiResponsiveMargin">
 				<content>
-					<Text
-						text="PR vencendo nos próximos 30 dias por: fornecedores/materiais/grupo de materiais" />
-				</content>
-			</Panel>
-			<Panel
-				width="auto"
-				class="sapUiResponsiveMargin">
-				<content>
-					<Text
-						text="Contratos com alguma linha acima de 90%: fornecedores/materiais/grupo de materiais" />
-				</content>
-			</Panel>
-			<Panel
-				width="auto"
-				class="sapUiResponsiveMargin">
-				<content>
-					<Text
-						text="PR com alguma linha acima de 90%: fornecedores/materiais/grupo de materiais" />
 				</content>
 			</Panel>
 		</content>
