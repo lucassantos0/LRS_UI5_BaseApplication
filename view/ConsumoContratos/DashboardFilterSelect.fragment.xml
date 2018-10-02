@@ -3,8 +3,8 @@
 	xmlns:mc="sap.suite.ui.microchart"
 	xmlns:core="sap.ui.core">
 	<Dialog
-		contentWidth="640px"
-		contentHeight="480px"
+		contentWidth="1024px"
+		contentHeight="720px"
 		title="Visão sintética">
 		<content>
 			<Panel
@@ -12,18 +12,43 @@
 				class="sapUiResponsiveMargin">
 				<content>
 					<Text
-						text="Contratos vencendo nos próximos 30 dias por: fornecedores/materiais/grupo de materiais" />
+						text="Contratos vencendo nos próximos 90 dias: 100" />
 					<GenericTile
 						press="press"
-						header="This is OneByOne tile with"
-						subheader="a RadialMicroChart"
+						header="60 dias"
 						frameType="OneByOne">
 						<tileContent>
-							<TileContent footer="Some footer">
+							<TileContent footer="Total: 70">
 								<content>
 									<mc:RadialMicroChart
-										percentage="99.9"
+										percentage="70%"
+										valueColor="Good" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile><GenericTile
+						press="press"
+						header="30 dias"
+						frameType="OneByOne">
+						<tileContent>
+							<TileContent footer="Total: 30">
+								<content>
+									<mc:RadialMicroChart
+										percentage="30%"
 										valueColor="Neutral" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile><GenericTile
+						press="press"
+						header="7 dias"
+						frameType="OneByOne">
+						<tileContent>
+							<TileContent footer="Total: 3">
+								<content>
+									<mc:RadialMicroChart
+										percentage="5%"
+										valueColor="Error" />
 								</content>
 							</TileContent>
 						</tileContent>
