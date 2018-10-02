@@ -86,8 +86,8 @@
 								<Link text="{consumoContratos>bukrs}" />
 								<Label text="Fornecedor" />
 								<Link text="{consumoContratos>lfa1/name1}" />
-								<Label visible="{= ${consumoContratos>lfa1/name2} != '' ? true : false }" text=" " />
-								<Text visible="{= ${consumoContratos>lfa1/name2} != '' ? true : false }" text="{consumoContratos>lfa1/name2}" />
+								<Label visible="{= ${consumoContratos>lfa1/name2} === '' ? false : true }" text=" " />
+								<Text visible="{= ${consumoContratos>lfa1/name2} === '' ? false : true }" text="{consumoContratos>lfa1/name2}" />
 								<Label text="Ctg.doc.compras" />
 								<Text text="{consumoContratos>bstyp}" />
 								<Label text="Tp.doc.compras" />
