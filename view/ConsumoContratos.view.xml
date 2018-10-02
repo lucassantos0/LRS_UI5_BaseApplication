@@ -119,7 +119,7 @@
 						<Table
 							inset="false"
 							items="{
-							path: 'consumoContratos>items/'
+							path: 'consumoContratos>ekpo/'
 						}"
 						>
 							<headerToolbar>
