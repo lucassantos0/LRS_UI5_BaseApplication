@@ -7,7 +7,7 @@
 			pageId="companyPageId"
 			header="{name1}"
 			icon="sap-icon://building"
-			title="{name1}"
+			title="{consumoContratos>lfa1/name1}"
 			titleUrl="{titleUrl}"
 			description="{description}"
 			groups="{ path : 'groups', templateShareable : 'true'}"

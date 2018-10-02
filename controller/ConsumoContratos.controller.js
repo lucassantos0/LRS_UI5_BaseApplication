@@ -53,9 +53,9 @@ sap.ui.define(
 		  this._oQuickViewSupplier = sap.ui.xmlfragment("lrs.ui5.view.ConsumoContratos.SupplierQuickCard", this);
 		  this.getView().addDependent(this._oQuickViewSupplier);
 	  },
-	  openQuickViewSupplier : function(oEvent, oModel) {
+	  openQuickViewSupplier : function(oEvent, sPath) {
 		  this.createPopover();
-		  this._oQuickViewSupplier.setModel(oModel);
+		  this._oQuickViewSupplier.setBindingContext("consumoContratos>" + sPath);
 		  var oButton = oEvent.getSource();
 		  jQuery.sap.delayedCall(0, this, function() {
 			  this._oQuickViewSupplier.openBy(oButton);
@@ -63,7 +63,7 @@ sap.ui.define(
 	  },
 	  viewSupplierDetails : function(oEvent) {
 	  	var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
-		  this.openQuickViewSupplier(oEvent, new sap.ui.model.json.JSONModel(this.getModel("consumoContratos").getObject(bindingContextPath).lfa1) );
+		  this.openQuickViewSupplier(oEvent, sPath );
 	  }
 	});
 });
