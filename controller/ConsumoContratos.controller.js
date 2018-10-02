@@ -64,6 +64,14 @@ sap.ui.define(
 	  viewSupplierDetails : function(oEvent) {
 	  	var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
 		  this.openQuickViewSupplier(oEvent, bindingContextPath );
+	  },
+	  viewDashboardFilterSelect : function(oEvent){
+	  	if (this._oDashboardFilterSelectDialog) {
+			  this._oDashboardFilterSelectDialog.destroy();
+		  }
+		  this._oDashboardFilterSelectDialog = sap.ui.xmlfragment("lrs.ui5.view.ConsumoContratos.DashboardFilterSelect", this);
+		  this.getView().addDependent(this._oDashboardFilterSelectDialog);
+			this._oDashboardFilterSelectDialog.open();
 	  }
 	});
 });

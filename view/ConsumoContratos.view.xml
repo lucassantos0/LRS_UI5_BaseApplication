@@ -61,7 +61,7 @@
 							press="onFilterSettings" />
 						<Button
 							icon="sap-icon://area-chart"
-							press="onFilterChartSettings" />
+							press="viewDashboardFilterSelect" />
 					</Toolbar>
 				</footer>
 			</Page>
