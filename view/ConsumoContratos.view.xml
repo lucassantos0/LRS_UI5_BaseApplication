@@ -77,10 +77,10 @@
 						<f:SimpleForm
 							editable="false"
 							layout="ResponsiveGridLayout"
-							labelSpanXL="8"
-							labelSpanL="8"
-							labelSpanM="8"
-							labelSpanS="12"
+							labelSpanXL="12"
+							labelSpanL="12"
+							labelSpanM="12"
+							labelSpanS="18"
 							adjustLabelSpan="false"
 							emptySpanXL="0"
 							emptySpanL="0"
@@ -88,7 +88,7 @@
 							emptySpanS="0"
 							columnsXL="3"
 							columnsL="3"
-							columnsM="3"
+							columnsM="2"
 							singleContainerFullSize="false"
 						>
 							<f:content>
