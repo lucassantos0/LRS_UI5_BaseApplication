@@ -5,19 +5,18 @@
 	<QuickView>
 		<QuickViewPage
 			icon="sap-icon://building"
-			title="{consumoContratos>lfa1/name1}"
+			title="{consumoContratos>lfa1/lifnr}"
 		>
-			<QuickViewGroup
-				heading="Contato"
-			>
+			<QuickViewGroup heading="Contato">
 				<QuickViewGroupElement
-					label="Código SAP"
-					value="{consumoContratos>lfa1/lifnr}"
-					type="sap.m.QuickViewGroupElementType.text"
-				>
-				</QuickViewGroupElement>
+					label="Nome"
+					value="{consumoContratos>lfa1/name1}"
+					type="sap.m.QuickViewGroupElementType.text" />
+				<QuickViewGroupElement
+					label=""
+					value="{consumoContratos>lfa1/name2}"
+					type="sap.m.QuickViewGroupElementType.text" />
 			</QuickViewGroup>
-			
 		</QuickViewPage>
 	</QuickView>
 </core:FragmentDefinition>
