@@ -17,7 +17,49 @@ sap.ui.define(
 		    listItemType : sap.ui.Device.system.phone ? "Active" : "Inactive"
 		  });
 		  this.setModel(oDeviceModel, "device");
-
+		  var oMockJson =
+		  {
+			  "milk" :
+			  [
+			  {
+			    "Seasons" : "Spring '16",
+			    "Revenue" : 325020.45,
+			    "Cost" : 197234.4,
+			    "Cost1" : 24800.63,
+			    "Cost2" : 172433.77,
+			    "Target" : 400000.00,
+			    "Budget" : 210000.00
+			  },
+			  {
+			    "Seasons" : "Summer '16",
+			    "Revenue" : 464000.3,
+			    "Cost" : 232070.5,
+			    "Cost1" : 51200.39,
+			    "Cost2" : 180870.11,
+			    "Target" : 400000.00,
+			    "Budget" : 224000.00
+			  },
+			  {
+			    "Seasons" : "Autumn '16",
+			    "Revenue" : 479100.17,
+			    "Cost" : 231003.32,
+			    "Cost1" : 79200.54,
+			    "Cost2" : 151802.78,
+			    "Target" : 440000.00,
+			    "Budget" : 238000.00
+			  },
+			  {
+			    "Seasons" : "Winter '16",
+			    "Revenue" : 536110.34,
+			    "Cost" : 371122.45,
+			    "Cost1" : 108800.73,
+			    "Cost2" : 262321.72,
+			    "Target" : 440000.00,
+			    "Budget" : 252000.00
+			  } ]
+		  };
+		  this._oMockModel = new sap.ui.model.json.JSONModel(oMockJson);
+		  this.setModel(this._oMockModel, "chart");
 	  },
 	  formatterMasterListDate : function(sDate) {
 		  var str = sDate;
@@ -62,16 +104,16 @@ sap.ui.define(
 		  });
 	  },
 	  viewSupplierDetails : function(oEvent) {
-	  	var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
-		  this.openQuickViewSupplier(oEvent, bindingContextPath );
+		  var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
+		  this.openQuickViewSupplier(oEvent, bindingContextPath);
 	  },
-	  viewDashboardFilterSelect : function(oEvent){
-	  	if (this._oDashboardFilterSelectDialog) {
+	  viewDashboardFilterSelect : function(oEvent) {
+		  if (this._oDashboardFilterSelectDialog) {
 			  this._oDashboardFilterSelectDialog.destroy();
 		  }
 		  this._oDashboardFilterSelectDialog = sap.ui.xmlfragment("lrs.ui5.view.ConsumoContratos.DashboardFilterSelect", this);
 		  this.getView().addDependent(this._oDashboardFilterSelectDialog);
-			this._oDashboardFilterSelectDialog.open();
+		  this._oDashboardFilterSelectDialog.open();
 	  }
 	});
 });
