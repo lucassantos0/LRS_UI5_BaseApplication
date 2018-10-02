@@ -80,7 +80,7 @@
 			},
 			"consumoContratos": {
 				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/consumoContratos.json"
+				"uri": "model/gestaoSaldoContratos.json"
 			},
 			"embarquesFornecedor": {
 				"type": "sap.ui.model.json.JSONModel",

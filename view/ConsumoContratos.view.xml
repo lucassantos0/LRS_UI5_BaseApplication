@@ -1,25 +1,32 @@
 <mvc:View
-		height="100%"
-		xmlns:core="sap.ui.core"
-		xmlns:mvc="sap.ui.core.mvc"
-		xmlns="sap.m"
-		controllerName="lrs.ui5.controller.ConsumoContratos"
-		xmlns:semantic="sap.m.semantic"
-		xmlns:f="sap.ui.layout.form">
-		
-<SplitContainer id="SplitContainer" initialDetail="detail" initialMaster="master">
-
+	height="100%"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	controllerName="lrs.ui5.controller.ConsumoContratos"
+	xmlns:semantic="sap.m.semantic"
+	xmlns:f="sap.ui.layout.form"
+>
+	<SplitContainer
+		id="SplitContainer"
+		initialDetail="detail"
+		initialMaster="master"
+	>
 		<masterPages>
-		
-			<Page id="master" title="Contratos" navButtonPress="onPressVoltar" showNavButton="true">
+			<Page
+				id="master"
+				title="Contratos"
+				navButtonPress="onPressVoltar"
+				showNavButton="true"
+			>
 				<content>
-					<List
-						items="{consumoContratos>/}">
+					<List items="{consumoContratos>/}">
 						<items>
 							<ObjectListItem
 								title="{consumoContratos>ebeln}"
 								type="Active"
-								press="onSelecionarContrato">
+								press="onSelecionarContrato"
+							>
 								<firstStatus>
 									<ObjectStatus
 										visible="{= ${consumoContratos>itemsPorcentagemConsumo} ? true : false }"
@@ -30,7 +37,8 @@
 										}" />
 								</firstStatus>
 								<attributes>
-									<ObjectAttribute text="{
+									<ObjectAttribute
+										text="{
 										path: 'consumoContratos>kdate',
 										formatter: '.formatterMasterListDate'
 									}" />
@@ -39,124 +47,136 @@
 						</items>
 					</List>
 				</content>
-			    <footer>
-			      <Toolbar>
-			        <Button id="idBtnCalendar" icon="sap-icon://calendar" press="onCalendarSettings" />
-			        <Button id="idBtnFilter" icon="sap-icon://filter" press="onFilterSettings" />
-			      </Toolbar>
-			    </footer>				
+				<footer>
+					<Toolbar>
+						<Button
+							id="idBtnCalendar"
+							icon="sap-icon://calendar"
+							press="onCalendarSettings" />
+						<Button
+							id="idBtnFilter"
+							icon="sap-icon://filter"
+							press="onFilterSettings" />
+						<Button 
+							icon="sap-icon://BusinessSuiteInAppSymbols/icon-line-bar-chart"
+							press="onFilterChartSettings" />
+					</Toolbar>
+				</footer>
 			</Page>
 		</masterPages>
 		<detailPages>
-		   			<Page id="detail"  title="{consumoContratos>ebeln}" navButtonPress="onVoltarDevice" showNavButton="{device>/isPhone}">
+			<Page
+				id="detail"
+				title="{consumoContratos>ebeln}"
+				navButtonPress="onVoltarDevice"
+				showNavButton="{device>/isPhone}"
+			>
 				<content>
-				<VBox class="sapUiSmallMargin">
-					<f:SimpleForm 
-						editable="false"
-						layout="ResponsiveGridLayout"
-						labelSpanXL="8"
-						labelSpanL="8"
-						labelSpanM="8"
-						labelSpanS="12"
-						adjustLabelSpan="false"
-						emptySpanXL="0"
-						emptySpanL="0"
-						emptySpanM="0"
-						emptySpanS="0"
-						columnsXL="3"
-						columnsL="3"
-						columnsM="3"
-						singleContainerFullSize="false" >
-						<f:content>
-							<core:Title text="" />
-							<Label text="Empresa" />
-							<Link text="{consumoContratos>bukrs}" />
-							<Label text="Ctg.doc.compras" />
-							<Text text="{consumoContratos>bstyp}" />
-							<Label text="Tp.doc.compras" />
-							<Text text="{consumoContratos>bsart}" />
-							<core:Title text="" /> 
-							<Label text="Data de criação" />
-							<Text text="{consumoContratos>aedat}" />
-							<Label text="Organiz.compras" />
-							<Link text="{consumoContratos>ekorg}" />
-							<Label text="Grupo de compradores" />
-							<Link text="{consumoContratos>ekgrp}" />
-							<core:Title text="" />
-							<Label text="Moeda" />
-							<Text text="{consumoContratos>waers}" />
-							<Label text="Início per.validade" />
-							<Text text="{consumoContratos>kdatb}" />
-							<Label text="Fim da validade" />
-							<Text text="{consumoContratos>kdate}" />
-							<Label text="ValFix.(nível cab.)" />
-							<Text text="{consumoContratos>ktwrt}" />
-						</f:content>
-					</f:SimpleForm>
-					<Table 
-						inset="false"
-						items="{
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm
+							editable="false"
+							layout="ResponsiveGridLayout"
+							labelSpanXL="8"
+							labelSpanL="8"
+							labelSpanM="8"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="0"
+							emptySpanL="0"
+							emptySpanM="0"
+							emptySpanS="0"
+							columnsXL="3"
+							columnsL="3"
+							columnsM="3"
+							singleContainerFullSize="false"
+						>
+							<f:content>
+								<core:Title text="" />
+								<Label text="Empresa" />
+								<Link text="{consumoContratos>bukrs}" />
+								<Label text="Ctg.doc.compras" />
+								<Text text="{consumoContratos>bstyp}" />
+								<Label text="Tp.doc.compras" />
+								<Text text="{consumoContratos>bsart}" />
+								<core:Title text="" />
+								<Label text="Data de criação" />
+								<Text text="{consumoContratos>aedat}" />
+								<Label text="Organiz.compras" />
+								<Link text="{consumoContratos>ekorg}" />
+								<Label text="Grupo de compradores" />
+								<Link text="{consumoContratos>ekgrp}" />
+								<core:Title text="" />
+								<Label text="Moeda" />
+								<Text text="{consumoContratos>waers}" />
+								<Label text="Início per.validade" />
+								<Text text="{consumoContratos>kdatb}" />
+								<Label text="Fim da validade" />
+								<Text text="{consumoContratos>kdate}" />
+								<Label text="ValFix.(nível cab.)" />
+								<Text text="{consumoContratos>ktwrt}" />
+							</f:content>
+						</f:SimpleForm>
+						<Table
+							inset="false"
+							items="{
 							path: 'consumoContratos>items/'
-						}">
-						<headerToolbar>
-							<Toolbar>
-								<Title text="Itens" level="H2"/>
-							</Toolbar>
-						</headerToolbar>
-						<columns>
-							<Column
-								width="14em">
-								<Text text="Material" />
-							</Column>
-							<Column
-								minScreenWidth="Tablet"
-								demandPopin="true">
-								<Text text="Item" />
-							</Column>
-							<Column
-								minScreenWidth="Tablet"
-								demandPopin="true">
-								<Text text="Grupo de mercadorias" />
-							</Column>
-							<Column
-								minScreenWidth="Tablet"
-								demandPopin="true"
-								hAlign="Center">
-								<Text text="Quantidade prevista" />
-							</Column>
-							<Column>
-								<Text text="Qtd.do pedido" />
-							</Column>
-							<Column>
-								<Text text="% consumido" />
-							</Column>
-						</columns>
-						<items>
-							<ColumnListItem>
-								<cells>
-									<ObjectIdentifier
-										title="{consumoContratos>txz01}"
-										text="{consumoContratos>matnr}"/>
-									<Text text="{consumoContratos>ebelp}" />
-									<Text text="{consumoContratos>matkl}" />
-									<Text text="{consumoContratos>ktmng}" />
-									<Text text="{consumoContratos>menge}" />
-									<Text text="0%" />
-								</cells>
-							</ColumnListItem>
-						</items>
-					</Table>
-				</VBox>
+						}"
+						>
+							<headerToolbar>
+								<Toolbar>
+									<Title
+										text="Itens"
+										level="H2" />
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="14em">
+									<Text text="Material" />
+								</Column>
+								<Column
+									minScreenWidth="Tablet"
+									demandPopin="true"
+								>
+									<Text text="Item" />
+								</Column>
+								<Column
+									minScreenWidth="Tablet"
+									demandPopin="true"
+								>
+									<Text text="Grupo de mercadorias" />
+								</Column>
+								<Column
+									minScreenWidth="Tablet"
+									demandPopin="true"
+									hAlign="Center"
+								>
+									<Text text="Quantidade prevista" />
+								</Column>
+								<Column>
+									<Text text="Qtd.do pedido" />
+								</Column>
+								<Column>
+									<Text text="% consumido" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier
+											title="{consumoContratos>txz01}"
+											text="{consumoContratos>matnr}" />
+										<Text text="{consumoContratos>ebelp}" />
+										<Text text="{consumoContratos>matkl}" />
+										<Text text="{consumoContratos>ktmng}" />
+										<Text text="{consumoContratos>menge}" />
+										<Text text="0%" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</VBox>
 				</content>
-				<footer>
-					<Toolbar>
-						<Button text="Reajuste" icon="sap-icon://action" press="onPress"/>
-						<Button text="Renegociação" icon="sap-icon://action" press="onPress"/>
-						<Button text="Aditivo" icon="sap-icon://action" press="onPress"/>
-					</Toolbar>	
-				</footer>
-			</Page>	
+			</Page>
 		</detailPages>
- 	</SplitContainer>
-
+	</SplitContainer>
 </mvc:View>
