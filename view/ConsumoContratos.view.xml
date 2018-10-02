@@ -78,9 +78,6 @@
 							editable="false"
 							layout="ResponsiveGridLayout"
 							adjustLabelSpan="true"
-							columnsXL="2"
-							columnsL="2"
-							columnsM="2"
 							singleContainerFullSize="false"
 						>
 							<f:content>
