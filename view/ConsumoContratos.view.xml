@@ -42,7 +42,8 @@
 											path: 'consumoContratos>kdate',
 											formatter: '.formatterMasterListDate'
 										}" />
-									<ObjectAttribute text="{= ${consumoContratos>bstyp} === 'L' ? 'Programa de remessa' : 'Contrato' }" />
+									<ObjectAttribute
+										text="{= ${consumoContratos>bstyp} === 'L' ? 'Programa de remessa' : 'Contrato' }" />
 								</attributes>
 							</ObjectListItem>
 						</items>
@@ -85,9 +86,16 @@
 								<Label text="Empresa" />
 								<Link text="{consumoContratos>bukrs}" />
 								<Label text="Fornecedor" />
-								<Link text="{consumoContratos>lfa1/name1}" />
-								<Label visible="{= ${consumoContratos>lfa1/name2} === '' ? false : true }" text=" " />
-								<Link visible="{= ${consumoContratos>lfa1/name2} === '' ? false : true }" text="{consumoContratos>lfa1/name2}" />
+								<Link
+									text="{consumoContratos>lfa1/name1}"
+									press="viewSupplierDetails" />
+								<Label
+									visible="{= ${consumoContratos>lfa1/name2} === '' ? false : true }"
+									text=" " />
+								<Link
+									visible="{= ${consumoContratos>lfa1/name2} === '' ? false : true }"
+									text="{consumoContratos>lfa1/name2}"
+									press="viewSupplierDetails" />
 								<Label text="Ctg.doc.compras" />
 								<Text text="{consumoContratos>bstyp}" />
 								<Label text="Tp.doc.compras" />
