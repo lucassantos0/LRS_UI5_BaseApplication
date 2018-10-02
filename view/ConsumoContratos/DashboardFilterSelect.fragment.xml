@@ -81,7 +81,7 @@
 								vizType='column'>
 								<viz:dataset>
 									<viz.data:FlattenedDataset
-										data="{chart>/milk}">
+										data="{chart>milk/}">
 										<viz.data:dimensions>
 											<viz.data:DimensionDefinition
 												name="Week"
