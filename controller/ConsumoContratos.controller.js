@@ -55,7 +55,7 @@ sap.ui.define(
 	  },
 	  openQuickViewSupplier : function(oEvent, sPath) {
 		  this.createPopover();
-		  this._oQuickViewSupplier.setBindingContext("consumoContratos>" + sPath);
+		  this._oQuickViewSupplier.bindContext("consumoContratos>" + sPath);
 		  var oButton = oEvent.getSource();
 		  jQuery.sap.delayedCall(0, this, function() {
 			  this._oQuickViewSupplier.openBy(oButton);
