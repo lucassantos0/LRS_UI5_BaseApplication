@@ -85,7 +85,7 @@
 								<Label text="Empresa" />
 								<Link text="{consumoContratos>bukrs}" />
 								<Label text="Fornecedor" />
-								<Link text="{consumoContratos>lfa1/name1}" />
+								<Link text="{consumoContratos>lfa1/name1} {consumoContratos>lfa1/name2}" />
 								<Label text="Ctg.doc.compras" />
 								<Text text="{consumoContratos>bstyp}" />
 								<Label text="Tp.doc.compras" />
