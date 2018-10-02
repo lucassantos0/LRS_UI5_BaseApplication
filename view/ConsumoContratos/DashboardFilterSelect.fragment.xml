@@ -8,13 +8,11 @@
 		title="Visão sintética">
 		<content>
 			<Panel
+				expandable="true"
+				expanded="false"
 				width="auto"
+				headerText="Contratos vencendo nos próximos 90 dias: 100"
 				class="sapUiResponsiveMargin">
-				<headerToolbar>
-					<Toolbar height="3rem">
-						<Title text="Contratos vencendo nos próximos 90 dias: 100" />
-					</Toolbar>
-				</headerToolbar>
 				<content>
 					<GenericTile
 						press="press"
