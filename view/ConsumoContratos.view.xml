@@ -171,10 +171,7 @@
 										<Text text="{consumoContratos>matkl}" />
 										<Text text="{consumoContratos>ktmng}" />
 										<Text text="{consumoContratos>menge}" />
-										<Text text="{
-											parts: [{path: 'consumoContratos>menge'},{path: 'consumoContratos>ktmng'}],
-											formatter: '.formatterConsumoQuantidadeContrato'  
-										}" />
+										<Text text="{= ( ${consumoContratos>menge'} / ${consumoContratos>ktmng} ) * 100 }" />
 									</cells>
 								</ColumnListItem>
 							</items>
