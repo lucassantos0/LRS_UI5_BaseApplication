@@ -60,7 +60,7 @@
 							icon="sap-icon://filter"
 							press="onFilterSettings" />
 						<Button
-							icon="sap-icon://SAP-icons-TNT/throughput-backlog"
+							icon="sap-icon://area-chart"
 							press="onFilterChartSettings" />
 					</Toolbar>
 				</footer>
