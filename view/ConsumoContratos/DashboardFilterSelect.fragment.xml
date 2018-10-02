@@ -1,13 +1,59 @@
 <core:FragmentDefinition
 	xmlns="sap.m"
-	xmlns:core="sap.ui.core"
->
+	xmlns:mc="sap.suite.ui.microchart"
+	xmlns:core="sap.ui.core">
 	<Dialog
 		contentWidth="640px"
 		contentHeight="480px"
 		title="Visão sintética">
 		<content>
-		
+			<Panel
+				width="auto"
+				class="sapUiResponsiveMargin">
+				<content>
+					<Text
+						text="Contratos vencendo nos próximos 30 dias por: fornecedores/materiais/grupo de materiais" />
+					<GenericTile
+						press="press"
+						header="This is OneByOne tile with"
+						subheader="a RadialMicroChart"
+						frameType="OneByOne">
+						<tileContent>
+							<TileContent footer="Some footer">
+								<content>
+									<mc:RadialMicroChart
+										percentage="99.9"
+										valueColor="Neutral" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</content>
+			</Panel>
+			<Panel
+				width="auto"
+				class="sapUiResponsiveMargin">
+				<content>
+					<Text
+						text="PR vencendo nos próximos 30 dias por: fornecedores/materiais/grupo de materiais" />
+				</content>
+			</Panel>
+			<Panel
+				width="auto"
+				class="sapUiResponsiveMargin">
+				<content>
+					<Text
+						text="Contratos com alguma linha acima de 90%: fornecedores/materiais/grupo de materiais" />
+				</content>
+			</Panel>
+			<Panel
+				width="auto"
+				class="sapUiResponsiveMargin">
+				<content>
+					<Text
+						text="PR com alguma linha acima de 90%: fornecedores/materiais/grupo de materiais" />
+				</content>
+			</Panel>
 		</content>
 	</Dialog>
 </core:FragmentDefinition>
