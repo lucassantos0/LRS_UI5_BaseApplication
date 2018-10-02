@@ -85,15 +85,15 @@
 										<viz.data:dimensions>
 											<viz.data:DimensionDefinition
 												name="Week"
-												value="{Week}" />
+												value="{chart>Week}" />
 										</viz.data:dimensions>
 										<viz.data:measures>
 											<viz.data:MeasureDefinition
 												name="Revenue"
-												value="{Revenue}" />
+												value="{chart>Revenue}" />
 											<viz.data:MeasureDefinition
 												name="Cost"
-												value="{Cost}" />
+												value="{chart>Cost}" />
 										</viz.data:measures>
 									</viz.data:FlattenedDataset>
 								</viz:dataset>
