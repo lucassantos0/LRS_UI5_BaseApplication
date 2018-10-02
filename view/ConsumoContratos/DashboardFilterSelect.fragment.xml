@@ -78,7 +78,14 @@
 								uiConfig="{applicationSet:'fiori'}"
 								height='100%'
 								width="100%"
-								vizType='column'>
+								vizType='column'
+								vizProperties="{
+									plotArea : {
+									 	dataLabel : {
+									 		visible : true
+									 	}
+									}
+								}">
 								<viz:dataset>
 									<viz.data:FlattenedDataset
 										data="{chart>/milk}">
