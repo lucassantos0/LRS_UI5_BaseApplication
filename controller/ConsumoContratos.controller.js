@@ -64,6 +64,10 @@ sap.ui.define(
 	  viewSupplierDetails : function(oEvent) {
 	  	var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
 		  this.openQuickViewSupplier(oEvent, bindingContextPath );
+	  },
+	  formatterConsumoQuantidadeContrato : function(nAtual, nPrevistoTotal){
+	  	var currFormat = sap.ui.core.format.NumberFormat.getCurrencyInstance();
+	  	return currFormat.format( nAtual / nPrevistoTotal );
 	  }
 	});
 });
