@@ -10,9 +10,12 @@
 			<Panel
 				width="auto"
 				class="sapUiResponsiveMargin">
+				<headerToolbar>
+					<Toolbar height="3rem">
+						<Title text="Contratos vencendo nos próximos 90 dias: 100" />
+					</Toolbar>
+				</headerToolbar>
 				<content>
-					<Text
-						text="Contratos vencendo nos próximos 90 dias: 100" />
 					<GenericTile
 						press="press"
 						header="60 dias"
@@ -26,7 +29,8 @@
 								</content>
 							</TileContent>
 						</tileContent>
-					</GenericTile><GenericTile
+					</GenericTile>
+					<GenericTile
 						press="press"
 						header="30 dias"
 						frameType="OneByOne">
@@ -39,7 +43,8 @@
 								</content>
 							</TileContent>
 						</tileContent>
-					</GenericTile><GenericTile
+					</GenericTile>
+					<GenericTile
 						press="press"
 						header="7 dias"
 						frameType="OneByOne">
