@@ -50,7 +50,7 @@ sap.ui.define(
 			  this._oQuickViewSupplier.destroy();
 		  }
 
-		  this._oQuickViewSupplier = sap.ui.xmlfragment("lrs.ui5.controller.ConsumoContratos.SupplierQuickCard", this);
+		  this._oQuickViewSupplier = sap.ui.xmlfragment("lrs.ui5.view.ConsumoContratos.SupplierQuickCard", this);
 		  this.getView().addDependent(this._oQuickViewSupplier);
 	  },
 	  openQuickViewSupplier : function(oEvent, oModel) {
