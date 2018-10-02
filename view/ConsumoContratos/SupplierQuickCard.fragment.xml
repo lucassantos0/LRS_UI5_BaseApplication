@@ -2,11 +2,7 @@
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core"
 >
-	<QuickView
-		id="quickView"
-		pages="{ path : '/pages', templateShareable : 'true'}"
-		navigate=".onNavigate"
-	>
+	<QuickView>
 		<QuickViewPage
 			pageId="{pageId}"
 			header="{header}"
