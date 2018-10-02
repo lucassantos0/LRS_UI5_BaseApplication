@@ -67,7 +67,7 @@ sap.ui.define(
 	  },
 	  formatterConsumoQuantidadeContrato : function(nAtual, nPrevistoTotal){
 	  	var currFormat = sap.ui.core.format.NumberFormat.getCurrencyInstance();
-	  	return currFormat.format( nAtual / nPrevistoTotal );
+	  	return currFormat.format( nAtual / nPrevistoTotal ).toString();
 	  }
 	});
 });
