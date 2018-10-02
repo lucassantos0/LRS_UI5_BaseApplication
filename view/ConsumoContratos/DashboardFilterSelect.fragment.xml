@@ -84,16 +84,13 @@
 										data="{chart>/milk}">
 										<viz.data:dimensions>
 											<viz.data:DimensionDefinition
-												name="Seasons"
-												value="{chart>Seasons}" />
+												name="Material"
+												value="{chart>Material}" />
 										</viz.data:dimensions>
 										<viz.data:measures>
 											<viz.data:MeasureDefinition
 												name="Revenue"
-												value="{chart>Revenue}" />
-											<viz.data:MeasureDefinition
-												name="Cost"
-												value="{chart>Cost}" />
+												value="{chart>Consumo}" />
 										</viz.data:measures>
 									</viz.data:FlattenedDataset>
 								</viz:dataset>
@@ -102,12 +99,12 @@
 										id='valueAxisFeed'
 										uid="valueAxis"
 										type="Measure"
-										values="Revenue" />
+										values="Consumo" />
 									<viz.feeds:FeedItem
 										id='categoryAxisFeed'
 										uid="categoryAxis"
 										type="Dimension"
-										values="Seasons" />
+										values="Material" />
 								</viz:feeds>
 							</viz:VizFrame>
 						</layout:flexContent>

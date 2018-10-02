@@ -22,40 +22,34 @@ sap.ui.define(
 			  "milk" :
 			  [
 			  {
-			    "Seasons" : "Spring '16",
-			    "Revenue" : 325020.45,
-			    "Cost" : 197234.4,
-			    "Cost1" : 24800.63,
-			    "Cost2" : 172433.77,
-			    "Target" : 400000.00,
-			    "Budget" : 210000.00
+			  	"Material" : "Material 1",
+			    "Fornecedor" : "1000",
+			    "Consumo" : "99"
 			  },
 			  {
-			    "Seasons" : "Summer '16",
-			    "Revenue" : 464000.3,
-			    "Cost" : 232070.5,
-			    "Cost1" : 51200.39,
-			    "Cost2" : 180870.11,
-			    "Target" : 400000.00,
-			    "Budget" : 224000.00
+			  	"Material" : "Material 2",
+			    "Fornecedor" : "1010",
+			    "Consumo" : "80"
 			  },
 			  {
-			    "Seasons" : "Autumn '16",
-			    "Revenue" : 479100.17,
-			    "Cost" : 231003.32,
-			    "Cost1" : 79200.54,
-			    "Cost2" : 151802.78,
-			    "Target" : 440000.00,
-			    "Budget" : 238000.00
+			  	"Material" : "Material 3",
+			    "Fornecedor" : "1010",
+			    "Consumo" : "70"
 			  },
 			  {
-			    "Seasons" : "Winter '16",
-			    "Revenue" : 536110.34,
-			    "Cost" : 371122.45,
-			    "Cost1" : 108800.73,
-			    "Cost2" : 262321.72,
-			    "Target" : 440000.00,
-			    "Budget" : 252000.00
+			  	"Material" : "Material 4",
+			    "Fornecedor" : "1000",
+			    "Consumo" : "70"
+			  },
+			  {
+			  	"Material" : "Material 5",
+			    "Fornecedor" : "999",
+			    "Consumo" : "38"
+			  },
+			  {
+			  	"Material" : "Material 6",
+			    "Fornecedor" : "1010",
+			    "Consumo" : "12"
 			  } ]
 		  };
 		  this._oMockModel = new sap.ui.model.json.JSONModel(oMockJson);
