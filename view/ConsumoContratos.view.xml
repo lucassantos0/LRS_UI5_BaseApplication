@@ -176,6 +176,47 @@
 								</ColumnListItem>
 							</items>
 						</Table>
+						<Table
+							visible="{= ${consumoContratos>bstyp} === 'L' ? true : false }"
+							inset="false"
+							items="{
+									path: 'consumoContratos>eket/'
+								}"
+							>
+							<headerToolbar>
+								<Toolbar>
+									<Title
+										text="Remessas"
+										level="H2" />
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="14em">
+									<Text text="Item" />
+								</Column>
+								<Column
+									minScreenWidth="Tablet"
+									demandPopin="true"
+								>
+									<Text text="Quantidade" />
+								</Column>
+								<Column
+									minScreenWidth="Tablet"
+									demandPopin="true"
+								>
+									<Text text="Data" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{consumoContratos>ebelp}" />
+										<Text text="{consumoContratos>menge}" />
+										<Text text="{consumoContratos>eindt}" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
 					</VBox>
 				</content>
 			</Page>
