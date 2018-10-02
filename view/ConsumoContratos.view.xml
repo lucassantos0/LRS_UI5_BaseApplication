@@ -171,7 +171,7 @@
 										<Text text="{consumoContratos>matkl}" />
 										<Text text="{consumoContratos>ktmng}" />
 										<Text text="{consumoContratos>menge}" />
-										<Text text="0%" />
+										<Text text="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 }" />
 									</cells>
 								</ColumnListItem>
 							</items>
