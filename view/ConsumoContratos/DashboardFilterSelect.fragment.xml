@@ -84,16 +84,16 @@
 										data="{chart>/milk}">
 										<viz.data:dimensions>
 											<viz.data:DimensionDefinition
-												name="Week"
-												value="{chart>/milk/Week}" />
+												name="Seasons"
+												value="{chart>Seasons}" />
 										</viz.data:dimensions>
 										<viz.data:measures>
 											<viz.data:MeasureDefinition
 												name="Revenue"
-												value="{chart>/milk/Revenue}" />
+												value="{chart>Revenue}" />
 											<viz.data:MeasureDefinition
 												name="Cost"
-												value="{chart>/milk/Cost}" />
+												value="{chart>Cost}" />
 										</viz.data:measures>
 									</viz.data:FlattenedDataset>
 								</viz:dataset>
