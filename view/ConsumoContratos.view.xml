@@ -42,7 +42,7 @@
 											path: 'consumoContratos>kdate',
 											formatter: '.formatterMasterListDate'
 										}" />
-									<ObjectAttribute text="{= ${consumoContratos>bstyp} == 'L' ? 'Programa de remessa' : 'Contrato' }" />
+									<ObjectAttribute text="{= ${consumoContratos>bstyp} === 'L' ? 'Programa de remessa' : 'Contrato' }" />
 								</attributes>
 							</ObjectListItem>
 						</items>
