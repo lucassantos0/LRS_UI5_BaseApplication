@@ -9,7 +9,7 @@
 	<Dialog
 		contentWidth="1024px"
 		contentHeight="720px"
-		title="Visão sintética">
+		title="Seleção de filtros - Dashboard">
 		<content>
 			<Panel
 				expandable="true"
