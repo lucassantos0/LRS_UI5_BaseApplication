@@ -84,7 +84,12 @@
 									 	dataLabel : {
 									 		visible : true
 									 	}
-									}
+									},
+									yAxis : {
+						               label : {
+						                  visible : false
+						               }
+						            }
 								}">
 								<viz:dataset>
 									<viz.data:FlattenedDataset
