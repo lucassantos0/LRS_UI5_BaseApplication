@@ -39,9 +39,10 @@
 								<attributes>
 									<ObjectAttribute
 										text="{
-										path: 'consumoContratos>kdate',
-										formatter: '.formatterMasterListDate'
-									}" />
+											path: 'consumoContratos>kdate',
+											formatter: '.formatterMasterListDate'
+										}" />
+									<ObjectAttribute text="{= ${consumoContratos>bstyp} == 'L' ? 'Programa de remessa' : 'Contrato' }" />
 								</attributes>
 							</ObjectListItem>
 						</items>
@@ -57,7 +58,7 @@
 							id="idBtnFilter"
 							icon="sap-icon://filter"
 							press="onFilterSettings" />
-						<Button 
+						<Button
 							icon="sap-icon://BusinessSuiteInAppSymbols/icon-line-bar-chart"
 							press="onFilterChartSettings" />
 					</Toolbar>
@@ -119,8 +120,8 @@
 						<Table
 							inset="false"
 							items="{
-							path: 'consumoContratos>ekpo/'
-						}"
+								path: 'consumoContratos>ekpo/'
+							}"
 						>
 							<headerToolbar>
 								<Toolbar>
