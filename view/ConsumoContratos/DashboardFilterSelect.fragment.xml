@@ -102,12 +102,12 @@
 										id='valueAxisFeed'
 										uid="valueAxis"
 										type="Measure"
-										values="Seasons" />
+										values="Revenue" />
 									<viz.feeds:FeedItem
 										id='categoryAxisFeed'
 										uid="categoryAxis"
 										type="Dimension"
-										values="Revenue" />
+										values="Week" />
 								</viz:feeds>
 							</viz:VizFrame>
 						</layout:flexContent>
