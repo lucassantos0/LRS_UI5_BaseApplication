@@ -107,7 +107,7 @@
 										id='categoryAxisFeed'
 										uid="categoryAxis"
 										type="Dimension"
-										values="Week" />
+										values="Seasons" />
 								</viz:feeds>
 							</viz:VizFrame>
 						</layout:flexContent>
