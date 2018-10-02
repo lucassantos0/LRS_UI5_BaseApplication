@@ -20,7 +20,7 @@
 				showNavButton="true"
 			>
 				<content>
-					<List items="{consumoContratos>/}">
+					<List items="{consumoContratos>/cw}">
 						<items>
 							<ObjectListItem
 								title="{consumoContratos>ebeln}"
