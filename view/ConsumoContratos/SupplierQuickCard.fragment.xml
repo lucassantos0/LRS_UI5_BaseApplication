@@ -4,9 +4,9 @@
 >
 	<QuickView>
 		<QuickViewPage
-			pageId="{pageId}"
-			header="{header}"
-			icon="{icon}"
+			pageId="companyPageId"
+			header="Company info"
+			icon="sap-icon://building"
 			title="{name1}"
 			titleUrl="{titleUrl}"
 			description="{description}"
