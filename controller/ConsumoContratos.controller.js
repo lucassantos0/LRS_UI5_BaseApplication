@@ -63,7 +63,7 @@ sap.ui.define(
 	  },
 	  viewSupplierDetails : function(oEvent) {
 	  	var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
-		  this.openQuickViewSupplier(oEvent, sPath );
+		  this.openQuickViewSupplier(oEvent, bindingContextPath );
 	  }
 	});
 });
