@@ -60,6 +60,7 @@ sap.ui.define(
 		  };
 		  this._oMockModel = new sap.ui.model.json.JSONModel(oMockJson);
 		  this.setModel(this._oMockModel, "chart");
+		  
 	  },
 	  formatterMasterListDate : function(sDate) {
 		  var str = sDate;
