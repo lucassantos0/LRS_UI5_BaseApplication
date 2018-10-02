@@ -147,6 +147,9 @@
 								>
 									<Text text="Grupo de mercadorias" />
 								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="IVA" />
+								</Column>
 								<Column
 									minScreenWidth="Tablet"
 									demandPopin="true"
@@ -160,6 +163,9 @@
 								<Column>
 									<Text text="% consumido" />
 								</Column>
+								<Column>
+									<Text text="Val.Unitário" />
+								</Column>
 							</columns>
 							<items>
 								<ColumnListItem>
@@ -169,9 +175,11 @@
 											text="{consumoContratos>matnr}" />
 										<Text text="{consumoContratos>ebelp}" />
 										<Text text="{consumoContratos>matkl}" />
+										<Text text="{consumoContratos>mwskz}" />
 										<Text text="{consumoContratos>ktmng}" />
 										<Text text="{consumoContratos>menge}" />
 										<Text text="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 }" />
+										<Text text="{consumoContratos>netpr}" />
 									</cells>
 								</ColumnListItem>
 							</items>
