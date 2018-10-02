@@ -62,7 +62,8 @@ sap.ui.define(
 		  });
 	  },
 	  viewSupplierDetails : function(oEvent) {
-		  this.openQuickViewSupplier(oEvent, this.oCompanyModel);
+	  	var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
+		  this.openQuickViewSupplier(oEvent, this.getModel("consumoContratos").getObject(bindingContextPath).lfa1 );
 	  }
 	});
 });

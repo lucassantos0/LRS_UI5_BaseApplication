@@ -11,7 +11,7 @@
 			pageId="{pageId}"
 			header="{header}"
 			icon="{icon}"
-			title="{title}"
+			title="{name1}"
 			titleUrl="{titleUrl}"
 			description="{description}"
 			groups="{ path : 'groups', templateShareable : 'true'}"
