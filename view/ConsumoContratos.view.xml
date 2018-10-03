@@ -5,28 +5,24 @@
 	xmlns="sap.m"
 	controllerName="lrs.ui5.controller.ConsumoContratos"
 	xmlns:semantic="sap.m.semantic"
-	xmlns:f="sap.ui.layout.form"
->
+	xmlns:f="sap.ui.layout.form">
 	<SplitContainer
 		id="SplitContainer"
 		initialDetail="detail"
-		initialMaster="master"
-	>
+		initialMaster="master">
 		<masterPages>
 			<Page
 				id="master"
 				title="Contratos"
 				navButtonPress="onPressVoltar"
-				showNavButton="true"
-			>
+				showNavButton="true">
 				<content>
 					<List items="{consumoContratos>/cw}">
 						<items>
 							<ObjectListItem
 								title="{consumoContratos>ebeln}"
 								type="Active"
-								press="onSelecionarContrato"
-							>
+								press="onSelecionarContrato">
 								<firstStatus>
 									<ObjectStatus
 										visible="{= ${consumoContratos>itemsPorcentagemConsumo} ? true : false }"
@@ -71,16 +67,14 @@
 				id="detail"
 				title="{consumoContratos>ebeln}"
 				navButtonPress="onVoltarDevice"
-				showNavButton="{device>/isPhone}"
-			>
+				showNavButton="{device>/isPhone}">
 				<content>
 					<VBox class="sapUiSmallMargin">
 						<f:SimpleForm
 							editable="false"
 							layout="ResponsiveGridLayout"
 							adjustLabelSpan="true"
-							singleContainerFullSize="false"
-						>
+							singleContainerFullSize="false">
 							<f:content>
 								<core:Title text="" />
 								<Label text="Empresa" />
@@ -102,7 +96,11 @@
 								<Text text="{consumoContratos>bsart}" />
 								<core:Title text="" />
 								<Label text="Data de criação" />
-								<Text text="{consumoContratos>aedat}" />
+								<Text
+									text="{
+											path: 'consumoContratos>aedat',
+											formatter: '.formatterMasterListDate'
+										}" />
 								<Label text="Organiz.compras" />
 								<Link text="{consumoContratos>ekorg}" />
 								<Label text="Grupo de compradores" />
@@ -111,9 +109,17 @@
 								<Label text="Moeda" />
 								<Text text="{consumoContratos>waers}" />
 								<Label text="Início per.validade" />
-								<Text text="{consumoContratos>kdatb}" />
+								<Text
+									text="{
+											path: 'consumoContratos>kdatb',
+											formatter: '.formatterMasterListDate'
+										}" />
 								<Label text="Fim da validade" />
-								<Text text="{consumoContratos>kdate}" />
+								<Text
+									text="{
+											path: 'consumoContratos>kdate',
+											formatter: '.formatterMasterListDate'
+										}" />
 								<Label text="ValFix.(nível cab.)" />
 								<Text text="{consumoContratos>ktwrt}" />
 							</f:content>
@@ -122,8 +128,7 @@
 							inset="false"
 							items="{
 								path: 'consumoContratos>ekpo/'
-							}"
-						>
+							}">
 							<headerToolbar>
 								<Toolbar>
 									<Title
@@ -137,24 +142,23 @@
 								</Column>
 								<Column
 									minScreenWidth="Tablet"
-									demandPopin="true"
-								>
+									demandPopin="true">
 									<Text text="Item" />
 								</Column>
 								<Column
 									minScreenWidth="Tablet"
-									demandPopin="true"
-								>
+									demandPopin="true">
 									<Text text="Grupo de mercadorias" />
 								</Column>
-								<Column minScreenWidth="Tablet" demandPopin="true">
+								<Column
+									minScreenWidth="Tablet"
+									demandPopin="true">
 									<Text text="IVA" />
 								</Column>
 								<Column
 									minScreenWidth="Tablet"
 									demandPopin="true"
-									hAlign="Center"
-								>
+									hAlign="Center">
 									<Text text="Quantidade prevista" />
 								</Column>
 								<Column>
@@ -178,7 +182,8 @@
 										<Text text="{consumoContratos>mwskz}" />
 										<Text text="{consumoContratos>ktmng}" />
 										<Text text="{consumoContratos>menge}" />
-										<Text text="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 }" />
+										<Text
+											text="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 }" />
 										<Text text="{consumoContratos>netpr}" />
 									</cells>
 								</ColumnListItem>
@@ -189,8 +194,7 @@
 							inset="false"
 							items="{
 									path: 'consumoContratos>eket/'
-								}"
-							>
+								}">
 							<headerToolbar>
 								<Toolbar>
 									<Title
@@ -204,14 +208,12 @@
 								</Column>
 								<Column
 									minScreenWidth="Tablet"
-									demandPopin="true"
-								>
+									demandPopin="true">
 									<Text text="Quantidade" />
 								</Column>
 								<Column
 									minScreenWidth="Tablet"
-									demandPopin="true"
-								>
+									demandPopin="true">
 									<Text text="Data" />
 								</Column>
 							</columns>
@@ -220,7 +222,11 @@
 									<cells>
 										<Text text="{consumoContratos>ebelp}" />
 										<Text text="{consumoContratos>menge}" />
-										<Text text="{consumoContratos>eindt}" />
+										<Text
+											text="{
+											path: 'consumoContratos>eindt',
+											formatter: '.formatterMasterListDate'
+										}" />
 									</cells>
 								</ColumnListItem>
 							</items>
