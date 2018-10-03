@@ -54,14 +54,7 @@ sap.ui.define(
 		  };
 		  this._oMockModel = new sap.ui.model.json.JSONModel(oMockJson);
 		  this.setModel(this._oMockModel, "chart");
-		  
-          //Ativa o Dialogo de Filtros 
-          if(!this.FilterSettingsDialog)
-          {
-              this.FilterSettingsDialog = sap.ui.xmlfragment( "view.ConsumoContratos.FilterSettings", this);
-              this.getView().addDependent(this.FilterSettingsDialog);
-          }    		  
-		  
+
 	  },
 	  formatterMasterListDate : function(sDate) {
 		  var str = sDate;
@@ -111,7 +104,12 @@ sap.ui.define(
 	  },
 	  
       onFilterSettings: function () {    	
-          this.FilterSettingsDialog.open();
+		  if (this._oFilterSettingsDialog) {
+			  this._oFilterSettingsDialog.destroy();
+		  }
+		  this._oFilterSettingsDialog = sap.ui.xmlfragment("lrs.ui5.view.ConsumoContratos.FilterSettings", this);
+		  this.getView().addDependent(this._oFilterSettingsDialog);
+		  this._oFilterSettingsDialog.open();   	  
       },
           
 	  viewSupplierDetails : function(oEvent) {
