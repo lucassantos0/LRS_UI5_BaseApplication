@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <ViewSettingsDialog
+    confirm="handleFilterSettingsConfirm">
+    <filterItems>
+      <ViewSettingsFilterItem items="" text="Tipo de Solicitação" key="1">
+        <items>
+          <ViewSettingsItem text="" key="" selected="" />
+        </items>
+      </ViewSettingsFilterItem>
+    </filterItems>
+  </ViewSettingsDialog>
+</core:FragmentDefinition>
