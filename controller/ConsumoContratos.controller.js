@@ -58,7 +58,11 @@ sap.ui.define(
 	  },
 	  formatterMasterListDate : function(sDate) {
 		  var str = sDate;
-		  return str.substring(6, 8) + "/" + str.substring(4, 6) + "/" + str.substring(0, 4);
+		  try{ 
+		  	return str.substring(6, 8) + "/" + str.substring(4, 6) + "/" + str.substring(0, 4);
+		  }catch(ex){
+		  	return null;
+		  }
 	  },
 	  formatterMasterListConsumoStatus : function(sConsumo) {
 		  var iPorcentagem = parseInt(sConsumo);
