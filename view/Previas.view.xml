@@ -22,7 +22,7 @@
 						<items>
 							<ObjectListItem
 								title="{embarquesFornecedor>Id}"
-								icon="{= ${embarquesFornecedor>Nota_divergencia} = '' ? '' : 'sap-icon://alert' }"
+								icon="{= ${embarquesFornecedor>Nota_divergencia} == '' ? '' : 'sap-icon://alert' }"
 								type="Active"
 								press="onSelecionarEmbarque">
 								<firstStatus>
