@@ -29,10 +29,7 @@
 									<ObjectStatus text="{embarquesFornecedor>Status_previa}" />
 								</firstStatus>
 								<attributes>
-									<ObjectAttribute text="{
-										path: 'embarquesFornecedor>Recebimento_previa_data_hora',
-										formatter: '.formatterMasterListDate'
-									}" />
+									<ObjectAttribute text="{embarquesFornecedor>Recebimento_previa_data_hora}" />
 								</attributes>
 							</ObjectListItem>
 						</items>
