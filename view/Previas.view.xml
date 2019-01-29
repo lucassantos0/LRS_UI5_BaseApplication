@@ -72,38 +72,40 @@
 								<core:Title text="Detalhes" />
 								<Label text="Id" />
 								<Text text="{embarquesFornecedor>Id}" />
-								<Label text="Recebimento_previa_data_hora" />
+								<Label text="Recebimento Prévia" />
 								<Text
 									text="{embarquesFornecedor>Recebimento_previa_data_hora}" />
-								<Label text="Retorno_previa_data_hora" />
+								<Label text="Retorna Prévia" />
 								<Text text="{embarquesFornecedor>Retorno_previa_data_hora}" />
-								<Label text="NFs_enviadas_janela" />
+								<Label text="NFs enviadas janela" />
 								<Text text="{embarquesFornecedor>NFs_enviadas_janela}" />
 								<core:Title text="Portaria" />
-								<Label text="Chegada_portaria_data_hora" />
+								<Label text="Chegada" />
 								<Text
 									text="{embarquesFornecedor>Chegada_portaria_data_hora}" />
-								<Label text="Status_Portaria" />
+								<Label text="Status" />
 								<Text text="{embarquesFornecedor>Status_Portaria}" />
-								<core:Title text="Divergência" />
+								<core:Title
+									text="Divergência"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? false : true }" />
 								<Label
-									text="Nota_divergencia"
-									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+									text="Nota"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? false : true }" />
 								<Text
 									text="{embarquesFornecedor>Nota_divergencia}"
-									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? false : true }" />
 								<Label
-									text="Retorno_divergencia_forn_data_hora"
-									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+									text="Retorno"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? false : true }" />
 								<Text
 									text="{embarquesFornecedor>Retorno_divergencia_forn_data_hora}"
-									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? false : true }" />
 								<Label
-									text="Tipo_divergencia"
-									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+									text="Tipo"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? false : true }" />
 								<Text
 									text="{embarquesFornecedor>Tipo_divergencia}"
-									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? false : true }" />
 							</f:content>
 						</f:SimpleForm>
 					</content>
