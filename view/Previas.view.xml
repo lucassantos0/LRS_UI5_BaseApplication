@@ -5,71 +5,110 @@
 	xmlns:semantic="sap.m.semantic"
 	xmlns:f="sap.ui.layout.form"
 	xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table"
 	xmlns="sap.m">
 	<Page
 		id="idPrevias"
 		title="Central de Prévias"
 		showNavButton="true"
-		navButtonPress="onNavBack">	
-		
-		<SplitContainer id="SplitContainer" initialDetail="detail" initialMaster="master">
-		
-		<masterPages>
-			<Page id="master" title="Embarques" navButtonPress="onPressVoltar" showNavButton="true">
-				<content>
-					<List
-						items="{embarquesFornecedor>/}">
-						<items>
-							<ObjectListItem
-								title="{embarquesFornecedor>Id}"
-								icon="{= ${embarquesFornecedor>Nota_divergencia} === '' ? '' : 'sap-icon://alert' }"
-								type="Active"
-								press="onSelecionarEmbarque">
-								<firstStatus>
-									<ObjectStatus text="{embarquesFornecedor>Status_previa}" />
-								</firstStatus>
-								<attributes>
-									<ObjectAttribute text="{embarquesFornecedor>Recebimento_previa_data_hora}" />
-								</attributes>
-							</ObjectListItem>
-						</items>
-					</List>
-				</content>
-			</Page>
-		</masterPages>
-		<detailPages>
-   			<Page id="detail"  title="{embarquesFornecedor>id}" navButtonPress="onVoltarDevice" showNavButton="{device>/isPhone}">
-				<content>
-					<List
-						headerText="Notas Fiscais"
-						items="{
-							path: 'embarquesFornecedor>items/'
-						}">
-						<ObjectListItem
-						    icon="sap-icon://bar-code"
-							title="{embarquesFornecedor>nf}"
-							number="{
-								parts:[{path:'embarquesFornecedor>valor'},{path:'embarquesFornecedor>moeda'}],
-								type: 'sap.ui.model.type.Currency',
-								formatOptions: {showMeasure: false}
-							}"
-							numberUnit="{embarquesFornecedor>moeda}">	
-							<firstStatus>
-								<ObjectStatus
-									text="{embarquesFornecedor>status}"
-									state="{
-										path: 'embarquesFornecedor>state',
-										formatter: 'sap.m.sample.ObjectListItem.Formatter.status'
-									}" />		
-							</firstStatus>												
-							<attributes>
-								<ObjectAttribute text="{embarquesFornecedor>obs}" />
-							</attributes>		
-						</ObjectListItem>
-					</List>				
-				</content>
-			</Page>
-		</detailPages>	
+		navButtonPress="onNavBack">
+		<SplitContainer
+			id="SplitContainer"
+			initialDetail="detail"
+			initialMaster="master">
+			<masterPages>
+				<Page
+					id="master"
+					title="Embarques"
+					navButtonPress="onPressVoltar"
+					showNavButton="true">
+					<content>
+						<List items="{embarquesFornecedor>/}">
+							<items>
+								<ObjectListItem
+									title="{embarquesFornecedor>Id}"
+									icon="{= ${embarquesFornecedor>Nota_divergencia} === '' ? '' : 'sap-icon://alert' }"
+									type="Active"
+									press="onSelecionarEmbarque">
+									<firstStatus>
+										<ObjectStatus
+											text="{embarquesFornecedor>Status_previa}" />
+									</firstStatus>
+									<attributes>
+										<ObjectAttribute
+											text="{embarquesFornecedor>Recebimento_previa_data_hora}" />
+									</attributes>
+								</ObjectListItem>
+							</items>
+						</List>
+					</content>
+				</Page>
+			</masterPages>
+			<detailPages>
+				<Page
+					id="detail"
+					title="{embarquesFornecedor>Id}"
+					navButtonPress="onVoltarDevice"
+					showNavButton="{device>/isPhone}">
+					<content>
+						<f:SimpleForm
+							editable="false"
+							layout="ResponsiveGridLayout"
+							title="Prévia"
+							labelSpanXL="4"
+							labelSpanL="4"
+							labelSpanM="12"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="0"
+							emptySpanL="0"
+							emptySpanM="0"
+							emptySpanS="0"
+							columnsXL="2"
+							columnsL="2"
+							columnsM="2"
+							singleContainerFullSize="false">
+							<f:content>
+								<core:Title text="Detalhes" />
+								<Label text="Id" />
+								<Text text="{embarquesFornecedor>Id}" />
+								<Label text="Recebimento_previa_data_hora" />
+								<Text
+									text="{embarquesFornecedor>Recebimento_previa_data_hora}" />
+								<Label text="Retorno_previa_data_hora" />
+								<Text text="{embarquesFornecedor>Retorno_previa_data_hora}" />
+								<Label text="NFs_enviadas_janela" />
+								<Text text="{embarquesFornecedor>NFs_enviadas_janela}" />
+								<core:Title text="Portaria" />
+								<Label text="Chegada_portaria_data_hora" />
+								<Text
+									text="{embarquesFornecedor>Chegada_portaria_data_hora}" />
+								<Label text="Status_Portaria" />
+								<Text text="{embarquesFornecedor>Status_Portaria}" />
+								<core:Title text="Divergência" />
+								<Label
+									text="Nota_divergencia"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+								<Text
+									text="{embarquesFornecedor>Nota_divergencia}"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+								<Label
+									text="Retorno_divergencia_forn_data_hora"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+								<Text
+									text="{embarquesFornecedor>Retorno_divergencia_forn_data_hora}"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+								<Label
+									text="Tipo_divergencia"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+								<Text
+									text="{embarquesFornecedor>Tipo_divergencia}"
+									visible="{= ${embarquesFornecedor>Nota_divergencia} === '' ? true : false }" />
+							</f:content>
+						</f:SimpleForm>
+					</content>
+				</Page>
+			</detailPages>
 		</SplitContainer>
 	</Page>
 </mvc:View>
