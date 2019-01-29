@@ -54,7 +54,7 @@ sap.ui.define(
 		  };
 		  this._oMockModel = new sap.ui.model.json.JSONModel(oMockJson);
 		  this.setModel(this._oMockModel, "chart");
-		  
+
 	  },
 	  formatterMasterListDate : function(sDate) {
 		  var str = sDate;
@@ -102,6 +102,16 @@ sap.ui.define(
 			  this._oQuickViewSupplier.openBy(oButton);
 		  });
 	  },
+	  
+      onFilterSettings: function () {    	
+		  if (this._oFilterSettingsDialog) {
+			  this._oFilterSettingsDialog.destroy();
+		  }
+		  this._oFilterSettingsDialog = sap.ui.xmlfragment("lrs.ui5.view.ConsumoContratos.FilterSettings", this);
+		  this.getView().addDependent(this._oFilterSettingsDialog);
+		  this._oFilterSettingsDialog.open();   	  
+      },
+          
 	  viewSupplierDetails : function(oEvent) {
 		  var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
 		  this.openQuickViewSupplier(oEvent, bindingContextPath);

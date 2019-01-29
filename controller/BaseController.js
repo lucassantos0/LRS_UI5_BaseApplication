@@ -10,7 +10,7 @@ sap.ui.define([
 			 * Convenience method for accessing the router.
 			 * @public
 			 * @returns {sap.ui.core.routing.Router} the router for this component
-			 */
+			 */ 
 			getRouter : function () {
 				return sap.ui.core.UIComponent.getRouterFor(this);
 			},
@@ -47,11 +47,8 @@ sap.ui.define([
 			 */
 			setModel : function (oModel, sName) {
 				return this.getView().setModel(oModel, sName);
-			},
-			
-			formatterCnpj : function(sCnpj) {
-				return sCnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/g,"\$1.\$2.\$3\/\$4\-\$5");
 			}
+			
 		});
 
 	});
