@@ -47,14 +47,14 @@
 			<detailPages>
 				<Page
 					id="detail"
-					title="{embarquesFornecedor>Id}"
+					title="{embarquesFornecedor>Fornecedor}"
 					navButtonPress="onVoltarDevice"
 					showNavButton="{device>/isPhone}">
 					<content>
 						<f:SimpleForm
 							editable="false"
 							layout="ResponsiveGridLayout"
-							title="Prévia"
+							title="Prévia {embarquesFornecedor>Id}"
 							labelSpanXL="4"
 							labelSpanL="4"
 							labelSpanM="12"
