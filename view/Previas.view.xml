@@ -21,16 +21,16 @@
 						items="{embarquesFornecedor>/}">
 						<items>
 							<ObjectListItem
-								title="{embarquesFornecedor>id}"
-								icon="sap-icon://shipping-status"
+								title="{embarquesFornecedor>Id}"
+								icon="{= ${embarquesFornecedor>Nota_divergencia} = '' ? '' : 'sap-icon://alert' }"
 								type="Active"
 								press="onSelecionarEmbarque">
 								<firstStatus>
-									<ObjectStatus text="Remessa: {embarquesFornecedor>remessa}" />
+									<ObjectStatus text="{embarquesFornecedor>Status_previa}" />
 								</firstStatus>
 								<attributes>
 									<ObjectAttribute text="{
-										path: 'embarquesFornecedor>data',
+										path: 'embarquesFornecedor>Recebimento_previa_data_hora',
 										formatter: '.formatterMasterListDate'
 									}" />
 								</attributes>
