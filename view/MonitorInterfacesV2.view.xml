@@ -4,15 +4,11 @@
 	xmlns="sap.suite.ui.commons"
 	controllerName="lrs.ui5.controller.MonitorInterfacesV2">
 	<m:Panel>
-		<m:Label text="Process Flow sample case with zooming and highlight path buttons - multiple root nodes" />
+		<m:Label text="Monitor de interfaces V2 - Southend LABS!" />
 		<m:HBox renderType="Bare">
 			<m:Button text="Zoom In" press="onZoomIn" />
 			<m:Button text="Zoom Out" press="onZoomOut" />
 			<m:ToggleButton text="Optimize Layout" press="onOptimizeLayout" />
-			<m:ToggleButton
-				text="Toggle HighlightPath"
-				type="Accept"
-				press="onHighlightPath" />
 		</m:HBox>
 		<ProcessFlow
 			id="processflow"
