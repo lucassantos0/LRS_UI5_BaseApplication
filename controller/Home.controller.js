@@ -9,9 +9,9 @@ sap.ui.define(
 		onInit : function()
 		{
 		},
-		navToTile1Action1 : function()
+		navToMonitorInterfacesV2 : function()
 		{
-			this.getRouter().navTo("Tile1Action1");
+			this.getRouter().navTo("MonitorInterfacesV2");
 		},
 		navToLogInterfaces : function(){
 			this.getRouter().navTo("LogInterfaces");
