@@ -22,11 +22,6 @@
 			]
 		},
 		{
-			"title": "Título 2",
-			"icon": "sap-icon://inspection",
-			"key": "Categoria2"
-		},
-		{
 			"title": "Mapa Comparativo",
 			"icon": "sap-icon://my-sales-order",
 			"key": "MapaComparativoLista"
