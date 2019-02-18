@@ -93,6 +93,10 @@
 			"eventosSourcing": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/mapaComparativoDetalhesCPFL.json"
+			},
+			"fluxoDocumentos": {
+				"type" : "sap.ui.model.json.JSONModel",
+				"uri": "model/monitorInterfacesV2.json"
 			}
 		},
 		"resources": {
@@ -171,6 +175,11 @@
 					"pattern": "LogInterfaces",
 					"name": "LogInterfaces",
 					"target": "LogInterfaces"
+				},
+				{
+					"pattern" : "MonitorInterfacesV2",
+					"name" : "MonitorInterfacesV2",
+					"target" : "MonitorInterfacesV2"
 				}
 			],
 			"targets": {
@@ -218,6 +227,9 @@
 				},
 				"LogInterfaces": {
 					"viewName": "LogInterfaces"
+				},
+				"MonitorInterfacesV2": {
+					"viewName": "MonitorInterfacesV2"
 				}
 			}
 		}
