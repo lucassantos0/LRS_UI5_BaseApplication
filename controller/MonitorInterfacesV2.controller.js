@@ -12,7 +12,7 @@ sap.ui.define(
 		  this.oProcessFlow = this.getView().byId("processflow");
 		 // oModel.attachRequestCompleted(this.oProcessFlow.updateModel.bind(this.oProcessFlow));
 
-		  this.getView().setModel(oModel);
+		  //this.getView().setModel(oModel);
 	  },
 
 	  onHighlightPath : function(oEvent) {
