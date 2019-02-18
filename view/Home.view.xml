@@ -21,16 +21,6 @@
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
 					<l:VerticalLayout>
-						<core:Icon src="sap-icon://inspection" size="2.5rem"
-							color="#346187" />
-						<Title text="{i18n>tile2Title}" titleStyle="H2"
-							class="sapUiTinyMarginTopBottom" />
-						<Text text="{i18n>tile2Content}" class="sapUiTinyMarginBottom" />
-						<Link text="{i18n>tile2Action1}" press="navToNotasServicoVisualizar" />
-					</l:VerticalLayout>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell>
-					<l:VerticalLayout>
 						<core:Icon src="sap-icon://my-sales-order" size="2.5rem"
 							color="#346187" />
 						<Title text="{i18n>tile3Title}" titleStyle="H2"
