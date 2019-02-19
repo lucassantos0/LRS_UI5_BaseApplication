@@ -55,7 +55,7 @@ sap.ui.define(
 				this.getView().addDependent(this._oPopoverDetalhesDocumento);
 			}
 	  	this._oPopoverDetalhesDocumento.bindElement("fluxoDocumentos>"+oEvent.getParameter("oBindingContexts").fluxoDocumentos.sPath);
-			this._oPopoverDetalhesDocumento.openBy(oEvent.getSource());
+			this._oPopoverDetalhesDocumento.openBy(oEvent);
 	  	
 	  },
 	  onCloseDetalhesDocumento: function (oEvent) {
