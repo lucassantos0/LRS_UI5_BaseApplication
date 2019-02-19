@@ -2,9 +2,9 @@
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core">
 	<Dialog
-		contentWidth="1024px"
-		contentHeight="720px"
-		title="POPUP" >
+		contentWidth="768px"
+		contentHeight="640px"
+		title="{fluxoDocumentos>id}" >
 		<beginButton>
 			<Button text="Action-A" press="handleCloseButton" />
 		</beginButton>
