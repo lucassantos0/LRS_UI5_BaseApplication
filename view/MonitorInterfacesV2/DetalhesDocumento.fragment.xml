@@ -19,7 +19,7 @@
 			<f:GridList
 				id="gridList"
 				headerText="Mensagens"
-				items="{ path: 'fluxoDocumentos>integrationDetails/' }">
+				items="{fluxoDocumentos>integrationDetails}">
 				<CustomListItem>
 					<VBox height="100%">
 						<VBox class="sapUiSmallMargin">
