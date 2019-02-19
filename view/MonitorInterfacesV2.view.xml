@@ -11,7 +11,7 @@
 		focusable="true">
 		<m:Label
 			text="Monitor de interfaces V2 HANA Only - Southend LABS!" />
-		<m:HBox renderType="Bare">
+		<!-- <m:HBox renderType="Bare">
 			<m:Button
 				icon="sap-icon://add"
 				text="Zoom in"
@@ -23,12 +23,14 @@
 			<m:ToggleButton
 				icon="sap-icon://resize"
 				text="Auto-ajustar"
-				press="onOptimizeLayout" />
-		</m:HBox>
+				press="onOptimizeLayout" /> 
+		</m:HBox> -->
 		<ProcessFlow
 			id="processflow"
 			foldedCorners="true"
+			scrollable="false"
 			wheelZoomable="false"
+			nodePress="onDocumentPressShowDetails"
 			class="PFLayoutSpec"
 			nodes="{fluxoDocumentos>/nodes}"
 			lanes="{fluxoDocumentos>/lanes}">

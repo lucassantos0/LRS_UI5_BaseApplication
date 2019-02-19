@@ -13,6 +13,7 @@ sap.ui.define(
 		 // oModel.attachRequestCompleted(this.oProcessFlow.updateModel.bind(this.oProcessFlow));
 
 		  //this.getView().setModel(oModel);
+		  this.oProcessFlow.optimizeLayout();
 	  },
 
 	  onHighlightPath : function(oEvent) {
@@ -28,10 +29,10 @@ sap.ui.define(
 //		  oModel.loadData(sDataPath);
 	  },
 
-	  onOptimizeLayout : function(oEvent) {
+	 /* onOptimizeLayout : function(oEvent) {
 		  this.oProcessFlow.optimizeLayout(oEvent.getSource().getPressed());
 		  MessageToast.show("Layout was " + (oEvent.getSource().getPressed() ? "optimized." : "brought back to its initial state."));
-	  },
+	  }, */
 
 	  onZoomIn : function() {
 		  this.oProcessFlow.zoomIn();
@@ -43,6 +44,10 @@ sap.ui.define(
 		  this.oProcessFlow.zoomOut();
 
 		  MessageToast.show("Zoom level changed to: " + this.oProcessFlow.getZoomLevel());
+	  },
+	  onDocumentPressShowDetails : function(oEvent) {
+	  	
+	  	
 	  }
 	});
 });
