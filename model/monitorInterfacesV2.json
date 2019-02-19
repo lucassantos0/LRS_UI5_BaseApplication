@@ -121,31 +121,31 @@
 	"lanes": [
 		{
 			"id": "0001",
-			"icon": "sap-icon://sales-quote",
+			"icon": "sap-icon://request",
 			"label": "RFQ",
 			"position": 0
 		},
 		{
 			"id": "0002",
-			"icon": "sap-icon://contacts",
+			"icon": "sap-icon://customer-order-entry",
 			"label": "Contratos",
 			"position": 1
 		},
 		{
 			"id": "0003",
-			"icon": "sap-icon://newspaper",
+			"icon": "sap-icon://supplier",
 			"label": "Ordem de Compra",
 			"position": 2
 		},
 		{
 			"id": "0004",
-			"icon": "sap-icon://newspaper",
+			"icon": "sap-icon://receipt",
 			"label": "Recepções",
 			"position": 3
 		},
 		{
 			"id": "0005",
-			"icon": "sap-icon://newspaper",
+			"icon": "sap-icon://monitor-payments",
 			"label": "Faturas",
 			"position": 4
 		}
