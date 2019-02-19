@@ -10,7 +10,7 @@
 		vertical="true"
 		focusable="true">
 		<m:Label
-			text="Monitor de interfaces V2 HANA Only - Southend LABS!" />
+			text="Monitor de interfaces HANA - Suprimentos 360° - Southend LABS!" />
 		<!-- <m:HBox renderType="Bare">
 			<m:Button
 				icon="sap-icon://add"
