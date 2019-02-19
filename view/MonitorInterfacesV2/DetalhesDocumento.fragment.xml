@@ -30,10 +30,10 @@
 									if available. -->
 							</layoutData>
 							<Title
-								text="{integrationDetails>id}"
+								text="{fluxoDocumentos>id}"
 								wrapping="true" />
 							<Label
-								text="{integrationDetails>documentDetails}"
+								text="{fluxoDocumentos>documentDetails}"
 								wrapping="true" />
 						</VBox>
 					</VBox>
