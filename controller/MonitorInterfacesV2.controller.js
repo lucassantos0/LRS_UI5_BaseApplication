@@ -47,8 +47,7 @@ sap.ui.define(
 		  MessageToast.show("Zoom level changed to: " + this.oProcessFlow.getZoomLevel());
 	  },
 	  onDocumentPressShowDetails : function(oEvent) {
-	  	
-	  	
+	  	sap.m.MessageToast.show(oEvent);
 	  }
 	});
 });
