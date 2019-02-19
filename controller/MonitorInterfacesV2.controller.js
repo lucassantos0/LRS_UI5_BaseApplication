@@ -47,7 +47,8 @@ sap.ui.define(
 		  MessageToast.show("Zoom level changed to: " + this.oProcessFlow.getZoomLevel());
 	  },
 	  onDocumentPressShowDetails : function(oEvent) {
-	  	sap.m.MessageToast.show(oEvent);
+	  	var oModel = this.getView().getModel("fluxoDocumentos").getObject(oEvent.getParameter("oBindingContexts").fluxoDocumentos.sPath);
+	  	sap.m.MessageToast.show("Exibir detalhes do documento "+ oModel.id + " do tipo "+ oModel.lane);
 	  }
 	});
 });
