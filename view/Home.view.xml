@@ -3,7 +3,7 @@
 	<Page showHeader="false">
 		<l:BlockLayout id="BlockLayout" background="Bright">
 			<l:BlockLayoutRow>
-				<l:BlockLayoutCell class="sapUiNoContentPadding sapUiNoMargin">
+				<l:BlockLayoutCell class="sapUiNoMargin">
 					<Image src="./images/homeImage_v2.png" width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
