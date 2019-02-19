@@ -13,7 +13,7 @@ sap.ui.define(
 		 // oModel.attachRequestCompleted(this.oProcessFlow.updateModel.bind(this.oProcessFlow));
 
 		  //this.getView().setModel(oModel);
-		  this.oProcessFlow.optimizeLayout();
+		  this.oProcessFlow.optimizeLayout(true);
 	  },
 
 	  onHighlightPath : function(oEvent) {
