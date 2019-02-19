@@ -3,12 +3,27 @@
 	xmlns:m="sap.m"
 	xmlns="sap.suite.ui.commons"
 	controllerName="lrs.ui5.controller.MonitorInterfacesV2">
-	<m:Panel>
-		<m:Label text="Monitor de interfaces V2 - Southend LABS!" />
+	<m:ScrollContainer
+		height="100%"
+		width="100%"
+		horizontal="true"
+		vertical="true"
+		focusable="true">
+		<m:Label
+			text="Monitor de interfaces V2 HANA Only - Southend LABS!" />
 		<m:HBox renderType="Bare">
-			<m:Button text="Zoom In" press="onZoomIn" />
-			<m:Button text="Zoom Out" press="onZoomOut" />
-			<m:ToggleButton text="Optimize Layout" press="onOptimizeLayout" />
+			<m:Button
+				icon="sap-icon://add"
+				text="Zoom in"
+				press="onZoomIn" />
+			<m:Button
+				icon="sap-icon://less"
+				text="Zoom out"
+				press="onZoomOut" />
+			<m:ToggleButton
+				icon="sap-icon://resize"
+				text="Auto-ajustar"
+				press="onOptimizeLayout" />
 		</m:HBox>
 		<ProcessFlow
 			id="processflow"
@@ -38,5 +53,5 @@
 					position="{fluxoDocumentos>position}" />
 			</lanes>
 		</ProcessFlow>
-	</m:Panel>
+	</m:ScrollContainer>
 </mvc:View>

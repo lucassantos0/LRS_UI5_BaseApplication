@@ -12,12 +12,12 @@
 			"key": "Categoria1",
 			"items": [
 				{
-					"title": "Sintético",
-					"key": "Tile1Action1"
+					"title": "Monitor V1",
+					"key": "LogInterfaces"
 				},
 				{
-					"title": "Analítico",
-					"key": "Tile1Action2"
+					"title": "Monitor V2 Hana",
+					"key": "MonitorInterfacesV2"
 				}
 			]
 		},
