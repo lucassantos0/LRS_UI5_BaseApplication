@@ -51,7 +51,7 @@
 									<Label text="Tipo Doc" />
 									<Text text="{fluxoDocumentos>type} - {fluxoDocumentos>documentDetails}" />
 									<Label text="Sentido" />
-									<Text text="{fluxoDocumentos>direction}" />
+									<Text text="{= ${fluxoDocumentos>direction} === '1' ? 'Saída' : 'Entrada' }" />
 									<Label text="Processamento" />
 									<Text text="{fluxoDocumentos>date} {fluxoDocumentos>time}" />
 									<Label text="Mensagem" />
