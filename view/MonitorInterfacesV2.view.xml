@@ -11,20 +11,20 @@
 		focusable="true">
 		<m:Label
 			text="Monitor de interfaces V2 HANA Only - Southend LABS!" />
-		<m:HBox renderType="Bare">
-			<!-- <m:Button
+		<!-- <m:HBox renderType="Bare">
+			<m:Button
 				icon="sap-icon://add"
 				text="Zoom in"
 				press="onZoomIn" />
 			<m:Button
 				icon="sap-icon://less"
 				text="Zoom out"
-				press="onZoomOut" /> -->
+				press="onZoomOut" /> 
 			<m:ToggleButton
 				icon="sap-icon://resize"
 				text="Auto-ajustar"
 				press="onOptimizeLayout" /> 
-		</m:HBox> 
+		</m:HBox> -->
 		<ProcessFlow
 			id="processflow"
 			foldedCorners="true"
