@@ -59,7 +59,17 @@
 			"state": "Positive",
 			"stateText": "OK Status",
 			"focused": false,
-			"texts": null
+			"texts": null,
+			"integrationDetails" : {
+				"type" : "IDOC",
+				"direction" : "1",
+				"idocType" : "ORDERS.ORDERS05",
+				"id" : "0000000044676379",
+				"status" : "03",
+				"date" : "02012019",
+				"time" : "10:39:31",
+				"message" : "El IDOC se ha enviado a un sistema SAP o a un programa externo"
+			}
 		}
 	],
 	"lanes": [

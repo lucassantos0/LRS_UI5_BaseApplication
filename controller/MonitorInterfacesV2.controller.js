@@ -47,8 +47,19 @@ sap.ui.define(
 		  MessageToast.show("Zoom level changed to: " + this.oProcessFlow.getZoomLevel());
 	  },
 	  onDocumentPressShowDetails : function(oEvent) {
-	  	var oModel = this.getView().getModel("fluxoDocumentos").getObject(oEvent.getParameter("oBindingContexts").fluxoDocumentos.sPath);
-	  	sap.m.MessageToast.show("Exibir detalhes do documento "+ oModel.id + " do tipo "+ oModel.lane);
-	  }
+	  	//var oModel = this.getView().getModel("fluxoDocumentos").getObject(oEvent.getParameter("oBindingContexts").fluxoDocumentos.sPath);
+	  	//sap.m.MessageToast.show("Exibir detalhes do documento "+ oModel.id + " do tipo "+ oModel.lane);
+	  	
+	  	if (!this._oPopoverDetalhesDocumento) {
+				this._oPopoverDetalhesDocumento = sap.ui.xmlfragment("lrs.ui5.view.MonitorInterfacesV2.DetalhesDocumento", this);
+				this.getView().addDependent(this._oPopoverDetalhesDocumento);
+			}
+	  	this._oPopoverDetalhesDocumento.bindElement("fluxoDocumentos>"+oEvent.getParameter("oBindingContexts").fluxoDocumentos.sPath);
+			this._oPopoverDetalhesDocumento.openBy(oEvent.getSource());
+	  	
+	  },
+	  onCloseDetalhesDocumento: function (oEvent) {
+			this._oPopoverDetalhesDocumento.close();
+		}
 	});
 });
