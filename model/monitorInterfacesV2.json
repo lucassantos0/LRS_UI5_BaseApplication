@@ -41,9 +41,14 @@
 			"children": [ ],
 			"highlighted": false,
 			"state": "Negative",
-			"stateText": "Mapping not configured between AN01021988234-T and AN01021988234-T in the Project for the cXML StatusUpdateRequest. Suggested Action : Please Configure Data Maps for Incoming and Outgoing Transaction Documents in CIG Portal -> Project -> Mappings . For configuration instructions refer to CIG Portal -> Resources -> Implementation Guides -> User Guide ->Cloud Integration Portal Guide-> Configuring an Ariba cloud integration project. For further assistance, please contact CIG Support with Error Code : CIG-PLT-00611",
+			"stateText": "Erro",
 			"focused": false,
-			"texts": null
+			"texts": [
+				"Mapping not configured between AN01021988234-T and AN01021988234-T in the Project for the cXML StatusUpdateRequest. Suggested Action : Please Configure",
+				" Data Maps for Incoming and Outgoing Transaction Documents in CIG Portal -> Project -> Mappings . For configuration instructions refer to", 
+				" CIG Portal -> Resources -> Implementation Guides -> User Guide ->Cloud Integration Portal Guide-> Configuring an Ariba cloud integration project.",
+				" For further assistance, please contact CIG Support with Error Code : CIG-PLT-00611"
+			]
 		}, {
 			"id": "4500375932",
 			"lane": "0003",
