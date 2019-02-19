@@ -5,71 +5,93 @@
 			"lane": "0001",
 			"title": "6000104699",
 			"titleAbbreviation": "6000104699",
-			"children": [ "4600011336", "4600003356", "4500375854" ],
+			"children": [
+				"4600011336",
+				"4600003356",
+				"4500375854"
+			],
 			"highlighted": false,
 			"state": "Positive",
 			"stateText": "OK status",
 			"focused": false,
 			"texts": null
-		}, {
+		},
+		{
 			"id": "4600011336",
 			"lane": "0002",
 			"title": "4600011336",
 			"titleAbbreviation": "4600011336",
-			"children": [ ],
+			"children": [],
 			"highlighted": false,
 			"state": "Positive",
 			"stateText": "OK status",
 			"focused": false,
 			"texts": null
-		}, {
+		},
+		{
 			"id": "4600003356",
 			"lane": "0002",
 			"title": "4600003356",
 			"titleAbbreviation": "4600003356",
-			"children": [ "4500375932" ],
+			"children": [
+				"4500375932"
+			],
 			"highlighted": false,
 			"state": "Positive",
 			"stateText": "OK status",
 			"focused": false,
 			"texts": null
-		}, {
+		},
+		{
 			"id": "4500375854",
 			"lane": "0003",
 			"title": "4500375854",
 			"titleAbbreviation": "4500375854",
-			"children": [ ],
+			"children": [],
 			"highlighted": false,
 			"state": "Negative",
 			"stateText": "Erro",
 			"focused": false,
 			"texts": [
 				"Mapping not configured between AN01021988234-T and AN01021988234-T in the Project for the cXML StatusUpdateRequest. Suggested Action : Please Configure",
-				" Data Maps for Incoming and Outgoing Transaction Documents in CIG Portal -> Project -> Mappings . For configuration instructions refer to", 
+				" Data Maps for Incoming and Outgoing Transaction Documents in CIG Portal -> Project -> Mappings . For configuration instructions refer to",
 				" CIG Portal -> Resources -> Implementation Guides -> User Guide ->Cloud Integration Portal Guide-> Configuring an Ariba cloud integration project.",
 				" For further assistance, please contact CIG Support with Error Code : CIG-PLT-00611"
 			]
-		}, {
+		},
+		{
 			"id": "4500375932",
 			"lane": "0003",
 			"title": "4500375932",
 			"titleAbbreviation": "4500375932",
-			"children": [ ],
+			"children": [],
 			"highlighted": false,
 			"state": "Positive",
 			"stateText": "OK Status",
 			"focused": false,
 			"texts": null,
-			"integrationDetails" : [{
-				"type" : "IDOC",
-				"direction" : "1",
-				"documentDetails" : "ORDERS.ORDERS05",
-				"id" : "0000000044676379",
-				"status" : "03",
-				"date" : "02012019",
-				"time" : "103931",
-				"message" : "El IDOC se ha enviado a un sistema SAP o a un programa externo"
-			}]
+			"integrationDetails": [
+				{
+					"type": "RFC",
+					"direction": "2",
+					"documentDetails": "/ARBA/BAPI_PO_CREATE1",
+					"id": "",
+					"status": "Sucesso",
+					"date": "01012019",
+					"time": "103931",
+					"message": "Documento 4500375932 criado com sucesso"
+				},
+				{
+					"type": "IDOC",
+					"direction": "1",
+					"documentDetails": "ORDERS.ORDERS05",
+					"id": "0000000044676379",
+					"status": "03",
+					"date": "02012019",
+					"time": "103931",
+					"message": "El IDOC se ha enviado a un sistema SAP o a un programa externo"
+				}
+			]
 		}
 	],
 	"lanes": [
@@ -78,12 +100,14 @@
 			"icon": "sap-icon://sales-quote",
 			"label": "RFQ",
 			"position": 0
-		}, {
+		},
+		{
 			"id": "0002",
 			"icon": "sap-icon://contacts",
 			"label": "Contratos",
 			"position": 1
-		}, {
+		},
+		{
 			"id": "0003",
 			"icon": "sap-icon://newspaper",
 			"label": "Ordem de Compra",
