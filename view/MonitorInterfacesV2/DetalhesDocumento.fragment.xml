@@ -1,7 +1,8 @@
 <core:FragmentDefinition
 	xmlns="sap.m"
 	xmlns:f="sap.f"
-	xmlns:core="sap.ui.core">
+	xmlns:core="sap.ui.core"
+	xmlns:form="sap.ui.layout.form">
 	<Dialog
 		contentWidth="640px"
 		contentHeight="480px">
@@ -29,12 +30,36 @@
 									shrinkFactor="0" /><!-- Don't shrink below minimum size. Fill space 
 									if available. -->
 							</layoutData>
-							<Title
-								text="{fluxoDocumentos>id}"
-								wrapping="true" />
-							<Label
-								text="{fluxoDocumentos>documentDetails}"
-								wrapping="true" />
+							<form:SimpleForm id="SimpleFormDisplay471"
+								editable="false"
+								layout="ResponsiveGridLayout"
+								labelSpanXL="4"
+								labelSpanL="4"
+								labelSpanM="4"
+								labelSpanS="12"
+								adjustLabelSpan="false"
+								emptySpanXL="1"
+								emptySpanL="1"
+								emptySpanM="1"
+								emptySpanS="0"
+								columnsXL="1"
+								columnsL="1"
+								columnsM="1" >
+								<form:content>
+									<Label text="ID" />
+									<Text text="{fluxoDocumentos>id}" />
+									<Label text="Tipo Doc" />
+									<Text text="{fluxoDocumentos>type}" />
+									<Label text="Sentido" />
+									<Text text="{fluxoDocumentos>direction}" />
+									<Label text="Processamento" />
+									<Text text="{fluxoDocumentos>date} {fluxoDocumentos>time}" />
+									<Label text="Mensagem" />
+									<Text text="{fluxoDocumentos>message}" />
+									<Label text="Status" />
+									<Text text="{fluxoDocumentos>status}" />
+								</form:content>
+							</form:SimpleForm>	
 						</VBox>
 					</VBox>
 				</CustomListItem>
