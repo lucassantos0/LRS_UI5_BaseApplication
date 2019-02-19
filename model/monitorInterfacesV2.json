@@ -64,7 +64,7 @@
 			"lane": "0003",
 			"title": "4500375932",
 			"titleAbbreviation": "4500375932",
-			"children": [],
+			"children": [ "5003337089" , "5108323989" ],
 			"highlighted": false,
 			"state": "Positive",
 			"stateText": "OK Status",
@@ -92,6 +92,30 @@
 					"message": "El IDOC se ha enviado a un sistema SAP o a un programa externo"
 				}
 			]
+		},
+		{
+			"id": "5003337089",
+			"lane": "0004",
+			"title": "5003337089",
+			"titleAbbreviation": "5003337089",
+			"children": [ ],
+			"highlighted": false,
+			"state": "Positive",
+			"stateText": "OK status",
+			"focused": false,
+			"texts": null
+		},
+		{
+			"id": "5108323989",
+			"lane": "0005",
+			"title": "5108323989",
+			"titleAbbreviation": "5108323989",
+			"children": [ ],
+			"highlighted": false,
+			"state": "Positive",
+			"stateText": "OK status",
+			"focused": false,
+			"texts": null
 		}
 	],
 	"lanes": [
@@ -112,6 +136,18 @@
 			"icon": "sap-icon://newspaper",
 			"label": "Ordem de Compra",
 			"position": 2
+		},
+		{
+			"id": "0004",
+			"icon": "sap-icon://newspaper",
+			"label": "Recepções",
+			"position": 3
+		},
+		{
+			"id": "0005",
+			"icon": "sap-icon://newspaper",
+			"label": "Faturas",
+			"position": 4
 		}
 	]
 }
