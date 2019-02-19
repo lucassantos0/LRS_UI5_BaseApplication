@@ -49,7 +49,7 @@
 									<Label text="ID" />
 									<Text text="{fluxoDocumentos>id}" />
 									<Label text="Tipo Doc" />
-									<Text text="{fluxoDocumentos>type}/{fluxoDocumentos>documentDetails}" />
+									<Text text="{fluxoDocumentos>type} - {fluxoDocumentos>documentDetails}" />
 									<Label text="Sentido" />
 									<Text text="{fluxoDocumentos>direction}" />
 									<Label text="Processamento" />
