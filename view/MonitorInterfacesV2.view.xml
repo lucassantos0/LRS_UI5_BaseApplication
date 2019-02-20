@@ -20,7 +20,7 @@
 				labelTooltip="Tooltip Example"
 				mandatory="true">
 				<fb:control>
-					<m:ComboBox type="Text">
+					<m:Select forceSelection="true">
 						<m:items>
 							<core:Item
 								key="0000"
@@ -41,7 +41,7 @@
 								key="0005"
 								text="Fatura" />
 						</m:items>
-					</m:ComboBox>
+					</m:Select>
 				</fb:control>
 			</fb:FilterItem>
 		</fb:filterItems>
