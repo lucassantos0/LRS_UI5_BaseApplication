@@ -9,7 +9,8 @@
 		<fb:filterItems>
 			<fb:FilterItem
 				name="filterDocumento"
-				label="Documento">
+				label="Documento"
+				mandatory="true">
 				<fb:control>
 					<m:Input />
 				</fb:control>
