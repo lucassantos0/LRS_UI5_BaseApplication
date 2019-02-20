@@ -2,7 +2,51 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:m="sap.m"
 	xmlns="sap.suite.ui.commons"
+	xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:core="sap.ui.core"
 	controllerName="lrs.ui5.controller.MonitorInterfacesV2">
+	<fb:FilterBar
+		search="onSearch">
+		<fb:filterItems>
+			<fb:FilterItem
+				name="filterDocumento"
+				label="Documento">
+				<fb:control>
+						<Input />
+				</fb:control>
+			</fb:FilterItem>
+			<fb:FilterItem
+				name="filterTipoDocumento"
+				label="Tipo documento"
+				labelTooltip="Tooltip Example"
+				mandatory="true">
+				<fb:control>
+					<ComboBox type="Text">
+						<items>
+							<core:Item
+								key="0000"
+								text="Requisição de compra" />
+							<core:Item
+								key="0001"
+								text="RFQ" />
+							<core:Item
+								key="0002"
+								text="Ordem de Compra" />
+							<core:Item
+								key="0003"
+								text="Contrato" />
+							<core:Item
+								key="0004"
+								text="Recepção" />
+							<core:Item
+								key="0005"
+								text="Fatura" />
+						</items>
+					</ComboBox>
+				</fb:control>
+			</fb:FilterItem>
+		</fb:filterItems>
+	</fb:FilterBar>
 	<m:ScrollContainer
 		height="100%"
 		width="100%"
@@ -11,20 +55,10 @@
 		focusable="true">
 		<m:Label
 			text="Monitor de interfaces HANA - Suprimentos 360° - Southend LABS!" />
-		<!-- <m:HBox renderType="Bare">
-			<m:Button
-				icon="sap-icon://add"
-				text="Zoom in"
-				press="onZoomIn" />
-			<m:Button
-				icon="sap-icon://less"
-				text="Zoom out"
-				press="onZoomOut" /> 
-			<m:ToggleButton
-				icon="sap-icon://resize"
-				text="Auto-ajustar"
-				press="onOptimizeLayout" /> 
-		</m:HBox> -->
+		<!-- <m:HBox renderType="Bare"> <m:Button icon="sap-icon://add" text="Zoom 
+			in" press="onZoomIn" /> <m:Button icon="sap-icon://less" text="Zoom out" 
+			press="onZoomOut" /> <m:ToggleButton icon="sap-icon://resize" text="Auto-ajustar" 
+			press="onOptimizeLayout" /> </m:HBox> -->
 		<ProcessFlow
 			id="processflow"
 			foldedCorners="true"
