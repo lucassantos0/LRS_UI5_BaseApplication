@@ -23,10 +23,9 @@
 						<core:Icon
 							src="sap-icon://area-chart"
 							size="2.5rem" />
-						<Title
+						<Text
 							text="{i18n>tile1Title}"
-							titleStyle="H2"
-							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
 						<Text
 							text="{i18n>tile1Content}"
 							wrapping="true"
@@ -45,10 +44,9 @@
 						<core:Icon
 							src="sap-icon://my-sales-order"
 							size="2.5rem" />
-						<Title
+						<Text
 							text="{i18n>tile3Title}"
-							titleStyle="H2"
-							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
 						<Text
 							text="{i18n>tile3Content}"
 							wrapping="true"
@@ -64,10 +62,9 @@
 						<core:Icon
 							src="sap-icon://order-status"
 							size="2.5rem" />
-						<Title
+						<Text
 							text="{i18n>tile4Title}"
-							titleStyle="H2"
-							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
 						<Text
 							text="{i18n>tile4Content}"
 							wrapping="true"
@@ -85,8 +82,7 @@
 							size="2.5rem" />
 						<Title
 							text="{i18n>tile2Title}"
-							titleStyle="H2"
-							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
 						<Text
 							text="{i18n>tile2Content}"
 							wrapping="true"
