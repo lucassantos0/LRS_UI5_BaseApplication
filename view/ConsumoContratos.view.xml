@@ -190,7 +190,7 @@
 												class="sapUiTinyMarginEnd"
 												src="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 &lt; 85 ? 'sap-icon://message-warning' : 'sap-icon://alert' }"
 												visible="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 &lt; 50 ? false : true }"
-												color="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 &lt; 85 ? 'Negative' : 'Critical' }" />
+												color="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 &lt; 85 ? 'Neutral' : 'Critical' }" />
 											<Text
 												text="{ parts: [
 														{path: 'consumoContratos>menge'}, 
