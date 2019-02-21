@@ -6,7 +6,7 @@
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
 		<l:BlockLayout background="Light">
-			<l:BlockLayoutRow backgroundColorSet="ColorSet1">
+			<l:BlockLayoutRow rowColorSet="ColorSet1">
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding sapUiNoMargin">
 					<Image
@@ -15,7 +15,7 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow
-				backgroundColorSet="ColorSet2"
+				rowColorSet="ColorSet2"
 				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell backgroundColorShade="ShadeA">
 					<l:VerticalLayout>
@@ -93,7 +93,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow backgroundColorSet="ColorSet1">
+			<l:BlockLayoutRow rowColorSet="ColorSet1">
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding"
 					backgroundColorShade="ShadeD"
