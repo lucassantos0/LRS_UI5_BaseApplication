@@ -21,7 +21,7 @@
 					id="master"
 					title="Embarques"
 					navButtonPress="onPressVoltar"
-					showNavButton="true">
+					showNavButton="false">
 					<content>
 						<List items="{embarquesFornecedor>/}">
 							<items>
