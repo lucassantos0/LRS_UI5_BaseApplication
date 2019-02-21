@@ -175,7 +175,7 @@
 								</Column>
 							</columns>
 							<items>
-								<ColumnListItem>
+								<ColumnListItem style="background-color:black;">
 									<cells>
 										<ObjectIdentifier
 											title="{consumoContratos>txz01}"
