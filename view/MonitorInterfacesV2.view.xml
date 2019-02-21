@@ -53,41 +53,48 @@
 				</fb:FilterItem>
 			</fb:filterItems>
 		</fb:FilterBar>
-		<m:Label
-			text="Monitor de interfaces HANA - Suprimentos 360° - Southend LABS!" />
 		<!-- <m:HBox renderType="Bare"> <m:Button icon="sap-icon://add" text="Zoom 
 			in" press="onZoomIn" /> <m:Button icon="sap-icon://less" text="Zoom out" 
 			press="onZoomOut" /> <m:ToggleButton icon="sap-icon://resize" text="Auto-ajustar" 
 			press="onOptimizeLayout" /> </m:HBox> -->
-		<ProcessFlow
-			id="processflow"
-			foldedCorners="true"
-			scrollable="false"
-			wheelZoomable="false"
-			nodePress="onDocumentPressShowDetails"
-			class="PFLayoutSpec"
-			nodes="{fluxoDocumentos>/nodes}"
-			lanes="{fluxoDocumentos>/lanes}">
-			<nodes>
-				<ProcessFlowNode
-					laneId="{fluxoDocumentos>lane}"
-					nodeId="{fluxoDocumentos>id}"
-					title="{fluxoDocumentos>title}"
-					children="{fluxoDocumentos>children}"
-					state="{fluxoDocumentos>state}"
-					stateText="{fluxoDocumentos>stateText}"
-					texts="{fluxoDocumentos>texts}"
-					highlighted="{fluxoDocumentos>highlighted}"
-					focused="{fluxoDocumentos>focused}"
-					titleAbbreviation="{fluxoDocumentos>titleAbbreviation}" />
-			</nodes>
-			<lanes>
-				<ProcessFlowLaneHeader
-					laneId="{fluxoDocumentos>id}"
-					iconSrc="{fluxoDocumentos>icon}"
-					text="{fluxoDocumentos>label}"
-					position="{fluxoDocumentos>position}" />
-			</lanes>
-		</ProcessFlow>
+		<Panel class="sapUiNoContentPadding sapUiNoMargin">
+			<headerToolbar>
+				<Toolbar>
+					<Title
+						level="H2"
+						text="Exibindo documento: 0010363799 (Requisição de compras)" />
+				</Toolbar>
+			</headerToolbar>
+			<ProcessFlow
+				id="processflow"
+				foldedCorners="true"
+				scrollable="false"
+				wheelZoomable="false"
+				nodePress="onDocumentPressShowDetails"
+				class="PFLayoutSpec"
+				nodes="{fluxoDocumentos>/nodes}"
+				lanes="{fluxoDocumentos>/lanes}">
+				<nodes>
+					<ProcessFlowNode
+						laneId="{fluxoDocumentos>lane}"
+						nodeId="{fluxoDocumentos>id}"
+						title="{fluxoDocumentos>title}"
+						children="{fluxoDocumentos>children}"
+						state="{fluxoDocumentos>state}"
+						stateText="{fluxoDocumentos>stateText}"
+						texts="{fluxoDocumentos>texts}"
+						highlighted="{fluxoDocumentos>highlighted}"
+						focused="{fluxoDocumentos>focused}"
+						titleAbbreviation="{fluxoDocumentos>titleAbbreviation}" />
+				</nodes>
+				<lanes>
+					<ProcessFlowLaneHeader
+						laneId="{fluxoDocumentos>id}"
+						iconSrc="{fluxoDocumentos>icon}"
+						text="{fluxoDocumentos>label}"
+						position="{fluxoDocumentos>position}" />
+				</lanes>
+			</ProcessFlow>
+		</Panel>
 	</m:ScrollContainer>
 </mvc:View>
