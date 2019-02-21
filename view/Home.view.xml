@@ -17,7 +17,7 @@
 			<l:BlockLayoutRow
 				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet11"
+					backgroundColorSet="ColorSet1"
 					backgroundColorShade="ShadeA">
 					<l:VerticalLayout>
 						<core:Icon
@@ -40,7 +40,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet11"
+					backgroundColorSet="ColorSet1"
 					backgroundColorShade="ShadeB">
 					<l:VerticalLayout>
 						<core:Icon
@@ -60,7 +60,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet11"
+					backgroundColorSet="ColorSet1"
 					backgroundColorShade="ShadeC">
 					<l:VerticalLayout>
 						<core:Icon
@@ -80,7 +80,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet11"
+					backgroundColorSet="ColorSet1"
 					backgroundColorShade="ShadeA">
 					<l:VerticalLayout>
 						<core:Icon
@@ -103,7 +103,7 @@
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding"
-					backgroundColorSet="ColorSet11"
+					backgroundColorSet="ColorSet1"
 					backgroundColorShade="ShadeD"
 					width="4">
 					<Table
