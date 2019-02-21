@@ -15,7 +15,7 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow
-				rowColorSet="ColorSet4"
+				rowColorSet="ColorSet2"
 				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell backgroundColorShade="ShadeA">
 					<l:VerticalLayout>
