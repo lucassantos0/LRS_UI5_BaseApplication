@@ -9,7 +9,7 @@
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow rowColorSet="ColorSet2" class="sapUiNoContentPadding sapUiNoMargin">
 				<l:BlockLayoutCell>
-					<l:VerticalLayout>
+					<l:VerticalLayout class="sapUiTinyContentPadding">
 						<core:Icon src="sap-icon://area-chart" size="2.5rem"
 							color="#346187" />
 						<Title text="{i18n>tile1Title}" titleStyle="H2"
@@ -20,7 +20,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
-					<l:VerticalLayout>
+					<l:VerticalLayout class="sapUiTinyContentPadding">
 						<core:Icon src="sap-icon://my-sales-order" size="2.5rem"
 							color="#346187" />
 						<Title text="{i18n>tile3Title}" titleStyle="H2"
@@ -30,7 +30,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
-					<l:VerticalLayout>
+					<l:VerticalLayout class="sapUiTinyContentPadding">
 						<core:Icon src="sap-icon://order-status" size="2.5rem" color="#346187" />
 						<Title text="{i18n>tile4Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
@@ -39,7 +39,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
-					<l:VerticalLayout>
+					<l:VerticalLayout class="sapUiTinyContentPadding">
 						<core:Icon src="sap-icon://supplier" size="2.5rem" color="#346187" />
 						<Title text="{i18n>tile2Title}" titleStyle="H2"
 							class="sapUiTinyMarginTopBottom" />
