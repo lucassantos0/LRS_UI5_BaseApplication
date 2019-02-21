@@ -186,7 +186,12 @@
 										<Text text="{consumoContratos>ktmng}" />
 										<Text text="{consumoContratos>menge}" />
 										<Text
-											text="{= ( ${consumoContratos>menge} / ${consumoContratos>ktmng} ) * 100 }" />
+											text="{ parts: [
+														{path: 'consumoContratos>menge'}, 
+														{path: 'consumoContratos>ktmng'}
+													],
+													formatter : '.formatterNumberRoundPercentage'
+											" />
 										<Text text="{consumoContratos>netpr}" />
 									</cells>
 								</ColumnListItem>

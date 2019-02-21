@@ -85,6 +85,10 @@ sap.ui.define(
 		  return (Math.round(iMax * 100) / 100) + "%";
 	  },
 
+	  formatterNumberRoundPercentage : function(nMenge, nKtmng) {
+	  	return (Math.round( ( nMenge / nKtmng * 100 ) * 100) / 100) + "%"; 
+	  },
+	  
 	  formatterGetTopConsumptionStatus : function(aEkpo) {
 		  var iMax = 0;
 		  var nCalc = 0;
