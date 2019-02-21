@@ -1,14 +1,14 @@
 <mvc:View controllerName="lrs.ui5.controller.Home" xmlns="sap.m"
 	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
-		<l:BlockLayout background="Light">
+		<l:BlockLayout>
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell class="sapUiNoContentPadding sapUiNoMargin">
 					<Image src="./images/homeImage_v2.png" width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow class="sapUiNoContentPadding">
-				<l:BlockLayoutCell class="sapUiTinyContentPadding">
+				<l:BlockLayoutCell class="sapUiTinyContentPadding" backgroundColorSet="ColorSet11">
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://area-chart" size="2.5rem"
 							color="#346187" />
@@ -19,7 +19,7 @@
 						<Link text="{i18n>tile1Action2}" press="navToMonitorInterfacesV2" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell>
+				<l:BlockLayoutCell backgroundColorSet="ColorSet11">
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://my-sales-order" size="2.5rem"
 							color="#346187" />
@@ -29,7 +29,7 @@
 						<Link text="{i18n>tile3Action1}" press="navToMapaComparativo" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell>
+				<l:BlockLayoutCell backgroundColorSet="ColorSet11">
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://order-status" size="2.5rem" color="#346187" />
 						<Title text="{i18n>tile4Title}" titleStyle="H2"
@@ -38,7 +38,7 @@
 						<Link text="{i18n>tile4Action1}" press="navToConsumoContratos" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell class="sapUiTinyContentPadding">
+				<l:BlockLayoutCell backgroundColorSet="ColorSet11">
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://supplier" size="2.5rem" color="#346187" />
 						<Title text="{i18n>tile2Title}" titleStyle="H2"
@@ -54,8 +54,8 @@
 					class="sapUiTinyMarginTopBottom" /> <Text text="{i18n>socialMediaContent}" 
 					class="sapUiTinyMarginBottom" /> <Link text="{i18n>accessLink}" /> <Link 
 					text="{i18n>learnLink}" /> </l:VerticalLayout> </l:BlockLayoutCell> -->
-				<l:BlockLayoutCell class="sapUiNoContentPadding"
-					width="3">
+				<l:BlockLayoutCell class="sapUiNoContentPadding" backgroundColorSet="ColorSet11"
+					width="4">
 					<Table
 						items="{path: 'customer>/customers', templateShareable: false}"
 						class="customerTablesapUiContentPadding">
