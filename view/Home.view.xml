@@ -18,7 +18,7 @@
 				rowColorSet="ColorSet3"
 				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell backgroundColorShade="ShadeA">
-					<VBox class="sapUiTinyContentPadding">
+					<VBox class="sapUiResponsiveContentPadding">
 						<core:Icon
 							src="sap-icon://area-chart"
 							size="2.5rem" />
@@ -38,7 +38,7 @@
 					</VBox>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeB">
-					<VBox class="sapUiTinyContentPadding">
+					<VBox class="sapUiResponsiveContentPadding">
 						<core:Icon
 							src="sap-icon://my-sales-order"
 							size="2.5rem"/>
@@ -55,7 +55,7 @@
 					</VBox>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeC">
-					<VBox class="sapUiTinyContentPadding">
+					<VBox class="sapUiResponsiveContentPadding">
 						<core:Icon
 							src="sap-icon://order-status"
 							size="2.5rem" />
@@ -72,7 +72,7 @@
 					</VBox>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeA">
-					<VBox class="sapUiTinyContentPadding">
+					<VBox class="sapUiResponsiveContentPadding">
 						<core:Icon
 							src="sap-icon://supplier"
 							size="2.5rem" />
