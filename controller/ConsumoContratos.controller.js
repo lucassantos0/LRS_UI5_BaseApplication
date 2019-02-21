@@ -71,16 +71,16 @@ sap.ui.define(
 		  var oEkpo = null;
 		  for ( var iEkpo in aEkpo) {
 			  oEkpo = aEkpo[iEkpo];
-			  nCalc = (oEkpo.menge / oEkpo.ktmng) * 100;
+			  nCalc = (oEkpo.ktmng / oEkpo.menge) * 100;
 			  if (nCalc > iMax) {
 				  iMax = nCalc;
 			  }
 		  }
-		  return (Math.round(iMax * 100) / 100) + "%";
+		  return Math.round(iMax) + "%";
 	  },
 
 	  formatterNumberRoundPercentage : function(nMenge, nKtmng) {
-	  	return (Math.round( ( nMenge / nKtmng * 100 ) * 100) / 100) + "%"; 
+	  	return Math.round( ( nKtmng / nMenge ) * 100 ) + "%"; 
 	  },
 	  
 	  formatterGetTopConsumptionStatus : function(aEkpo) {
@@ -89,7 +89,7 @@ sap.ui.define(
 		  var oEkpo = null;
 		  for ( var iEkpo in aEkpo) {
 			  oEkpo = aEkpo[iEkpo];
-			  nCalc = (oEkpo.menge / oEkpo.ktmng) * 100;
+			  nCalc = (oEkpo.ktmng / oEkpo.menge) * 100;
 			  if (nCalc > iMax) {
 				  iMax = nCalc;
 			  }
