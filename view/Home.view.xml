@@ -25,7 +25,8 @@
 							size="2.5rem" />
 						<Title
 							text="{i18n>tile1Title}"
-							class="sapUiTinyMarginTopBottom" />
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
 						<Text
 							text="{i18n>tile1Content}"
 							wrapping="true"
@@ -46,7 +47,8 @@
 							size="2.5rem" />
 						<Title
 							text="{i18n>tile3Title}"
-							class="sapUiTinyMarginTopBottom" />
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
 						<Text
 							text="{i18n>tile3Content}"
 							wrapping="true"
@@ -64,7 +66,8 @@
 							size="2.5rem" />
 						<Title
 							text="{i18n>tile4Title}"
-							class="sapUiTinyMarginTopBottom" />
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
 						<Text
 							text="{i18n>tile4Content}"
 							wrapping="true"
@@ -82,7 +85,8 @@
 							size="2.5rem" />
 						<Title
 							text="{i18n>tile2Title}"
-							class="sapUiTinyMarginTopBottom" />
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom ClasseCorBranca" />
 						<Text
 							text="{i18n>tile2Content}"
 							wrapping="true"
