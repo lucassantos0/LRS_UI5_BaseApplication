@@ -17,8 +17,8 @@
 			<l:BlockLayoutRow
 				rowColorSet="ColorSet3"
 				class="sapUiNoContentPadding">
-				<l:BlockLayoutCell styleClass="sapUiTinyContentPadding" backgroundColorShade="ShadeA">
-					<l:VerticalLayout>
+				<l:BlockLayoutCell backgroundColorShade="ShadeA">
+					<VBox class="sapUiTinyContentPadding">
 						<core:Icon
 							src="sap-icon://area-chart"
 							size="2.5rem" />
@@ -35,10 +35,10 @@
 						<Link
 							text="{i18n>tile1Action2}"
 							press="navToMonitorInterfacesV2" />
-					</l:VerticalLayout>
+					</VBox>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeB">
-					<l:VerticalLayout>
+					<VBox class="sapUiTinyContentPadding">
 						<core:Icon
 							src="sap-icon://my-sales-order"
 							size="2.5rem"/>
@@ -52,10 +52,10 @@
 						<Link
 							text="{i18n>tile3Action1}"
 							press="navToMapaComparativo" />
-					</l:VerticalLayout>
+					</VBox>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeC">
-					<l:VerticalLayout>
+					<VBox class="sapUiTinyContentPadding">
 						<core:Icon
 							src="sap-icon://order-status"
 							size="2.5rem" />
@@ -69,10 +69,10 @@
 						<Link
 							text="{i18n>tile4Action1}"
 							press="navToConsumoContratos" />
-					</l:VerticalLayout>
+					</VBox>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeA">
-					<l:VerticalLayout>
+					<VBox class="sapUiTinyContentPadding">
 						<core:Icon
 							src="sap-icon://supplier"
 							size="2.5rem" />
@@ -86,7 +86,7 @@
 						<Link
 							text="{i18n>tile2Action1}"
 							press="navToPortalFornecedor" />
-					</l:VerticalLayout>
+					</VBox>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow rowColorSet="ColorSet4">
