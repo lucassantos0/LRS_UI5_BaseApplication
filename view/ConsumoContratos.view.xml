@@ -25,8 +25,11 @@
 								press="onSelecionarContrato">
 								<firstStatus>
 									<ObjectStatus
-										visible="{= ${consumoContratos>itemsPorcentagemConsumo} ? true : false }"
-										text="{consumoContratos>itemsPorcentagemConsumo}%"
+										visible="true"
+										text="{
+											path: 'consumoContratos>ekpo',
+											formatter: '.formatterGetTopConsumption'
+										}"
 										state="{
 											path : 'consumoContratos>itemsPorcentagemConsumo',
 											formatter : '.formatterMasterListConsumoStatus'

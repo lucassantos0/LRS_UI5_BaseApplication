@@ -71,6 +71,10 @@ sap.ui.define(
 		  return 'Error';
 	  },
 
+	  formatterGetTopConsumption : function(aEkpo) {
+	  	return  ( ( aEkpo[0].menge / aEkpo[0].ktmng ) * 100 ) ; 
+	  },
+	  
 	  getSplitContObj : function() {
 		  var result = this.byId("SplitContainer");
 		  return result;
