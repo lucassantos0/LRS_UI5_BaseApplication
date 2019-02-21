@@ -189,7 +189,7 @@
 											<core:Icon
 												src="{= ( ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 100 ) &lt; 85 ? 'sap-icon://message-warning' : 'sap-icon://alert' }"
 												visible="{= ( ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 100 )  &lt; 70 ? false : true }"
-												color="{= ( ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 100 )  &lt; 85 ? 'sap.ui.core.IconColor.Negative' : 'sap.ui.core.IconColor.Critical' }" />
+												color="{= ( ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 100 )  &lt; 85 ? 'Negative' : 'Critical' }" />
 											<Text
 												text="{ parts: [
 														{path: 'consumoContratos>menge'}, 
