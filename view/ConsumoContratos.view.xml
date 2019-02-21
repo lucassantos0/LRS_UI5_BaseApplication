@@ -187,9 +187,9 @@
 										<Text text="{consumoContratos>menge}" />
 										<HBox>
 											<core:Icon
-												src="{= ( ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 100 ) &lt; 85 ? 'sap-icon://message-warning' : 'sap-icon://alert' }"
-												visible="{= ( ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 100 )  &lt; 70 ? false : true }"
-												color="{= ( ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 100 )  &lt; 85 ? 'Negative' : 'Critical' }" />
+												src="{= ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 10 &lt; 85 ? 'sap-icon://message-warning' : 'sap-icon://alert' }"
+												visible="{= ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 10  &lt; 70 ? false : true }"
+												color="{= ( ${consumoContratos>menge} * ${consumoContratos>ktmng} ) * 10  &lt; 85 ? 'Negative' : 'Critical' }" />
 											<Text
 												text="{ parts: [
 														{path: 'consumoContratos>menge'}, 
