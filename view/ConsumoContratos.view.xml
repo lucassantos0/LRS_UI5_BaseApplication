@@ -175,7 +175,7 @@
 								</Column>
 							</columns>
 							<items>
-								<ColumnListItem style="background-color:black;">
+								<ColumnListItem>
 									<cells>
 										<ObjectIdentifier
 											title="{consumoContratos>txz01}"
@@ -185,13 +185,19 @@
 										<Text text="{consumoContratos>mwskz}" />
 										<Text text="{consumoContratos>ktmng}" />
 										<Text text="{consumoContratos>menge}" />
-										<Text
-											text="{ parts: [
+										<HBox>
+											<core:Icon
+												src="{= ${consumoContratos>menge} * ${consumoContratos>ktmng} < 85 ? 'sap-icon://message-warning' : 'sap-icon://alert' }"
+												visible="{= ${consumoContratos>menge} * ${consumoContratos>ktmng} < 70 ? 'false' : 'true' }"
+												color="{= ${consumoContratos>menge} * ${consumoContratos>ktmng} < 85 ? 'Yellow' : 'Red' }" />
+											<Text
+												text="{ parts: [
 														{path: 'consumoContratos>menge'}, 
 														{path: 'consumoContratos>ktmng'}
 													],
 													formatter : '.formatterNumberRoundPercentage'
 											}" />
+										</HBox>
 										<Text text="{consumoContratos>netpr}" />
 									</cells>
 								</ColumnListItem>
