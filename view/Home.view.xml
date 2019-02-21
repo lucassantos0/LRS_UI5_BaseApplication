@@ -32,9 +32,11 @@
 							class="sapUiTinyMarginBottom" />
 						<Link
 							text="{i18n>tile1Action1}"
+							class="FonteBranca"
 							press="navToLogInterfaces" />
 						<Link
 							text="{i18n>tile1Action2}"
+							class="FonteBranca"
 							press="navToMonitorInterfacesV2" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
@@ -53,6 +55,7 @@
 							class="sapUiTinyMarginBottom" />
 						<Link
 							text="{i18n>tile3Action1}"
+							class="FonteBranca"
 							press="navToMapaComparativo" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
@@ -71,6 +74,7 @@
 							class="sapUiTinyMarginBottom" />
 						<Link
 							text="{i18n>tile4Action1}"
+							class="FonteBranca"
 							press="navToConsumoContratos" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
@@ -80,7 +84,7 @@
 						<core:Icon
 							src="sap-icon://supplier"
 							size="2.5rem" />
-						<Title
+						<Text
 							text="{i18n>tile2Title}"
 							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
 						<Text
@@ -89,6 +93,7 @@
 							class="sapUiTinyMarginBottom" />
 						<Link
 							text="{i18n>tile2Action1}"
+							class="FonteBranca"
 							press="navToPortalFornecedor" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
