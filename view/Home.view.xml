@@ -17,7 +17,7 @@
 			<l:BlockLayoutRow
 				rowColorSet="ColorSet3"
 				class="sapUiNoContentPadding">
-				<l:BlockLayoutCell backgroundColorShade="ShadeA">
+				<l:BlockLayoutCell styleClass="sapUiTinyContentPadding" backgroundColorShade="ShadeA">
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://area-chart"
