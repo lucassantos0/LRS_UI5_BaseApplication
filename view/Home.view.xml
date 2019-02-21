@@ -7,7 +7,7 @@
 					<Image src="./images/homeImage_v2.png" width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow accentCells="Accent1" class="sapUiNoContentPadding">
+			<l:BlockLayoutRow class="sapUiNoContentPadding">
 				<l:BlockLayoutCell class="sapUiTinyContentPadding">
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://area-chart" size="2.5rem"
@@ -19,7 +19,7 @@
 						<Link text="{i18n>tile1Action2}" press="navToMonitorInterfacesV2" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell class="sapUiTinyContentPadding">
+				<l:BlockLayoutCell>
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://my-sales-order" size="2.5rem"
 							color="#346187" />
@@ -29,7 +29,7 @@
 						<Link text="{i18n>tile3Action1}" press="navToMapaComparativo" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell class="sapUiTinyContentPadding">
+				<l:BlockLayoutCell>
 					<l:VerticalLayout>
 						<core:Icon src="sap-icon://order-status" size="2.5rem" color="#346187" />
 						<Title text="{i18n>tile4Title}" titleStyle="H2"
