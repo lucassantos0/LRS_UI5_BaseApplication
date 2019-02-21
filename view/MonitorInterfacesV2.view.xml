@@ -57,14 +57,14 @@
 			in" press="onZoomIn" /> <m:Button icon="sap-icon://less" text="Zoom out" 
 			press="onZoomOut" /> <m:ToggleButton icon="sap-icon://resize" text="Auto-ajustar" 
 			press="onOptimizeLayout" /> </m:HBox> -->
-		<Panel class="sapUiNoContentPadding sapUiNoMargin">
-			<headerToolbar>
-				<Toolbar>
-					<Title
+		<m:Panel class="sapUiNoContentPadding sapUiNoMargin">
+			<m:headerToolbar>
+				<m:Toolbar>
+					<m:Title
 						level="H2"
 						text="Exibindo documento: 0010363799 (Requisição de compras)" />
-				</Toolbar>
-			</headerToolbar>
+				</m:Toolbar>
+			</m:headerToolbar>
 			<ProcessFlow
 				id="processflow"
 				foldedCorners="true"
@@ -95,6 +95,6 @@
 						position="{fluxoDocumentos>position}" />
 				</lanes>
 			</ProcessFlow>
-		</Panel>
+		</m:Panel>
 	</m:ScrollContainer>
 </mvc:View>
