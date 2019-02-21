@@ -48,7 +48,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow rowColorSet="ColorSet2">
+			<l:BlockLayoutRow>
 				<!-- <l:BlockLayoutCell> <l:VerticalLayout> <core:Icon src="sap-icon://thumb-up" 
 					size="2.5rem" color="#346187" /> <Title text="{i18n>socialMediaTitle}" titleStyle="H2" 
 					class="sapUiTinyMarginTopBottom" /> <Text text="{i18n>socialMediaContent}" 
