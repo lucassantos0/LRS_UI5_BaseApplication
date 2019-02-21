@@ -72,7 +72,17 @@ sap.ui.define(
 	  },
 
 	  formatterGetTopConsumption : function(aEkpo) {
-	  	return  ( ( aEkpo[0].menge / aEkpo[0].ktmng ) * 100 ) ; 
+	  	var iMax = 0;
+	  	var nCalc = 0;
+	  	var oEkpo = null;
+	  	for(var iEkpo in aEkpo){
+				oEkpo = aEkpo[iEkpo];
+				nCalc = ( oEkpo.menge / oEkpo.ktmng ) * 100;
+				if(nCalc > iMax){
+					iMax = nCalc;
+				}
+			}
+	  	return iMax + "%"; 
 	  },
 	  
 	  getSplitContObj : function() {
