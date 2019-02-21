@@ -64,12 +64,6 @@ sap.ui.define(
 			  return null;
 		  }
 	  },
-	  formatterMasterListConsumoStatus : function(sConsumo) {
-		  var iPorcentagem = parseInt(sConsumo);
-		  if (iPorcentagem < 40) { return 'None'; }
-		  if (iPorcentagem < 80) { return 'Warning'; }
-		  return 'Error';
-	  },
 
 	  formatterGetTopConsumption : function(aEkpo) {
 		  var iMax = 0;
