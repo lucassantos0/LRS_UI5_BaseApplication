@@ -191,7 +191,7 @@
 														{path: 'consumoContratos>ktmng'}
 													],
 													formatter : '.formatterNumberRoundPercentage'
-											" />
+											}" />
 										<Text text="{consumoContratos>netpr}" />
 									</cells>
 								</ColumnListItem>
