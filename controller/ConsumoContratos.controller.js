@@ -82,7 +82,7 @@ sap.ui.define(
 					iMax = nCalc;
 				}
 			}
-	  	return iMax + "%"; 
+	  	return ( Math.round(iMax * 100) / 100 ) + "%"; 
 	  },
 	  
 	  getSplitContObj : function() {
