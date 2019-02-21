@@ -5,7 +5,7 @@
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
-		<l:BlockLayout background="Bright">
+		<l:BlockLayout background="Light">
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding sapUiNoMargin">
@@ -15,7 +15,6 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow
-				accentCells="Accent1"
 				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell
 					backgroundColorSet="ColorSet11"
@@ -101,7 +100,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow accentCells="Accent1">
+			<l:BlockLayoutRow>
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding"
 					backgroundColorSet="ColorSet11"
