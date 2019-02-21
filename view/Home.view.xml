@@ -6,7 +6,7 @@
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
 		<l:BlockLayout background="Light">
-			<l:BlockLayoutRow>
+			<l:BlockLayoutRow backgroundColorSet="ColorSet1">
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding sapUiNoMargin">
 					<Image
@@ -15,10 +15,9 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow
+				backgroundColorSet="ColorSet1"
 				class="sapUiNoContentPadding">
-				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet1"
-					backgroundColorShade="ShadeA">
+				<l:BlockLayoutCell backgroundColorShade="ShadeA">
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://area-chart"
@@ -39,9 +38,7 @@
 							press="navToMonitorInterfacesV2" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet1"
-					backgroundColorShade="ShadeB">
+				<l:BlockLayoutCell backgroundColorShade="ShadeB">
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://my-sales-order"
@@ -59,9 +56,7 @@
 							press="navToMapaComparativo" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet1"
-					backgroundColorShade="ShadeC">
+				<l:BlockLayoutCell backgroundColorShade="ShadeC">
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://order-status"
@@ -79,9 +74,7 @@
 							press="navToConsumoContratos" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell
-					backgroundColorSet="ColorSet1"
-					backgroundColorShade="ShadeA">
+				<l:BlockLayoutCell backgroundColorShade="ShadeA">
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://supplier"
@@ -100,10 +93,9 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow>
+			<l:BlockLayoutRow backgroundColorSet="ColorSet1">
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding"
-					backgroundColorSet="ColorSet1"
 					backgroundColorShade="ShadeD"
 					width="4">
 					<Table
