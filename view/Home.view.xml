@@ -21,8 +21,7 @@
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://area-chart"
-							size="2.5rem"
-							color="#346187" />
+							size="2.5rem" />
 						<Title
 							text="{i18n>tile1Title}"
 							titleStyle="H2"
@@ -42,8 +41,7 @@
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://my-sales-order"
-							size="2.5rem"
-							color="#346187" />
+							size="2.5rem"/>
 						<Title
 							text="{i18n>tile3Title}"
 							titleStyle="H2"
@@ -60,8 +58,7 @@
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://order-status"
-							size="2.5rem"
-							color="#346187" />
+							size="2.5rem" />
 						<Title
 							text="{i18n>tile4Title}"
 							titleStyle="H2"
@@ -78,8 +75,7 @@
 					<l:VerticalLayout>
 						<core:Icon
 							src="sap-icon://supplier"
-							size="2.5rem"
-							color="#346187" />
+							size="2.5rem" />
 						<Title
 							text="{i18n>tile2Title}"
 							titleStyle="H2"
