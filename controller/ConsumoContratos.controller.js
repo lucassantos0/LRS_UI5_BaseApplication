@@ -94,7 +94,7 @@ sap.ui.define(
 				  iMax = nCalc;
 			  }
 		  }
-		  if (iMax < 70) { return "None"; }
+		  if (iMax < 50) { return "None"; }
 		  if (iMax < 85) {
 			  return "Warning";
 		  } else {
