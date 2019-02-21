@@ -22,32 +22,32 @@ sap.ui.define(
 			  "milk" :
 			  [
 			  {
-			  	"Material" : "Material 1",
+			    "Material" : "Material 1",
 			    "Fornecedor" : "1000",
 			    "Consumo" : "99"
 			  },
 			  {
-			  	"Material" : "Material 2",
+			    "Material" : "Material 2",
 			    "Fornecedor" : "1010",
 			    "Consumo" : "80"
 			  },
 			  {
-			  	"Material" : "Material 3",
+			    "Material" : "Material 3",
 			    "Fornecedor" : "1010",
 			    "Consumo" : "70"
 			  },
 			  {
-			  	"Material" : "Material 4",
+			    "Material" : "Material 4",
 			    "Fornecedor" : "1000",
 			    "Consumo" : "70"
 			  },
 			  {
-			  	"Material" : "Material 5",
+			    "Material" : "Material 5",
 			    "Fornecedor" : "999",
 			    "Consumo" : "38"
 			  },
 			  {
-			  	"Material" : "Material 6",
+			    "Material" : "Material 6",
 			    "Fornecedor" : "1010",
 			    "Consumo" : "12"
 			  } ]
@@ -58,10 +58,10 @@ sap.ui.define(
 	  },
 	  formatterMasterListDate : function(sDate) {
 		  var str = sDate;
-		  try{ 
-		  	return str.substring(6, 8) + "/" + str.substring(4, 6) + "/" + str.substring(0, 4);
-		  }catch(ex){
-		  	return null;
+		  try {
+			  return str.substring(6, 8) + "/" + str.substring(4, 6) + "/" + str.substring(0, 4);
+		  } catch (ex) {
+			  return null;
 		  }
 	  },
 	  formatterMasterListConsumoStatus : function(sConsumo) {
@@ -72,19 +72,38 @@ sap.ui.define(
 	  },
 
 	  formatterGetTopConsumption : function(aEkpo) {
-	  	var iMax = 0;
-	  	var nCalc = 0;
-	  	var oEkpo = null;
-	  	for(var iEkpo in aEkpo){
-				oEkpo = aEkpo[iEkpo];
-				nCalc = ( oEkpo.menge / oEkpo.ktmng ) * 100;
-				if(nCalc > iMax){
-					iMax = nCalc;
-				}
-			}
-	  	return ( Math.round(iMax * 100) / 100 ) + "%"; 
+		  var iMax = 0;
+		  var nCalc = 0;
+		  var oEkpo = null;
+		  for ( var iEkpo in aEkpo) {
+			  oEkpo = aEkpo[iEkpo];
+			  nCalc = (oEkpo.menge / oEkpo.ktmng) * 100;
+			  if (nCalc > iMax) {
+				  iMax = nCalc;
+			  }
+		  }
+		  return (Math.round(iMax * 100) / 100) + "%";
 	  },
-	  
+
+	  formatterGetTopConsumptionStatus : function(aEkpo) {
+		  var iMax = 0;
+		  var nCalc = 0;
+		  var oEkpo = null;
+		  for ( var iEkpo in aEkpo) {
+			  oEkpo = aEkpo[iEkpo];
+			  nCalc = (oEkpo.menge / oEkpo.ktmng) * 100;
+			  if (nCalc > iMax) {
+				  iMax = nCalc;
+			  }
+		  }
+		  if (iMax < 70) { return "None"; }
+		  if (iMax < 85) {
+			  return "Warning";
+		  } else {
+			  return "Error";
+		  }
+	  },
+
 	  getSplitContObj : function() {
 		  var result = this.byId("SplitContainer");
 		  return result;
@@ -116,16 +135,16 @@ sap.ui.define(
 			  this._oQuickViewSupplier.openBy(oButton);
 		  });
 	  },
-	  
-      onFilterSettings: function () {    	
+
+	  onFilterSettings : function() {
 		  if (this._oFilterSettingsDialog) {
 			  this._oFilterSettingsDialog.destroy();
 		  }
 		  this._oFilterSettingsDialog = sap.ui.xmlfragment("lrs.ui5.view.ConsumoContratos.FilterSettings", this);
 		  this.getView().addDependent(this._oFilterSettingsDialog);
-		  this._oFilterSettingsDialog.open();   	  
-      },
-          
+		  this._oFilterSettingsDialog.open();
+	  },
+
 	  viewSupplierDetails : function(oEvent) {
 		  var bindingContextPath = oEvent.getSource().getBindingContext("consumoContratos").sPath;
 		  this.openQuickViewSupplier(oEvent, bindingContextPath);

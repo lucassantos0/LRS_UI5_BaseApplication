@@ -31,8 +31,8 @@
 											formatter: '.formatterGetTopConsumption'
 										}"
 										state="{
-											path : 'consumoContratos>itemsPorcentagemConsumo',
-											formatter : '.formatterMasterListConsumoStatus'
+											path : 'consumoContratos>ekpo',
+											formatter : '.formatterGetTopConsumptionStatus'
 										}" />
 								</firstStatus>
 								<attributes>
