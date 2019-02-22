@@ -161,7 +161,8 @@
 		},
 		{
 			"id": "0015",
-			"icon": "Evento de Sourcing",
+			"icon": "sap-icon://request",
+			"label": "Evento de Sourcing",
 			"position": 2
 		},
 		{
