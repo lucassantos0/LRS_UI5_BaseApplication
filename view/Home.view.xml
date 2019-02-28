@@ -20,15 +20,15 @@
 				<l:BlockLayoutCell backgroundColorShade="ShadeB">
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
-						<l:titleLink>
-							<Link
-								text="SouthEnd SA"
-								href="http://www.southend.com.ar/portugues/" />
-						</l:titleLink>
 						<Text
 							text="{i18n>tileSouthEndSA}"
 							class="FonteBranca" />
 					</l:VerticalLayout>
+					<l:titleLink>
+						<Link
+							text="SouthEnd SA"
+							href="http://www.southend.com.ar/portugues/" />
+					</l:titleLink>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell>
 					<l:VerticalLayout
