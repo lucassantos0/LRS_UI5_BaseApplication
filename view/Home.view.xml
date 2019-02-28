@@ -68,7 +68,8 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow>
+			<l:BlockLayoutRow
+				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell
 					backgroundColorShade="ShadeA"
 					width="2">
