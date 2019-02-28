@@ -40,25 +40,6 @@
 							press="navToMonitorInterfacesV2" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell backgroundColorShade="ShadeB">
-					<l:VerticalLayout
-						class="sapUiNoContentPadding sapUiTinyMargin">
-						<core:Icon
-							src="sap-icon://my-sales-order"
-							size="2.5rem" />
-						<Text
-							text="{i18n>tile3Title}"
-							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
-						<Text
-							text="{i18n>tile3Content}"
-							wrapping="true"
-							class="sapUiTinyMarginBottom" />
-						<Link
-							text="{i18n>tile3Action1}"
-							class="FonteBranca"
-							press="navToMapaComparativo" />
-					</l:VerticalLayout>
-				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeC">
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
@@ -78,7 +59,30 @@
 							press="navToConsumoContratos" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell backgroundColorShade="ShadeA">
+				<l:BlockLayoutCell
+					width="2"
+					backgroundColorShade="ShadeB">
+					<l:VerticalLayout
+						class="sapUiNoContentPadding sapUiTinyMargin">
+						<core:Icon
+							src="sap-icon://my-sales-order"
+							size="2.5rem" />
+						<Text
+							text="{i18n>tile3Title}"
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
+						<Text
+							text="{i18n>tile3Content}"
+							wrapping="true"
+							class="sapUiTinyMarginBottom" />
+						<Link
+							text="{i18n>tile3Action1}"
+							class="FonteBranca"
+							press="navToMapaComparativo" />
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow rowColorSet="ColorSet4">
+				<l:BlockLayoutCell width="2" backgroundColorShade="ShadeA">
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 						<core:Icon
@@ -97,61 +101,17 @@
 							press="navToPortalFornecedor" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
+				<l:BlockLayoutCell backgroundColorShade="ShadeB">
+					<l:VerticalLayout
+						class="sapUiNoContentPadding sapUiTinyMargin">
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell backgroundColorShade="ShadeC">
+					<l:VerticalLayout
+						class="sapUiNoContentPadding sapUiTinyMargin">
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<!-- <l:BlockLayoutRow rowColorSet="ColorSet4"> -->
-			<!-- <l:BlockLayoutCell -->
-			<!-- class="sapUiNoContentPadding" -->
-			<!-- backgroundColorShade="ShadeD" -->
-			<!-- width="4"> -->
-			<!-- <Table -->
-			<!-- items="{path: 'customer>/customers', templateShareable: false}" -->
-			<!-- class="customerTablesapUiContentPadding"> -->
-			<!-- <headerToolbar> -->
-			<!-- <Toolbar design="Transparent"> -->
-			<!-- <Title text="{i18n>customerOverviewTitle}" /> -->
-			<!-- </Toolbar> -->
-			<!-- </headerToolbar> -->
-			<!-- <columns> -->
-			<!-- <Column> -->
-			<!-- <Text text="{i18n>customerName}" /> -->
-			<!-- </Column> -->
-			<!-- <Column minScreenWidth="Tablet"> -->
-			<!-- <Text text="{i18n>productId}" /> -->
-			<!-- </Column> -->
-			<!-- <Column -->
-			<!-- minScreenWidth="Desktop" -->
-			<!-- hAlign="End"> -->
-			<!-- <Text text="{i18n>lastPurchase}" /> -->
-			<!-- </Column> -->
-			<!-- <Column hAlign="Center"> -->
-			<!-- <Text text="{i18n>payment}" /> -->
-			<!-- </Column> -->
-			<!-- <Column hAlign="End"> -->
-			<!-- <Text text="{i18n>amount}" /> -->
-			<!-- </Column> -->
-			<!-- </columns> -->
-			<!-- <items> -->
-			<!-- <ColumnListItem> -->
-			<!-- <cells> -->
-			<!-- <Text text="{customer>name}" /> -->
-			<!-- <Text text="{customer>productId}" /> -->
-			<!-- <Text text="{customer>lastPurchase}" /> -->
-			<!-- <ObjectNumber -->
-			<!-- number="{customer>payment}" -->
-			<!-- state="{customer>state}" /> -->
-			<!-- <ObjectNumber -->
-			<!-- number="{ -->
-			<!-- parts:[{path:'customer>amount'},{path:'customer>currencyCode'}], -->
-			<!-- type: 'sap.ui.model.type.Currency', -->
-			<!-- formatOptions: {showMeasure: false} -->
-			<!-- }" -->
-			<!-- unit="{customer>currencyCode}" /> -->
-			<!-- </cells> -->
-			<!-- </ColumnListItem> -->
-			<!-- </items> -->
-			<!-- </Table> -->
-			<!-- </l:BlockLayoutCell> -->
-			<!-- </l:BlockLayoutRow> -->
 		</l:BlockLayout>
 	</Page>
 </mvc:View>
