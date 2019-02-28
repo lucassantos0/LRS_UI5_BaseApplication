@@ -16,7 +16,7 @@
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow
 				accentCells="Accent1"
-				class="sapUiNoContentPadding">
+				class="sapUiTinyMargin">
 				<l:BlockLayoutCell backgroundColorShade="ShadeB">
 					<l:VerticalLayout
 						class="sapUiTinyMargin">
@@ -25,7 +25,7 @@
 					</l:VerticalLayout>
 					<l:titleLink>
 						<Link
-							text="SouthEnd SA"
+							text="SouthEnd S.A."
 							href="http://www.southend.com.ar/portugues/" />
 					</l:titleLink>
 				</l:BlockLayoutCell>
