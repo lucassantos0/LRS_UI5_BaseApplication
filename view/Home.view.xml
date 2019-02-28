@@ -69,7 +69,7 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow
-				class="sapUiNoContentPadding">
+				class="sapUiTinyMargin">
 				<l:BlockLayoutCell
 					backgroundColorShade="ShadeA"
 					width="2">
