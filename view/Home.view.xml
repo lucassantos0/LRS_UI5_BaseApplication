@@ -19,10 +19,9 @@
 				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell backgroundColorShade="ShadeB">
 					<l:VerticalLayout
-						class="sapUiNoContentPadding sapUiTinyMargin">
+						class="sapUiTinyMargin">
 						<Text
-							text="{i18n>tileSouthEndSA}"
-							class="FonteBranca" />
+							text="{i18n>tileSouthEndSA}" />
 					</l:VerticalLayout>
 					<l:titleLink>
 						<Link
