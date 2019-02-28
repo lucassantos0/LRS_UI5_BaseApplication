@@ -6,7 +6,7 @@
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
 		<l:BlockLayout background="Light">
-			<l:BlockLayoutRow >
+			<l:BlockLayoutRow accentCells="Accent1" >
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding sapUiNoMargin">
 					<Image
