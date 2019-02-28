@@ -81,7 +81,7 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow >
-				<l:BlockLayoutCell width="2" >
+				<l:BlockLayoutCell  backgroundColorShade="ShadeA" width="2" >
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 						<core:Icon
@@ -100,7 +100,7 @@
 							press="navToPortalFornecedor" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell >
+				<l:BlockLayoutCell backgroundColorShade="ShadeB">
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 					</l:VerticalLayout>
