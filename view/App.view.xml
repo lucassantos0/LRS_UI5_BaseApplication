@@ -52,7 +52,7 @@
 		</tnt:header>
 		<tnt:sideContent>
 			<tnt:SideNavigation
-				expanded="true"
+				expanded="false"
 				itemSelect="onItemSelect">
 				<tnt:NavigationList items="{path: 'side>/navigation', templateShareable: false}">
 					<tnt:NavigationListItem
