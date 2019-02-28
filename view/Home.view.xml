@@ -6,7 +6,7 @@
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
 		<l:BlockLayout background="Light">
-			<l:BlockLayoutRow  >
+			<l:BlockLayoutRow>
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding sapUiNoMargin">
 					<Image
@@ -14,10 +14,84 @@
 						width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow accentCells="Accent1"
-				
+			<l:BlockLayoutRow
+				accentCells="Accent1"
 				class="sapUiNoContentPadding">
-				<l:BlockLayoutCell >
+				<l:BlockLayoutCell backgroundColorShade="ShadeB">
+					<l:VerticalLayout
+						class="sapUiNoContentPadding sapUiTinyMargin">
+						<l:titleLink>
+							<Link
+								text="SouthEnd SA"
+								href="http://www.southend.com.ar/portugues/" />
+						</l:titleLink>
+						<Text
+							text="{i18n>tileSouthEndSA}"
+							class="FonteBranca" />
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell>
+					<l:VerticalLayout
+						class="sapUiNoContentPadding sapUiTinyMargin">
+						<core:Icon
+							src="sap-icon://order-status"
+							size="2.5rem" />
+						<Text
+							text="{i18n>tile4Title}"
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
+						<Text
+							text="{i18n>tile4Content}"
+							wrapping="true"
+							class="sapUiTinyMarginBottom" />
+						<Link
+							text="{i18n>tile4Action1}"
+							class="FonteBranca"
+							press="navToConsumoContratos" />
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell width="2">
+					<l:VerticalLayout
+						class="sapUiNoContentPadding sapUiTinyMargin">
+						<core:Icon
+							src="sap-icon://my-sales-order"
+							size="2.5rem" />
+						<Text
+							text="{i18n>tile3Title}"
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
+						<Text
+							text="{i18n>tile3Content}"
+							wrapping="true"
+							class="sapUiTinyMarginBottom" />
+						<Link
+							text="{i18n>tile3Action1}"
+							class="FonteBranca"
+							press="navToMapaComparativo" />
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell
+					backgroundColorShade="ShadeA"
+					width="2">
+					<l:VerticalLayout
+						class="sapUiNoContentPadding sapUiTinyMargin">
+						<core:Icon
+							src="sap-icon://supplier"
+							size="2.5rem" />
+						<Text
+							text="{i18n>tile2Title}"
+							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
+						<Text
+							text="{i18n>tile2Content}"
+							wrapping="true"
+							class="sapUiTinyMarginBottom" />
+						<Link
+							text="{i18n>tile2Action1}"
+							class="FonteBranca"
+							press="navToPortalFornecedor" />
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell>
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 						<core:Icon
@@ -38,71 +112,6 @@
 							text="{i18n>tile1Action2}"
 							class="FonteBranca"
 							press="navToMonitorInterfacesV2" />
-					</l:VerticalLayout>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell >
-					<l:VerticalLayout
-						class="sapUiNoContentPadding sapUiTinyMargin">
-						<core:Icon
-							src="sap-icon://order-status"
-							size="2.5rem" />
-						<Text
-							text="{i18n>tile4Title}"
-							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
-						<Text
-							text="{i18n>tile4Content}"
-							wrapping="true"
-							class="sapUiTinyMarginBottom" />
-						<Link
-							text="{i18n>tile4Action1}"
-							class="FonteBranca"
-							press="navToConsumoContratos" />
-					</l:VerticalLayout>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell
-					width="2">
-					<l:VerticalLayout
-						class="sapUiNoContentPadding sapUiTinyMargin">
-						<core:Icon
-							src="sap-icon://my-sales-order"
-							size="2.5rem" />
-						<Text
-							text="{i18n>tile3Title}"
-							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
-						<Text
-							text="{i18n>tile3Content}"
-							wrapping="true"
-							class="sapUiTinyMarginBottom" />
-						<Link
-							text="{i18n>tile3Action1}"
-							class="FonteBranca"
-							press="navToMapaComparativo" />
-					</l:VerticalLayout>
-				</l:BlockLayoutCell>
-			</l:BlockLayoutRow>
-			<l:BlockLayoutRow >
-				<l:BlockLayoutCell  backgroundColorShade="ShadeA" width="2" >
-					<l:VerticalLayout
-						class="sapUiNoContentPadding sapUiTinyMargin">
-						<core:Icon
-							src="sap-icon://supplier"
-							size="2.5rem" />
-						<Text
-							text="{i18n>tile2Title}"
-							class="sapUiTinyMarginTopBottom TamanhoFonteH2" />
-						<Text
-							text="{i18n>tile2Content}"
-							wrapping="true"
-							class="sapUiTinyMarginBottom" />
-						<Link
-							text="{i18n>tile2Action1}"
-							class="FonteBranca"
-							press="navToPortalFornecedor" />
-					</l:VerticalLayout>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell backgroundColorShade="ShadeB">
-					<l:VerticalLayout
-						class="sapUiNoContentPadding sapUiTinyMargin">
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell backgroundColorShade="ShadeC">
