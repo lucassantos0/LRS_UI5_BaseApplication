@@ -14,7 +14,7 @@
 						width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow
+			<l:BlockLayoutRow accentCells="Accent1"
 				
 				class="sapUiNoContentPadding">
 				<l:BlockLayoutCell >
@@ -40,7 +40,7 @@
 							press="navToMonitorInterfacesV2" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell backgroundColorShade="ShadeC">
+				<l:BlockLayoutCell >
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 						<core:Icon
@@ -60,8 +60,7 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell
-					width="2"
-					backgroundColorShade="ShadeB">
+					width="2">
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 						<core:Icon
@@ -101,7 +100,7 @@
 							press="navToPortalFornecedor" />
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell backgroundColorShade="ShadeB">
+				<l:BlockLayoutCell >
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 					</l:VerticalLayout>
