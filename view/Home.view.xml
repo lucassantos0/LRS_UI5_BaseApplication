@@ -5,8 +5,8 @@
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
-		<l:BlockLayout background="Accent">
-			<l:BlockLayoutRow rowColorSet="ColorSet4">
+		<l:BlockLayout background="Light">
+			<l:BlockLayoutRow >
 				<l:BlockLayoutCell
 					class="sapUiNoContentPadding sapUiNoMargin">
 					<Image
@@ -15,9 +15,9 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow
-				rowColorSet="ColorSet3"
+				
 				class="sapUiNoContentPadding">
-				<l:BlockLayoutCell backgroundColorShade="ShadeA">
+				<l:BlockLayoutCell >
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 						<core:Icon
@@ -81,8 +81,8 @@
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-			<l:BlockLayoutRow rowColorSet="ColorSet4">
-				<l:BlockLayoutCell width="2" backgroundColorShade="ShadeA">
+			<l:BlockLayoutRow >
+				<l:BlockLayoutCell width="2" >
 					<l:VerticalLayout
 						class="sapUiNoContentPadding sapUiTinyMargin">
 						<core:Icon
