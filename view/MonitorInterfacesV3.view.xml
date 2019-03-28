@@ -55,7 +55,7 @@
 					</fb:filterItems>
 				</fb:FilterBar>
 				<t:Table id="tableList" selectionMode="None" enableBusyIndicator="true" 
-					class="sapUiResponsiveMargin" rows="{ path: '/monitorV3', 
+					class="sapUiResponsiveMargin" rows="{ path: 'monitorV3>d/results', 
 													      sorter: { path: 'Date', descending: false },
 													      parameters: { operationMode : 'Server' } }">
 					<t:columns>
