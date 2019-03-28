@@ -18,7 +18,11 @@
 				{
 					"title": "Monitor V2",
 					"key": "MonitorInterfacesV2"
-				}
+				},
+				{
+					"title": "Monitor V3",
+					"key": "MonitorInterfacesV3"
+				}				
 			]
 		},
 		{
