@@ -97,7 +97,11 @@
 			"fluxoDocumentos": {
 				"type" : "sap.ui.model.json.JSONModel",
 				"uri": "model/monitorInterfacesV2.json"
-			}
+			},
+			"monitorV3": {
+				"type" : "sap.ui.model.json.JSONModel",
+				"uri": "model/monitorInterfacesV3.json"
+			}			
 		},
 		"resources": {
 			"css": [
