@@ -235,7 +235,10 @@
 				},
 				"MonitorInterfacesV2": {
 					"viewName": "MonitorInterfacesV2"
-				}
+				},
+				"MonitorInterfacesV3": {
+					"viewName": "MonitorInterfacesV3"
+				}				
 			}
 		}
 	}
