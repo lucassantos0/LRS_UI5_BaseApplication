@@ -180,7 +180,12 @@
 					"pattern" : "MonitorInterfacesV2",
 					"name" : "MonitorInterfacesV2",
 					"target" : "MonitorInterfacesV2"
-				}
+				},
+				{
+					"pattern" : "MonitorInterfacesV3",
+					"name" : "MonitorInterfacesV3",
+					"target" : "MonitorInterfacesV3"
+				}				
 			],
 			"targets": {
 				"home": {
