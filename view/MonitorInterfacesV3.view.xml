@@ -94,7 +94,7 @@
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">
-							<Label text="Data}" />
+							<Label text="Data" />
 							<t:template>
 								<Text text="{
 									path: 'Date',
@@ -105,7 +105,7 @@
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">
-							<Label text="{i18n>columnTime}" />
+							<Label text="Hora" />
 							<t:template>
 								<Text text="{
 									path: 'Time', 
@@ -117,7 +117,7 @@
 							</t:template>
 						</t:Column>
 						<t:Column width="26rem">
-							<Label text="{i18n>columnMessage}" />
+							<Label text="Mensagem" />
 							<t:template>
 								<Text text="{Message}" />
 							</t:template>
