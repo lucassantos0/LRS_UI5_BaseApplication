@@ -1,0 +1,127 @@
+<mvc:View
+	controllerName="lrs.ui5.controller.MonitorInterfacesV3"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:core="sap.ui.core" xmlns:f="sap.f" height="100%"
+	xmlns:t="sap.ui.table">
+				<fb:FilterBar search="onSearch"
+					showFilterConfiguration="false">
+					<fb:filterItems>
+						<fb:FilterItem name="A" label="{i18n>filterDate}">
+							<fb:control>
+								<DateRangeSelection id="filtroDataCriacao" displayFormat="dd/MM/yyyy"/>
+							</fb:control>
+						</fb:FilterItem>					
+						<fb:FilterItem name="B" label="{i18n>filterStatus}">
+							<fb:control>
+								<Select id="filtroStatus" items="{/VH_StatusSet}">
+									<core:Item key="{Value}" text="{Description}" />
+								</Select>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="C" label="{i18n>filterDirection}">
+							<fb:control>
+								<Select id="filtroDirecao" items="{/VH_DirectionSet}">
+									<core:Item key="{Value}" text="{Description}" />
+								</Select>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="D" label="{i18n>filterType}">
+							<fb:control>
+								<Select id="filtroTipo" items="{/VH_TypeSet}">
+									<core:Item key="{Value}" text="{Description}" />
+								</Select>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="E" label="{i18n>filterProduct}">
+							<fb:control>
+								<Select id="filtroProduto" items="{/VH_ProductSet}">
+									<core:Item key="{Value}" text="{Description}" />
+								</Select>
+							</fb:control>
+						</fb:FilterItem> 
+						<fb:FilterItem name="F" label="{i18n>filterProcess}">
+							<fb:control>
+								<Select id="filtroProcesso" items="{/VH_ProcessSet}">
+									<core:Item key="{Value}" text="{Description}" />
+								</Select>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="G" label="{i18n>filterDocument}">
+							<fb:control>
+								<Input id="filtroDocumento"></Input>
+							</fb:control>
+						</fb:FilterItem>						
+					</fb:filterItems>
+				</fb:FilterBar>
+				<t:Table id="tableList" selectionMode="None" enableBusyIndicator="true" 
+					class="sapUiResponsiveMargin" rows="{ path: '/InterfaceSet', 
+													      sorter: { path: 'Date', descending: false },
+													      parameters: { operationMode : 'Server' } }">
+					<t:columns>
+						<t:Column width="6rem">
+							<Label text="{i18n>columnStatus}" />
+							<t:template>
+								<HBox justifyContent="SpaceBetween">
+									<Text text="{StatusDesc}" wrapping="false" />
+									<core:Icon src="sap-icon://color-fill"
+										color="{StatusColr}" visible="true" />
+								</HBox>
+							</t:template>
+						</t:Column>
+						<t:Column width="8rem">
+							<Label text="{i18n>columnDocument}" />
+							<t:template>
+								<Text text="{Document}" />
+							</t:template>
+						</t:Column>
+						<t:Column width="10rem">
+							<Label text="{i18n>columnProcess}" />
+							<t:template>
+								<Text text="{ProcessDesc}" />
+							</t:template>
+						</t:Column>
+						<t:Column width="6rem">
+							<Label text="Direção" />
+							<t:template>
+								<Text text="{DirectionDesc}" />
+							</t:template>
+						</t:Column>
+						<t:Column width="6rem">
+							<Label text="{i18n>columnType}" />
+							<t:template>
+								<Text text="{TypeDesc}" />
+							</t:template>
+						</t:Column>
+						<t:Column width="6rem">
+							<Label text="{i18n>columnDate}" />
+							<t:template>
+								<Text text="{
+									path: 'Date',
+									type: 'sap.ui.model.type.Date',
+         							formatOptions: {
+           								pattern: 'dd/MM/yyyy', UTC: true
+         							}}" />
+							</t:template>
+						</t:Column>
+						<t:Column width="6rem">
+							<Label text="{i18n>columnTime}" />
+							<t:template>
+								<Text text="{
+									path: 'Time', 
+									  type: 'sap.ui.model.odata.type.Time',
+									  formatOptions: {  
+									    pattern : 'HH:mm:ss'
+									  }
+								}" />
+							</t:template>
+						</t:Column>
+						<t:Column width="26rem">
+							<Label text="{i18n>columnMessage}" />
+							<t:template>
+								<Text text="{Message}" />
+							</t:template>
+						</t:Column>
+					</t:columns>
+				</t:Table>
+</mvc:View>
