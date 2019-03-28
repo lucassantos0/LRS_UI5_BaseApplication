@@ -19,7 +19,7 @@
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
-						<fb:FilterItem name="C" label="Direção">
+						<fb:FilterItem name="C" label="Direo">
 							<fb:control>
 								<Select id="filtroDirecao" items="{/VH_DirectionSet}">
 									<core:Item key="{Value}" text="{Description}" />
