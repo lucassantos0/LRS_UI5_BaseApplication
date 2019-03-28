@@ -7,47 +7,47 @@
 				<fb:FilterBar search="onSearch"
 					showFilterConfiguration="false">
 					<fb:filterItems>
-						<fb:FilterItem name="A" label="{i18n>filterDate}">
+						<fb:FilterItem name="A" label="Data">
 							<fb:control>
 								<DateRangeSelection id="filtroDataCriacao" displayFormat="dd/MM/yyyy"/>
 							</fb:control>
 						</fb:FilterItem>					
-						<fb:FilterItem name="B" label="{i18n>filterStatus}">
+						<fb:FilterItem name="B" label="Status">
 							<fb:control>
 								<Select id="filtroStatus" items="{/VH_StatusSet}">
 									<core:Item key="{Value}" text="{Description}" />
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
-						<fb:FilterItem name="C" label="{i18n>filterDirection}">
+						<fb:FilterItem name="C" label="Direção">
 							<fb:control>
 								<Select id="filtroDirecao" items="{/VH_DirectionSet}">
 									<core:Item key="{Value}" text="{Description}" />
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
-						<fb:FilterItem name="D" label="{i18n>filterType}">
+						<fb:FilterItem name="D" label="Tipo">
 							<fb:control>
 								<Select id="filtroTipo" items="{/VH_TypeSet}">
 									<core:Item key="{Value}" text="{Description}" />
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
-						<fb:FilterItem name="E" label="{i18n>filterProduct}">
+						<fb:FilterItem name="E" label="Produto">
 							<fb:control>
 								<Select id="filtroProduto" items="{/VH_ProductSet}">
 									<core:Item key="{Value}" text="{Description}" />
 								</Select>
 							</fb:control>
 						</fb:FilterItem> 
-						<fb:FilterItem name="F" label="{i18n>filterProcess}">
+						<fb:FilterItem name="F" label="Processo">
 							<fb:control>
 								<Select id="filtroProcesso" items="{/VH_ProcessSet}">
 									<core:Item key="{Value}" text="{Description}" />
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
-						<fb:FilterItem name="G" label="{i18n>filterDocument}">
+						<fb:FilterItem name="G" label="Documento">
 							<fb:control>
 								<Input id="filtroDocumento"></Input>
 							</fb:control>
@@ -60,7 +60,7 @@
 													      parameters: { operationMode : 'Server' } }">
 					<t:columns>
 						<t:Column width="6rem">
-							<Label text="{i18n>columnStatus}" />
+							<Label text="Status" />
 							<t:template>
 								<HBox justifyContent="SpaceBetween">
 									<Text text="{StatusDesc}" wrapping="false" />
@@ -70,13 +70,13 @@
 							</t:template>
 						</t:Column>
 						<t:Column width="8rem">
-							<Label text="{i18n>columnDocument}" />
+							<Label text="Documento" />
 							<t:template>
 								<Text text="{Document}" />
 							</t:template>
 						</t:Column>
 						<t:Column width="10rem">
-							<Label text="{i18n>columnProcess}" />
+							<Label text="Processo" />
 							<t:template>
 								<Text text="{ProcessDesc}" />
 							</t:template>
@@ -88,13 +88,13 @@
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">
-							<Label text="{i18n>columnType}" />
+							<Label text="Tipo" />
 							<t:template>
 								<Text text="{TypeDesc}" />
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">
-							<Label text="{i18n>columnDate}" />
+							<Label text="Data}" />
 							<t:template>
 								<Text text="{
 									path: 'Date',
