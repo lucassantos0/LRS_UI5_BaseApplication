@@ -23,29 +23,44 @@
 						</fb:FilterItem>
 						<fb:FilterItem name="C" label="Direção">
 							<fb:control>
-								<Select id="filtroDirecao" items="{/VH_DirectionSet}">
-									<core:Item key="{Value}" text="{Description}" />
+								<Select id="filtroDirecao">
+							        <core:Item key="" text=""/>
+							        <core:Item key="1" text="Entrada"/>
+							        <core:Item key="2" text="Saída"/>
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
 						<fb:FilterItem name="D" label="Tipo">
 							<fb:control>
-								<Select id="filtroTipo" items="{/VH_TypeSet}">
-									<core:Item key="{Value}" text="{Description}" />
+								<Select id="filtroTipo">
+							        <core:Item key="" text=""/>
+							        <core:Item key="1" text="RFC"/>
+							        <core:Item key="2" text="Proxy"/>
+							        <core:Item key="3" text="IDOC"/>
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
 						<fb:FilterItem name="E" label="Produto">
 							<fb:control>
-								<Select id="filtroProduto" items="{/VH_ProductSet}">
-									<core:Item key="{Value}" text="{Description}" />
+								<Select id="filtroProduto">
+							        <core:Item key="" text=""/>
+							        <core:Item key="1" text="Buying"/>
+							        <core:Item key="2" text="Network"/>
+							        <core:Item key="3" text="Sourcing"/>
 								</Select>
 							</fb:control>
 						</fb:FilterItem> 
 						<fb:FilterItem name="F" label="Processo">
 							<fb:control>
-								<Select id="filtroProcesso" items="{/VH_ProcessSet}">
-									<core:Item key="{Value}" text="{Description}" />
+								<Select id="filtroProcesso">
+							        <core:Item key="" text=""/>
+							        <core:Item key="1" text="Criar Pedido"/>
+							        <core:Item key="2" text="Criar Folha Serviço"/>
+							        <core:Item key="3" text="Criar Contrato"/>
+							        <core:Item key="4" text="Criar Fornecedor"/>
+							        <core:Item key="5" text="Dados Mestres"/>
+							        <core:Item key="6" text="Aviso Pagamento"/>
+							        <core:Item key="7" text="Alterar Pedido de Compras"/>
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
