@@ -94,7 +94,16 @@
 						<t:Column width="6rem">
 							<Label text="Data" />
 							<t:template>
-							  <Text text="{monitorV3>Date}" />
+							  <Text text="{
+							    path: 'monitorV3>Date',
+							    type: 'sap.ui.model.type.Date',
+							    formatOptions: {
+							      source: {
+							        pattern: 'yyyy-MM-ddTHH:mm:ss'
+							      },
+							      pattern: 'yyyy/MM/dd'
+							    }
+							  }" />
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">

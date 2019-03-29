@@ -3,7 +3,7 @@
 	[{
 	"InterfaceGuid": "0001",
 	"Status": "1",
-	"Document": "123111",
+	"Document": "4500008547",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "1",
@@ -14,13 +14,13 @@
 	"DirectionDesc": "Entrada",
 	"Type": "1",
 	"TypeDesc": "RFC",
-	"Date": "/Date(1541556000000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H00M00S",
 	"Message": "Pedido de compras criado com sucesso"
 },{
 	"InterfaceGuid": "0002",
 	"Status": "1",
-	"Document": "4564111",
+	"Document": "0002698547",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "3",
@@ -31,13 +31,13 @@
 	"DirectionDesc": "Entrada",
 	"Type": "2",
 	"TypeDesc": "Proxy",
-	"Date": "/Date(1538535600000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H01M00S",
 	"Message": "Fornecedor criado com sucesso"
 },{
 	"InterfaceGuid": "0003",
 	"Status": "2",
-	"Document": "1231112",
+	"Document": "4500002546",
 	"StatusDesc": "Erro",
 	"StatusColr": "#f33334",
 	"Product": "1",
@@ -48,13 +48,13 @@
 	"DirectionDesc": "Entrada",
 	"Type": "1",
 	"TypeDesc": "RFC",
-	"Date": "/Date(1538362800000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H02M00S",
 	"Message": "Verificar erro no PI"
 },{
 	"InterfaceGuid": "0004",
 	"Status": "1",
-	"Document": "456456",
+	"Document": "4500002544",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "2",
@@ -65,13 +65,13 @@
 	"DirectionDesc": "Saída",
 	"Type": "3",
 	"TypeDesc": "IDOC",
-	"Date": "/Date(1536030000000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H03M00S",
 	"Message": "Pedido de compras confirmado com sucesso"
 },{
 	"InterfaceGuid": "0005",
 	"Status": "2",
-	"Document": "9999999",
+	"Document": "Supplier.csv",
 	"StatusDesc": "Erro",
 	"StatusColr": "#f33334",
 	"Product": "2",
@@ -82,13 +82,13 @@
 	"DirectionDesc": "Saída",
 	"Type": "2",
 	"TypeDesc": "Proxy",
-	"Date": "/Date(1528081200000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H04M00S",
 	"Message": "Verificar a mensagem na transação SXI_MONITOR"
 },{
 	"InterfaceGuid": "0006",
 	"Status": "1",
-	"Document": "1147897",
+	"Document": "4600000122",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "1",
@@ -99,7 +99,7 @@
 	"DirectionDesc": "Entrada",
 	"Type": "1",
 	"TypeDesc": "RFC",
-	"Date": "/Date(1528167600000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H05M00S",
 	"Message": "Contrato criado com sucesso"
 },{
@@ -116,13 +116,13 @@
 	"DirectionDesc": "Saída",
 	"Type": "3",
 	"TypeDesc": "IDOC",
-	"Date": "/Date(1530759600000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H06M00S",
 	"Message": "Aviso criado com sucesso"
 },{
 	"InterfaceGuid": "0008",
 	"Status": "2",
-	"Document": "77777",
+	"Document": "0001519878",
 	"StatusDesc": "Erro",
 	"StatusColr": "#f33334",
 	"Product": "3",
@@ -133,13 +133,13 @@
 	"DirectionDesc": "Entrada",
 	"Type": "2",
 	"TypeDesc": "Proxy",
-	"Date": "/Date(1536116400000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H07M00S",
 	"Message": "Verificar a mensagem na transação SXI_MONITOR"
 },{
 	"InterfaceGuid": "0009",
 	"Status": "1",
-	"Document": "666666",
+	"Document": "CompanyCode.csv",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "2",
@@ -150,13 +150,13 @@
 	"DirectionDesc": "Saída",
 	"Type": "2",
 	"TypeDesc": "Proxy",
-	"Date": "/Date(1515808800000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H08M00S",
 	"Message": "Dados carregados no Ariba"
 },{
 	"InterfaceGuid": "0010",
 	"Status": "1",
-	"Document": "333333",
+	"Document": "4500011236",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "1",
@@ -167,13 +167,13 @@
 	"DirectionDesc": "Entrada",
 	"Type": "1",
 	"TypeDesc": "RFC",
-	"Date": "/Date(1518573600000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H09M00S",
 	"Message": "Pedido de compras criado com sucesso"
 },{
 	"InterfaceGuid": "0011",
 	"Status": "1",
-	"Document": "55555",
+	"Document": "4500011236",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "1",
@@ -184,7 +184,7 @@
 	"DirectionDesc": "Entrada",
 	"Type": "1",
 	"TypeDesc": "RFC",
-	"Date": "/Date(1531537200000)/",
+	"Date": "2019-03-29T09:43:01",
 	"Time": "PT11H10M00S",
 	"Message": "Pedido de compras alterado com sucesso"
 }]
