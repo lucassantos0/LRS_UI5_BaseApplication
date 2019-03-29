@@ -101,16 +101,16 @@
 							      source: {
 							        pattern: 'yyyy-MM-ddTHH:mm:ss'
 							      },
-							      pattern: 'yyyy/MM/dd'
+							      pattern: 'dd/MM/yyyy/'
 							    }
 							  }" />
 							</t:template>
-						</t:Column>
+						</t:Column> 
 						<t:Column width="6rem">
 							<Label text="Hora" />
 							<t:template> 
 								<Text text="{
-									path: 'Time', 
+									path: 'monitorV3>Time', 
 									  type: 'sap.ui.model.odata.type.Time',
 									  formatOptions: {  
 									    pattern : 'HH:mm:ss'
