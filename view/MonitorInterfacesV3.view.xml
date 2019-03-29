@@ -55,7 +55,7 @@
 					</fb:filterItems>
 				</fb:FilterBar>
 				<t:Table id="tableList" selectionMode="None" enableBusyIndicator="true" 
-					class="sapUiResponsiveMargin" rows="{monitorV3/}">
+					class="sapUiResponsiveMargin" rows="{monitorV3>/}">
 					<t:columns>
 						<t:Column width="6rem">
 							<Label text="Status" />
