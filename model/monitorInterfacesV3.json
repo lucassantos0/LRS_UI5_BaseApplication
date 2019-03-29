@@ -1,4 +1,6 @@
-[{
+{
+	"lista" : 
+	[{
 	"InterfaceGuid": "0001",
 	"Status": "1",
 	"Document": "123111",
@@ -186,3 +188,4 @@
 	"Time": "PT11H10M00S",
 	"Message": "Pedido de compras alterado com sucesso"
 }]
+}
