@@ -109,8 +109,7 @@
 						<t:Column width="6rem">
 							<Label text="Hora" />
 							<t:template> 
-								<Text text="{monitorV3>Time}
-								}" />
+								<Text text="{monitorV3>Time}" />
 							</t:template>
 						</t:Column>
 						<t:Column width="26rem">
