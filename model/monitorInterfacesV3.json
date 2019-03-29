@@ -62,7 +62,7 @@
 	"Process": "1",
 	"ProcessDesc": "Confirmar Pedido de Compras",
 	"Direction": "2",
-	"DirectionDesc": "Sa�da",
+	"DirectionDesc": "Saída",
 	"Type": "3",
 	"TypeDesc": "IDOC",
 	"Date": "/Date(1536030000000)/",
@@ -79,12 +79,12 @@
 	"Process": "5",
 	"ProcessDesc": "Dados Mestres",
 	"Direction": "2",
-	"DirectionDesc": "Sa�da",
+	"DirectionDesc": "Saída",
 	"Type": "2",
 	"TypeDesc": "Proxy",
 	"Date": "/Date(1528081200000)/",
 	"Time": "PT11H04M00S",
-	"Message": "Verificar a mensagem na transa��o SXI_MONITOR"
+	"Message": "Verificar a mensagem na transação SXI_MONITOR"
 },{
 	"InterfaceGuid": "0006",
 	"Status": "1",
@@ -113,7 +113,7 @@
 	"Process": "6",
 	"ProcessDesc": "Aviso Pagamento",
 	"Direction": "2",
-	"DirectionDesc": "Sa�da",
+	"DirectionDesc": "Saída",
 	"Type": "3",
 	"TypeDesc": "IDOC",
 	"Date": "/Date(1530759600000)/",
@@ -135,7 +135,7 @@
 	"TypeDesc": "Proxy",
 	"Date": "/Date(1536116400000)/",
 	"Time": "PT11H07M00S",
-	"Message": "Verificar a mensagem na transa��o SXI_MONITOR"
+	"Message": "Verificar a mensagem na transação SXI_MONITOR"
 },{
 	"InterfaceGuid": "0009",
 	"Status": "1",
@@ -147,7 +147,7 @@
 	"Process": "5",
 	"ProcessDesc": "Dados Mestres",
 	"Direction": "2",
-	"DirectionDesc": "Sa�da",
+	"DirectionDesc": "Saída",
 	"Type": "2",
 	"TypeDesc": "Proxy",
 	"Date": "/Date(1515808800000)/",
