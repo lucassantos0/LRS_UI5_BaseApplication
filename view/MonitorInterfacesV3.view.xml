@@ -61,41 +61,41 @@
 							<Label text="Status" />
 							<t:template>
 								<HBox justifyContent="SpaceBetween">
-									<Text text="{StatusDesc}" wrapping="false" />
+									<Text text="{monitorV3>StatusDesc}" wrapping="false" />
 									<core:Icon src="sap-icon://color-fill"
-										color="{StatusColr}" visible="true" />
+										color="{monitorV3>StatusColr}" visible="true" />
 								</HBox>
 							</t:template>
 						</t:Column>
 						<t:Column width="8rem">
 							<Label text="Documento" />
 							<t:template>
-								<Text text="{Document}" />
+								<Text text="{monitorV3>Document}" />
 							</t:template>
 						</t:Column>
 						<t:Column width="10rem">
 							<Label text="Processo" />
 							<t:template>
-								<Text text="{ProcessDesc}" />
+								<Text text="{monitorV3>ProcessDesc}" />
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">
 							<Label text="Direção" />
 							<t:template>
-								<Text text="{DirectionDesc}" />
+								<Text text="{monitorV3>DirectionDesc}" />
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">
 							<Label text="Tipo" />
 							<t:template>
-								<Text text="{TypeDesc}" />
+								<Text text="{monitorV3>TypeDesc}" />
 							</t:template>
 						</t:Column>
 						<t:Column width="6rem">
 							<Label text="Data" />
 							<t:template>
 								<Text text="{
-									path: 'Date',
+									path: 'monitorV3>Date',
 									type: 'sap.ui.model.type.Date',
          							formatOptions: {
            								pattern: 'dd/MM/yyyy', UTC: true
@@ -106,7 +106,7 @@
 							<Label text="Hora" />
 							<t:template>
 								<Text text="{
-									path: 'Time', 
+									path: 'monitorV3>Time', 
 									  type: 'sap.ui.model.odata.type.Time',
 									  formatOptions: {  
 									    pattern : 'HH:mm:ss'
@@ -117,7 +117,7 @@
 						<t:Column width="26rem">
 							<Label text="Mensagem" />
 							<t:template>
-								<Text text="{Message}" />
+								<Text text="{monitorV3>Message}" />
 							</t:template>
 						</t:Column>
 					</t:columns>
