@@ -109,12 +109,7 @@
 						<t:Column width="6rem">
 							<Label text="Hora" />
 							<t:template> 
-								<Text text="{
-									path: 'monitorV3>Time', 
-									  type: 'sap.ui.model.odata.type.Time',
-									  formatOptions: {  
-									    pattern : 'HH:mm:ss'
-									  }
+								<Text text="{monitorV3>Time}
 								}" />
 							</t:template>
 						</t:Column>

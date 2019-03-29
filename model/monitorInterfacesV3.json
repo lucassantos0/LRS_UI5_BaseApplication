@@ -15,7 +15,7 @@
 	"Type": "1",
 	"TypeDesc": "RFC",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H00M00S", 
+	"Time": "11:02",
 	"Message": "Pedido de compras criado com sucesso"
 },{
 	"InterfaceGuid": "0002",
@@ -32,7 +32,7 @@
 	"Type": "2",
 	"TypeDesc": "Proxy",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H01M00S",
+	"Time": "11:23",
 	"Message": "Fornecedor criado com sucesso"
 },{
 	"InterfaceGuid": "0003",
@@ -49,7 +49,7 @@
 	"Type": "1",
 	"TypeDesc": "RFC",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H02M00S",
+	"Time": "11:44",
 	"Message": "Verificar erro no PI"
 },{
 	"InterfaceGuid": "0004",
@@ -66,7 +66,7 @@
 	"Type": "3",
 	"TypeDesc": "IDOC",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H03M00S",
+	"Time": "12:05",
 	"Message": "Pedido de compras confirmado com sucesso"
 },{
 	"InterfaceGuid": "0005",
@@ -83,7 +83,7 @@
 	"Type": "2",
 	"TypeDesc": "Proxy",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H04M00S",
+	"Time": "12:12",
 	"Message": "Verificar a mensagem na transação SXI_MONITOR"
 },{
 	"InterfaceGuid": "0006",
@@ -100,7 +100,7 @@
 	"Type": "1",
 	"TypeDesc": "RFC",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H05M00S",
+	"Time": "13:42",
 	"Message": "Contrato criado com sucesso"
 },{
 	"InterfaceGuid": "0007",
@@ -117,7 +117,7 @@
 	"Type": "3",
 	"TypeDesc": "IDOC",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H06M00S",
+	"Time": "13:55",
 	"Message": "Aviso criado com sucesso"
 },{
 	"InterfaceGuid": "0008",
@@ -134,12 +134,12 @@
 	"Type": "2",
 	"TypeDesc": "Proxy",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H07M00S",
+	"Time": "14:08",
 	"Message": "Verificar a mensagem na transação SXI_MONITOR"
 },{
 	"InterfaceGuid": "0009",
 	"Status": "1",
-	"Document": "CompanyCode.csv",
+	"Document": "CompCode.csv",
 	"StatusDesc": "Sucesso",
 	"StatusColr": "#b6d957",
 	"Product": "2",
@@ -151,7 +151,7 @@
 	"Type": "2",
 	"TypeDesc": "Proxy",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H08M00S",
+	"Time": "15:17",
 	"Message": "Dados carregados no Ariba"
 },{
 	"InterfaceGuid": "0010",
@@ -168,7 +168,7 @@
 	"Type": "1",
 	"TypeDesc": "RFC",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H09M00S",
+	"Time": "15:40",
 	"Message": "Pedido de compras criado com sucesso"
 },{
 	"InterfaceGuid": "0011",
@@ -185,7 +185,7 @@
 	"Type": "1",
 	"TypeDesc": "RFC",
 	"Date": "2019-03-29T09:43:01",
-	"Time": "PT11H10M00S",
+	"Time": "16:06",
 	"Message": "Pedido de compras alterado com sucesso"
 }]
 }
