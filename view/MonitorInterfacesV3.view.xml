@@ -14,8 +14,10 @@
 						</fb:FilterItem>					
 						<fb:FilterItem name="B" label="Status">
 							<fb:control>
-								<Select id="filtroStatus" items="{/VH_StatusSet}">
-									<core:Item key="{Value}" text="{Description}" />
+								<Select id="filtroStatus">
+							        <core:Item key="" text=""/>
+							        <core:Item key="1" text="Sucesso"/>
+							        <core:Item key="2" text="Erro"/>
 								</Select>
 							</fb:control>
 						</fb:FilterItem>
