@@ -101,7 +101,7 @@
 							      source: {
 							        pattern: 'yyyy-MM-ddTHH:mm:ss'
 							      },
-							      pattern: 'dd/MM/yyyy/'
+							      pattern: 'dd/MM/yyyy'
 							    }
 							  }" />
 							</t:template>
