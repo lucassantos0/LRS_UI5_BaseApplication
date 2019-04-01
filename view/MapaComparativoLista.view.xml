@@ -15,7 +15,7 @@
 									<l:BlockLayoutRow>
 										<l:BlockLayoutCell title="Consultar Evento">
 											<VBox>
-												<Input type="Text" placeholder="Digite o DocumentId. Ex.:Doc1234578901" id="DocId" width="80%"/>
+												<Input type="Text" placeholder="Digite o DocumentId. Ex.:Doc1234578901" id="DocId" width="50%"/>
 												<Button text="Buscar" icon="sap-icon://search" press="onSearch"/>
 											</VBox>
 										</l:BlockLayoutCell>									
