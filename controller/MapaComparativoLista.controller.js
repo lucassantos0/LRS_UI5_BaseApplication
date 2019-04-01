@@ -16,7 +16,7 @@ sap.ui.define(
 		},
 		
 		  openAriba: function(){
-				window.open("https://paranapanema-t.sourcing.ariba.com","_blank");
+				window.open("https://paranapanema-t.sourcing.ariba.com","_blank"); 
 			  }		
 		
 	});
