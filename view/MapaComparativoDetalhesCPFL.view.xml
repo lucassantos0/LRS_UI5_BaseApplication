@@ -455,13 +455,6 @@
 							</l:VerticalLayout>					
 					</IconTabFilter>
 					<IconTabFilter text="Fornecedores Lado a Lado">
-						<ObjectHeader id="CabecalhoDetalhe"
-							binding=""
-							title="{/titulo}">
-							<attributes>
-								<ObjectAttribute text="Data: {/data}" />
-							</attributes>
-						</ObjectHeader>		
 						<ScrollContainer width="100%">	
 							<Table id="tableLadoaLado">													
 								<columns>																																																																																																	
