@@ -299,7 +299,197 @@
          "style":"fornecedor1",
          "visible":true,
          "resumo":"X"
-      }
+      },
+{  
+         "docid":"Doc1556069432",
+         "columnid":"LIFNR2",
+         "text":"Fornecedor",
+         "halign":"Left",
+         "width":"18em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":"X"
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"FABRICANTE2",
+         "text":"Fabricante",
+         "halign":"Left",
+         "width":"10em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"PRAZO2",
+         "text":"Prazo Entrega (dias)",
+         "halign":"Center",
+         "width":"5em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"NCMFORN2",
+         "text":"NCM",
+         "halign":"Center",
+         "width":"7em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"IVAFORN2",
+         "text":"IVA",
+         "halign":"Center",
+         "width":"5em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"PRECOICMS2",
+         "text":"Preço C/ ICMS; S/IPI",
+         "halign":"Center",
+         "width":"7em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"ALIQ_ICMS2",
+         "text":"Alíquota ICMS \r\n(For. / SAP)",
+         "halign":"Center",
+         "width":"8em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"DIVALIQ_ICMS2",
+         "text":"",
+         "halign":"Center",
+         "width":"",
+         "style":"fornecedor2",
+         "visible":false,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"ALIQ_IPI2",
+         "text":"Alíquota IPI \r\n(For. / SAP)",
+         "halign":"Center",
+         "width":"8em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"DIVALIQ_IPI2",
+         "text":"",
+         "halign":"Center",
+         "width":"",
+         "style":"fornecedor2",
+         "visible":false,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"REDUC_ICMS2",
+         "text":"Redução ICMS \r\n(For. / SAP)",
+         "halign":"Center",
+         "width":"8em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"DIVREDUC_ICMS2",
+         "text":"",
+         "halign":"Center",
+         "width":"",
+         "style":"fornecedor2",
+         "visible":false,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"REDUC_IPI2",
+         "text":"Redução IPI \r\n(For. / SAP)",
+         "halign":"Center",
+         "width":"8em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"DIVREDUC_IPI2",
+         "text":"",
+         "halign":"Center",
+         "width":"",
+         "style":"fornecedor2",
+         "visible":false,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"PRECOLIQ2",
+         "text":"Preço Líquido S/ ICMS; S/IPI",
+         "halign":"Center",
+         "width":"7em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"PRECOIMP2",
+         "text":"R$ Preço C/ Impostos",
+         "halign":"Center",
+         "width":"7em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"DIVPRECOIMP2",
+         "text":"",
+         "halign":"Center",
+         "width":"",
+         "style":"fornecedor2",
+         "visible":false,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"PRECOIMPSAP2",
+         "text":"R$ Preço SAP",
+         "halign":"Center",
+         "width":"7em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":""
+      },
+      {  
+         "docid":"Doc1556069432",
+         "columnid":"TCO2",
+         "text":"R$ TCO custo total",
+         "halign":"Center",
+         "width":"7em",
+         "style":"fornecedor2",
+         "visible":true,
+         "resumo":"X"
+      }	  
    ],
    "rows":[  
       {  
@@ -332,7 +522,26 @@
          "precoimp1":"159,00",
          "divprecoimp1":"X",
          "precoimpsap1":"0,00",
-         "tco1":"0,00"
+         "tco1":"0,00",
+         "lifnr2":"Forn Teste 2",
+         "fabricante2":"",
+         "prazo2":"10",
+         "ncmforn2":"",
+         "ivaforn2":"",
+         "precoicms2":"150,00",
+         "aliqIcms2":"7,00 / 0,00",
+         "divaliqIcms2":"",
+         "aliqIpi2":"6,00 / 0,00",
+         "divaliqIpi2":"",
+         "reducIcms2":"0,00 / 0,00",
+         "divreducIcms2":"",
+         "reducIpi2":"0,00 / 0,00",
+         "divreducIpi2":"",
+         "precoliq2":"",
+         "precoimp2":"159,00",
+         "divprecoimp2":"X",
+         "precoimpsap2":"0,00",
+         "tco2":"0,00"		 
       }
    ],
    "columnsResumo":[  
