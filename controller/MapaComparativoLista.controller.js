@@ -15,8 +15,8 @@ sap.ui.define(
 			this.getRouter().navTo("MapaComparativoDetalhesCPFL",{ rfq : sId }); 
 		},
 		
-		  openAriba: function(){ 
-				window.open("https://paranapanema-t.sourcing.ariba.com","_blank"); 
+		  openAriba: function(){
+				window.open("https://www.ariba.com","_blank"); 
 			  }		
 		
 	});
