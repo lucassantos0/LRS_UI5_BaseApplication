@@ -38,8 +38,8 @@ sap.ui.define(
 		},
 
 		onAppNav : function(oEvent) {
-			var sId = oEvent.getSource().getProperty("app:nav");
-			this.getRouter().navTo(sId);
+			var sNav = oEvent.getSource().data("nav")
+			this.getRouter().navTo(sNav);
 		},
 		
 		onUserNamePress : function(oEvent)
