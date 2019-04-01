@@ -12,7 +12,8 @@
 			<tnt:ToolHeader>
 				<Image
 					src="./images/Logo_sin_fondo_Blanco.png"
-					densityAware="false" >
+					densityAware="false"
+					width="50px" >
 					<layoutData>
 						<FlexItemData growFactor="1" />
 					</layoutData>
