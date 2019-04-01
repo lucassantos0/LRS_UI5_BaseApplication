@@ -1,9 +1,6 @@
 <mvc:View 	controllerName="lrs.ui5.controller.MapaComparativoLista" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core" xmlns:f="sap.f" height="100%">
-			<Page title="Mapa Comparativo" showNavButton="false">
-				<headerContent>
-					<Image src="./images/logo.png" height="35px"/>
-				</headerContent>			
+			<Page title="Mapa Comparativo" showNavButton="false">		
 				<content>
 					<VBox>
 						<l:DynamicSideContent
@@ -21,10 +18,7 @@
 												<Input type="Text" placeholder="Digite o DocumentId. Ex.:Doc1234578901" id="DocId" width="100%"/>
 												<Button text="Buscar" icon="sap-icon://search" press="onSearch"/>
 											</VBox>
-										</l:BlockLayoutCell>
-										<l:BlockLayoutCell title="Taxa Selic">
-												<Input type="Text" placeholder="" id="Selic" width="60%"/>
-										</l:BlockLayoutCell>										
+										</l:BlockLayoutCell>									
 									</l:BlockLayoutRow>
 								</l:BlockLayout>
 							</l:VerticalLayout>
