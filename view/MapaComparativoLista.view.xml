@@ -15,7 +15,7 @@
 									<l:BlockLayoutRow>
 										<l:BlockLayoutCell title="Consultar Evento">
 											<VBox>
-												<Input type="Text" placeholder="Digite o DocumentId. Ex.:Doc1234578901" id="DocId" width="100%"/>
+												<Input type="Text" placeholder="Digite o DocumentId. Ex.:Doc1234578901" id="DocId" width="80%"/>
 												<Button text="Buscar" icon="sap-icon://search" press="onSearch"/>
 											</VBox>
 										</l:BlockLayoutCell>									
@@ -37,15 +37,15 @@
 						<List id="listaRfqs"
 						      headerText="RFQs" 
 							  items="{listaRfqs>/listaRfqs}">	
-							<ObjectListItem title="{listaRfqs>DocId} - {listaRfqs>EventTitle}" type="Active" press="onListItemPress">
+							<ObjectListItem title="{listaRfqs>docid} - {listaRfqs>eventTitle}" type="Active" press="onListItemPress">
 								<firstStatus>
-									<ObjectStatus text="Tipo de Compra: {listaRfqs>TipoCompra}"/>
+									<ObjectStatus text="Requisição: {listaRfqs>numReq}"/>
 								</firstStatus>
 								<secondStatus>
-									<ObjectStatus text="Data Criação: {listaRfqs>DataInicial}"/>
+									<ObjectStatus text="Data Criação: {listaRfqs>dateCreation}"/>
 								</secondStatus>								
 								<attributes>
-									<ObjectAttribute text="WorkspaceId: {listaRfqs>Workspace} - {listaRfqs>ProjectTitle}"/>																											
+									<ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}"/>																											
 								</attributes>
 							</ObjectListItem>
 						</List>
