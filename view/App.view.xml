@@ -9,14 +9,19 @@
 		class="sapUiDemoToolPage">
 		<tnt:header>
 			<tnt:ToolHeader>
-				<Button
-					id="sideNavigationToggleButton"
-					icon="sap-icon://menu2"
-					type="Transparent"
-					press="onSideNavButtonPress" />
-				<ToolbarSpacer />
-				<Title text="{i18n>appTitle}" />
-				<ToolbarSpacer />
+				<Button press="onAppNav" id="MapaComparativoLista" text="Mapa Comparativo" />
+				<Button press="onAppNav" id="ConsumoContratos" text="Gestão consumo Contratos" />
+				<Button press="onAppNav" id="PortalFornecedor" text="Portal Fornecedor" />
+				<Button press="onAppNav" id="MonitorInterfacesV2" text="Monitor Interfaces V1" />
+				<Button press="onAppNav" id="MonitorInterfacesV3" text="Monitor Interfaces V2" />
+<!-- 				<Button -->
+<!-- 					id="sideNavigationToggleButton" -->
+<!-- 					icon="sap-icon://menu2" -->
+<!-- 					type="Transparent" -->
+<!-- 					press="onSideNavButtonPress" /> -->
+<!-- 				<ToolbarSpacer /> -->
+<!-- 				<Title text="{i18n>appTitle}" /> -->
+<!-- 				<ToolbarSpacer /> -->
 				<!-- <Button
 					id="errorButton"
 					icon="sap-icon://message-popup"

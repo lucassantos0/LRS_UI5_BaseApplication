@@ -37,6 +37,11 @@ sap.ui.define(
 			}*/
 		},
 
+		onAppNav : function(oEvent) {
+			var sId = oEvent.getSource().getId();
+			this.getRouter().navTo(sId);
+		},
+		
 		onUserNamePress : function(oEvent)
 		{
 			var oBundle = this.getModel("i18n").getResourceBundle();
