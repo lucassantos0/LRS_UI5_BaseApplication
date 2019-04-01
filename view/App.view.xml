@@ -13,7 +13,7 @@
 				<Image
 					src="./images/Logo_sin_fondo_Blanco.png"
 					densityAware="false"
-					width="160px" >
+					width="150px" >
 					<layoutData>
 						<FlexItemData growFactor="1" />
 					</layoutData>
