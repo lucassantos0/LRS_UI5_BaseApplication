@@ -9,11 +9,11 @@
 		class="sapUiDemoToolPage">
 		<tnt:header>
 			<tnt:ToolHeader>
-				<Button press="onAppNav" id="MapaComparativoLista" text="Mapa Comparativo" />
-				<Button press="onAppNav" id="ConsumoContratos" text="Gestão consumo Contratos" />
-				<Button press="onAppNav" id="PortalFornecedor" text="Portal Fornecedor" />
-				<Button press="onAppNav" id="MonitorInterfacesV2" text="Monitor Interfaces V1" />
-				<Button press="onAppNav" id="MonitorInterfacesV3" text="Monitor Interfaces V2" />
+				<Button press="onAppNav" zNavigationDest="MapaComparativoLista" text="Mapa Comparativo" />
+				<Button press="onAppNav" zNavigationDest="ConsumoContratos" text="Gestão consumo Contratos" />
+				<Button press="onAppNav" zNavigationDest="PortalFornecedor" text="Portal Fornecedor" />
+				<Button press="onAppNav" zNavigationDest="MonitorInterfacesV2" text="Monitor Interfaces V1" />
+				<Button press="onAppNav" zNavigationDest="MonitorInterfacesV3" text="Monitor Interfaces V2" />
 <!-- 				<Button -->
 <!-- 					id="sideNavigationToggleButton" -->
 <!-- 					icon="sap-icon://menu2" -->

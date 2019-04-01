@@ -38,7 +38,7 @@ sap.ui.define(
 		},
 
 		onAppNav : function(oEvent) {
-			var sId = oEvent.getSource().getId();
+			var sId = oEvent.getSource().getProperty("zNavigationDest");
 			this.getRouter().navTo(sId);
 		},
 		
