@@ -95,13 +95,13 @@
 				"uri": "model/mapaComparativoDetalhesCPFL.json"
 			},
 			"fluxoDocumentos": {
-				"type" : "sap.ui.model.json.JSONModel",
+				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/monitorInterfacesV2.json"
 			},
 			"monitorV3": {
-				"type" : "sap.ui.model.json.JSONModel",
+				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/monitorInterfacesV3.json"
-			}			
+			}
 		},
 		"resources": {
 			"css": [
@@ -122,6 +122,11 @@
 			"routes": [
 				{
 					"pattern": "",
+					"name": "home",
+					"target": "home"
+				},
+				{
+					"pattern": "Home",
 					"name": "home",
 					"target": "home"
 				},
@@ -181,15 +186,15 @@
 					"target": "LogInterfaces"
 				},
 				{
-					"pattern" : "MonitorInterfacesV2",
-					"name" : "MonitorInterfacesV2",
-					"target" : "MonitorInterfacesV2"
+					"pattern": "MonitorInterfacesV2",
+					"name": "MonitorInterfacesV2",
+					"target": "MonitorInterfacesV2"
 				},
 				{
-					"pattern" : "MonitorInterfacesV3",
-					"name" : "MonitorInterfacesV3",
-					"target" : "MonitorInterfacesV3"
-				}				
+					"pattern": "MonitorInterfacesV3",
+					"name": "MonitorInterfacesV3",
+					"target": "MonitorInterfacesV3"
+				}
 			],
 			"targets": {
 				"home": {
@@ -242,7 +247,7 @@
 				},
 				"MonitorInterfacesV3": {
 					"viewName": "MonitorInterfacesV3"
-				}				
+				}
 			}
 		}
 	}

@@ -11,7 +11,7 @@
 		<tnt:header>
 			<tnt:ToolHeader>
 				<Image
-					app:nav=""
+					app:nav="Home"
 					press="onAppNav"
 					src="./images/Logo_sin_fondo_Blanco.png"
 					densityAware="false"
