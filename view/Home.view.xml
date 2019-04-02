@@ -3,6 +3,7 @@
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
+	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
 		<l:BlockLayout background="Light">
@@ -17,7 +18,7 @@
 			<l:BlockLayoutRow class="sapUiTinyMargin">
 				<l:BlockLayoutCell>
 					<l:VerticalLayout class="sapUiNoMargin"> 
-						<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518863113331232769" height="502" width="504" frameborder="0" allowfullscreen=""></iframe>
+						<html:iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518863113331232769" height="502" width="504" frameborder="0" allowfullscreen=""></html:iframe>
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
