@@ -1,3 +1,4 @@
 .ActiveBackground{
-    background-color: #444444;
+    background-color: #444444 !important;
+    color: red !important;
 }
