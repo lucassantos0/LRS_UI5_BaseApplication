@@ -18,6 +18,7 @@ sap.ui.define(
 		}, 
 
 		onAppNav : function(oEvent) {
+			$(".ActiveBackground").removeClass("ActiveBackground");
 			var sNav = oEvent.getSource().data("nav");
 			oEvent.getSource().addStyleClass("ActiveBackground");
 			this.getRouter().navTo(sNav);
