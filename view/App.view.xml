@@ -21,7 +21,7 @@
 					</layoutData>
 				</Image>
 				<Button id="btnHeader1" press="onAppNav" type="Transparent" app:nav="MapaComparativoLista" text="Mapa Comparativo" />
-				<Button id="btnHeader2" press="onAppNav" type="Transparent" app:nav="ConsumoContratos" text="Gestão consumo Contratos" />
+				<Button id="btnHeader2" press="onAppNav" type="Transparent" app:nav="ConsumoContratos" text="Saldo Contratos" />
 				<Button id="btnHeader3" press="onAppNav" type="Transparent" app:nav="PortalFornecedor" text="Portal Fornecedor" />
 				<Button id="btnHeader4" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV2" text="Monitor Interfaces V1" />
 				<Button id="btnHeader5" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV3" text="Monitor Interfaces V2" />				
