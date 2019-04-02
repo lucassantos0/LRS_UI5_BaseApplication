@@ -14,6 +14,13 @@
 						width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
+			<l:BlockLayoutRow class="sapUiTinyMargin">
+				<l:BlockLayoutCell>
+					<l:VerticalLayout class="sapUiNoMargin"> 
+						<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518863113331232769" height="502" width="504" frameborder="0" allowfullscreen=""></iframe>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
 <!-- 			<l:BlockLayoutRow -->
 <!-- 				accentCells="Accent1" -->
 <!-- 				class="sapUiTinyMargin"> -->
