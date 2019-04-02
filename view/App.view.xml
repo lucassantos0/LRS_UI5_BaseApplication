@@ -24,7 +24,7 @@
 				<Button press="onAppNav" type="Transparent" app:nav="ConsumoContratos" text="Gestão consumo Contratos" />
 				<Button press="onAppNav" type="Transparent" app:nav="PortalFornecedor" text="Portal Fornecedor" />
 				<Button press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV2" text="Monitor Interfaces V1" />
-				<Button press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV3" text="Monitor Interfaces V2" />
+				<Button press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV3" text="Monitor Interfaces V2" />				
 			</tnt:ToolHeader>
 		</tnt:header>
 		<tnt:mainContents>
