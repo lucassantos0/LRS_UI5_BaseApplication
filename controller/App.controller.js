@@ -15,7 +15,7 @@ sap.ui.define(
 		onInit : function()
 		{
 			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-		},
+		}, 
 
 		onAppNav : function(oEvent) {
 			var sNav = oEvent.getSource().data("nav");

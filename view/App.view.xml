@@ -5,7 +5,7 @@
 	xmlns="sap.m"
 	xmlns:tnt="sap.tnt"
 	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
-	<tnt:ToolPage
+	<tnt:ToolPage 
 		id="app"
 		class="sapUiDemoToolPage">
 		<tnt:header>
