@@ -1,3 +1,4 @@
 .ActiveBackground{
-    text-decoration: underline overline dotted white !important;
+    border-bottom-color: white !important;
+    border-bottom-style: solid !important;
 }
