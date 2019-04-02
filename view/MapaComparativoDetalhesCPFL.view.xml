@@ -454,6 +454,21 @@
 							</VBox>
 							</l:VerticalLayout>					
 					</IconTabFilter>
+					<IconTabFilter text="Fornecedores Lado a Lado">
+						<ScrollContainer width="100%">	
+							<Table id="tableLadoaLado">													
+								<columns>																																																																																																	
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>																															
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer> 		
+						<Button	text="Exportar para Excel" icon="sap-icon://excel-attachment" press="onExportXLSDetalhe" />									
+					</IconTabFilter>						
 					<IconTabFilter text="Sumário Executivo" id="sumarioTab">											
 						<f:SimpleForm id="sumarioHeader"
 							editable="true"

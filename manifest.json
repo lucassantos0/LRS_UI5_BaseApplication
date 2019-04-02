@@ -101,7 +101,11 @@
 			"monitorV3": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/monitorInterfacesV3.json"
-			}
+			},
+			"mapaLadoaLado": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/MapaLadoaLado.json"
+			}			
 		},
 		"resources": {
 			"css": [

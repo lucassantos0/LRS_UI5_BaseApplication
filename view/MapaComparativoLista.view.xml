@@ -1,76 +1,60 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
-	xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core" height="100%"
-	controllerName="lrs.ui5.controller.MapaComparativoLista">
-	<Page title="Mapa Comparativo" showNavButton="false">
-		<content>
-			<VBox>
-<!-- 		<l:VerticalLayout id="containerLayout" width="100%" > -->
-<!-- 			<l:BlockLayout id="BlockLayout" background="Light">			 -->
-<!-- 				<l:BlockLayoutRow> -->
-<!-- 					<l:BlockLayoutCell -->
-<!-- 							title="Consultar Eventos Premiados" -->
-<!-- 							width="3"> -->
-					<fb:FilterBar search="onSearch" showFilterConfiguration="false">
-						<fb:filterItems>
-							<fb:FilterItem name="A" label="Data Criação">
-								<fb:control>
-									<DateRangeSelection id="filtroDataCriacao" displayFormat="dd/MM/yyyy" />
-								</fb:control>
-							</fb:FilterItem>
-							<fb:FilterItem name="B" label="Núm. RFQ">
-								<fb:control>
-									<Input type="Text" placeholder="Núm RFQ" id="filtroNumRfq"></Input>
-								</fb:control>
-							</fb:FilterItem>
-							<fb:FilterItem name="C" label="Núm. Requisição">
-								<fb:control>
-									<Input type="Text" placeholder="Núm Req" id="filtroNumReq"></Input>
-								</fb:control>
-							</fb:FilterItem>
-							<fb:FilterItem name="D" label="WorkspaceId">
-								<fb:control>
-									<Input type="Text" placeholder="WorkspaceId" id="filtroWsId"></Input>
-								</fb:control>
-							</fb:FilterItem>	
-							<fb:FilterItem name="E" label="DocumentId">
-								<fb:control>
-									<Input type="Text" placeholder="DocId" id="filtroDocId"></Input>
-								</fb:control>
-							</fb:FilterItem>	
-						</fb:filterItems>
-					</fb:FilterBar>				
-<!-- 					</l:BlockLayoutCell> -->
-<!-- 					<l:BlockLayoutCell -->
-<!-- 							title="Consultar Evento Não Concluído"> -->
-<!-- 						<label text="DocumentId"/>	 -->
-<!-- 						<Input  type="Text" placeholder="DocId Evt.Aberto" id="newDocId"/> -->
-<!-- 						<Button	text="Buscar" icon="sap-icon://search" press="onSearchAberto" />	 -->
-<!-- 					</l:BlockLayoutCell> -->
-<!-- 				</l:BlockLayoutRow>			 -->
-<!-- 				</l:BlockLayout> -->
-<!-- 				</l:VerticalLayout> -->
-				<List id="listaRfqs"
-				      headerText="RFQs" 
-				      items="{listaRfqs>/listaRfqs}">	
-					<ObjectListItem title="{listaRfqs>id}" type="Active" 
-						press="onListItemPress" number="{listaRfqs>amount}" numberUnit="{listaRfqs>currency}">
-						<firstStatus>
-							<ObjectStatus text="{listaRfqs>numberOfRounds} rodada(s)" />
-						</firstStatus>
-						<attributes>
-						    <ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}" />
-						    <ObjectAttribute text="Data Criação: {listaRfqs>dateCreation}"/>
-						    <ObjectAttribute text="Núm Req: {listaRfqs>numReq}" />
-						    <ObjectAttribute text="Última Atualização: {listaRfqs>lastUpdate}"/>
-						</attributes>
-					</ObjectListItem>
-				</List>
-			</VBox>
-		</content>
-		<footer>
-			<Toolbar>
-				<ToolbarSpacer />
-			</Toolbar>
-		</footer>
-	</Page>
+<mvc:View 	controllerName="lrs.ui5.controller.MapaComparativoLista" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core" xmlns:f="sap.f" height="100%">
+			<Page title="Mapa Comparativo" showNavButton="false">		
+				<content>
+					<VBox>
+						<l:DynamicSideContent
+							id="DynamicSideContent"
+							class="sapUiDSCExplored sapUiContentPadding"
+							containerQuery="true"
+							equalSplit="true"
+							breakpointChanged="updateToggleButtonState">	
+						<l:mainContent>				
+							<l:VerticalLayout id="containerLayout" width="100%">
+								<l:BlockLayout id="BlockLayout" background="Default">
+									<l:BlockLayoutRow>
+										<l:BlockLayoutCell title="Consultar Evento">
+											<VBox>
+												<Input type="Text" placeholder="Digite o DocumentId. Ex.:Doc1234578901" id="DocId" width="50%"/>
+												<Button text="Buscar" icon="sap-icon://search" press="onSearch"/>
+											</VBox>
+										</l:BlockLayoutCell>									
+									</l:BlockLayoutRow>
+								</l:BlockLayout>
+							</l:VerticalLayout>
+					</l:mainContent>								
+					<l:sideContent>
+					<FlexBox
+						height="180px"
+						alignItems="Center"
+						justifyContent="Center">
+						<items>
+							<Image src="./images/SAP_Ariba_logo.png" densityAware="false" height="100px" press="openAriba"/>
+						</items>
+					</FlexBox>										
+					</l:sideContent>
+				</l:DynamicSideContent>						
+						<List id="listaRfqs"
+						      headerText="RFQs" 
+							  items="{listaRfqs>/listaRfqs}">	
+							<ObjectListItem title="{listaRfqs>docid} - {listaRfqs>eventTitle}" type="Active" press="onListItemPress">
+								<firstStatus>
+									<ObjectStatus text="Requisição: {listaRfqs>numReq}"/>
+								</firstStatus>
+								<secondStatus>
+									<ObjectStatus text="Data Criação: {listaRfqs>dateCreation}"/>
+								</secondStatus>								
+								<attributes>
+									<ObjectAttribute text="WorkspaceId: {listaRfqs>workspace}"/>																											
+								</attributes>
+							</ObjectListItem>
+						</List>
+					</VBox>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+					</Toolbar>
+				</footer>
+			</Page>
 </mvc:View>
