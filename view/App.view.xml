@@ -26,7 +26,7 @@
 				<Button id="btnHeader4" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV2" text="Monitor Interfaces V1" />
 				<Button id="btnHeader5" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV3" text="Monitor Interfaces V2" />	
 				<ToolbarSpacer />
-				<Image src="./images/SAP-logo-icon-PNG-Transparent-Background.png" densityAware="false" width="150px" ></Image>		
+				<Image src="./images/SAP-logo-icon-PNG-Transparent-Background.png" densityAware="false" width="120px" ></Image>		
 			</tnt:ToolHeader>
 		</tnt:header>
 		<tnt:mainContents>
