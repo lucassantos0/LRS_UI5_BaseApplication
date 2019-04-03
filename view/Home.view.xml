@@ -9,7 +9,7 @@
 		<l:BlockLayout background="Default">
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell
-					class="sapUiNoContentPadding sapUiNoMargin">
+					class="sapUiNoContentPadding sapUiNoMarginTop sapUiNoMarginBegin sapUiNoMarginEnd">
 					<Image
 						src="./images/southend_corp_logo.jpg"
 						width="100%" />
