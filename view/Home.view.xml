@@ -31,10 +31,6 @@
 					<l:VerticalLayout>
 					</l:VerticalLayout>
 				</l:BlockLayoutCell>
-				<l:BlockLayoutCell>
-					<l:VerticalLayout>
-					</l:VerticalLayout>
-				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<!-- <l:BlockLayoutRow -->
 			<!-- accentCells="Accent1" -->
