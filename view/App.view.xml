@@ -24,7 +24,9 @@
 				<Button id="btnHeader2" press="onAppNav" type="Transparent" app:nav="ConsumoContratos" text="Gestão consumo Contratos" />
 				<Button id="btnHeader3" press="onAppNav" type="Transparent" app:nav="PortalFornecedor" text="Portal Fornecedor" />
 				<Button id="btnHeader4" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV2" text="Monitor Interfaces V1" />
-				<Button id="btnHeader5" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV3" text="Monitor Interfaces V2" />				
+				<Button id="btnHeader5" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV3" text="Monitor Interfaces V2" />	
+				<ToolbarSpacer />
+				<Image src="./images/SAP-logo-icon-PNG-Transparent-Background.png" densityAware="false" width="150px" ></Image>		
 			</tnt:ToolHeader>
 		</tnt:header>
 		<tnt:mainContents>
