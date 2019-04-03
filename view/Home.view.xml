@@ -15,23 +15,28 @@
 						width="100%" />
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
-<!-- 			<l:BlockLayoutRow> -->
-<!-- 				<l:BlockLayoutCell -->
-<!-- 					class="sapUiTinyContentPadding sapUiNoMargin"> -->
-<!-- 					<l:VerticalLayout> -->
-<!-- 						<html:iframe -->
-<!-- 							src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518863113331232769" -->
-<!-- 							height="502" -->
-<!-- 							width="504" -->
-<!-- 							frameborder="0" -->
-<!-- 							allowfullscreen=""></html:iframe> -->
-<!-- 					</l:VerticalLayout> -->
-<!-- 				</l:BlockLayoutCell> -->
-<!-- 				<l:BlockLayoutCell class="sapUiNoMargin"> -->
-<!-- 					<l:VerticalLayout> -->
-<!-- 					</l:VerticalLayout> -->
-<!-- 				</l:BlockLayoutCell> -->
-<!-- 			</l:BlockLayoutRow> -->
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell>
+					<l:VerticalLayout>
+						<Text text="Novidades SouthEnd SA" />
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell
+					class="sapUiTinyContentPadding sapUiNoMargin">
+					<l:VerticalLayout>
+						<html:iframe
+							src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518863113331232769"
+							height="502"
+							width="504"
+							frameborder="0"
+							allowfullscreen=""></html:iframe>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell>
+					<l:VerticalLayout>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
 			<!-- <l:BlockLayoutRow -->
 			<!-- accentCells="Accent1" -->
 			<!-- class="sapUiTinyMargin"> -->
