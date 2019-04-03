@@ -39,16 +39,16 @@
 					app:nav="PortalFornecedor"
 					text="Portal Fornecedor" />
 				<Button
-					id="btnHeader4"
-					press="onAppNav"
-					type="Transparent"
-					app:nav="MonitorInterfacesV2"
-					text="Monitor Interfaces V1" />
-				<Button
 					id="btnHeader5"
 					press="onAppNav"
 					type="Transparent"
 					app:nav="MonitorInterfacesV3"
+					text="Monitor Interfaces V1" />
+				<Button
+					id="btnHeader4"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="MonitorInterfacesV2"
 					text="Monitor Interfaces V2" />
 				<ToolbarSpacer />
 				<Image
