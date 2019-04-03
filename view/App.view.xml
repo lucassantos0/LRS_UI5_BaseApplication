@@ -52,6 +52,7 @@
 					text="Monitor Interfaces V2" />
 				<ToolbarSpacer />
 				<Image
+					press="onAppNavSAPExternal"
 					src="./images/SAP-logo-icon-PNG-Transparent-Background.png"
 					densityAware="false"
 					width="80px">

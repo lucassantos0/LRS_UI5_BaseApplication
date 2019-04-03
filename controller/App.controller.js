@@ -17,7 +17,10 @@ sap.ui.define(
 			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
 			//this.getRouter().navTo("home");
 		}, 
-
+		onAppNavSAPExternal : function(oEvent){
+			var win = window.open("https://www.sap.com/index.html", '_blank');
+		  win.focus();
+		},
 		onAppNav : function(oEvent) {
 			this.byId("btnHeader1").removeStyleClass("ActiveBackground");
 			this.byId("btnHeader2").removeStyleClass("ActiveBackground");
