@@ -9,7 +9,7 @@
 		<l:BlockLayout background="Default">
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell
-					class="sapUiNoContentPadding sapUiNoMarginTop sapUiNoMarginBegin sapUiNoMarginEnd">
+					class="sapUiNoContentPadding sapUiNoMargin">
 					<Image
 						src="./images/southend_corp_logo.jpg"
 						width="100%" />
@@ -17,7 +17,7 @@
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell
-					class="sapUiNoContentPadding sapUiNoMargin">
+					class="sapUiNoContentPadding sapUiNoMarginBegin sapUiNoMarginEnd">
 					<FlexBox
 						alignItems="Center"
 						justifyContent="Center">
@@ -27,7 +27,7 @@
 					</FlexBox>
 				</l:BlockLayoutCell>
 				<l:BlockLayoutCell
-					class="sapUiNoContentPadding sapUiNoMargin">
+					class="sapUiNoContentPadding sapUiNoMarginBegin sapUiNoMarginEnd">
 					<l:VerticalLayout>
 						<html:iframe
 							name="f15ade8a2873e78"
