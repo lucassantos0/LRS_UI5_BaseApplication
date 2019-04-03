@@ -22,7 +22,7 @@
 						justifyContent="Center">
 						<items>
 							<Text
-								text="Novidades SouthEnd SA"/>
+								text="Novidades SouthEnd Corp"/>
 						</items>
 					</FlexBox>
 				</l:BlockLayoutCell>
@@ -39,7 +39,7 @@
 							scrolling="no"
 							allow="encrypted-media"
 							title="fb:page Facebook Social Plugin"
-							src="https://www.facebook.com/v2.3/plugins/page.php?adapt_container_width=false&amp;app_id=574153526026185&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fd_vbiawPdxB.js%3Fversion%3D44%23cb%3Df29c256703284c%26domain%3Dwww.southend.com.ar%26origin%3Dhttp%253A%252F%252Fwww.southend.com.ar%252Ff36a5516ac643%26relation%3Dparent.parent&amp;container_width=548&amp;height=311&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouthEnd-SA%2F155689534484836&amp;locale=es_LA&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;width=640&amp;height=800"
+							src="https://www.facebook.com/v2.3/plugins/page.php?adapt_container_width=false&amp;app_id=574153526026185&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fd_vbiawPdxB.js%3Fversion%3D44%23cb%3Df29c256703284c%26domain%3Dwww.southend.com.ar%26origin%3Dhttp%253A%252F%252Fwww.southend.com.ar%252Ff36a5516ac643%26relation%3Dparent.parent&amp;container_width=548&amp;height=311&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouthEnd-SA%2F155689534484836&amp;locale=es_LA&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;width=640&amp;height=800"
 							style="border: none; visibility: visible; width: 640px; height: 800px;"
 							class=""></html:iframe>
 					</l:VerticalLayout>
