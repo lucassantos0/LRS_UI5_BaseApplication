@@ -1,11 +1,11 @@
 <mvc:View
 	height="100%"
 	controllerName="lrs.ui5.controller.App"
-	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:tnt="sap.tnt"
 	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
-	<tnt:ToolPage 
+	<tnt:ToolPage
 		id="app"
 		class="sapUiDemoToolPage">
 		<tnt:header>
@@ -15,18 +15,50 @@
 					press="onAppNav"
 					src="./images/Logo_sin_fondo_Blanco.png"
 					densityAware="false"
-					width="150px" >
+					width="150px">
 					<layoutData>
 						<FlexItemData growFactor="1" />
 					</layoutData>
 				</Image>
-				<Button id="btnHeader1" press="onAppNav" type="Transparent" app:nav="MapaComparativoLista" text="Mapa Comparativo" />
-				<Button id="btnHeader2" press="onAppNav" type="Transparent" app:nav="ConsumoContratos" text="Gestão consumo Contratos" />
-				<Button id="btnHeader3" press="onAppNav" type="Transparent" app:nav="PortalFornecedor" text="Portal Fornecedor" />
-				<Button id="btnHeader4" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV2" text="Monitor Interfaces V1" />
-				<Button id="btnHeader5" press="onAppNav" type="Transparent" app:nav="MonitorInterfacesV3" text="Monitor Interfaces V2" />	
+				<Button
+					id="btnHeader1"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="MapaComparativoLista"
+					text="Mapa Comparativo" />
+				<Button
+					id="btnHeader2"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="ConsumoContratos"
+					text="Gestão consumo Contratos" />
+				<Button
+					id="btnHeader3"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="PortalFornecedor"
+					text="Portal Fornecedor" />
+				<Button
+					id="btnHeader4"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="MonitorInterfacesV2"
+					text="Monitor Interfaces V1" />
+				<Button
+					id="btnHeader5"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="MonitorInterfacesV3"
+					text="Monitor Interfaces V2" />
 				<ToolbarSpacer />
-				<Image src="./images/SAP-logo-icon-PNG-Transparent-Background.png" densityAware="false" width="120px" ></Image>		
+				<Image
+					src="./images/SAP-logo-icon-PNG-Transparent-Background.png"
+					densityAware="false"
+					width="80px">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Image>
 			</tnt:ToolHeader>
 		</tnt:header>
 		<tnt:mainContents>
