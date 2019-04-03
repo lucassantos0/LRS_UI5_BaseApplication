@@ -16,7 +16,8 @@
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow>
-				<l:BlockLayoutCell>
+				<l:BlockLayoutCell
+					class="sapUiNoContentPadding sapUiNoMargin">
 					<FlexBox
 						alignItems="Center"
 						justifyContent="Center">
