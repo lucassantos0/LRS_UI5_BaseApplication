@@ -6,25 +6,138 @@
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page showHeader="false">
-		<l:VerticalLayout
-			class="sapUiNoContentPadding sapUiNoMargin">
-			<Image
-				src="./images/southend_corp_logo.jpg"
-				width="100%" />
-			<HBox>
-				<Text text="Novidades SouthEnd SA" />
-				<html:iframe
-					name="f15ade8a2873e78"
-					frameborder="0"
-					allowtransparency="true"
-					allowfullscreen="true"
-					scrolling="no"
-					allow="encrypted-media"
-					title="fb:page Facebook Social Plugin"
-					src="https://www.facebook.com/v2.3/plugins/page.php?adapt_container_width=false&amp;app_id=574153526026185&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fd_vbiawPdxB.js%3Fversion%3D44%23cb%3Df29c256703284c%26domain%3Dwww.southend.com.ar%26origin%3Dhttp%253A%252F%252Fwww.southend.com.ar%252Ff36a5516ac643%26relation%3Dparent.parent&amp;container_width=548&amp;height=311&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouthEnd-SA%2F155689534484836&amp;locale=es_LA&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;width=550"
-					style="border: none; visibility: visible;"
-					class=""></html:iframe>
-			</HBox>
-		</l:VerticalLayout>
+		<l:BlockLayout background="Default">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell
+					class="sapUiNoContentPadding sapUiNoMargin">
+					<Image
+						src="./images/southend_corp_logo.jpg"
+						width="100%" />
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell>
+					<l:VerticalLayout>
+						<Text text="Novidades SouthEnd SA" />
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell
+					class="sapUiTinyContentPadding sapUiNoMargin">
+					<l:VerticalLayout>
+						<html:iframe name="f15ade8a2873e78" frameborder="0" width="480px" heigth="560px" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/page.php?adapt_container_width=false&amp;app_id=574153526026185&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fd_vbiawPdxB.js%3Fversion%3D44%23cb%3Df29c256703284c%26domain%3Dwww.southend.com.ar%26origin%3Dhttp%253A%252F%252Fwww.southend.com.ar%252Ff36a5516ac643%26relation%3Dparent.parent&amp;container_width=548&amp;height=311&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouthEnd-SA%2F155689534484836&amp;locale=es_LA&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;width=550" style="border: none; visibility: visible;" class=""></html:iframe>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell>
+					<l:VerticalLayout>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<!-- <l:BlockLayoutRow -->
+			<!-- accentCells="Accent1" -->
+			<!-- class="sapUiTinyMargin"> -->
+			<!-- <l:BlockLayoutCell backgroundColorShade="ShadeB"> -->
+			<!-- <l:VerticalLayout -->
+			<!-- class="sapUiTinyMargin"> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tileSouthEndSA}" /> -->
+			<!-- </l:VerticalLayout> -->
+			<!-- <l:titleLink> -->
+			<!-- <Link -->
+			<!-- text="SouthEnd S.A." -->
+			<!-- href="http://www.southend.com.ar/portugues/" /> -->
+			<!-- </l:titleLink> -->
+			<!-- </l:BlockLayoutCell> -->
+			<!-- <l:BlockLayoutCell> -->
+			<!-- <l:VerticalLayout -->
+			<!-- class="sapUiNoContentPadding sapUiTinyMargin"> -->
+			<!-- <core:Icon -->
+			<!-- src="sap-icon://order-status" -->
+			<!-- size="2.5rem" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile4Title}" -->
+			<!-- class="sapUiTinyMarginTopBottom TamanhoFonteH2" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile4Content}" -->
+			<!-- wrapping="true" -->
+			<!-- class="sapUiTinyMarginBottom" /> -->
+			<!-- <Link -->
+			<!-- text="{i18n>tile4Action1}" -->
+			<!-- class="FonteBranca" -->
+			<!-- press="navToConsumoContratos" /> -->
+			<!-- </l:VerticalLayout> -->
+			<!-- </l:BlockLayoutCell> -->
+			<!-- <l:BlockLayoutCell width="2"> -->
+			<!-- <l:VerticalLayout -->
+			<!-- class="sapUiNoContentPadding sapUiTinyMargin"> -->
+			<!-- <core:Icon -->
+			<!-- src="sap-icon://my-sales-order" -->
+			<!-- size="2.5rem" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile3Title}" -->
+			<!-- class="sapUiTinyMarginTopBottom TamanhoFonteH2" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile3Content}" -->
+			<!-- wrapping="true" -->
+			<!-- class="sapUiTinyMarginBottom" /> -->
+			<!-- <Link -->
+			<!-- text="{i18n>tile3Action1}" -->
+			<!-- class="FonteBranca" -->
+			<!-- press="navToMapaComparativo" /> -->
+			<!-- </l:VerticalLayout> -->
+			<!-- </l:BlockLayoutCell> -->
+			<!-- </l:BlockLayoutRow> -->
+			<!-- <l:BlockLayoutRow -->
+			<!-- class="sapUiTinyMargin"> -->
+			<!-- <l:BlockLayoutCell -->
+			<!-- backgroundColorShade="ShadeA" -->
+			<!-- width="2"> -->
+			<!-- <l:VerticalLayout -->
+			<!-- class="sapUiNoContentPadding sapUiTinyMargin"> -->
+			<!-- <core:Icon -->
+			<!-- src="sap-icon://supplier" -->
+			<!-- size="2.5rem" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile2Title}" -->
+			<!-- class="sapUiTinyMarginTopBottom TamanhoFonteH2" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile2Content}" -->
+			<!-- wrapping="true" -->
+			<!-- class="sapUiTinyMarginBottom" /> -->
+			<!-- <Link -->
+			<!-- text="{i18n>tile2Action1}" -->
+			<!-- class="FonteBranca" -->
+			<!-- press="navToPortalFornecedor" /> -->
+			<!-- </l:VerticalLayout> -->
+			<!-- </l:BlockLayoutCell> -->
+			<!-- <l:BlockLayoutCell> -->
+			<!-- <l:VerticalLayout -->
+			<!-- class="sapUiNoContentPadding sapUiTinyMargin"> -->
+			<!-- <core:Icon -->
+			<!-- src="sap-icon://area-chart" -->
+			<!-- size="2.5rem" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile1Title}" -->
+			<!-- class="sapUiTinyMarginTopBottom TamanhoFonteH2" /> -->
+			<!-- <Text -->
+			<!-- text="{i18n>tile1Content}" -->
+			<!-- wrapping="true" -->
+			<!-- class="sapUiTinyMarginBottom" /> -->
+			<!-- <Link -->
+			<!-- text="{i18n>tile1Action1}" -->
+			<!-- class="FonteBranca" -->
+			<!-- press="navToLogInterfaces" /> -->
+			<!-- <Link -->
+			<!-- text="{i18n>tile1Action2}" -->
+			<!-- class="FonteBranca" -->
+			<!-- press="navToMonitorInterfacesV2" /> -->
+			<!-- </l:VerticalLayout> -->
+			<!-- </l:BlockLayoutCell> -->
+			<!-- <l:BlockLayoutCell backgroundColorShade="ShadeC"> -->
+			<!-- <l:VerticalLayout -->
+			<!-- class="sapUiNoContentPadding sapUiTinyMargin"> -->
+			<!-- </l:VerticalLayout> -->
+			<!-- </l:BlockLayoutCell> -->
+			<!-- </l:BlockLayoutRow> -->
+		</l:BlockLayout>
 	</Page>
 </mvc:View>
