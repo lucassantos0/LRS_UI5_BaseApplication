@@ -9,7 +9,7 @@
 		<l:VerticalLayout
 			class="sapUiNoContentPadding sapUiNoMargin">
 			<Image
-				src="./images/southend_corp_logo.jpeg"
+				src="./images/southend_corp_logo.jpg"
 				width="100%" />
 			<HBox>
 				<Text text="Novidades SouthEnd SA" />
