@@ -21,8 +21,7 @@
 						alignItems="Center"
 						justifyContent="Center">
 						<items>
-							<Text
-								text="Novidades SouthEnd Corp"/>
+							<html:h1>Novidades SouthEnd Corp</html:h1>
 						</items>
 					</FlexBox>
 				</l:BlockLayoutCell>
