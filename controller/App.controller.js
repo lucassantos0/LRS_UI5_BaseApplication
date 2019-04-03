@@ -15,7 +15,7 @@ sap.ui.define(
 		onInit : function()
 		{
 			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-			this.getRouter().navTo("home");
+			//this.getRouter().navTo("home");
 		}, 
 
 		onAppNav : function(oEvent) {

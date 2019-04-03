@@ -105,7 +105,7 @@
 			"mapaLadoaLado": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/MapaLadoaLado.json"
-			}			
+			}
 		},
 		"resources": {
 			"css": [
@@ -201,6 +201,9 @@
 				}
 			],
 			"targets": {
+				"": {
+					"viewName": "Home"
+				},
 				"home": {
 					"viewName": "Home"
 				},
