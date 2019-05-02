@@ -40,8 +40,7 @@
 			visibleRowCount="7"
 			paste="onPaste">
 			<t:columns>
-				<t:Column width="11rem">
-					<Label text="Product Name" />
+				<t:Column>
 					<t:template>
 						<FormattedText htmlText="{newsAribaProcurement>content:encoded}" />
 					</t:template>
