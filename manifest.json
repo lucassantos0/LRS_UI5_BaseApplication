@@ -66,6 +66,10 @@
 				"type": "sap.ui.model.xml.XMLModel",
 				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100700001921/feed/"
 			},
+			"newsAribaCIG": {
+				"type": "sap.ui.model.xml.XMLModel",
+				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100800000194/feed/"
+			},
 			"side": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/sideContent.json"
