@@ -15,7 +15,7 @@
 				iconDensityAware="false"
 				info="{Type}"
 				timestamp="{Date}"
-				text="{newsAribaProcurement>description}"
+				text="{newsAribaProcurement>content:encoded}"
 				convertLinksToAnchorTags="All" />
 		</List>
 	</Page>
