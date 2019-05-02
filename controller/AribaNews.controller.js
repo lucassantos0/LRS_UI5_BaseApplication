@@ -17,7 +17,7 @@ sap.ui.define(
 			
 		},
 		formatterProxyContent : function(sContent) {
-			return sContent.replace(/</gi, '&lt;').replace(/>/gi, '&gt;');
+			return sContent; //.replace(/https/gi, 'https://cors-anywhere.herokuapp.com/https');
 		}
 
 	});
