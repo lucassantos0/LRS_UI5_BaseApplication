@@ -11,7 +11,7 @@
 			items="{newsAribaProcurement>/channel/item}">
 			<items>
 				<ColumnListItem>
-					<core:HTML content="{newsAribaProcurement>encoded}" />
+					<core:HTML content="teste" />
 				</ColumnListItem>
 			</items>
 		</List>
