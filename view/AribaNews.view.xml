@@ -6,7 +6,7 @@
 	xmlns:t="sap.ui.table"
 	xmlns="sap.m">
 	<Page>
-		<List
+		<Table
 			headerText="Lista"
 			items="{newsAribaProcurement>/channel/item}">
 			<columns>
@@ -23,7 +23,7 @@
 					</cells>
 				</ColumnListItem>
 			</items>
-		</List>
+		</Table>
 		<!-- <List -->
 		<!-- showSeparators="Inner" -->
 		<!-- items="{newsAribaProcurement>/channel/item}"> -->
