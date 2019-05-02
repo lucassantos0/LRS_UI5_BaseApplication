@@ -5,29 +5,26 @@
 	xmlns:core="sap.ui.core"
 	xmlns="sap.m">
 	<Page>
-<!-- 		<List -->
-<!-- 			showSeparators="Inner" -->
-<!-- 			items="{newsAribaProcurement>/channel/item}"> -->
-<!-- 			<items> -->
-<!-- 				<ColumnListItem> -->
-<!-- 					<Text text="sample" /> -->
-<!-- 					<core:HTML content="{newsAribaProcurement>description}" /> -->
-<!-- 				</ColumnListItem> -->
-<!-- 			</items> -->
-<!-- 		</List> -->
 		<List
 			showSeparators="Inner"
 			items="{newsAribaProcurement>/channel/item}">
-			<FeedListItem
-				sender="{Author}"
-				icon="{AuthorPicUrl}"
-				senderPress="onSenderPress"
-				iconPress="onIconPress"
-				iconDensityAware="false"
-				info="{Type}"
-				timestamp="{Date}"
-				text="{newsAribaProcurement>content:encoded}"
-				convertLinksToAnchorTags="All" />
+				<ColumnListItem>
+					<core:HTML content="{newsAribaProcurement>content:encoded}" />
+				</ColumnListItem>
 		</List>
+<!-- 		<List -->
+<!-- 			showSeparators="Inner" -->
+<!-- 			items="{newsAribaProcurement>/channel/item}"> -->
+<!-- 			<FeedListItem -->
+<!-- 				sender="{Author}" -->
+<!-- 				icon="{AuthorPicUrl}" -->
+<!-- 				senderPress="onSenderPress" -->
+<!-- 				iconPress="onIconPress" -->
+<!-- 				iconDensityAware="false" -->
+<!-- 				info="{Type}" -->
+<!-- 				timestamp="{Date}" -->
+<!-- 				text="{newsAribaProcurement>content:encoded}" -->
+<!-- 				convertLinksToAnchorTags="All" /> -->
+<!-- 		</List> -->
 	</Page>
 </mvc:View> 
