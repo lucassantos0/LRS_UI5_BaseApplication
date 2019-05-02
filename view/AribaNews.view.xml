@@ -5,28 +5,43 @@
 	xmlns:core="sap.ui.core"
 	xmlns="sap.m">
 	<Page>
-		<List
-			items="{newsAribaProcurement>/channel/item}">
-				<ColumnListItem>
-					<HBox>
+		<List items="{newsAribaProcurement>/channel/item}">
+			<ColumnListItem>
+				<HBox>
 					<Text text="Text" />
-					
-					</HBox>
-				</ColumnListItem>
+				</HBox>
+			</ColumnListItem>
 		</List>
-<!-- 		<List -->
-<!-- 			showSeparators="Inner" -->
-<!-- 			items="{newsAribaProcurement>/channel/item}"> -->
-<!-- 			<FeedListItem -->
-<!-- 				sender="{Author}" -->
-<!-- 				icon="{AuthorPicUrl}" -->
-<!-- 				senderPress="onSenderPress" -->
-<!-- 				iconPress="onIconPress" -->
-<!-- 				iconDensityAware="false" -->
-<!-- 				info="{Type}" -->
-<!-- 				timestamp="{Date}" -->
-<!-- 				text="{newsAribaProcurement>content:encoded}" -->
-<!-- 				convertLinksToAnchorTags="All" /> -->
-<!-- 		</List> -->
+		<!-- <List -->
+		<!-- showSeparators="Inner" -->
+		<!-- items="{newsAribaProcurement>/channel/item}"> -->
+		<!-- <FeedListItem -->
+		<!-- sender="{Author}" -->
+		<!-- icon="{AuthorPicUrl}" -->
+		<!-- senderPress="onSenderPress" -->
+		<!-- iconPress="onIconPress" -->
+		<!-- iconDensityAware="false" -->
+		<!-- info="{Type}" -->
+		<!-- timestamp="{Date}" -->
+		<!-- text="{newsAribaProcurement>content:encoded}" -->
+		<!-- convertLinksToAnchorTags="All" /> -->
+		<!-- </List> -->
+		<Table
+			rows="{newsAribaProcurement>/channel/item}"
+			title="Products"
+			selectionMode="MultiToggle"
+			visibleRowCount="7"
+			paste="onPaste">
+			<columns>
+				<Column width="11rem">
+					<Label text="Product Name" />
+					<template>
+						<Text
+							text="texto"
+							wrapping="false" />
+					</template>
+				</Column>
+			</columns>
+		</Table>
 	</Page>
-</mvc:View> 
+</mvc:View>
