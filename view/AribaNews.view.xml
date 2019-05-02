@@ -4,15 +4,19 @@
 	xmlns:l="sap.ui.layout"
 	xmlns="sap.m">
 	<Page>
-		<FeedTile items="{newsAribaProcurement>/channel/item}">
-			<items>
-				<FeedItem
-					title="{newsAribaProcurement>title}"
-					image="{img}"
-					link="{newsAribaProcurement>link}"
-					source="{src}"
-					publicationDate="{pubdate}" />
-			</items>
-		</FeedTile>
+		<List
+			showSeparators="Inner"
+			items="{newsAribaProcurement>/channel/item}">
+			<FeedListItem
+				sender="{Author}"
+				icon="{AuthorPicUrl}"
+				senderPress="onSenderPress"
+				iconPress="onIconPress"
+				iconDensityAware="false"
+				info="{Type}"
+				timestamp="{Date}"
+				text="{newsAribaProcurement>description}"
+				convertLinksToAnchorTags="All" />
+		</List>
 	</Page>
 </mvc:View>
