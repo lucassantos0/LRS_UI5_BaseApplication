@@ -3,6 +3,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table"
 	xmlns="sap.m">
 	<Page>
 		<List items="{newsAribaProcurement>/channel/item}">
@@ -26,22 +27,22 @@
 		<!-- text="{newsAribaProcurement>content:encoded}" -->
 		<!-- convertLinksToAnchorTags="All" /> -->
 		<!-- </List> -->
-		<Table
+		<t:Table
 			rows="{newsAribaProcurement>/channel/item}"
 			title="Products"
 			selectionMode="MultiToggle"
 			visibleRowCount="7"
 			paste="onPaste">
-			<columns>
-				<Column width="11rem">
+			<t:columns>
+				<t:Column width="11rem">
 					<Label text="Product Name" />
-					<template>
+					<t:template>
 						<Text
 							text="texto"
 							wrapping="false" />
-					</template>
-				</Column>
-			</columns>
-		</Table>
+					</t:template>
+				</t:Column>
+			</t:columns>
+		</t:Table>
 	</Page>
 </mvc:View>
