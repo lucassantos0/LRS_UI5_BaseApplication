@@ -3,7 +3,6 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
-	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns="sap.m">
 	<Page>
 		<List
@@ -11,9 +10,23 @@
 			items="{newsAribaProcurement>/channel/item}">
 			<items>
 				<ColumnListItem>
-					<core:HTML content="teste" />
+					<core:HTML content="{newsAribaProcurement>description}" />
 				</ColumnListItem>
 			</items>
 		</List>
+<!-- 		<List -->
+<!-- 			showSeparators="Inner" -->
+<!-- 			items="{newsAribaProcurement>/channel/item}"> -->
+<!-- 			<FeedListItem -->
+<!-- 				sender="{Author}" -->
+<!-- 				icon="{AuthorPicUrl}" -->
+<!-- 				senderPress="onSenderPress" -->
+<!-- 				iconPress="onIconPress" -->
+<!-- 				iconDensityAware="false" -->
+<!-- 				info="{Type}" -->
+<!-- 				timestamp="{Date}" -->
+<!-- 				text="{newsAribaProcurement>encoded}" -->
+<!-- 				convertLinksToAnchorTags="All" /> -->
+<!-- 		</List> -->
 	</Page>
 </mvc:View>
