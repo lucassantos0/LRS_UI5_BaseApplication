@@ -8,7 +8,7 @@
 	<Page>
 		<List 
 			headerText="Lista"
-			items="{path: 'newsAribaProcurement>/channel/item/' }">
+			items="{newsAribaProcurement>/channel/item}">
 			<items>
 				<ColumnListItem>
 					<cells>
