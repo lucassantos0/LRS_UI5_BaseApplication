@@ -14,9 +14,10 @@ sap.ui.define(
 
 		onInit : function()
 		{
-			formatterProxyContent : function(sContent) {
-				return sContent.replace(/https/gi, 'https://cors-anywhere.herokuapp.com/https');
-			}
+			
+		},
+		formatterProxyContent : function(sContent) {
+			return sContent.replace(/https/gi, 'https://cors-anywhere.herokuapp.com/https');
 		}
 
 	});
