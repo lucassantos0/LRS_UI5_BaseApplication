@@ -17,7 +17,8 @@
 					<cells>
 						<FormattedText
 							htmlText="{
-								path: 'newsAribaProcurement>content:encoded'
+								path: 'newsAribaProcurement>content:encoded',
+								formatter : '.formatterProxyContent'
 							}" />
 					</cells>
 				</ColumnListItem>
