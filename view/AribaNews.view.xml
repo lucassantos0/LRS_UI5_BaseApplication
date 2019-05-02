@@ -6,10 +6,11 @@
 	xmlns="sap.m">
 	<Page>
 		<List
-			showSeparators="Inner"
 			items="{newsAribaProcurement>/channel/item}">
 				<ColumnListItem>
-					<core:HTML content="{newsAribaProcurement>content:encoded}" />
+					<HBox>
+					<FormattedText htmlText="{newsAribaProcurement>content:encoded}" />
+					</HBox>
 				</ColumnListItem>
 		</List>
 <!-- 		<List -->
