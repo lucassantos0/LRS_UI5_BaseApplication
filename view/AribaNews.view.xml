@@ -10,15 +10,16 @@
 			headerText="Lista"
 			items="{newsAribaProcurement>/channel/item}">
 			<columns>
-				<Column>
-					<Text text="Product" />
-				</Column>
+				<Column />
 			</columns>
 			<items>
 				<ColumnListItem>
 					<cells>
 						<FormattedText
-							htmlText="{newsAribaProcurement>content:encoded}" />
+							htmlText="{
+								path: 'newsAribaProcurement>content:encoded',
+								formatter : '.formatterProxyContent'
+							}" />
 					</cells>
 				</ColumnListItem>
 			</items>
