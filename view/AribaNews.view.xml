@@ -36,16 +36,14 @@
 		<t:Table
 			rows="{newsAribaProcurement>/channel/item}"
 			title="Products"
-			selectionMode="MultiToggle"
+			selectionMode="None"
 			visibleRowCount="7"
 			paste="onPaste">
 			<t:columns>
 				<t:Column width="11rem">
 					<Label text="Product Name" />
 					<t:template>
-						<Text
-							text="texto"
-							wrapping="false" />
+						<FormattedText htmlText="{newsAribaProcurement>content:encoded}" />
 					</t:template>
 				</t:Column>
 			</t:columns>
