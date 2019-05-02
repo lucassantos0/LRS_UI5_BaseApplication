@@ -9,6 +9,7 @@
 			items="{newsAribaProcurement>/channel/item}">
 				<ColumnListItem>
 					<HBox>
+					<Text text="Text" />
 					<FormattedText htmlText="{newsAribaProcurement>description}" />
 					</HBox>
 				</ColumnListItem>
