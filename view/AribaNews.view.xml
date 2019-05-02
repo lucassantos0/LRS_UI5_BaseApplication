@@ -36,7 +36,7 @@
 						<cells>
 							<FormattedText
 								htmlText="{
-								path: 'newsAribaProcurement>content:encoded',
+								path: 'newsAribaCIG>content:encoded',
 								formatter : '.formatterProxyContent'
 							}" />
 						</cells>
