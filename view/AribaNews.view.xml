@@ -12,6 +12,7 @@
 			<items>
 				<ColumnListItem>
 					<cells>
+						<Text text="Lista" />
 						<FormattedText htmlText="{newsAribaProcurement>content:encoded}" />
 					</cells>
 				</ColumnListItem>
