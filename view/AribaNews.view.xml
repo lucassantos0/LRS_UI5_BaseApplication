@@ -7,7 +7,7 @@
 	xmlns="sap.m">
 	<Page>
 		<Table
-			headerText="Lista"
+			headerText="SAP Ariba Procurement"
 			items="{newsAribaProcurement>/channel/item}">
 			<columns>
 				<Column />
@@ -17,8 +17,7 @@
 					<cells>
 						<FormattedText
 							htmlText="{
-								path: 'newsAribaProcurement>content:encoded',
-								formatter : '.formatterProxyContent'
+								path: 'newsAribaProcurement>content:encoded'
 							}" />
 					</cells>
 				</ColumnListItem>
