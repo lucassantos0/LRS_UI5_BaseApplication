@@ -10,6 +10,7 @@
 			items="{newsAribaProcurement>/channel/item}">
 			<items>
 				<ColumnListItem>
+					<Text text="sample" />
 					<core:HTML content="{newsAribaProcurement>description}" />
 				</ColumnListItem>
 			</items>
@@ -29,4 +30,4 @@
 <!-- 				convertLinksToAnchorTags="All" /> -->
 <!-- 		</List> -->
 	</Page>
-</mvc:View>
+</mvc:View> 
