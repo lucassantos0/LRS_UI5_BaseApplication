@@ -62,6 +62,10 @@
 					"bundleName": "lrs.ui5.i18n.i18n"
 				}
 			},
+			"newsAribaProcurement": {
+				"type": "sap.ui.model.xml.XMLModel",
+				"uri": "https://blogs.sap.com/tags/73554900100700001921/feed/"
+			},
 			"side": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/sideContent.json"
@@ -193,6 +197,11 @@
 					"pattern": "MonitorInterfacesV3",
 					"name": "MonitorInterfacesV3",
 					"target": "MonitorInterfacesV3"
+				},
+				{
+					"pattern": "AribaNews",
+					"name": "AribaNews",
+					"target": "AribaNews"
 				}
 			],
 			"targets": {
@@ -201,6 +210,9 @@
 				},
 				"home": {
 					"viewName": "Home"
+				},
+				"AribaNews": {
+					"viewName": "AribaNews"
 				},
 				"appSettings": {
 					"viewName": "settings.AppSettings"

@@ -1,0 +1,18 @@
+<mvc:View
+	controllerName="lrs.ui5.controller.AribaNews"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<Page>
+		<FeedTile items="{newsAribaProcurement>/channel/item}">
+			<items>
+				<FeedItem
+					title="{newsAribaProcurement>title}"
+					image="{img}"
+					link="{newsAribaProcurement>link}"
+					source="{src}"
+					publicationDate="{pubdate}" />
+			</items>
+		</FeedTile>
+	</Page>
+</mvc:View>
