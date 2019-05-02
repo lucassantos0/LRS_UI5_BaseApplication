@@ -9,15 +9,13 @@
 		<List 
 			headerText="Lista"
 			items="{path: 'newsAribaProcurement>/channel/item/' }">
-			<ColumnListItem>
-				<HBox>
-				<core:Icon size="2rem" src="sap-icon://attachment-photo" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
-				<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
-					<Link text="{Name}" target="{ProductPicUrl}" press="handlePress"/>
-					<Label text="{ProductId}"/>
-				</VBox>
-			</HBox>
-			</ColumnListItem>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<FormattedText htmlText="{newsAribaProcurement>content:encoded}" />
+					</cells>
+				</ColumnListItem>
+			</items>
 		</List>
 		<!-- <List -->
 		<!-- showSeparators="Inner" -->
@@ -33,19 +31,19 @@
 		<!-- text="{newsAribaProcurement>content:encoded}" -->
 		<!-- convertLinksToAnchorTags="All" /> -->
 		<!-- </List> -->
-		<t:Table
-			rows="{newsAribaProcurement>/channel/item}"
-			title="Products"
-			selectionMode="None"
-			visibleRowCount="7"
-			paste="onPaste">
-			<t:columns>
-				<t:Column>
-					<t:template>
-						<FormattedText htmlText="{newsAribaProcurement>content:encoded}" />
-					</t:template>
-				</t:Column>
-			</t:columns>
-		</t:Table>
+<!-- 		<t:Table -->
+<!-- 			rows="{newsAribaProcurement>/channel/item}" -->
+<!-- 			title="Products" -->
+<!-- 			selectionMode="None" -->
+<!-- 			visibleRowCount="7" -->
+<!-- 			paste="onPaste"> -->
+<!-- 			<t:columns> -->
+<!-- 				<t:Column> -->
+<!-- 					<t:template> -->
+<!-- 						<FormattedText htmlText="{newsAribaProcurement>content:encoded}" /> -->
+<!-- 					</t:template> -->
+<!-- 				</t:Column> -->
+<!-- 			</t:columns> -->
+<!-- 		</t:Table> -->
 	</Page>
 </mvc:View>
