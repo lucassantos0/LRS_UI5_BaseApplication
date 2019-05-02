@@ -4,7 +4,7 @@
 	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
 	xmlns:t="sap.ui.table"
-	xmlns="sap.m">
+	xmlns="sap.m"> 
 	<Page>
 		<List items="{newsAribaProcurement>/channel/item}">
 			<ColumnListItem>
