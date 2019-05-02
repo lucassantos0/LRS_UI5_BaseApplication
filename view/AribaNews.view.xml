@@ -2,6 +2,7 @@
 	controllerName="lrs.ui5.controller.AribaNews"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns="sap.m">
 	<Page>
@@ -10,8 +11,7 @@
 			items="{newsAribaProcurement>/channel/item}">
 			<items>
 				<ColumnListItem>
-					<FormattedText
-						htmlText="{newsAribaProcurement>encoded}" />
+					<core:HTML content="{newsAribaProcurement>encoded}" />
 				</ColumnListItem>
 			</items>
 		</List>
