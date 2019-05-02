@@ -6,7 +6,9 @@
 	xmlns:t="sap.ui.table"
 	xmlns="sap.m"> 
 	<Page>
-		<List items="{path: 'newsAribaProcurement>/channel/item' }">
+		<List 
+			headerText="Lista"
+			items="{path: 'newsAribaProcurement>/channel/item/' }">
 			<ColumnListItem>
 				<HBox>
 					<Text text="Text" />
