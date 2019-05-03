@@ -23,9 +23,9 @@
 							<Toolbar>
 								<content>
 									<ToolbarSpacer />
-									<Button custom:nav="ProcurementPage" text="&lt;" press="onPageDown" enabled="{= ${/ProcurementPage} === 1 ? 'false' : 'true' }" />
+									<Button custom:nav="ProcurementPage" text="&lt;" press="onPageDown" enabled="{= ${/ProcurementPage} === 1 ? false : true }" />
 									<Text text="{/ProcurementPage}" align="Center" />
-									<Button custom:nav="ProcurementPage" text="&gt;" press="onPageUp" enabled="{= ${/ProcurementPage} === 5 ? 'false' : 'true' }" />
+									<Button custom:nav="ProcurementPage" text="&gt;" press="onPageUp" enabled="{= ${/ProcurementPage} === 5 ? false : true }" />
 								</content>
 							</Toolbar>
 						</headerToolbar>
