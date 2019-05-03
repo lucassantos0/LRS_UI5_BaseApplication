@@ -81,6 +81,75 @@
 						</items>
 					</Table>
 				</IconTabFilter>
+				<IconTabFilter
+					text="SAP Ariba Network Integration (SAP ERP)">
+					<Table
+						alternateRowColors="true"
+						items="{newsAribaNetworkIntegration>/channel/item}">
+						<columns>
+							<Column />
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Panel
+										expandable="true"
+										expanded="false"
+										width="100%">
+										<headerToolbar>
+											<Toolbar height="3rem">
+												<Title text="{newsAribaNetworkIntegration>title}" />
+												<ToolbarSpacer />
+												<Text text="{newsAribaNetworkIntegration>pubDate}" />
+											</Toolbar>
+										</headerToolbar>
+										<content>
+											<core:HTML
+												content="{
+													path: 'newsAribaNetworkIntegration>content:encoded',
+													formatter : '.formatterProxyContent'
+												}" />
+										</content>
+									</Panel>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
+				<IconTabFilter text="SAP Cloud Platform">
+					<Table
+						alternateRowColors="true"
+						items="{newsSAPCloudPlatform>/channel/item}">
+						<columns>
+							<Column />
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Panel
+										expandable="true"
+										expanded="false"
+										width="100%">
+										<headerToolbar>
+											<Toolbar height="3rem">
+												<Title text="{newsSAPCloudPlatform>title}" />
+												<ToolbarSpacer />
+												<Text text="{newsSAPCloudPlatform>pubDate}" />
+											</Toolbar>
+										</headerToolbar>
+										<content>
+											<core:HTML
+												content="{
+													path: 'newsSAPCloudPlatform>content:encoded',
+													formatter : '.formatterProxyContent'
+												}" />
+										</content>
+									</Panel>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
 			</items>
 		</IconTabBar>
 	</Page>

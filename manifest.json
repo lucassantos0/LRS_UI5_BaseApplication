@@ -70,6 +70,14 @@
 				"type": "sap.ui.model.xml.XMLModel",
 				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100800000194/feed/"
 			},
+			"newsSAPCloudPlatform": {
+				"type": "sap.ui.model.xml.XMLModel",
+				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/01200615320800003694/feed/"
+			},
+			"newsAribaNetworkIntegration": {
+				"type": "sap.ui.model.xml.XMLModel",
+				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/67838200100800006082/feed/"
+			},
 			"side": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/sideContent.json"
