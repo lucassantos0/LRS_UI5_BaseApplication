@@ -20,11 +20,16 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<core:HTML
-										content="{
+									<VBox>
+										<Title
+											level="H1"
+											text="{newsAribaProcurement>title}" />
+										<core:HTML
+											content="{
 											path: 'newsAribaProcurement>content:encoded',
 											formatter : '.formatterProxyContent'
 										}" />
+									</VBox>
 								</cells>
 							</ColumnListItem>
 						</items>
@@ -39,11 +44,16 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<core:HTML
-										content="{
+									<VBox>
+										<Title
+											level="H1"
+											text="{newsAribaCIG>title}" />
+										<core:HTML
+											content="{
 											path: 'newsAribaCIG>content:encoded',
 											formatter : '.formatterProxyContent'
 										}" />
+									</VBox>
 								</cells>
 							</ColumnListItem>
 						</items>
