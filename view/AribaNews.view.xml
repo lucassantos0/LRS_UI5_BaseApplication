@@ -48,6 +48,74 @@
 						</items>
 					</Table>
 				</IconTabFilter>
+				<IconTabFilter text="SAP Ariba Supply Chain">
+					<Table
+						alternateRowColors="true"
+						items="{newsAribaSupplyChain>/channel/item}">
+						<columns>
+							<Column />
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Panel
+										expandable="true"
+										expanded="false"
+										width="100%">
+										<headerToolbar>
+											<Toolbar height="3rem">
+												<Title text="{newsAribaSupplyChain>title}" />
+												<ToolbarSpacer />
+												<Text text="{newsAribaSupplyChain>pubDate}" />
+											</Toolbar>
+										</headerToolbar>
+										<content>
+											<core:HTML
+												content="{
+												path: 'newsAribaSupplyChain>content:encoded',
+												formatter : '.formatterProxyContent'
+											}" />
+										</content>
+									</Panel>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
+				<IconTabFilter text="SAP Ariba Strategic Sourcing">
+					<Table
+						alternateRowColors="true"
+						items="{newsAribaStrategicSourcing>/channel/item}">
+						<columns>
+							<Column />
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Panel
+										expandable="true"
+										expanded="false"
+										width="100%">
+										<headerToolbar>
+											<Toolbar height="3rem">
+												<Title text="{newsAribaStrategicSourcing>title}" />
+												<ToolbarSpacer />
+												<Text text="{newsAribaStrategicSourcing>pubDate}" />
+											</Toolbar>
+										</headerToolbar>
+										<content>
+											<core:HTML
+												content="{
+												path: 'newsAribaStrategicSourcing>content:encoded',
+												formatter : '.formatterProxyContent'
+											}" />
+										</content>
+									</Panel>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
 				<IconTabFilter
 					text="SAP Ariba Cloud Integration Gateway">
 					<Table

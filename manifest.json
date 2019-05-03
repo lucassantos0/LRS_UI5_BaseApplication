@@ -78,6 +78,14 @@
 				"type": "sap.ui.model.xml.XMLModel",
 				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/67838200100800006082/feed/"
 			},
+			"newsAribaSupplyChain": {
+				"type": "sap.ui.model.xml.XMLModel",
+				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100700001931/feed/"
+			},
+			"newsAribaStrategicSourcing": {
+				"type": "sap.ui.model.xml.XMLModel",
+				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100700001349/feed/"
+			},
 			"side": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/sideContent.json"
