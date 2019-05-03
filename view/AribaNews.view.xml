@@ -13,7 +13,9 @@
 			class="sapUiResponsiveContentPadding">
 			<items>
 				<IconTabFilter text="SAP Ariba Procurement">
-					<Table items="{newsAribaProcurement>/channel/item}">
+					<Table
+						alternateRowColors="true"
+						items="{newsAribaProcurement>/channel/item}">
 						<columns>
 							<Column />
 						</columns>
@@ -36,7 +38,9 @@
 				</IconTabFilter>
 				<IconTabFilter
 					text="SAP Ariba Cloud Integration Gateway">
-					<Table items="{newsAribaCIG>/channel/item}">
+					<Table
+						alternateRowColors="true"
+						items="{newsAribaCIG>/channel/item}">
 						<columns>
 							<Column />
 						</columns>
