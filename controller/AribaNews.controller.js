@@ -26,6 +26,7 @@ sap.ui.define(
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
 			var oModel = this.getView().getModel().getData();
 			oModel[sNav]++;
+			this.getView().getModel(sNav).loadData(this._newsURLs[sNav] + "?paged=" + oModel[sNav]);
 			this.getView().getModel().setData(oModel);
 		},
 		onPageDown : function(oEvent) {
