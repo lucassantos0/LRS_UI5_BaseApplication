@@ -13,8 +13,10 @@ sap.ui.define(
 	{
 		onInit : function()
 		{
-			this._newsAribaProcurementURL = "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100700001921/feed/";
-			this._newsAribaPageModel = new sap.ui.model.json.JSONModel({ "ProcurementPage" : 1 });
+			this._newsURLs = {
+					"newsAribaProcurement" = "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100700001921/feed/"
+			};
+			this._newsAribaPageModel = new sap.ui.model.json.JSONModel({ "newsAribaProcurement" : 1 });
 			this.getView().setModel(this._newsAribaPageModel);
 		},
 		formatterProxyContent : function(sContent) {
