@@ -18,13 +18,15 @@
 					<Table
 						alternateRowColors="true"
 						items="{newsAribaProcurement>/channel/item}">
-						<Toolbar>
-							<content>
-								<ToolbarSpacer />
-								<Button text="&lt;" />
-								<Button text="&gt;" />
-							</content>
-						</Toolbar>
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<ToolbarSpacer />
+									<Button text="&lt;" />
+									<Button text="&gt;" />
+								</content>
+							</Toolbar>
+						</headerToolbar>
 						<columns>
 							<Column />
 						</columns>
