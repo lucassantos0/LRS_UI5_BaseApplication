@@ -24,7 +24,7 @@
 								<content>
 									<ToolbarSpacer />
 									<Button custom:nav="newsAribaProcurement" text="&lt;" press="onPageDown" enabled="{= ${/newsAribaProcurement} === 1 ? false : true }" />
-									<Text text="{/ProcurementPage}" align="Center" />
+									<Text text="{/newsAribaProcurement}" align="Center" />
 									<Button custom:nav="newsAribaProcurement" text="&gt;" press="onPageUp" enabled="{= ${/newsAribaProcurement} === 5 ? false : true }" />
 								</content>
 							</Toolbar>
