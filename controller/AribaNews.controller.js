@@ -11,13 +11,16 @@ sap.ui.define(
 
 	return BaseController.extend("lrs.ui5.controller.AribaNews",
 	{
-
 		onInit : function()
 		{
-			
+			this._newsAribaPageModel = new sap.ui.model.json.JSONModel({ "ProcurementPage" : 1 });
+			this.getView().setModel(this._newsAribaPageModel);
 		},
 		formatterProxyContent : function(sContent) {
 			return sContent; //.replace(/https/gi, 'https://cors-anywhere.herokuapp.com/https');
+		},
+		onPageUp : function(oEvent) {
+			
 		}
 
 	});

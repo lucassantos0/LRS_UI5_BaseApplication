@@ -22,8 +22,9 @@
 							<Toolbar>
 								<content>
 									<ToolbarSpacer />
-									<Button text="&lt;" />
-									<Button text="&gt;" />
+									<Button text="&lt;" press="onPageDown" enabled="false" />
+									<Text text="{/ProcurementPage}" />
+									<Button text="&gt;" press="onPageUp" enabled="true" />
 								</content>
 							</Toolbar>
 						</headerToolbar>
