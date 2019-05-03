@@ -20,19 +20,15 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<VBox>
-										<Toolbar class="sapUiNoMargin HeaderTitleContrast">
-											<Label text="{newsAribaProcurement>title}" />
-											<ToolbarSpacer />
-											<Label
-												text="Publicação: {newsAribaProcurement>pubDate}" />
-										</Toolbar>
+									<Panel
+										headerText="{newsAribaProcurement>title}"
+										width="100%">
 										<core:HTML
 											content="{
 											path: 'newsAribaProcurement>content:encoded',
 											formatter : '.formatterProxyContent'
 										}" />
-									</VBox>
+									</Panel>
 								</cells>
 							</ColumnListItem>
 						</items>
