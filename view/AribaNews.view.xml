@@ -5,7 +5,9 @@
 	xmlns:core="sap.ui.core"
 	xmlns:t="sap.ui.table"
 	xmlns="sap.m">
-	<Page class="AribaNewsImage">
+	<Page
+		showHeader="false"
+		class="AribaNewsImage">
 		<IconTabBar
 			id="idIconTabBarNoIcons"
 			expanded="true"
