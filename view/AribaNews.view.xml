@@ -23,6 +23,8 @@
 							<ColumnListItem>
 								<cells>
 									<Panel
+										expandable="true"
+										expanded="false"
 										headerText="{newsAribaProcurement>title}"
 										width="100%">
 										<core:HTML
@@ -48,6 +50,8 @@
 							<ColumnListItem>
 								<cells>
 									<Panel
+										expandable="true"
+										expanded="false"
 										headerText="{newsAribaCIG>title}"
 										width="100%">
 										<core:HTML
