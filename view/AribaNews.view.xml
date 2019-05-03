@@ -18,6 +18,13 @@
 					<Table
 						alternateRowColors="true"
 						items="{newsAribaProcurement>/channel/item}">
+						<Toolbar>
+							<content>
+								<ToolbarSpacer />
+								<Button text="&lt;" />
+								<Button text="&gt;" />
+							</content>
+						</Toolbar>
 						<columns>
 							<Column />
 						</columns>
@@ -151,8 +158,7 @@
 						</items>
 					</Table>
 				</IconTabFilter>
-				<IconTabFilter
-					text="SAP Ariba Network">
+				<IconTabFilter text="SAP Ariba Network">
 					<Table
 						alternateRowColors="true"
 						items="{newsAribaNetwork>/channel/item}">
