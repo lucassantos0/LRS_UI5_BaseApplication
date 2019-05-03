@@ -22,15 +22,15 @@ sap.ui.define(
 		},
 		onPageUp : function(oEvent) {
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
-			var sPage = this.getView().getModel().getData()[sNav];
-			sPage++;
-			this.getView().getModel().getData()[sNav] = sPage;
+			var oModel = this.getView().getModel().getData();
+			oModel[sNav]++;
+			this.getView().getModel().setData(oModel);
 		},
 		onPageDown : function(oEvent) {
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
-			var sPage = this.getView().getModel().getData()[sNav];
-			sPage--;
-			this.getView().getModel().getData()[sNav] = sPage;
+			var oModel = this.getView().getModel().getData();
+			oModel[sNav]--;
+			this.getView().getModel().setData(oModel);
 		}
 
 	});
