@@ -21,7 +21,7 @@
 							<ColumnListItem>
 								<cells>
 									<VBox>
-										<Toolbar class="sapUiNoMargin">
+										<Toolbar class="sapUiNoMargin HeaderTitleContrast">
 											<Label text="{newsAribaProcurement>title}" />
 											<ToolbarSpacer />
 											<Label
