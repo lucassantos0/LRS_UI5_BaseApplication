@@ -21,10 +21,12 @@
 							<ColumnListItem>
 								<cells>
 									<VBox>
-										<Title
-											class="HeaderTitleContrast"
-											level="H1"
-											text="{newsAribaProcurement>title}" />
+										<Toolbar class="sapUiNoMargin">
+											<Label text="{newsAribaProcurement>title}" />
+											<ToolbarSpacer />
+											<Label
+												text="Publicação: {newsAribaProcurement>pubDate}" />
+										</Toolbar>
 										<core:HTML
 											content="{
 											path: 'newsAribaProcurement>content:encoded',
