@@ -78,6 +78,10 @@
 				"type": "sap.ui.model.xml.XMLModel",
 				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/67838200100800006082/feed/"
 			},
+			"newsAribaNetwork": {
+				"type": "sap.ui.model.xml.XMLModel",
+				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/67838200100800005701/feed/"
+			},
 			"newsAribaSupplyChain": {
 				"type": "sap.ui.model.xml.XMLModel",
 				"uri": "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100700001931/feed/"

@@ -152,10 +152,10 @@
 					</Table>
 				</IconTabFilter>
 				<IconTabFilter
-					text="SAP Ariba Network Integration (SAP ERP)">
+					text="SAP Ariba Network">
 					<Table
 						alternateRowColors="true"
-						items="{newsAribaNetworkIntegration>/channel/item}">
+						items="{newsAribaNetwork>/channel/item}">
 						<columns>
 							<Column />
 						</columns>
@@ -168,15 +168,15 @@
 										width="100%">
 										<headerToolbar>
 											<Toolbar height="3rem">
-												<Title text="{newsAribaNetworkIntegration>title}" />
+												<Title text="{newsAribaNetwork>title}" />
 												<ToolbarSpacer />
-												<Text text="{newsAribaNetworkIntegration>pubDate}" />
+												<Text text="{newsAribaNetwork>pubDate}" />
 											</Toolbar>
 										</headerToolbar>
 										<content>
 											<core:HTML
 												content="{
-													path: 'newsAribaNetworkIntegration>content:encoded',
+													path: 'newsAribaNetwork>content:encoded',
 													formatter : '.formatterProxyContent'
 												}" />
 										</content>
