@@ -63,6 +63,16 @@
 					<Table
 						alternateRowColors="true"
 						items="{newsAribaSupplyChain>/channel/item}">
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<ToolbarSpacer />
+									<Button custom:nav="newsAribaSupplyChain" text="&lt;" press="onPageDown" enabled="{= ${/newsAribaSupplyChain} === 1 ? false : true }" />
+									<Text text="{/newsAribaSupplyChain}" align="Center" />
+									<Button custom:nav="newsAribaSupplyChain" text="&gt;" press="onPageUp" enabled="{= ${/newsAribaSupplyChain} === 5 ? false : true }" />
+								</content>
+							</Toolbar>
+						</headerToolbar>
 						<columns>
 							<Column />
 						</columns>
@@ -97,6 +107,16 @@
 					<Table
 						alternateRowColors="true"
 						items="{newsAribaStrategicSourcing>/channel/item}">
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<ToolbarSpacer />
+									<Button custom:nav="newsAribaStrategicSourcing" text="&lt;" press="onPageDown" enabled="{= ${/newsAribaStrategicSourcing} === 1 ? false : true }" />
+									<Text text="{/newsAribaStrategicSourcing}" align="Center" />
+									<Button custom:nav="newsAribaStrategicSourcing" text="&gt;" press="onPageUp" enabled="{= ${/newsAribaStrategicSourcing} === 5 ? false : true }" />
+								</content>
+							</Toolbar>
+						</headerToolbar>
 						<columns>
 							<Column />
 						</columns>
@@ -132,6 +152,16 @@
 					<Table
 						alternateRowColors="true"
 						items="{newsAribaCIG>/channel/item}">
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<ToolbarSpacer />
+									<Button custom:nav="newsAribaCIG" text="&lt;" press="onPageDown" enabled="{= ${/newsAribaCIG} === 1 ? false : true }" />
+									<Text text="{/newsAribaCIG}" align="Center" />
+									<Button custom:nav="newsAribaCIG" text="&gt;" press="onPageUp" enabled="{= ${/newsAribaCIG} === 5 ? false : true }" />
+								</content>
+							</Toolbar>
+						</headerToolbar>
 						<columns>
 							<Column />
 						</columns>
@@ -166,6 +196,16 @@
 					<Table
 						alternateRowColors="true"
 						items="{newsAribaNetwork>/channel/item}">
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<ToolbarSpacer />
+									<Button custom:nav="newsAribaNetwork" text="&lt;" press="onPageDown" enabled="{= ${/newsAribaNetwork} === 1 ? false : true }" />
+									<Text text="{/newsAribaNetwork}" align="Center" />
+									<Button custom:nav="newsAribaNetwork" text="&gt;" press="onPageUp" enabled="{= ${/newsAribaNetwork} === 5 ? false : true }" />
+								</content>
+							</Toolbar>
+						</headerToolbar>
 						<columns>
 							<Column />
 						</columns>
@@ -200,6 +240,16 @@
 					<Table
 						alternateRowColors="true"
 						items="{newsSAPCloudPlatform>/channel/item}">
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<ToolbarSpacer />
+									<Button custom:nav="newsSAPCloudPlatform" text="&lt;" press="onPageDown" enabled="{= ${/newsSAPCloudPlatform} === 1 ? false : true }" />
+									<Text text="{/newsSAPCloudPlatform}" align="Center" />
+									<Button custom:nav="newsSAPCloudPlatform" text="&gt;" press="onPageUp" enabled="{= ${/newsSAPCloudPlatform} === 5 ? false : true }" />
+								</content>
+							</Toolbar>
+						</headerToolbar>
 						<columns>
 							<Column />
 						</columns>
