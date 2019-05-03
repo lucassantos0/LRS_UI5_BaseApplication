@@ -3,3 +3,7 @@
 	font-color: white !important;
 	font-weight: bold !important;
 }
+img {
+    max-width: 68%;
+    max-height: 68%;
+}
