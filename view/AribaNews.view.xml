@@ -6,47 +6,50 @@
 	xmlns:t="sap.ui.table"
 	xmlns="sap.m">
 	<Page>
-		<HBox>
-			<Table
-				headerText="SAP Ariba Procurement"
-				items="{newsAribaProcurement>/channel/item}">
-				<columns>
-					<Column />
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<FormattedText
-								htmlText="{
-								path: 'newsAribaProcurement>content:encoded',
-								formatter : '.formatterProxyContent'
-							}" />
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
-			<Table
-				headerText="SAP Ariba Cloud Integration Gateway"
-				items="{newsAribaCIG>/channel/item}">
-				<columns>
-					<Column />
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<core:HTML content="{
-								path: 'newsAribaCIG>content:encoded',
-								formatter : '.formatterProxyContent'
-							}" />
-<!-- 							<FormattedText -->
-<!-- 								htmlText="{ -->
-<!-- 								path: 'newsAribaCIG>content:encoded', -->
-<!-- 								formatter : '.formatterProxyContent' -->
-<!-- 							}" /> -->
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
-		</HBox>
+		<IconTabBar
+			id="idIconTabBarNoIcons"
+			expanded="true"
+			expandable="false"
+			class="sapUiResponsiveContentPadding">
+			<items>
+				<IconTabFilter text="SAP Ariba Procurement">
+					<Table items="{newsAribaProcurement>/channel/item}">
+						<columns>
+							<Column />
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<core:HTML
+										content="{
+											path: 'newsAribaProcurement>content:encoded',
+											formatter : '.formatterProxyContent'
+										}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
+				<IconTabFilter
+					text="SAP Ariba Cloud Integration Gateway">
+					<Table items="{newsAribaCIG>/channel/item}">
+						<columns>
+							<Column />
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<core:HTML
+										content="{
+											path: 'newsAribaCIG>content:encoded',
+											formatter : '.formatterProxyContent'
+										}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
 	</Page>
 </mvc:View>
