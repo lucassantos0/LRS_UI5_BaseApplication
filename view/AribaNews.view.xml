@@ -34,11 +34,15 @@
 				<items>
 					<ColumnListItem>
 						<cells>
-							<FormattedText
-								htmlText="{
+							<core:HTML content="{
 								path: 'newsAribaCIG>content:encoded',
 								formatter : '.formatterProxyContent'
 							}" />
+<!-- 							<FormattedText -->
+<!-- 								htmlText="{ -->
+<!-- 								path: 'newsAribaCIG>content:encoded', -->
+<!-- 								formatter : '.formatterProxyContent' -->
+<!-- 							}" /> -->
 						</cells>
 					</ColumnListItem>
 				</items>
