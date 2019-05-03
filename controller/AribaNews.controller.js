@@ -22,9 +22,9 @@ sap.ui.define(
 		},
 		onPageUp : function(oEvent) {
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
-			var sPage = this.getView().getModel().getData().ProcurementPage;
+			var sPage = this.getView().getModel().getData().sNav;
 			sPage++;
-			this.getView().getModel().setData({ sNav : sPage });
+			this.getView().getModel().getData().sNav = sPage;
 		},
 		onPageDown : function(oEvent) {
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
