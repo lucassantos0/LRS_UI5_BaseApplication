@@ -50,6 +50,12 @@
 					type="Transparent"
 					app:nav="MonitorInterfacesV2"
 					text="Monitor Interfaces V2" />
+				<Button 
+					id="btnHeader5"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="AribaNews"
+					text="Ariba Blogs" />
 				<ToolbarSpacer />
 				<Image
 					press="onAppNavSAPExternal"
