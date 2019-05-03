@@ -22,6 +22,7 @@
 								<cells>
 									<VBox>
 										<Title
+											class="HeaderTitleContrast"
 											level="H1"
 											text="{newsAribaProcurement>title}" />
 										<core:HTML
@@ -46,6 +47,7 @@
 								<cells>
 									<VBox>
 										<Title
+											class="HeaderTitleContrast"
 											level="H1"
 											text="{newsAribaCIG>title}" />
 										<core:HTML
