@@ -43,17 +43,15 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<VBox>
-										<Title
-											class="HeaderTitleContrast"
-											level="H1"
-											text="{newsAribaCIG>title}" />
+									<Panel
+										headerText="{newsAribaCIG>title}"
+										width="100%">
 										<core:HTML
 											content="{
 											path: 'newsAribaCIG>content:encoded',
 											formatter : '.formatterProxyContent'
 										}" />
-									</VBox>
+									</Panel>
 								</cells>
 							</ColumnListItem>
 						</items>
