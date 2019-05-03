@@ -20,7 +20,9 @@ sap.ui.define(
 			return sContent; //.replace(/https/gi, 'https://cors-anywhere.herokuapp.com/https');
 		},
 		onPageUp : function(oEvent) {
-			
+			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
+			this.getView().getModel().setData({ "ProcurementPage" : 2 });
+
 		}
 
 	});

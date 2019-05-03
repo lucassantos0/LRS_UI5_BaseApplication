@@ -4,7 +4,8 @@
 	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
 	xmlns:t="sap.ui.table"
-	xmlns="sap.m">
+	xmlns="sap.m"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
 	<Page
 		showHeader="false"
 		class="AribaNewsImage">
@@ -22,9 +23,9 @@
 							<Toolbar>
 								<content>
 									<ToolbarSpacer />
-									<Button text="&lt;" press="onPageDown" enabled="false" />
-									<Text text="{/ProcurementPage}" />
-									<Button text="&gt;" press="onPageUp" enabled="true" />
+									<Button custom:nav="ProcurementPage" text="&lt;" press="onPageDown" enabled="{= ${/ProcurementPage} === 1 ? 'false' : 'true' }" />
+									<Text text="{/ProcurementPage}" align="Center" />
+									<Button custom:nav="ProcurementPage" text="&gt;" press="onPageUp" enabled="{= ${/ProcurementPage} === 5 ? 'false' : 'true' }" />
 								</content>
 							</Toolbar>
 						</headerToolbar>
