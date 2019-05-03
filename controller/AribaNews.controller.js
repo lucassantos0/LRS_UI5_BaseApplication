@@ -24,13 +24,13 @@ sap.ui.define(
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
 			var sPage = this.getView().getModel().getData().ProcurementPage;
 			sPage++;
-			this.getView().getModel().setData({ "ProcurementPage" : sPage });
-		}
+			this.getView().getModel().setData({ sNav : sPage });
+		},
 		onPageDown : function(oEvent) {
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
 			var sPage = this.getView().getModel().getData().ProcurementPage;
 			sPage--;
-			this.getView().getModel().setData({ "ProcurementPage" : sPage });
+			this.getView().getModel().setData({ sNav : sPage });
 		}
 
 	});
