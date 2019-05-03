@@ -11,6 +11,7 @@ sap.ui.define(
 
 	return BaseController.extend("lrs.ui5.controller.AribaNews",
 	{
+		this._newsAribaProcurementURL : "https://cors-anywhere.herokuapp.com/https://blogs.sap.com/tags/73554900100700001921/feed/",
 		onInit : function()
 		{
 			this._newsAribaPageModel = new sap.ui.model.json.JSONModel({ "ProcurementPage" : 1 });
@@ -21,8 +22,15 @@ sap.ui.define(
 		},
 		onPageUp : function(oEvent) {
 			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
-			this.getView().getModel().setData({ "ProcurementPage" : 2 });
-
+			var sPage = this.getView().getModel().getData().ProcurementPage;
+			sPage++;
+			this.getView().getModel().setData({ "ProcurementPage" : sPage });
+		}
+		onPageDown : function(oEvent) {
+			var sNav = oEvent.getSource().data("nav"); //selected option - ex. ProcurementPage
+			var sPage = this.getView().getModel().getData().ProcurementPage;
+			sPage--;
+			this.getView().getModel().setData({ "ProcurementPage" : sPage });
 		}
 
 	});
