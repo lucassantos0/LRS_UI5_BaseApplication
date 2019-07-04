@@ -40,7 +40,7 @@
 						<ObjectPageSubSection title=" ">
 							<blocks>
 								<core:Fragment
-									fragmentName="mapacomparativo.view.Mapa.ResumoSumario"
+									fragmentName="lrs.ui5.Mapa.ResumoSumario"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
