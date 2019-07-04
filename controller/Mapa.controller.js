@@ -1,9 +1,9 @@
 sap.ui.define(
-[ "mapacomparativo/controller/BaseController", 'sap/ui/model/json/JSONModel', "mapacomparativo/controller/formatter", "sap/m/MessageBox",
+[ "mapacomparativo/controller/BaseController", 'sap/ui/model/json/JSONModel', "lrs/ui5/controller/formatter", "sap/m/MessageBox",
     "sap/ui/core/Fragment", "sap/m/Dialog", "sap/m/Label", "sap/m/Text", "sap/ui/core/util/Export", "sap/ui/core/util/ExportTypeCSV" ], function(BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label,
     Text, Export, ExportTypeCSV) {
 	"use strict";
-	return BaseController.extend("mapacomparativo.controller.Mapa",
+	return BaseController.extend("lrs.ui5.controller.Mapa",
 	{
 	  formatter : formatter,
 	  onInit : function() {

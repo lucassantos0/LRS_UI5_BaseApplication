@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="mapacomparativo.controller.Mapa"
+	controllerName="lrs.ui5.controller.Mapa"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:m="sap.m"
 	xmlns="sap.uxap"
@@ -51,14 +51,14 @@
 						<ObjectPageSubSection title="Itens geral">
 							<blocks>
 								<core:Fragment
-									fragmentName="mapacomparativo.view.Mapa.ResumoPacote"
+									fragmentName="lrs.ui5.Mapa.ResumoPacote"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
 						<ObjectPageSubSection title="Itens comuns">
 							<blocks>
 								<core:Fragment
-									fragmentName="mapacomparativo.view.Mapa.ItensComuns"
+									fragmentName="lrs.ui5.Mapa.ItensComuns"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
@@ -66,7 +66,7 @@
 							title="Itens não comuns">
 							<blocks>
 								<core:Fragment
-									fragmentName="mapacomparativo.view.Mapa.ItensNaoComuns"
+									fragmentName="lrs.ui5.Mapa.ItensNaoComuns"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
@@ -77,7 +77,7 @@
 						<ObjectPageSubSection title=" ">
 							<blocks>
 								<core:Fragment
-									fragmentName="mapacomparativo.view.Mapa.AnaliseItem"
+									fragmentName="lrs.ui5.Mapa.AnaliseItem"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
@@ -88,7 +88,7 @@
 						<ObjectPageSubSection title=" ">
 							<blocks>
 								<core:Fragment
-									fragmentName="mapacomparativo.view.Mapa.AnaliseContrato"
+									fragmentName="lrs.ui5.Mapa.AnaliseContrato"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
