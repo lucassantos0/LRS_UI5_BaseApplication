@@ -40,7 +40,7 @@
 						<ObjectPageSubSection title=" ">
 							<blocks>
 								<core:Fragment
-									fragmentName="lrs.ui5.Mapa.ResumoSumario"
+									fragmentName="lrs.ui5.view.Mapa.ResumoSumario"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
@@ -51,14 +51,14 @@
 						<ObjectPageSubSection title="Itens geral">
 							<blocks>
 								<core:Fragment
-									fragmentName="lrs.ui5.Mapa.ResumoPacote"
+									fragmentName="lrs.ui5.view.Mapa.ResumoPacote"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
 						<ObjectPageSubSection title="Itens comuns">
 							<blocks>
 								<core:Fragment
-									fragmentName="lrs.ui5.Mapa.ItensComuns"
+									fragmentName="lrs.ui5.view.Mapa.ItensComuns"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
@@ -66,7 +66,7 @@
 							title="Itens não comuns">
 							<blocks>
 								<core:Fragment
-									fragmentName="lrs.ui5.Mapa.ItensNaoComuns"
+									fragmentName="lrs.ui5.view.Mapa.ItensNaoComuns"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
@@ -77,7 +77,7 @@
 						<ObjectPageSubSection title=" ">
 							<blocks>
 								<core:Fragment
-									fragmentName="lrs.ui5.Mapa.AnaliseItem"
+									fragmentName="lrs.ui5.view.Mapa.AnaliseItem"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
@@ -88,7 +88,7 @@
 						<ObjectPageSubSection title=" ">
 							<blocks>
 								<core:Fragment
-									fragmentName="lrs.ui5.Mapa.AnaliseContrato"
+									fragmentName="lrs.ui5.view.Mapa.AnaliseContrato"
 									type="XML" />
 							</blocks>
 						</ObjectPageSubSection>
