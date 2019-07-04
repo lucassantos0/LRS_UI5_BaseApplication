@@ -31,7 +31,7 @@
 					press="onAppNav"
 					type="Transparent"
 					app:nav="MapaComparativoV2"
-					text="Mapa Comparativo" />
+					text="Mapa Comparativo V2" />
 				<Button
 					id="btnHeader2"
 					press="onAppNav"
