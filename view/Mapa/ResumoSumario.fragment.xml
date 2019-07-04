@@ -1,0 +1,81 @@
+<core:FragmentDefinition
+	xmlns:m="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout">
+	<m:VBox>
+		<f:SimpleForm
+			class="sapUiNoMargin"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			columnsXL="3"
+			columnsL="3"
+			columnsM="3"
+			labelSpanXL="6"
+			labelSpanL="6"
+			labelSpanM="6"
+			labelSpanS="12">
+			<f:content>
+				<core:Title text="Geral" />
+				<m:Label
+					text="Valor últ. preço corrigido ({Control>/AnaliseItem/IndiceIGPM}%)" />
+				<m:Text
+					text="{
+					parts: [ { path: 'Control>/AnaliseItem/LastPOPricesSum' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+					formatter: '.ValorUltimoPrecoCorrigido'
+				}" />
+				<m:Label text="Total premiado" />
+				<m:Text
+					text="{parts: [
+				        {path: 'Control>/AnaliseItem/AwardedPrice'}, 
+				        {path: 'BRL'}
+				    ],
+				    type: 'sap.ui.model.type.Currency',
+				    formatOptions: {
+					    	decimalSeparator : ',', 
+					    	groupingSeparator : '.',
+					        showMeasure: false
+					    }
+					}" />
+				<m:Label text="Itens premiados" />
+				<m:Text
+					text="{Control>/AnaliseItem/AwardedItems} / {mcdetails>/quoteitems}" />
+				<core:Title text="Itens comuns" />
+				<m:Label text="Quantidade" />
+				<m:Text
+					text="{Control>/AnaliseItem/CommonAwardedItems} / {Control>/AnaliseItem/AwardedItems}" />
+				<m:Label text="Valor premiado" />
+				<m:Text
+					text="{parts: [
+				        {path: 'Control>/AnaliseItem/CommonAwardedPrice'}, 
+				        {path: 'BRL'}
+				    ],
+				    type: 'sap.ui.model.type.Currency',
+				    formatOptions: {
+				    	decimalSeparator : ',', 
+				    	groupingSeparator : '.',
+				        showMeasure: false
+				    }
+				}" />
+				<core:Title text="Itens não-comuns" />
+				<m:Label text="Quantidade" />
+				<m:Text
+					text="{Control>/AnaliseItem/NotCommonAwardedItems} / {Control>/AnaliseItem/AwardedItems}" />
+				<m:Label text="Valor premiado" />
+				<m:Text
+					text="{parts: [
+				        {path: 'Control>/AnaliseItem/NotCommonAwardedPrice'}, 
+				        {path: 'BRL'}
+				    ],
+				    type: 'sap.ui.model.type.Currency',
+				    formatOptions: {
+					    	decimalSeparator : ',', 
+					    	groupingSeparator : '.',
+					        showMeasure: false
+					    }}" />
+			</f:content>
+		</f:SimpleForm>
+	</m:VBox>
+</core:FragmentDefinition>

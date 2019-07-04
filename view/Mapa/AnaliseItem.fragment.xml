@@ -1,0 +1,51 @@
+<core:FragmentDefinition
+	xmlns:m="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout">
+	<t:Table
+		id="TabelaItens"
+		enableColumnReordering="false"
+		fixedColumnCount="1"
+		alternateRowColors="true"
+		rows="{mcdetails>/items}"
+		columns="{
+			path: 'mcdetails>/ui5tableconf1',
+			factory: '.AnaliseItemColFactory'
+		}"
+		selectionMode="None"
+		visibleRowCount="14">
+		<t:extension>
+			<m:Toolbar class="sapMTBHeader-CTX">
+				<m:content>
+					<m:ToolbarSpacer />
+					<m:Label text="Exibir apenas divergências:" />
+					<m:CheckBox
+						selected="{Control>/AnaliseItem/ExibirApenasDivergencia}"
+						select="FilterTabelaItens" />
+					<m:Label text="Detalhes último preço:" />
+					<m:CheckBox
+						selected="{Control>/AnaliseItem/UltimoPrecoVisivel}" />
+					<m:Label text="Exibição" />
+					<m:Select
+						forceSelection="true"
+						change="FilterTabelaItens"
+						selectedKey="{Control>/AnaliseItem/Exibicao}">
+						<core:Item
+							key="0"
+							text="Todos os itens" />
+						<core:Item
+							key="1"
+							text="Itens comuns" />
+						<core:Item
+							key="2"
+							text="Itens não-comuns" />
+					</m:Select>
+				</m:content>
+			</m:Toolbar>
+		</t:extension>
+	</t:Table>
+</core:FragmentDefinition>

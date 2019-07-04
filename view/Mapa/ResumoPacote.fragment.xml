@@ -1,0 +1,122 @@
+<core:FragmentDefinition
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	xmlns="sap.uxap"
+	xmlns:layout="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:mc="sap.suite.ui.microchart">
+	<layout:VerticalLayout>
+		<m:Table
+			class="sapUiSizeCompact"
+			id="TabelaConfiguracaoFornecedores"
+			inset="false"
+			items="{
+				path: 'mcdetails>/suppliers' 
+			}">
+			<m:columns>
+				<m:Column
+					hAlign="Begin"
+					width="3em" />
+				<m:Column width="20em">
+					<m:Text text="Fornecedor" />
+				</m:Column>
+				<m:Column width="2em" />
+				<m:Column
+					hAlign="End"
+					width="8em">
+					<m:Text text="Valor cotação" />
+				</m:Column>
+				<m:Column
+					hAlign="Center"
+					width="9em">
+					<m:Text text="Itens respondidos" />
+				</m:Column>
+				<m:Column
+					hAlign="Center"
+					width="9em">
+					<m:Text text="Itens premiados" />
+				</m:Column>
+				<m:Column
+					hAlign="End"
+					width="8em">
+					<m:Text text="Valor premiado" />
+				</m:Column>
+				<m:Column
+					hAlign="Center"
+					width="6em">
+					<m:Text text="% itens" />
+				</m:Column>
+				<m:Column
+					hAlign="Center"
+					width="6em">
+					<m:Text text="% valor" />
+				</m:Column>
+				<m:Column
+					hAlign="Center"
+					width="6em">
+					<m:Text text="Itens Exc." />
+				</m:Column>
+			</m:columns>
+			<m:items>
+				<m:ColumnListItem>
+					<m:cells>
+						<m:CheckBox
+							select="updateTabelaConfiguracaoFornecedores"
+							selected="{mcdetails>applyCalc}" />
+						<m:Text
+							text="{
+								parts: [ { path: 'mcdetails>id' }, { path : 'mcdetails>name' } ],
+								formatter: '.TabelaConfiguracaoFornecedoresNome' 
+							}" />
+						<m:Button
+							press="MessagesShow"
+							visible="{
+								path: 'mcdetails>messages',
+								formatter: '.MessagesButtonVisible'
+							}"
+							type="{
+								path: 'mcdetails>messages',
+								formatter: '.MessagesButtonColor'
+							}"
+							icon="{
+								path: 'mcdetails>messages',
+								formatter: '.MessagesButtonIcon'
+							}" />
+						<m:Text
+							text="{
+							    parts: [
+							        {path: 'mcdetails>somatoriorfp'}, 
+							        {path: 'BRL'}
+							    ],
+							    type: 'sap.ui.model.type.Currency',
+							    formatOptions: {
+							    	decimalSeparator : ',', 
+							    	groupingSeparator : '.',
+							        showMeasure: false
+							    }
+							}" />
+						<m:Text
+							text="{mcdetails>quoteditems}/{mcdetails>/quoteitems}" />
+						<m:Text text="{mcdetails>rfpitems}" />
+						<m:Text
+							text="{parts: [
+							        {path: 'mcdetails>awardprice'}, 
+							        {path: 'BRL'}
+							    ],
+							    type: 'sap.ui.model.type.Currency',
+							    formatOptions: {
+							    	decimalSeparator : ',', 
+							    	groupingSeparator : '.',
+							        showMeasure: false
+							    }
+						}" />
+						<m:Text text="{mcdetails>distawarditems}" />
+						<m:Text text="{mcdetails>distawardprice}" />
+						<m:Text text="{mcdetails>exclusiveitems}" />
+					</m:cells>
+				</m:ColumnListItem>
+			</m:items>
+		</m:Table>
+	</layout:VerticalLayout>
+</core:FragmentDefinition>

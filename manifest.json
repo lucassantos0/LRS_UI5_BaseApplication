@@ -136,6 +136,10 @@
 			"mapaLadoaLado": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/MapaLadoaLado.json"
+			},
+			"mcdetails": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/MapaComparativo.json"
 			}
 		},
 		"resources": {
@@ -229,6 +233,12 @@
 					"pattern": "AribaNews",
 					"name": "AribaNews",
 					"target": "AribaNews"
+				},
+				{
+					"pattern": "MapaComparativoV2",
+					"name": "mapa",
+					"target": "mapa",
+					"titleTarget": "mapa"
 				}
 			],
 			"targets": {
@@ -288,6 +298,9 @@
 				},
 				"MonitorInterfacesV3": {
 					"viewName": "MonitorInterfacesV3"
+				},
+				"mapa": {
+					"viewName": "Mapa"
 				}
 			}
 		}

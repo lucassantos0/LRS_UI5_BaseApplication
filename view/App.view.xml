@@ -27,6 +27,12 @@
 					app:nav="MapaComparativoLista"
 					text="Mapa Comparativo" />
 				<Button
+					id="btnHeader7"
+					press="onAppNav"
+					type="Transparent"
+					app:nav="MapaComparativoV2"
+					text="Mapa Comparativo" />
+				<Button
 					id="btnHeader2"
 					press="onAppNav"
 					type="Transparent"

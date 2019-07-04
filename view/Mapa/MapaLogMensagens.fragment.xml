@@ -1,0 +1,57 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout">
+	<Dialog
+		resizable="false"
+		state="Information"
+		title="Log simulação PO para fornecedor {mcdetails>id}"
+		contentHeight="600px"
+		contentWidth="800px">
+		<beginButton>
+			<Button
+				text="Fechar"
+				press=".MessagesClose"/>
+		</beginButton>
+		<content>
+			<Table
+				class="sapUiSizeCompact"
+				inset="false"
+				items="{
+						path: 'mcdetails>messages' 
+					}">
+				<columns>
+					<Column width="4em">
+						<Text text="Tipo" />
+					</Column>
+					<Column width="8em">
+						<Text text="Mensagem" />
+					</Column>
+					<Column width="16em">
+						<Text text="Descrição" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<core:Icon
+								color="{
+									path: 'mcdetails>type',
+									formatter: '.MessageButtonColor'
+								}"
+								src="{
+									path: 'mcdetails>type',
+									formatter: '.MessageButtonIcon'
+								}" />
+							<Text text="{mcdetails>title}" />
+							<Text text="{mcdetails>description}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Dialog>
+</core:FragmentDefinition>
