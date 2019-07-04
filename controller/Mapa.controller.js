@@ -50,7 +50,7 @@ sap.ui.define(
 		    content :
 		    [ new Label(
 		    {
-		      text : 'Informar código documento (formato DocXXXX) para consulta.',
+		      text : 'Informar código documento (formato DocXXXX) para consulta. <Desativo em ambiente de demonstração>',
 		      labelFor : 'submitDialogTextarea'
 		    }), new sap.m.TextArea('submitDialogTextarea',
 		    {
@@ -58,7 +58,7 @@ sap.ui.define(
 			      var sText = oEvent.getParameter('value');
 			      var parent = oEvent.getSource().getParent();
 
-			      parent.getBeginButton().setEnabled(sText.length > 3);
+			      //parent.getBeginButton().setEnabled(sText.length > 3);
 		      },
 		      width : '100%',
 		      placeholder : 'Doc123456789'
