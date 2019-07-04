@@ -236,9 +236,9 @@
 				},
 				{
 					"pattern": "MapaComparativoV2",
-					"name": "mapa",
-					"target": "mapa",
-					"titleTarget": "mapa"
+					"name": "MapaComparativoV2",
+					"target": "MapaComparativoV2",
+					"titleTarget": "MapaComparativoV2"
 				}
 			],
 			"targets": {
@@ -299,7 +299,7 @@
 				"MonitorInterfacesV3": {
 					"viewName": "MonitorInterfacesV3"
 				},
-				"mapa": {
+				"MapaComparativoV2": {
 					"viewName": "Mapa"
 				}
 			}
