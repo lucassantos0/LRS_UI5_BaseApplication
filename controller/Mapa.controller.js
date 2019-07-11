@@ -199,7 +199,7 @@ sap.ui.define(
 	  MessagesShow : function(oEvent) {
 		  if (!this._oDialog) {
 			  // create dialog via fragment factory
-			  this._oDialog = sap.ui.xmlfragment("fragmentMapaLogMensagens", "mapacomparativo.view.Mapa.MapaLogMensagens", this);
+			  this._oDialog = sap.ui.xmlfragment("fragmentMapaLogMensagens", "lrs.ui5.view.Mapa.MapaLogMensagens", this);
 			  // connect dialog to view (models, lifecycle)
 			  this.getView().addDependent(this._oDialog);
 			  this._oDialog.setModel(this.getView().getModel("mcdetails"), "mcdetails");
