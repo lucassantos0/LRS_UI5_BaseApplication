@@ -32,7 +32,7 @@ sap.ui.define(
 		  if (!this.sDocument) {
 			  return false;
 		  } else {
-			  this.LoadRFPData(this.sDocument); 
+			  this.LoadRFPData(this.sDocument);
 		  }
 	  },
 	  LoadRFPData : function(sDocument) {

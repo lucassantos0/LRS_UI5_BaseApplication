@@ -86,17 +86,17 @@
 					<m:Text
 						visible="{mcdetails>applyCalc}"
 						text="{
-						parts:[ { path: 'mcdetails>lastpopricesum' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
-						formatter: '.ValorCorrigidoUltPrecoSomatorio' 
-					} " />
+							parts:[ { path: 'mcdetails>referenceprice' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							formatter: '.ValorCorrigidoUltPrecoSomatorio' 
+						} " />
 					<m:ObjectStatus
 						visible="{mcdetails>applyCalc}"
 						text="{
-							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>lastpopricesum' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>referenceprice' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
 							formatter: '.ValorCorrigidoUltPrecoSomatorioDiff' 
 						}"
 						state="{
-							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>lastpopricesum' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>referenceprice' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
 							formatter: '.ValorCorrigidoUltPrecoSomatorioDiffState' 
 						}" />
 					<m:Text

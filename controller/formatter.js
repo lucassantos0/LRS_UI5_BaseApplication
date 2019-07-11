@@ -73,48 +73,83 @@ window.AnaliseItensVariacaoPrecoState = function(aBids, nLastPoPrice, aSuppliers
 	return nLastPoPrice > nLowestBidPrice ? "Success" : "Error"; 
 };
 
-window.CheckBestBidPrice = function(nCompBid, aBids, aSuppliers){
+window.CheckBestBidPrice = function(oBid, aBids, aSuppliers){
 	// Check if nCompBid is LE other bids com aBids array
 	// return Success if the best or None otherwise
 	var bSupplierCalcEnabled = false;
-	nCompBid = Number(nCompBid);
+	if(!oBid){
+		return "None";
+	}
+	var nCompBid = Number(oBid.bidprice);
+	var nAwardedItems = 0;
+	var nCurrSupplierItems = 0;
+	//aSuppliers
 	if(!nCompBid || !aBids){
 		return "None";
 	}
+	for(var i = 0; i < aSuppliers.length; i++){
+		if(aSuppliers[i].id == oBid.supplier){
+			nAwardedItems = aSuppliers[i].distawarditems;
+		}
+	}
 	for(var i = 0; i < aBids.length; i++){
+		nCurrSupplierItems = 0;
 		aBids[i].bidprice = Number(aBids[i].bidprice);
 	// check if supplier has applyCalc property enabled;
 		bSupplierCalcEnabled = false;
 		for(var j = 0; j < aSuppliers.length; j++) {
 			if(aBids[i].supplier == aSuppliers[j].id) {
 				bSupplierCalcEnabled = aSuppliers[j].applyCalc;
+				nCurrSupplierItems = aSuppliers[j].distawarditems;
 			}
 		}
 		if(aBids[i].bidprice < nCompBid && bSupplierCalcEnabled){
 			return "None";
 		}
+		if(aBids[i].bidprice === nCompBid && bSupplierCalcEnabled){
+			if(nAwardedItems < nCurrSupplierItems){
+				return "None";
+			}
+		}
 	}
-	return "Success";
+	return "Success"; 
 };
-window.CheckBestBidPriceIcon = function(nCompBid, aBids, aSuppliers){
+window.CheckBestBidPriceIcon = function(oBid, aBids, aSuppliers){
 	// Check if nCompBid is LE other bids com aBids array
 	// return Success if the best or None otherwise
 	var bSupplierCalcEnabled;
-	nCompBid = Number(nCompBid);
+	if(!oBid){
+		return "";
+	}
+	var nCompBid = Number(oBid.bidprice);
+	var nAwardedItems = 0;
+	var nCurrSupplierItems = 0;
 	if(!nCompBid || !aBids){
 		return "";
 	}
+	for(var i = 0; i < aSuppliers.length; i++){
+		if(aSuppliers[i].id == oBid.supplier){
+			nAwardedItems = aSuppliers[i].distawarditems;
+		}
+	}
 	for(var i = 0; i < aBids.length; i++){
+		nCurrSupplierItems = 0;
 		aBids[i].bidprice = Number(aBids[i].bidprice);
 	// check if supplier has applyCalc property enabled;
 		bSupplierCalcEnabled = false;
 		for(var j = 0; j < aSuppliers.length; j++) {
 			if(aBids[i].supplier == aSuppliers[j].id) {
 				bSupplierCalcEnabled = aSuppliers[j].applyCalc;
+				//nCurrSupplierItems = aSuppliers[j].distawarditems; //Bug da bandeirinha preta virou feature...
 			}
 		}
 		if(aBids[i].bidprice < nCompBid && bSupplierCalcEnabled){
 			return "";
+		}
+		if(aBids[i].bidprice === nCompBid && bSupplierCalcEnabled){
+			if(nAwardedItems < nCurrSupplierItems){
+				return "";
+			}
 		}
 	}
 	return "sap-icon://flag";

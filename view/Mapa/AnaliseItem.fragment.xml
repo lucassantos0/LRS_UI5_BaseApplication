@@ -9,7 +9,7 @@
 	<t:Table
 		id="TabelaItens"
 		enableColumnReordering="false"
-		fixedColumnCount="1"
+		fixedColumnCount="3"
 		alternateRowColors="true"
 		rows="{mcdetails>/items}"
 		columns="{
