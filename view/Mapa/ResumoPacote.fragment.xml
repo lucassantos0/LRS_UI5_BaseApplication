@@ -89,12 +89,7 @@
 							        {path: 'mcdetails>somatoriorfp'}, 
 							        {path: 'BRL'}
 							    ],
-							    type: 'sap.ui.model.type.Currency',
-							    formatOptions: {
-							    	decimalSeparator : ',', 
-							    	groupingSeparator : '.',
-							        showMeasure: false
-							    }
+							    type: 'sap.ui.model.type.Currency'
 							}" />
 						<m:Text
 							text="{mcdetails>quoteditems}/{mcdetails>/quoteitems}" />
