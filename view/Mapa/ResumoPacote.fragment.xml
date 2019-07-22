@@ -84,13 +84,7 @@
 								formatter: '.MessagesButtonIcon'
 							}" />
 						<m:Text
-							text="{
-							    parts: [
-							        {path: 'mcdetails>somatoriorfp'}, 
-							        {path: 'BRL'}
-							    ],
-							    type: 'sap.ui.model.type.Currency'
-							}" />
+							text="{mcdetails>somatoriorfp}"/>
 						<m:Text
 							text="{mcdetails>quoteditems}/{mcdetails>/quoteitems}" />
 						<m:Text text="{mcdetails>rfpitems}" />
