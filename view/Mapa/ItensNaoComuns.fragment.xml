@@ -56,18 +56,7 @@
 					}" />
 					<m:Text
 						visible="{mcdetails>applyCalc}"
-						text="{
-						    parts: [
-						        {path: 'mcdetails>notcommon/quoteprice'}, 
-						        {path: 'BRL'}
-						    ],
-						    type: 'sap.ui.model.type.Currency',
-						    formatOptions: {
-						    	decimalSeparator : ',', 
-						    	groupingSeparator : '.',
-						        showMeasure: false
-						    }
-						}" />
+						text="{path: 'mcdetails>notcommon/quoteprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}" />
 					<m:Text
 						visible="{mcdetails>applyCalc}"
 						text="{mcdetails>notcommon/quoteitems} / {Control>/AnaliseItem/NotCommonAwardedItems}" />
@@ -76,17 +65,7 @@
 						text="{mcdetails>notcommon/awardeditems} / {Control>/AnaliseItem/NotCommonAwardedItems}" />
 					<m:Text
 						visible="{mcdetails>applyCalc}"
-						text="{parts: [
-						        {path: 'mcdetails>notcommon/awardedprice'}, 
-						        {path: 'BRL'}
-						    ],
-						    type: 'sap.ui.model.type.Currency',
-						    formatOptions: {
-						    	decimalSeparator : ',', 
-						    	groupingSeparator : '.',
-						        showMeasure: false
-						    }
-						}" />
+						text="{path: 'mcdetails>notcommon/awardedprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}" />
 					<m:Text 
 						visible="{mcdetails>applyCalc}"
 						text="{mcdetails>notcommon/distawarditems}" />

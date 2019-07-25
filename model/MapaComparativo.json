@@ -869,7 +869,7 @@
 			"hAlign": "Center",
 			"template": {
 				"type": "sap.m.Text",
-				"text": "{ path: 'mcdetails>quantity', type: 'sap.ui.model.type.Float', formatOptions: { minFractionDigits: 2 }}",
+				"text": "{path: 'mcdetails>quantity', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}",
 				"href": "",
 				"target": "",
 				"state": "",
@@ -897,7 +897,7 @@
 			"hAlign": "End",
 			"template": {
 				"type": "sap.m.Text",
-				"text": "{parts: [ {path: 'mcdetails>lastpoprice'}, {path: 'BRL'} ], type: 'sap.ui.model.type.Currency', formatOptions: { decimalSeparator : ',', groupingSeparator : '.', showMeasure: false }}",
+				"text": "{path: 'mcdetails>lastpoprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}",
 				"href": "",
 				"target": "",
 				"state": "",
@@ -972,7 +972,7 @@
 			"hAlign": "End",
 			"template": {
 				"type": "sap.m.Text",
-				"text": "{parts: [ {path: 'mcdetails>bids/0/bidprice'}, {path: 'BRL'} ], type: 'sap.ui.model.type.Currency', formatOptions: { decimalSeparator : ',', groupingSeparator : '.', showMeasure: false }}",
+				"text": "{path: 'mcdetails>bids/0/bidprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}",
 				"href": "",
 				"target": "",
 				"state": "{ parts: [ 'mcdetails>bids/0/', 'mcdetails>bids', 'mcdetails>/suppliers' ] , formatter: 'window.CheckBestBidPrice' }",
@@ -1141,7 +1141,7 @@
 			"hAlign": "End",
 			"template": {
 				"type": "sap.m.Text",
-				"text": "{parts: [ {path: 'mcdetails>bids/1/bidprice'}, {path: 'BRL'} ], type: 'sap.ui.model.type.Currency', formatOptions: { decimalSeparator : ',', groupingSeparator : '.', showMeasure: false }}",
+				"text": "{path: 'mcdetails>bids/1/bidprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}",
 				"href": "",
 				"target": "",
 				"state": "{ parts: [ 'mcdetails>bids/1/', 'mcdetails>bids', 'mcdetails>/suppliers' ] , formatter: 'window.CheckBestBidPrice' }",
@@ -1310,7 +1310,7 @@
 			"hAlign": "End",
 			"template": {
 				"type": "sap.m.Text",
-				"text": "{parts: [ {path: 'mcdetails>bids/2/bidprice'}, {path: 'BRL'} ], type: 'sap.ui.model.type.Currency', formatOptions: { decimalSeparator : ',', groupingSeparator : '.', showMeasure: false }}",
+				"text": "{path: 'mcdetails>bids/2/bidprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}",
 				"href": "",
 				"target": "",
 				"state": "{ parts: [ 'mcdetails>bids/2/', 'mcdetails>bids', 'mcdetails>/suppliers' ] , formatter: 'window.CheckBestBidPrice' }",
