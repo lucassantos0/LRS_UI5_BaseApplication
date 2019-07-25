@@ -1,13 +1,13 @@
 sap.ui.define(
-[ "lrs/ui5/controller/BaseController", 'sap/ui/model/json/JSONModel', "lrs/ui5/controller/formatter", "sap/m/MessageBox",
-    "sap/ui/core/Fragment", "sap/m/Dialog", "sap/m/Label", "sap/m/Text", "sap/ui/core/util/Export", "sap/ui/core/util/ExportTypeCSV" ], function(BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label,
-    Text, Export, ExportTypeCSV) {
+[ "mapacomparativo/controller/BaseController", 'sap/ui/model/json/JSONModel', "mapacomparativo/controller/formatter", "sap/m/MessageBox",
+    "sap/ui/core/Fragment", "sap/m/Dialog", "sap/m/Label", "sap/m/Text" ], function(BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label,
+    Text) {
 	"use strict";
-	return BaseController.extend("lrs.ui5.controller.Mapa",
+	return BaseController.extend("mapacomparativo.controller.Mapa",
 	{
 	  formatter : formatter,
 	  onInit : function() {
-		  this.getRouter().getRoute("MapaComparativoV2").attachMatched(this.onRouteMatched, this);
+		  this.getRouter().getRoute("mapa").attachMatched(this.onRouteMatched, this);
 		  this._oControlModelData =
 		  {
 			  "AnaliseItem" :
@@ -30,7 +30,7 @@ sap.ui.define(
 	  onRouteMatched : function(oEvent) {
 		  this.sDocument = oEvent.getParameters().arguments.rfq;
 		  if (!this.sDocument) {
-		  	this.updateTabelaConfiguracaoFornecedores();
+			  return false;
 		  } else {
 			  this.LoadRFPData(this.sDocument);
 		  }
@@ -50,7 +50,7 @@ sap.ui.define(
 		    content :
 		    [ new Label(
 		    {
-		      text : 'Informar código documento (formato DocXXXX) para consulta. <Desativo em ambiente de demonstração>',
+		      text : 'Informar código documento (formato DocXXXX) para consulta.',
 		      labelFor : 'submitDialogTextarea'
 		    }), new sap.m.TextArea('submitDialogTextarea',
 		    {
@@ -58,7 +58,7 @@ sap.ui.define(
 			      var sText = oEvent.getParameter('value');
 			      var parent = oEvent.getSource().getParent();
 
-			      //parent.getBeginButton().setEnabled(sText.length > 3);
+			      parent.getBeginButton().setEnabled(sText.length > 3);
 		      },
 		      width : '100%',
 		      placeholder : 'Doc123456789'
@@ -199,7 +199,7 @@ sap.ui.define(
 	  MessagesShow : function(oEvent) {
 		  if (!this._oDialog) {
 			  // create dialog via fragment factory
-			  this._oDialog = sap.ui.xmlfragment("fragmentMapaLogMensagens", "lrs.ui5.view.Mapa.MapaLogMensagens", this);
+			  this._oDialog = sap.ui.xmlfragment("fragmentMapaLogMensagens", "mapacomparativo.view.Mapa.MapaLogMensagens", this);
 			  // connect dialog to view (models, lifecycle)
 			  this.getView().addDependent(this._oDialog);
 			  this._oDialog.setModel(this.getView().getModel("mcdetails"), "mcdetails");
@@ -456,7 +456,13 @@ sap.ui.define(
 			  if (!!sTempItemBidSupplier) {
 				  aSuppliersCalc[sTempItemBidSupplier].awarded++;
 				  aSuppliersCalc[sTempItemBidSupplier].quoteprice = aSuppliersCalc[sTempItemBidSupplier].quoteprice + (nTempItemBidPrice * aItems[i].quantity);
-				  aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward = aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward + (aItems[i].lastpoprice * aItems[i].quantity) ;
+if(!aItems[i].lastpoprice && !aItems[i].averageprice){
+				  	
+				  }else if(!aItems[i].averageprice){
+				  	aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward = aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward + (aItems[i].lastpoprice * aItems[i].quantity) ;
+				  }else{
+				  	aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward = aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward + (aItems[i].averageprice * aItems[i].quantity) ;
+				  }
 				  oSuppliersSumCalc.nSumPrice += nTempItemBidPrice * aItems[i].quantity;
 				  oSuppliersSumCalc.nSumAwarded++;
 				  if (aItems[i].bids.length - nRemoveApplyCalc == 1) {
@@ -484,7 +490,7 @@ sap.ui.define(
 			      oSuppliersSumCalc.nSumAwarded > 0 ? Math.round((aSuppliersCalc[aSuppliers[i].id].awarded / oSuppliersSumCalc.nSumAwarded) * 100) : 0);
 			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/exclusiveitems", aSuppliersCalc[aSuppliers[i].id].exclusive);
 			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/lastpopricesum", aSuppliersCalc[aSuppliers[i].id].lastpopricesum);
-			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/lastpopricesumquoteaward", aSuppliersCalc[aSuppliers[i].id].lastpopricesumquoteaward);
+			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/lastpopricesumquoteaward", Math.round(aSuppliersCalc[aSuppliers[i].id].lastpopricesumquoteaward * 100)/100);
 			  nSumAllItemsLastPOPriceSum += aSuppliersCalc[aSuppliers[i].id].lastpopricesumquoteaward;
 		  }
 		  this.getView().getModel("Control").setProperty("/AnaliseItem/AwardedPrice", nSumAllItemsPrice );
