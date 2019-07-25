@@ -85,19 +85,21 @@
 							}" />
 						<m:Text
 							text="{
-							    path: 'mcdetails>somatoriorfp', 
+								parts: [
+							        {path: 'mcdetails>somatoriorfp'}, 
+							        {path: 'BRL'}
+							    ],
 							    type: 'sap.ui.model.type.Currency',
 							    formatOptions: {
-							    	decimalSeparator : ',', 
-							    	groupingSeparator : '.',
 							        showMeasure: false
 							    }
-						}" />							
+							}" />							
 						<m:Text
 							text="{mcdetails>quoteditems}/{mcdetails>/quoteitems}" />
 						<m:Text text="{mcdetails>rfpitems}" />
 						<m:Text
-							text="{parts: [
+							text="{
+								parts: [
 							        {path: 'mcdetails>awardprice'}, 
 							        {path: 'BRL'}
 							    ], 
