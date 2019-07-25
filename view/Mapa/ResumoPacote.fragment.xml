@@ -91,10 +91,12 @@
 							    ],
 							    type: 'sap.ui.model.type.Currency',
 							    formatOptions: {
+							    	decimalSeparator : ',', 
+							    	groupingSeparator : '.',
 							        showMeasure: false
 							    }
 							}" />							
-						<m:Text
+						<m:Text 
 							text="{mcdetails>quoteditems}/{mcdetails>/quoteitems}" />
 						<m:Text text="{mcdetails>rfpitems}" />
 						<m:Text
