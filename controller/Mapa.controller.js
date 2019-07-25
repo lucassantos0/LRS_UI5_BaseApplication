@@ -30,7 +30,7 @@ sap.ui.define(
 	  onRouteMatched : function(oEvent) {
 		  this.sDocument = oEvent.getParameters().arguments.rfq;
 		  if (!this.sDocument) {
-			  return false;
+		  	this.updateTabelaConfiguracaoFornecedores();
 		  } else {
 			  this.LoadRFPData(this.sDocument);
 		  }
