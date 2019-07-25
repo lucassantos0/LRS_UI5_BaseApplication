@@ -7,17 +7,13 @@
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
+		"ach": "ach",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		},
 		"applicationVersion": {
 			"version": "1.0.0"
-		},
-		"___dataSources": {
-			"TMS": {
-				"uri": "/sap/opu/odata/sap/ZSERVICO_APP/",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0"
-				}
-			}
 		}
 	},
 	"config": {
