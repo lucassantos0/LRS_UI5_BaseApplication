@@ -7,7 +7,7 @@ sap.ui.define(
 	{
 	  formatter : formatter,
 	  onInit : function() {
-		  this.getRouter().getRoute("mapa").attachMatched(this.onRouteMatched, this);
+		  this.getRouter().getRoute("MapaComparativoV2").attachMatched(this.onRouteMatched, this);
 		  this._oControlModelData =
 		  {
 			  "AnaliseItem" :
