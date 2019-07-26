@@ -3,7 +3,7 @@ sap.ui.define(
     "sap/ui/core/Fragment", "sap/m/Dialog", "sap/m/Label", "sap/m/Text" ], function(BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label,
     Text) {
 	"use strict";
-	return BaseController.extend("mapacomparativo.controller.Mapa",
+	return BaseController.extend("lrs.ui5.controller.Mapa",
 	{
 	  formatter : formatter,
 	  onInit : function() {
