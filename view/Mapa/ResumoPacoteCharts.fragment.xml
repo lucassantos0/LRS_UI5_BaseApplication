@@ -6,6 +6,12 @@
 	xmlns="sap.suite.ui.microchart"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:l="sap.ui.layout">
+	<m:MessageStrip
+		text="Distribuição de valor premiado por fornecedor"
+		type="Information"
+		showIcon="false"
+		class="sapUiMediumMarginBottom">
+	</m:MessageStrip>
 	<m:HBox>
 		<m:VBox>
 			<m:Text
@@ -16,7 +22,7 @@
 				</m:layoutData>
 			</m:Text>
 			<m:FlexBox
-				width="26rem"
+				width="27rem"
 				height="10rem"
 				alignItems="left"
 				justifyContent="SpaceBetween">
@@ -45,7 +51,7 @@
 				</m:layoutData>
 			</m:Text>
 			<m:FlexBox
-				width="26rem"
+				width="27rem"
 				height="10rem"
 				alignItems="left"
 				justifyContent="SpaceBetween">
@@ -74,7 +80,7 @@
 				</m:layoutData>
 			</m:Text>
 			<m:FlexBox
-				width="26rem"
+				width="27rem"
 				height="10rem"
 				alignItems="left"
 				justifyContent="SpaceBetween">
