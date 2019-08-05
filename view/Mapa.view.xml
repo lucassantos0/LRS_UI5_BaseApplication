@@ -72,6 +72,17 @@
 						</ObjectPageSubSection>
 					</subSections>
 				</ObjectPageSection>
+				<ObjectPageSection title="Resumo Charts">
+					<subSections>
+						<ObjectPageSubSection title=" ">
+							<blocks>
+								<core:Fragment
+									fragmentName="lrs.ui5.view.Mapa.ResumoPacoteCharts"
+									type="XML" />
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
 				<ObjectPageSection title="Análise por item">
 					<subSections>
 						<ObjectPageSubSection title=" ">
