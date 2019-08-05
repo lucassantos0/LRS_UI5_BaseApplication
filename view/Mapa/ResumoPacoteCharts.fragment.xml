@@ -12,7 +12,7 @@
 			height="10rem"
 			alignItems="left"
 			justifyContent="SpaceBetween"
-			items="{
+			segments="{
 				path: 'mcdetails>/suppliers' 
 			}">
 			<m:items>
@@ -20,9 +20,9 @@
 					selectionChanged="onSelectionChanged">
 					<segments>
 						<InteractiveDonutChartSegment
-							label="{mcdetails>name}"
+							label="{mcdetails>id}"
 							value="{mcdetails>awardprice}"
-							displayedValue="{mcdetails>awardprice}%" />
+							displayedValue="{mcdetails>distawardprice}%" />
 					</segments>
 				</InteractiveDonutChart>
 			</m:items>
