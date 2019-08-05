@@ -6,99 +6,101 @@
 	xmlns="sap.suite.ui.microchart"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:l="sap.ui.layout">
-	<m:MessageStrip
-		text="Distribuição de valor premiado por fornecedor"
-		type="Information"
-		showIcon="false"
-		class="sapUiMediumMarginBottom">
-	</m:MessageStrip>
-	<m:HBox>
-		<m:VBox>
-			<m:Text
-				text="Itens geral"
-				class="sapUiSmallMargin">
-				<m:layoutData>
-					<l:GridData span="XL12 L12 M12 S12" />
-				</m:layoutData>
-			</m:Text>
-			<m:FlexBox
-				width="27rem"
-				height="10rem"
-				alignItems="left"
-				justifyContent="SpaceBetween">
-				<m:items>
-					<InteractiveDonutChart
-						selectionEnabled="false"
-						segments="{
-							path: 'mcdetails>/suppliers' 
-						}">
-						<segments>
-							<InteractiveDonutChartSegment
-								label="{mcdetails>name}"
-								value="{mcdetails>distawardprice}"
-								displayedValue="{mcdetails>distawardprice}%" />
-						</segments>
-					</InteractiveDonutChart>
-				</m:items>
-			</m:FlexBox>
-		</m:VBox>
-		<m:VBox>
-			<m:Text
-				text="Itens comuns"
-				class="sapUiSmallMargin">
-				<m:layoutData>
-					<l:GridData span="XL12 L12 M12 S12" />
-				</m:layoutData>
-			</m:Text>
-			<m:FlexBox
-				width="27rem"
-				height="10rem"
-				alignItems="left"
-				justifyContent="SpaceBetween">
-				<m:items>
-					<InteractiveDonutChart
-						selectionEnabled="false"
-						segments="{
-							path: 'mcdetails>/suppliers' 
-						}">
-						<segments>
-							<InteractiveDonutChartSegment
-								label="{mcdetails>name}"
-								value="{mcdetails>common/distawardprice}"
-								displayedValue="{mcdetails>common/distawardprice}%" />
-						</segments>
-					</InteractiveDonutChart>
-				</m:items>
-			</m:FlexBox>
-		</m:VBox>
-		<m:VBox>
-			<m:Text
-				text="Itens não-comuns"
-				class="sapUiSmallMargin">
-				<m:layoutData>
-					<l:GridData span="XL12 L12 M12 S12" />
-				</m:layoutData>
-			</m:Text>
-			<m:FlexBox
-				width="27rem"
-				height="10rem"
-				alignItems="left"
-				justifyContent="SpaceBetween">
-				<m:items>
-					<InteractiveDonutChart
-						selectionEnabled="false"
-						segments="{
-							path: 'mcdetails>/suppliers' 
-						}">
-						<segments>
-							<InteractiveDonutChartSegment
-								label="{mcdetails>name}"
-								value="{mcdetails>notcommon/distawardprice}"
-								displayedValue="{mcdetails>notcommon/distawardprice}%" />
-						</segments>
-					</InteractiveDonutChart>
-				</m:items>
-			</m:FlexBox>
-		</m:VBox>
-	</m:HBox>
+	<m:VBox>
+		<m:MessageStrip
+			text="Distribuição de valor premiado por fornecedor"
+			type="Information"
+			showIcon="false"
+			class="sapUiMediumMarginBottom">
+		</m:MessageStrip>
+		<m:HBox>
+			<m:VBox>
+				<m:Text
+					text="Itens geral"
+					class="sapUiSmallMargin">
+					<m:layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</m:layoutData>
+				</m:Text>
+				<m:FlexBox
+					width="27rem"
+					height="10rem"
+					alignItems="left"
+					justifyContent="SpaceBetween">
+					<m:items>
+						<InteractiveDonutChart
+							selectionEnabled="false"
+							segments="{
+								path: 'mcdetails>/suppliers' 
+							}">
+							<segments>
+								<InteractiveDonutChartSegment
+									label="{mcdetails>name}"
+									value="{mcdetails>distawardprice}"
+									displayedValue="{mcdetails>distawardprice}%" />
+							</segments>
+						</InteractiveDonutChart>
+					</m:items>
+				</m:FlexBox>
+			</m:VBox>
+			<m:VBox>
+				<m:Text
+					text="Itens comuns"
+					class="sapUiSmallMargin">
+					<m:layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</m:layoutData>
+				</m:Text>
+				<m:FlexBox
+					width="27rem"
+					height="10rem"
+					alignItems="left"
+					justifyContent="SpaceBetween">
+					<m:items>
+						<InteractiveDonutChart
+							selectionEnabled="false"
+							segments="{
+								path: 'mcdetails>/suppliers' 
+							}">
+							<segments>
+								<InteractiveDonutChartSegment
+									label="{mcdetails>name}"
+									value="{mcdetails>common/distawardprice}"
+									displayedValue="{mcdetails>common/distawardprice}%" />
+							</segments>
+						</InteractiveDonutChart>
+					</m:items>
+				</m:FlexBox>
+			</m:VBox>
+			<m:VBox>
+				<m:Text
+					text="Itens não-comuns"
+					class="sapUiSmallMargin">
+					<m:layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</m:layoutData>
+				</m:Text>
+				<m:FlexBox
+					width="27rem"
+					height="10rem"
+					alignItems="left"
+					justifyContent="SpaceBetween">
+					<m:items>
+						<InteractiveDonutChart
+							selectionEnabled="false"
+							segments="{
+								path: 'mcdetails>/suppliers' 
+							}">
+							<segments>
+								<InteractiveDonutChartSegment
+									label="{mcdetails>name}"
+									value="{mcdetails>notcommon/distawardprice}"
+									displayedValue="{mcdetails>notcommon/distawardprice}%" />
+							</segments>
+						</InteractiveDonutChart>
+					</m:items>
+				</m:FlexBox>
+			</m:VBox>
+		</m:HBox>
+	</m:VBox>
 </core:FragmentDefinition>
