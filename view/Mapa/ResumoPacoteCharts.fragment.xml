@@ -16,7 +16,7 @@
 				</m:layoutData>
 			</m:Text>
 			<m:FlexBox
-				width="30rem"
+				width="26rem"
 				height="10rem"
 				alignItems="left"
 				justifyContent="SpaceBetween">
@@ -45,7 +45,7 @@
 				</m:layoutData>
 			</m:Text>
 			<m:FlexBox
-				width="30rem"
+				width="26rem"
 				height="10rem"
 				alignItems="left"
 				justifyContent="SpaceBetween">
@@ -74,7 +74,7 @@
 				</m:layoutData>
 			</m:Text>
 			<m:FlexBox
-				width="30rem"
+				width="26rem"
 				height="10rem"
 				alignItems="left"
 				justifyContent="SpaceBetween">
