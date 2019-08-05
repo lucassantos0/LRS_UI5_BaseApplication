@@ -38,7 +38,7 @@
 			<m:Column
 				hAlign="End"
 				width="10em">
-				<m:Text text="Valor corrigido últ. preço" />
+				<m:Text text="Valor histórico item cotação" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"
@@ -53,7 +53,7 @@
 			<m:Column
 				hAlign="End"
 				width="10em">
-				<m:Text text="Valor corrigido últ. preço" />
+				<m:Text text="Valor histórico item premiado" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"
@@ -75,17 +75,17 @@
 					<m:Text
 						visible="{mcdetails>applyCalc}"
 						text="{
-							parts:[ { path: 'mcdetails>referenceprice' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							parts:[ { path: 'mcdetails>referenceprice' }, { path: 'mcdetails>referencepriceavg' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
 							formatter: '.ValorCorrigidoUltPrecoSomatorio' 
 						} " />
 					<m:ObjectStatus
 						visible="{mcdetails>applyCalc}"
 						text="{
-							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>referenceprice' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>referenceprice' }, { path: 'mcdetails>referencepriceavg' },  { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
 							formatter: '.ValorCorrigidoUltPrecoSomatorioDiff' 
 						}"
 						state="{
-							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>referenceprice' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							parts:[ {path: 'mcdetails>somatoriorfp'}, { path: 'mcdetails>referenceprice' },{ path: 'mcdetails>referencepriceavg' },  { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
 							formatter: '.ValorCorrigidoUltPrecoSomatorioDiffState' 
 						}" />
 					<m:Text
@@ -94,17 +94,17 @@
 					<m:Text
 						visible="{mcdetails>applyCalc}"
 						text="{
-						parts:[ { path: 'mcdetails>lastpopricesumquoteaward' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
-						formatter: '.ValorCorrigidoUltPrecoSomatorio' 
-					} " />
+							parts:[ { path: 'mcdetails>lastpopricesumquoteaward' }, { path: 'mcdetails>lastpopricesumquoteawardavg' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							formatter: '.ValorCorrigidoUltPrecoSomatorio' 
+						} " />
 					<m:ObjectStatus
 						visible="{mcdetails>applyCalc}"
 						text="{
-							parts:[ {path: 'mcdetails>awardprice'}, { path: 'mcdetails>lastpopricesumquoteaward' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							parts:[ {path: 'mcdetails>awardprice'}, { path: 'mcdetails>lastpopricesumquoteaward' }, { path: 'mcdetails>lastpopricesumquoteawardavg' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
 							formatter: '.ValorCorrigidoUltPrecoSomatorioDiff' 
 						}"
 						state="{
-							parts:[ {path: 'mcdetails>awardprice'}, { path: 'mcdetails>lastpopricesumquoteaward' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
+							parts:[ {path: 'mcdetails>awardprice'}, { path: 'mcdetails>lastpopricesumquoteaward' }, { path: 'mcdetails>lastpopricesumquoteawardavg' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
 							formatter: '.ValorCorrigidoUltPrecoSomatorioDiffState' 
 						}" />
 				</m:cells>

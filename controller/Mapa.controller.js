@@ -1,7 +1,6 @@
 sap.ui.define(
-[ "lrs/ui5/controller/BaseController", 'sap/ui/model/json/JSONModel', "lrs/ui5/controller/formatter", "sap/m/MessageBox",
-    "sap/ui/core/Fragment", "sap/m/Dialog", "sap/m/Label", "sap/m/Text" ], function(BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label,
-    Text) {
+[ "lrs/ui5/controller/BaseController", 'sap/ui/model/json/JSONModel', "lrs/ui5/controller/formatter", "sap/m/MessageBox", "sap/ui/core/Fragment",
+    "sap/m/Dialog", "sap/m/Label", "sap/m/Text" ], function(BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label, Text) {
 	"use strict";
 	return BaseController.extend("lrs.ui5.controller.Mapa",
 	{
@@ -18,6 +17,7 @@ sap.ui.define(
 			    "AwardedItems" : 0,
 			    "IndiceIGPM" : 0,
 			    "LastPOPriceSum" : 0,
+			    "LastPOPriceSumAvg" : 0,
 			    "CommonAwardedPrice" : 0,
 			    "CommonAwardedItems" : 0,
 			    "NotCommonAwardedPrice" : 0,
@@ -30,7 +30,7 @@ sap.ui.define(
 	  onRouteMatched : function(oEvent) {
 		  this.sDocument = oEvent.getParameters().arguments.rfq;
 		  if (!this.sDocument) {
-		  	this.updateTabelaConfiguracaoFornecedores();
+			  this.updateTabelaConfiguracaoFornecedores();
 		  } else {
 			  this.LoadRFPData(this.sDocument);
 		  }
@@ -167,39 +167,33 @@ sap.ui.define(
 
 		  return oColumn;
 	  },
-	  ValorUltimoPrecoCorrigido : function(nLastPOPricesSum, nIndiceIGPM){
-	  	if(!nLastPOPricesSum){ return ""; }
-	  	if(nIndiceIGPM === 0 || !nIndiceIGPM){
-	  		return this.FormatCurrency((nLastPOPricesSum).toFixed(2));
-	  	}
-	  	return this.FormatCurrency((nLastPOPricesSum + (nLastPOPricesSum * ( nIndiceIGPM / 100 ) )).toFixed(2)) ;
+	  ValorUltimoPrecoCorrigido : function(nLastPOPricesSum, nIndiceIGPM) {
+		  if (!nLastPOPricesSum) { return ""; }
+		  if (nIndiceIGPM === 0 || !nIndiceIGPM) { return this.FormatCurrency((nLastPOPricesSum).toFixed(2)); }
+		  return this.FormatCurrency((nLastPOPricesSum + (nLastPOPricesSum * (nIndiceIGPM / 100))).toFixed(2));
 	  },
-	  ValorCorrigidoUltPrecoSomatorio : function(nLastPOPriceSum, nIndex){
-	  	if(!nIndex){
-	  		nIndex = 0;
-	  	}
-	  	return this.FormatCurrency((nLastPOPriceSum + (nLastPOPriceSum * ( nIndex / 100 ) )).toFixed(2));
+	  ValorCorrigidoUltPrecoSomatorio : function(nLastPOPriceSum, nLastPOPriceSumIndexed, nIndex) {
+		  if (!nIndex) {
+			  nIndex = 0;
+		  }
+		  return this.FormatCurrency(    ((Number(nLastPOPriceSumIndexed) + (Number(nLastPOPriceSumIndexed) * (nIndex / 100))) + Number(nLastPOPriceSum)).toFixed(2)     );
 	  },
-	  ValorCorrigidoUltPrecoSomatorioDiff : function(nSomatorioRfp, nLastPOPriceSum, nIndex){
-	  	if(!nLastPOPriceSum){
-	  		return "";
-	  	}
-	  	var nFixedIndexValue = nLastPOPriceSum + (nLastPOPriceSum * ( nIndex / 100 ) );
-	  	if(nFixedIndexValue === 0){
-	  		return "0";
-	  	}
-	  	return nFixedIndexValue > nSomatorioRfp ?
-	  			Math.round(( ( nFixedIndexValue - nSomatorioRfp ) / nSomatorioRfp ) * 100) : 
-	  				Math.round(( ( nSomatorioRfp - nFixedIndexValue ) / nFixedIndexValue ) * 100) * -1;
+	  ValorCorrigidoUltPrecoSomatorioDiff : function(nSomatorioRfp, nLastPOPriceSum, nLastPOPriceSumIndexed, nIndex) {
+		  if (!nLastPOPriceSum) { return ""; }
+		  var nFixedIndexValue = Number(nLastPOPriceSum) + Number(nLastPOPriceSumIndexed) + (Number(nLastPOPriceSumIndexed) * (nIndex / 100));
+		  if (nFixedIndexValue === 0) { return "0"; }
+		  return nFixedIndexValue > nSomatorioRfp ? Math.round(((nFixedIndexValue - nSomatorioRfp) / nSomatorioRfp) * 100) : Math
+		      .round(((nSomatorioRfp - nFixedIndexValue) / nFixedIndexValue) * 100)
+		      * -1;
 	  },
-	  ValorCorrigidoUltPrecoSomatorioDiffState : function(nSomatorioRfp, nLastPOPriceSum, nIndex){
-	  	var nFixedIndexValue = nLastPOPriceSum + (nLastPOPriceSum * ( nIndex / 100 ) );
-	  	return nFixedIndexValue > nSomatorioRfp ? "Success" : "Error";
+	  ValorCorrigidoUltPrecoSomatorioDiffState : function(nSomatorioRfp, nLastPOPriceSum, nLastPOPriceSumIndexed, nIndex) {
+		  var nFixedIndexValue = Number(nLastPOPriceSum) + Number(nLastPOPriceSumIndexed) + (Number(nLastPOPriceSumIndexed) * (nIndex / 100));
+		  return nFixedIndexValue > nSomatorioRfp ? "Success" : "Error";
 	  },
 	  MessagesShow : function(oEvent) {
 		  if (!this._oDialog) {
 			  // create dialog via fragment factory
-			  this._oDialog = sap.ui.xmlfragment("fragmentMapaLogMensagens", "mapacomparativo.view.Mapa.MapaLogMensagens", this);
+			  this._oDialog = sap.ui.xmlfragment("fragmentMapaLogMensagens", "lrs.ui5.view.Mapa.MapaLogMensagens", this);
 			  // connect dialog to view (models, lifecycle)
 			  this.getView().addDependent(this._oDialog);
 			  this._oDialog.setModel(this.getView().getModel("mcdetails"), "mcdetails");
@@ -290,6 +284,9 @@ sap.ui.define(
 		  var aSuppliersNotCommon = [];
 		  var nTempItemBidPrice;
 		  var sTempItemBidSupplier;
+		  var sTempItemBidSupplierName;
+		  var nTempItemBidSupplierDate;
+		  var nTempItemBidSupplierQuoted;
 		  var nSumCommonPrice = 0;
 		  var nSumCommonItems = 0;
 		  var nSumNotCommonPrice = 0;
@@ -297,6 +294,8 @@ sap.ui.define(
 		  for (var i = 0; i < aSuppliers.length; i++) 
 		  {
 			  aSuppliersCommon[aSuppliers[i].id] = {
+				    name : aSuppliers[i].name,
+				    quoteditems : aSuppliers[i].quoteditems,
 				    applyCalc : aSuppliers[i].applyCalc,
 				    quoteprice : 0,
 				    quoteitems : 0,
@@ -306,6 +305,8 @@ sap.ui.define(
 						distawardprice : 0,
 				  };
 			  aSuppliersNotCommon[aSuppliers[i].id] = {
+				    name : aSuppliers[i].name,
+				    quoteditems : aSuppliers[i].quoteditems,
 				    applyCalc : aSuppliers[i].applyCalc,
 				    quoteprice : 0,
 				    quoteitems : 0,
@@ -318,6 +319,9 @@ sap.ui.define(
 		  for(var i = 0; i < aItems.length; i++){
 		  	nTempItemBidPrice = 0;
 		  	sTempItemBidSupplier = "";
+			  sTempItemBidSupplierName = "";
+			  nTempItemBidSupplierDate = 0;
+			  nTempItemBidSupplierQuoted = 0;
   			for(var j = 0; j < aItems[i].bids.length; j++){
   				if(!aItems[i].bids[j].supplier){
   					continue;
@@ -326,22 +330,92 @@ sap.ui.define(
   		  		continue;
   		  	}
   				
-			  	if (nTempItemBidPrice == 0) {
-					  nTempItemBidPrice = aItems[i].bids[j].bidprice;
-					  sTempItemBidSupplier = aItems[i].bids[j].supplier;
-				  } else if (nTempItemBidPrice > aItems[i].bids[j].bidprice) {
-					  nTempItemBidPrice = aItems[i].bids[j].bidprice;
-					  sTempItemBidSupplier = aItems[i].bids[j].supplier;
-				  }
-
 			  	switch(aItems[i].allbiddersitem){
 			  		case "1": // itens comuns
 			  				aSuppliersCommon[aItems[i].bids[j].supplier].quoteitems ++;
 			  				aSuppliersCommon[aItems[i].bids[j].supplier].quoteprice += aItems[i].bids[j].bidprice * aItems[i].quantity;
+			  				if (nTempItemBidPrice == 0) {
+								  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+								  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+								  sTempItemBidSupplierName = aSuppliersCommon[aItems[i].bids[j].supplier].name;
+								  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+								  nTempItemBidSupplierQuoted = aSuppliersCommon[aItems[i].bids[j].supplier].quoteditems;
+							  } else if (nTempItemBidPrice > aItems[i].bids[j].bidprice) {
+								  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+								  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+								  sTempItemBidSupplierName = aSuppliersCommon[aItems[i].bids[j].supplier].name;
+								  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+								  nTempItemBidSupplierQuoted = aSuppliersCommon[aItems[i].bids[j].supplier].quoteditems;
+							  } else if (nTempItemBidPrice == aItems[i].bids[j].bidprice) {
+								  // APLICAR CRITERIO DESEMPATE
+								  // Alem de comparar o preço, comparar em ordem os critérios de
+									// desempate:
+								  // 2. Delivery date (prazo de entrega em dias)
+								  // 3. Qtde de itens ofertados por fornecedor
+								  // 4. Nome do fornecedor (ordem alfabetica)
+								  if (Number(nTempItemBidSupplierDate) > Number(aItems[i].bids[j].deliverydate)) {
+									  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+									  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+									  sTempItemBidSupplierName = aSuppliersCommon[aItems[i].bids[j].supplier].name;
+									  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+									  nTempItemBidSupplierQuoted = aSuppliersCommon[aItems[i].bids[j].supplier].quoteditems;
+								  } else if (nTempItemBidSupplierQuoted < aSuppliersCommon[aItems[i].bids[j].supplier].quoteitems) {
+									  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+									  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+									  sTempItemBidSupplierName = aSuppliersCommon[aItems[i].bids[j].supplier].name;
+									  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+									  nTempItemBidSupplierQuoted = aSuppliersCommon[aItems[i].bids[j].supplier].quoteditems;
+								  } else if (sTempItemBidSupplierName.localeCompare(aSuppliersCommon[aItems[i].bids[j].supplier].name) >= 0) {
+									  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+									  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+									  sTempItemBidSupplierName = aSuppliersCommon[aItems[i].bids[j].supplier].name;
+									  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+									  nTempItemBidSupplierQuoted = aSuppliersCommon[aItems[i].bids[j].supplier].quoteditems;
+								  }
+							  }
 			  				break;
 			  		case "2": // itens não comuns
 			  				aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteitems ++;
 			  				aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteprice += aItems[i].bids[j].bidprice * aItems[i].quantity;
+			  				if (nTempItemBidPrice == 0) {
+								  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+								  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+								  sTempItemBidSupplierName = aSuppliersNotCommon[aItems[i].bids[j].supplier].name;
+								  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+								  nTempItemBidSupplierQuoted = aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteditems;
+							  } else if (nTempItemBidPrice > aItems[i].bids[j].bidprice) {
+								  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+								  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+								  sTempItemBidSupplierName = aSuppliersNotCommon[aItems[i].bids[j].supplier].name;
+								  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+								  nTempItemBidSupplierQuoted = aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteditems;
+							  } else if (nTempItemBidPrice == aItems[i].bids[j].bidprice) {
+								  // APLICAR CRITERIO DESEMPATE
+								  // Alem de comparar o preço, comparar em ordem os critérios de
+									// desempate:
+								  // 2. Delivery date (prazo de entrega em dias)
+								  // 3. Qtde de itens ofertados por fornecedor
+								  // 4. Nome do fornecedor (ordem alfabetica)
+								  if (Number(nTempItemBidSupplierDate) > Number(aItems[i].bids[j].deliverydate)) {
+									  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+									  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+									  sTempItemBidSupplierName = aSuppliersNotCommon[aItems[i].bids[j].supplier].name;
+									  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+									  nTempItemBidSupplierQuoted = aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteditems;
+								  } else if (nTempItemBidSupplierQuoted < aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteitems) {
+									  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+									  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+									  sTempItemBidSupplierName = aSuppliersNotCommon[aItems[i].bids[j].supplier].name;
+									  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+									  nTempItemBidSupplierQuoted = aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteditems;
+								  } else if (sTempItemBidSupplierName.localeCompare(aSuppliersNotCommon[aItems[i].bids[j].supplier].name) >= 0) {
+									  nTempItemBidPrice = aItems[i].bids[j].bidprice;
+									  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+									  sTempItemBidSupplierName = aSuppliersNotCommon[aItems[i].bids[j].supplier].name;
+									  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate;
+									  nTempItemBidSupplierQuoted = aSuppliersNotCommon[aItems[i].bids[j].supplier].quoteditems;
+								  }
+							  }
 				  			break;
 			  	}
   			}
@@ -349,6 +423,7 @@ sap.ui.define(
 		  		case "1": // itens comuns
 	  				nSumCommonItems ++;
 		  			if (!!sTempItemBidSupplier) {
+		  				//APLICAR CRITERIO DESEMPATE - campo awardeditems
 		  				aSuppliersCommon[sTempItemBidSupplier].awardeditems ++;
 		  				aSuppliersCommon[sTempItemBidSupplier].awardedprice += (nTempItemBidPrice * aItems[i].quantity);
 		  				nSumCommonPrice += (nTempItemBidPrice * aItems[i].quantity);
@@ -357,6 +432,7 @@ sap.ui.define(
 		  		case "2": // itens não comuns
 	  				nSumNotCommonItems ++;
 		  			if (!!sTempItemBidSupplier) {
+		  				//APLICAR CRITERIO DESEMPATE- campo awardeditems
 		  				aSuppliersNotCommon[sTempItemBidSupplier].awardeditems ++;
 		  				aSuppliersNotCommon[sTempItemBidSupplier].awardedprice += (nTempItemBidPrice * aItems[i].quantity);
 		  				nSumNotCommonPrice += (nTempItemBidPrice * aItems[i].quantity);
@@ -399,9 +475,13 @@ sap.ui.define(
 		  var nSuppliersWithCalc = 0;
 		  var nTempItemBidPrice;
 		  var sTempItemBidSupplier;
+		  var sTempItemBidSupplierName;
+		  var nTempItemBidSupplierDate;
+		  var nTempItemBidSupplierQuoted;
 		  var nSumAllItemsPrice = 0;
 		  var nSumAllItemsAwarded = 0;
 		  var nSumAllItemsLastPOPriceSum = 0;
+		  var nSumAllItemsLastPOPriceSumAvg = 0;
 		  var oSuppliersSumCalc =
 		  {
 		    nSumAwarded : 0,
@@ -414,11 +494,14 @@ sap.ui.define(
 			  }
 			  map =
 			  {
+				    name : aSuppliers[i].name,
+				    quoteditems : aSuppliers[i].quoteditems,
 			    applyCalc : aSuppliers[i].applyCalc,
 			    awarded : 0,
 			    quoteprice : 0,
 			    exclusive : 0,
 			    lastpopricesum : 0,
+			    lastpopricesumquoteawardavg : 0,
 			    lastpopricesumquoteaward : 0
 			  };
 			  aSuppliersCalc[aSuppliers[i].id] = map;
@@ -426,6 +509,9 @@ sap.ui.define(
 
 		  for (var i = 0; i < aItems.length; i++) {
 			  sTempItemBidSupplier = "";
+			  sTempItemBidSupplierName = "";
+			  nTempItemBidSupplierDate = 0;
+			  nTempItemBidSupplierQuoted = 0;
 			  nTempItemBidPrice = 0;
 			  nRemoveApplyCalc = 0;
 			  var nTotalBids = 0;
@@ -441,14 +527,46 @@ sap.ui.define(
 				  }else{
 				  	aSuppliersCalc[aItems[i].bids[j].supplier].lastpopricesum += !!aItems[i].bids[j].bidprice ? aItems[i].bids[j].bidprice * aItems[i].quantity : 0 ;
 				  }
-				  
+
 				  if (nTempItemBidPrice == 0) {
 					  nTempItemBidPrice = aItems[i].bids[j].bidprice;
 					  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+					  sTempItemBidSupplierName = aSuppliersCalc[aItems[i].bids[j].supplier].name;
+					  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate; 
+					  nTempItemBidSupplierQuoted = aSuppliersCalc[aItems[i].bids[j].supplier].quoteditems;
 				  } else if (nTempItemBidPrice > aItems[i].bids[j].bidprice) {
 					  nTempItemBidPrice = aItems[i].bids[j].bidprice;
-					  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+					  sTempItemBidSupplier = aItems[i].bids[j].supplier; 
+					  sTempItemBidSupplierName = aSuppliersCalc[aItems[i].bids[j].supplier].name;
+					  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate; 
+					  nTempItemBidSupplierQuoted = aSuppliersCalc[aItems[i].bids[j].supplier].quoteditems;
+				  } else if (nTempItemBidPrice == aItems[i].bids[j].bidprice){
+				  	//APLICAR CRITERIO DESEMPATE 
+					  //Alem de comparar o preço, comparar em ordem os critérios de desempate:
+					  //2. Delivery date (prazo de entrega em dias)
+					  //3. Qtde de itens ofertados por fornecedor
+					  //4. Nome do fornecedor (ordem alfabetica)
+				  	if(Number(nTempItemBidSupplierDate) > Number(aItems[i].bids[j].deliverydate)){
+				  		nTempItemBidPrice = aItems[i].bids[j].bidprice;
+						  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+						  sTempItemBidSupplierName = aSuppliersCalc[aItems[i].bids[j].supplier].name;
+						  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate; 
+						  nTempItemBidSupplierQuoted = aSuppliersCalc[aItems[i].bids[j].supplier].quoteditems;
+				  	} else if( nTempItemBidSupplierQuoted < aSuppliersCalc[aItems[i].bids[j].supplier].quoteitems ){
+				  		nTempItemBidPrice = aItems[i].bids[j].bidprice;
+						  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+						  sTempItemBidSupplierName = aSuppliersCalc[aItems[i].bids[j].supplier].name;
+						  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate; 
+						  nTempItemBidSupplierQuoted = aSuppliersCalc[aItems[i].bids[j].supplier].quoteditems;
+				  	} else if(sTempItemBidSupplierName.localeCompare(aSuppliersCalc[aItems[i].bids[j].supplier].name) >= 0){
+				  		nTempItemBidPrice = aItems[i].bids[j].bidprice;
+						  sTempItemBidSupplier = aItems[i].bids[j].supplier;
+						  sTempItemBidSupplierName = aSuppliersCalc[aItems[i].bids[j].supplier].name;
+						  nTempItemBidSupplierDate = aItems[i].bids[j].deliverydate; 
+						  nTempItemBidSupplierQuoted = aSuppliersCalc[aItems[i].bids[j].supplier].quoteditems;
+				  	}
 				  }
+				  
 				  if (aItems[i].bids[j].bidprice > 0) {
 					  nTotalBids++;
 				  }
@@ -456,12 +574,10 @@ sap.ui.define(
 			  if (!!sTempItemBidSupplier) {
 				  aSuppliersCalc[sTempItemBidSupplier].awarded++;
 				  aSuppliersCalc[sTempItemBidSupplier].quoteprice = aSuppliersCalc[sTempItemBidSupplier].quoteprice + (nTempItemBidPrice * aItems[i].quantity);
-if(!aItems[i].lastpoprice && !aItems[i].averageprice){
-				  	
-				  }else if(!aItems[i].averageprice){
-				  	aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward = aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward + (aItems[i].lastpoprice * aItems[i].quantity) ;
+				  if(!aItems[i].averageprice){
+				  	aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward = aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward + (nTempItemBidPrice * aItems[i].quantity) ;
 				  }else{
-				  	aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward = aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteaward + (aItems[i].averageprice * aItems[i].quantity) ;
+				  	aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteawardavg = aSuppliersCalc[sTempItemBidSupplier].lastpopricesumquoteawardavg + (aItems[i].averageprice * aItems[i].quantity) ;
 				  }
 				  oSuppliersSumCalc.nSumPrice += nTempItemBidPrice * aItems[i].quantity;
 				  oSuppliersSumCalc.nSumAwarded++;
@@ -491,11 +607,14 @@ if(!aItems[i].lastpoprice && !aItems[i].averageprice){
 			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/exclusiveitems", aSuppliersCalc[aSuppliers[i].id].exclusive);
 			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/lastpopricesum", aSuppliersCalc[aSuppliers[i].id].lastpopricesum);
 			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/lastpopricesumquoteaward", Math.round(aSuppliersCalc[aSuppliers[i].id].lastpopricesumquoteaward * 100)/100);
+			  this.getView().getModel("mcdetails").setProperty("/suppliers/" + aSuppliers[i].path + "/lastpopricesumquoteawardavg", Math.round(aSuppliersCalc[aSuppliers[i].id].lastpopricesumquoteawardavg * 100)/100);
 			  nSumAllItemsLastPOPriceSum += aSuppliersCalc[aSuppliers[i].id].lastpopricesumquoteaward;
+			  nSumAllItemsLastPOPriceSumAvg += aSuppliersCalc[aSuppliers[i].id].lastpopricesumquoteawardavg;
 		  }
 		  this.getView().getModel("Control").setProperty("/AnaliseItem/AwardedPrice", nSumAllItemsPrice );
 		  this.getView().getModel("Control").setProperty("/AnaliseItem/AwardedItems", nSumAllItemsAwarded );
 		  this.getView().getModel("Control").setProperty("/AnaliseItem/LastPOPricesSum", nSumAllItemsLastPOPriceSum );
+		  this.getView().getModel("Control").setProperty("/AnaliseItem/LastPOPricesSumAvg", nSumAllItemsLastPOPriceSumAvg );
 		  this.updateCommonItems();
 		  this.FilterTabelaItens(null);
 	  },
@@ -514,12 +633,12 @@ if(!aItems[i].lastpoprice && !aItems[i].averageprice){
 				  aFilters.push( new sap.ui.model.Filter("allbiddersitem", sap.ui.model.FilterOperator.EQ, "2") );
 				  break;
 		  }
-		  switch (this.getView().getModel("Control").getObject("/AnaliseItem/ExibirApenasDivergencia")){
-		  	case true:
-		  		aFilters.push(new sap.ui.model.Filter("hasdiffitem", sap.ui.model.FilterOperator.EQ, true ));
-		  		break;
-		  	case false:
-		  		break;
+		  switch (this.getView().getModel("Control").getObject("/AnaliseItem/ExibirApenasDivergencia")) {
+			  case true:
+				  aFilters.push(new sap.ui.model.Filter("hasdiffitem", sap.ui.model.FilterOperator.EQ, true));
+				  break;
+			  case false:
+				  break;
 		  }
 		  oBinding.filter(aFilters);
 	  }

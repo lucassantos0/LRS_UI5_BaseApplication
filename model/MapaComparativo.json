@@ -16,7 +16,9 @@
 			"exclusiveitems": 0,
 			"lastpopricesum": 0,
 			"lastpopricesumquoteaward": 0,
-			"referenceprice": 27982.85,
+			"lastpopricesumquoteawardavg": 0,
+			"referenceprice": 28042.54,
+			"referencepriceavg": 0,
 			"common": {
 				"distawarditems": 0,
 				"distawardprice": 0,
@@ -175,12 +177,6 @@
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "A data de remessa estatística situa-se no passado",
-					"subtitle": ""
-				},
-				{
-					"type": "Error",
-					"title": "E(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -191,8 +187,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -203,8 +199,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -215,8 +211,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -227,8 +223,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -239,8 +235,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -251,8 +247,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -263,8 +259,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -275,8 +271,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -287,8 +283,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -299,57 +295,123 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa estatística situa-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa estatística situa-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa estatística situa-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa estatística situa-se no passado",
 					"subtitle": ""
 				},
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "Data de entrega pode ser cumprida?",
+					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
 					"subtitle": ""
 				}
 			]
@@ -368,7 +430,9 @@
 			"exclusiveitems": 0,
 			"lastpopricesum": 0,
 			"lastpopricesumquoteaward": 0,
-			"referenceprice": 27982.85,
+			"lastpopricesumquoteawardavg": 0,
+			"referenceprice": 28042.54,
+			"referencepriceavg": 0,
 			"common": {
 				"distawarditems": 0,
 				"distawardprice": 0,
@@ -455,12 +519,6 @@
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "A data de remessa estatística situa-se no passado",
-					"subtitle": ""
-				},
-				{
-					"type": "Error",
-					"title": "E(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -471,8 +529,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -483,8 +541,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -495,8 +553,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -507,8 +565,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -519,8 +577,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -531,8 +589,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -543,9 +601,15 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
 					"subtitle": ""
 				}
 			]
@@ -564,7 +628,9 @@
 			"exclusiveitems": 0,
 			"lastpopricesum": 0,
 			"lastpopricesumquoteaward": 0,
-			"referenceprice": 27982.85,
+			"lastpopricesumquoteawardavg": 0,
+			"referenceprice": 28042.54,
+			"referencepriceavg": 0,
 			"common": {
 				"distawarditems": 0,
 				"distawardprice": 0,
@@ -675,12 +741,6 @@
 				{
 					"type": "Warning",
 					"title": "W(ME)",
-					"description": "A data de remessa estatística situa-se no passado",
-					"subtitle": ""
-				},
-				{
-					"type": "Error",
-					"title": "E(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -691,8 +751,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -703,8 +763,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -715,8 +775,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -727,8 +787,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -739,8 +799,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -751,8 +811,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -763,8 +823,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -775,8 +835,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -787,8 +847,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -799,8 +859,8 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
 					"subtitle": ""
 				},
@@ -811,9 +871,15 @@
 					"subtitle": ""
 				},
 				{
-					"type": "Error",
-					"title": "E(ME)",
+					"type": "Warning",
+					"title": "W(ME)",
 					"description": "A data de remessa encontra-se no passado",
+					"subtitle": ""
+				},
+				{
+					"type": "Warning",
+					"title": "W(ME)",
+					"description": "A data de remessa estatística situa-se no passado",
 					"subtitle": ""
 				}
 			]
@@ -1100,7 +1166,7 @@
 			}
 		},
 		{
-			"label": "Data entrega",
+			"label": "Prazo de entrega em dias",
 			"labelHeader": "SPRINT 3.1 LTDA",
 			"visible": "{mcdetails>/suppliers/0/applyCalc}",
 			"minWidth": "7rem",
@@ -1269,7 +1335,7 @@
 			}
 		},
 		{
-			"label": "Data entrega",
+			"label": "Prazo de entrega em dias",
 			"labelHeader": "teste integracao 0207",
 			"visible": "{mcdetails>/suppliers/1/applyCalc}",
 			"minWidth": "7rem",
@@ -1438,7 +1504,7 @@
 			}
 		},
 		{
-			"label": "Data entrega",
+			"label": "Prazo de entrega em dias",
 			"labelHeader": "Fornecedor DUMMY 2",
 			"visible": "{mcdetails>/suppliers/2/applyCalc}",
 			"minWidth": "7rem",
@@ -1478,23 +1544,23 @@
 			"rfqitem": "00001",
 			"ncmerp": "3923.90.00",
 			"deliverydate": "20190704",
-			"lastpoprice": 2.00,
+			"lastpoprice": 2.44,
 			"lastposupplierid": "2100010   ",
 			"lastposuppliername": "Marco A. Zapparoli De Barros",
-			"lastpodate": "20190626",
-			"lastpoid": "4500512268 / 00001",
+			"lastpodate": "20190614",
+			"lastpoid": "4500512136 / 00001",
 			"priceunit": 1,
 			"averageprice": 0,
 			"bids": [
 				{
 					"supplier": "0001107666",
 					"hasdiff": true,
-					"bidprice": 1.81,
-					"taxicmserp": 0,
+					"bidprice": 245.53,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 15.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1502,7 +1568,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3923.90.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1510,12 +1576,12 @@
 				{
 					"supplier": "0001303576",
 					"hasdiff": true,
-					"bidprice": 2.10,
-					"taxicmserp": 0,
+					"bidprice": 284.87,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 15.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1523,7 +1589,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3923.90.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1569,13 +1635,13 @@
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 2.10,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 457.17,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1583,7 +1649,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.21.00",
-					"deliverydate": "15.07.2019",
+					"deliverydate": "11",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1611,13 +1677,13 @@
 				},
 				{
 					"supplier": "0008000976",
-					"hasdiff": true,
-					"bidprice": 1.89,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 411.45,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1625,7 +1691,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.21.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1643,20 +1709,20 @@
 			"lastpoprice": 0.68,
 			"lastposupplierid": "1100941   ",
 			"lastposuppliername": "Copecar Ind Com de Pecas Agricolas",
-			"lastpodate": "20181211",
+			"lastpodate": "20181107",
 			"lastpoid": "4500504401 / 00001",
 			"priceunit": 100,
 			"averageprice": 0,
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 0.68,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 345.44,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1664,20 +1730,20 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3923.50.00",
-					"deliverydate": "16.07.2019",
+					"deliverydate": "12",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
 				},
 				{
 					"supplier": "0001303576",
-					"hasdiff": true,
-					"bidprice": 0.50,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 254.00,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1685,7 +1751,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3923.50.00",
-					"deliverydate": "15.07.2019",
+					"deliverydate": "11",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1724,7 +1790,7 @@
 			"lastpoprice": 38.00,
 			"lastposupplierid": "1101667   ",
 			"lastposuppliername": "Coml Devides Borr Mat Ind Lav Lt",
-			"lastpodate": "20181227",
+			"lastpodate": "20181218",
 			"lastpoid": "4500510549 / 00001",
 			"priceunit": 1,
 			"averageprice": 0,
@@ -1732,12 +1798,12 @@
 				{
 					"supplier": "0001107666",
 					"hasdiff": true,
-					"bidprice": 47.13,
-					"taxicmserp": 0,
+					"bidprice": 377.04,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 10.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1745,7 +1811,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "4009.31.00",
-					"deliverydate": "17.07.2019",
+					"deliverydate": "13",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1774,12 +1840,12 @@
 				{
 					"supplier": "0008000976",
 					"hasdiff": true,
-					"bidprice": 46.42,
-					"taxicmserp": 0,
+					"bidprice": 371.36,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 10.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1787,7 +1853,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "4009.31.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1805,20 +1871,20 @@
 			"lastpoprice": 2.47,
 			"lastposupplierid": "1101382   ",
 			"lastposuppliername": "Ruflav Comercio De Pecas Ltda",
-			"lastpodate": "20180809",
+			"lastpodate": "20180801",
 			"lastpoid": "4500488985 / 00001",
 			"priceunit": 100,
 			"averageprice": 0,
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 2.47,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 19.76,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1826,7 +1892,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7307.19.20",
-					"deliverydate": "18.07.2019",
+					"deliverydate": "14",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1854,13 +1920,13 @@
 				},
 				{
 					"supplier": "0008000976",
-					"hasdiff": true,
-					"bidprice": 2.39,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 19.12,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1868,7 +1934,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7307.19.20",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1886,20 +1952,20 @@
 			"lastpoprice": 78.44,
 			"lastposupplierid": "1101346   ",
 			"lastposuppliername": "UBB Uniao Bras de Artefatos Bor Lt",
-			"lastpodate": "20180927",
+			"lastpodate": "20180924",
 			"lastpoid": "4500496762 / 00001",
 			"priceunit": 1000,
 			"averageprice": 0,
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 57.30,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 630.30,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1907,7 +1973,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7609.00.00",
-					"deliverydate": "19.07.2019",
+					"deliverydate": "15",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1935,13 +2001,13 @@
 				},
 				{
 					"supplier": "0008000976",
-					"hasdiff": true,
-					"bidprice": 59.20,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 651.20,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1949,7 +2015,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7609.00.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -1967,20 +2033,20 @@
 			"lastpoprice": 5.07,
 			"lastposupplierid": "1100941   ",
 			"lastposuppliername": "Copecar Ind Com de Pecas Agricolas",
-			"lastpodate": "20181106",
+			"lastpodate": "20181105",
 			"lastpoid": "4500503773 / 00001",
 			"priceunit": 100,
 			"averageprice": 0,
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 5.07,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 50.70,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -1988,20 +2054,20 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8432.90.00",
-					"deliverydate": "20.07.2019",
+					"deliverydate": "16",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
 				},
 				{
 					"supplier": "0001303576",
-					"hasdiff": true,
-					"bidprice": 4.89,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 48.90,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2009,7 +2075,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8432.90.00",
-					"deliverydate": "16.07.2019",
+					"deliverydate": "12",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2048,20 +2114,20 @@
 			"lastpoprice": 10.00,
 			"lastposupplierid": "1100208   ",
 			"lastposuppliername": "Hidra-Sert Conexões e Equip. Hid. Ltda",
-			"lastpodate": "20181110",
+			"lastpodate": "20181105",
 			"lastpoid": "4500503775 / 00001",
 			"priceunit": 1,
 			"averageprice": 0,
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 10.00,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 710.00,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2069,7 +2135,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7307.19.90",
-					"deliverydate": "21.07.2019",
+					"deliverydate": "17",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2097,13 +2163,13 @@
 				},
 				{
 					"supplier": "0008000976",
-					"hasdiff": true,
-					"bidprice": 15.00,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 1065.00,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2111,7 +2177,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7307.19.90",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2137,12 +2203,12 @@
 				{
 					"supplier": "0001107666",
 					"hasdiff": true,
-					"bidprice": 9.18,
+					"bidprice": 110.16,
 					"taxicmserp": 0,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 8.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2150,7 +2216,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "4016.93.00",
-					"deliverydate": "22.07.2019",
+					"deliverydate": "18",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2179,12 +2245,12 @@
 				{
 					"supplier": "0008000976",
 					"hasdiff": true,
-					"bidprice": 8.80,
+					"bidprice": 105.60,
 					"taxicmserp": 0,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 8.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2192,7 +2258,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "4016.93.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2217,13 +2283,13 @@
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 11.40,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 45.60,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2231,7 +2297,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8708.99.90",
-					"deliverydate": "23.07.2019",
+					"deliverydate": "19",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2259,13 +2325,13 @@
 				},
 				{
 					"supplier": "0008000976",
-					"hasdiff": true,
-					"bidprice": 8.50,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 34.00,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2273,7 +2339,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8708.99.90",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2299,12 +2365,12 @@
 				{
 					"supplier": "0001107666",
 					"hasdiff": true,
-					"bidprice": 53.85,
-					"taxicmserp": 0,
+					"bidprice": 215.40,
+					"taxicmserp": 12.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 12.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2312,7 +2378,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8482.50.90",
-					"deliverydate": "24.07.2019",
+					"deliverydate": "20",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2320,12 +2386,12 @@
 				{
 					"supplier": "0001303576",
 					"hasdiff": true,
-					"bidprice": 52.99,
-					"taxicmserp": 0,
+					"bidprice": 211.96,
+					"taxicmserp": 12.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 12.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2333,7 +2399,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8482.50.90",
-					"deliverydate": "17.07.2019",
+					"deliverydate": "13",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2372,7 +2438,7 @@
 			"lastpoprice": 20.16,
 			"lastposupplierid": "1100941   ",
 			"lastposuppliername": "Copecar Ind Com de Pecas Agricolas",
-			"lastpodate": "20180906",
+			"lastpodate": "20180904",
 			"lastpoid": "4500493977 / 00001",
 			"priceunit": 100,
 			"averageprice": 0,
@@ -2380,8 +2446,8 @@
 				{
 					"supplier": "0001107666",
 					"hasdiff": true,
-					"bidprice": 20.16,
-					"taxicmserp": 0,
+					"bidprice": 504.00,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
@@ -2393,7 +2459,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.40.90",
-					"deliverydate": "25.07.2019",
+					"deliverydate": "21",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2422,8 +2488,8 @@
 				{
 					"supplier": "0008000976",
 					"hasdiff": true,
-					"bidprice": 20.00,
-					"taxicmserp": 0,
+					"bidprice": 500.00,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
@@ -2435,7 +2501,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.40.90",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2460,13 +2526,13 @@
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 5.79,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 11.58,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2474,20 +2540,20 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8432.90.00",
-					"deliverydate": "26.07.2019",
+					"deliverydate": "22",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
 				},
 				{
 					"supplier": "0001303576",
-					"hasdiff": true,
-					"bidprice": 4.99,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 9.98,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2495,7 +2561,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8432.90.00",
-					"deliverydate": "18.07.2019",
+					"deliverydate": "14",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2541,13 +2607,13 @@
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 84.35,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 2108.75,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2555,7 +2621,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7609.00.00",
-					"deliverydate": "27.07.2019",
+					"deliverydate": "23",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2583,13 +2649,13 @@
 				},
 				{
 					"supplier": "0008000976",
-					"hasdiff": true,
-					"bidprice": 83.99,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 2099.75,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2597,7 +2663,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7609.00.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2615,20 +2681,20 @@
 			"lastpoprice": 3.31,
 			"lastposupplierid": "1100941   ",
 			"lastposuppliername": "Copecar Ind Com de Pecas Agricolas",
-			"lastpodate": "20180711",
+			"lastpodate": "20180625",
 			"lastpoid": "4500483791 / 00004",
 			"priceunit": 1000,
 			"averageprice": 0,
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 3.31,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 810.95,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2636,20 +2702,20 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8412.90.10",
-					"deliverydate": "28.07.2019",
+					"deliverydate": "24",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
 				},
 				{
 					"supplier": "0001303576",
-					"hasdiff": true,
-					"bidprice": 2.99,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 732.55,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2657,7 +2723,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "8412.90.10",
-					"deliverydate": "19.07.2019",
+					"deliverydate": "15",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2705,11 +2771,11 @@
 					"supplier": "0001107666",
 					"hasdiff": true,
 					"bidprice": 92.60,
-					"taxicmserp": 0,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 8.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2717,7 +2783,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "4016.93.00",
-					"deliverydate": "29.07.2019",
+					"deliverydate": "25",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2747,11 +2813,11 @@
 					"supplier": "0008000976",
 					"hasdiff": true,
 					"bidprice": 91.55,
-					"taxicmserp": 0,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 8.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2759,7 +2825,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "4016.93.00",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2785,8 +2851,8 @@
 				{
 					"supplier": "0001107666",
 					"hasdiff": true,
-					"bidprice": 104.56,
-					"taxicmserp": 0,
+					"bidprice": 313.68,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
@@ -2798,7 +2864,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.40.90",
-					"deliverydate": "30.07.2019",
+					"deliverydate": "26",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2806,8 +2872,8 @@
 				{
 					"supplier": "0001303576",
 					"hasdiff": true,
-					"bidprice": 103.99,
-					"taxicmserp": 0,
+					"bidprice": 311.97,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
@@ -2819,7 +2885,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.40.90",
-					"deliverydate": "20.07.2019",
+					"deliverydate": "16",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2866,8 +2932,8 @@
 				{
 					"supplier": "0001107666",
 					"hasdiff": true,
-					"bidprice": 129.88,
-					"taxicmserp": 0,
+					"bidprice": 1039.04,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
@@ -2879,7 +2945,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.40.90",
-					"deliverydate": "31.07.2019",
+					"deliverydate": "27",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2908,8 +2974,8 @@
 				{
 					"supplier": "0008000976",
 					"hasdiff": true,
-					"bidprice": 128.88,
-					"taxicmserp": 0,
+					"bidprice": 1031.04,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
@@ -2921,7 +2987,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "3917.40.90",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -2946,13 +3012,13 @@
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
+					"hasdiff": false,
 					"bidprice": 6.98,
-					"taxicmserp": 0,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2960,20 +3026,20 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7412.20.00",
-					"deliverydate": "01.08.2019",
+					"deliverydate": "28",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
 				},
 				{
 					"supplier": "0001303576",
-					"hasdiff": true,
+					"hasdiff": false,
 					"bidprice": 7.99,
-					"taxicmserp": 0,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -2981,7 +3047,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7412.20.00",
-					"deliverydate": "21.07.2019",
+					"deliverydate": "17",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -3027,13 +3093,13 @@
 			"bids": [
 				{
 					"supplier": "0001107666",
-					"hasdiff": true,
-					"bidprice": 9.80,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 19.60,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -3041,7 +3107,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7307.19.20",
-					"deliverydate": "02.08.2019",
+					"deliverydate": "29",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
@@ -3069,13 +3135,13 @@
 				},
 				{
 					"supplier": "0008000976",
-					"hasdiff": true,
-					"bidprice": 8.99,
-					"taxicmserp": 0,
+					"hasdiff": false,
+					"bidprice": 17.98,
+					"taxicmserp": 18.00,
 					"taxicmsariba": 18.00,
 					"taxbasecalculoicmserp": 0,
 					"taxbasecalculoicmsariba": 0,
-					"taxipierp": 0,
+					"taxipierp": 5.00,
 					"taxipiariba": 5.00,
 					"taxbasecalculoipierp": 0,
 					"taxbasecalculoipiariba": 0,
@@ -3083,7 +3149,7 @@
 					"taxissariba": 0,
 					"ncmerp": "",
 					"ncmariba": "7307.19.20",
-					"deliverydate": "14.07.2019",
+					"deliverydate": "10",
 					"ivaerp": "C3",
 					"incoterms": "CIF",
 					"incotermsvalue": 0
