@@ -11,13 +11,13 @@
 			width="20rem"
 			height="10rem"
 			alignItems="left"
-			justifyContent="SpaceBetween"
-			segments="{
-				path: 'mcdetails>/suppliers' 
-			}">
+			justifyContent="SpaceBetween">
 			<m:items>
 				<InteractiveDonutChart
-					selectionChanged="onSelectionChanged">
+					selectionChanged="onSelectionChanged"
+					segments="{
+						path: 'mcdetails>/suppliers' 
+					}">
 					<segments>
 						<InteractiveDonutChartSegment
 							label="{mcdetails>id}"
