@@ -8,7 +8,7 @@
 	xmlns:l="sap.ui.layout">
 	<m:VBox>
 		<m:MessageStrip
-			text="Distribuição de valor premiado por fornecedor"
+			text="Distribuição de valor para premiação"
 			type="Information"
 			showIcon="false"
 			class="sapUiMediumMarginBottom">
