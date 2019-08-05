@@ -8,7 +8,7 @@
 	xmlns:l="sap.ui.layout">
 	<m:VBox>
 		<m:FlexBox
-			width="20rem"
+			width="30rem"
 			height="10rem"
 			alignItems="left"
 			justifyContent="SpaceBetween">
@@ -20,8 +20,8 @@
 					}">
 					<segments>
 						<InteractiveDonutChartSegment
-							label="{mcdetails>id}"
-							value="{mcdetails>awardprice}"
+							label="{mcdetails>name}"
+							value="{mcdetails>distawardprice}"
 							displayedValue="{mcdetails>distawardprice}%" />
 					</segments>
 				</InteractiveDonutChart>
