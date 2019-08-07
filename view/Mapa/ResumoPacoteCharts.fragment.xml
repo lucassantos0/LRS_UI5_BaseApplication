@@ -25,7 +25,6 @@
 				<m:FlexBox
 					width="27rem"
 					height="10rem"
-					alignItems="left"
 					justifyContent="SpaceBetween">
 					<m:items>
 						<InteractiveDonutChart
@@ -54,7 +53,6 @@
 				<m:FlexBox
 					width="27rem"
 					height="10rem"
-					alignItems="left"
 					justifyContent="SpaceBetween">
 					<m:items>
 						<InteractiveDonutChart
@@ -83,7 +81,6 @@
 				<m:FlexBox
 					width="27rem"
 					height="10rem"
-					alignItems="left"
 					justifyContent="SpaceBetween">
 					<m:items>
 						<InteractiveDonutChart
