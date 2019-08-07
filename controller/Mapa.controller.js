@@ -122,8 +122,10 @@ sap.ui.define(
 			  multiLabels.push(new sap.m.Label(
 			  {
 			    text : oContext.getObject().labelHeader,
-			    design : "Bold"
-			  }));
+			    design : "Bold",
+			    textAlign: sap.ui.core.TextAlign.Begin,
+			    width: "100%"
+			  }));			  
 		  }
 		  multiLabels.push(new sap.m.Label(
 		  {
@@ -633,12 +635,12 @@ sap.ui.define(
 				  aFilters.push( new sap.ui.model.Filter("allbiddersitem", sap.ui.model.FilterOperator.EQ, "2") );
 				  break;
 		  }
-		  switch (this.getView().getModel("Control").getObject("/AnaliseItem/ExibirApenasDivergencia")) {
-			  case true:
-				  aFilters.push(new sap.ui.model.Filter("hasdiffitem", sap.ui.model.FilterOperator.EQ, true));
-				  break;
-			  case false:
-				  break;
+		  switch (this.getView().getModel("Control").getObject("/AnaliseItem/ExibirApenasDivergencia")){
+		  	case true:
+		  		aFilters.push(new sap.ui.model.Filter("hasdiffitem", sap.ui.model.FilterOperator.EQ, true ));
+		  		break;
+		  	case false:
+		  		break;
 		  }
 		  oBinding.filter(aFilters);
 	  }

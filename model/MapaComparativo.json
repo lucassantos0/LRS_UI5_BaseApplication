@@ -17,7 +17,7 @@
 			"lastpopricesum": 0,
 			"lastpopricesumquoteaward": 0,
 			"lastpopricesumquoteawardavg": 0,
-			"referenceprice": 28042.54,
+			"referenceprice": 27982.85,
 			"referencepriceavg": 0,
 			"common": {
 				"distawarditems": 0,
@@ -431,7 +431,7 @@
 			"lastpopricesum": 0,
 			"lastpopricesumquoteaward": 0,
 			"lastpopricesumquoteawardavg": 0,
-			"referenceprice": 28042.54,
+			"referenceprice": 27982.85,
 			"referencepriceavg": 0,
 			"common": {
 				"distawarditems": 0,
@@ -629,7 +629,7 @@
 			"lastpopricesum": 0,
 			"lastpopricesumquoteaward": 0,
 			"lastpopricesumquoteawardavg": 0,
-			"referenceprice": 28042.54,
+			"referenceprice": 27982.85,
 			"referencepriceavg": 0,
 			"common": {
 				"distawarditems": 0,
@@ -1544,11 +1544,11 @@
 			"rfqitem": "00001",
 			"ncmerp": "3923.90.00",
 			"deliverydate": "20190704",
-			"lastpoprice": 2.44,
+			"lastpoprice": 2.00,
 			"lastposupplierid": "2100010   ",
 			"lastposuppliername": "Marco A. Zapparoli De Barros",
 			"lastpodate": "20190614",
-			"lastpoid": "4500512136 / 00001",
+			"lastpoid": "4500512268 / 00001",
 			"priceunit": 1,
 			"averageprice": 0,
 			"bids": [
@@ -1872,7 +1872,7 @@
 			"lastposupplierid": "1101382   ",
 			"lastposuppliername": "Ruflav Comercio De Pecas Ltda",
 			"lastpodate": "20180801",
-			"lastpoid": "4500488985 / 00001",
+			"lastpoid": "4500488985 / 00002",
 			"priceunit": 100,
 			"averageprice": 0,
 			"bids": [

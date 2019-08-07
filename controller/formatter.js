@@ -66,6 +66,7 @@ window.AnaliseItensVariacaoPrecoState = function(aBids, nLastPoPrice, aSuppliers
 window.CheckBestBidPrice = function(oBid, aBids, aSuppliers) {
 	if (!oBid) { return "None"; }
 	if (oBid.bidprice == 0){ return "None"; }
+	if (!aBids){ return "None"; }
 	var bIsBidBest = false;
 	var map;
 	var aSuppliersCalc = []; 
@@ -89,7 +90,7 @@ window.CheckBestBidPrice = function(oBid, aBids, aSuppliers) {
 		if (aBids[i].bidprice < oBid.bidprice) {
 			return "None"; // 1. If current bid is not best price
 		} else if (aBids[i].bidprice == oBid.bidprice) {
-			if (aBids[i].deliverydate < oBid.deliverydate) {
+			if (Number(aBids[i].deliverydate) < Number(oBid.deliverydate)) {
 				return "None"; // 2. If current bid is not the quickest
 			} else if (aBids[i].deliverydate == oBid.deliverydate) {
 				if(aSuppliersCalc[aBids[i].supplier].quoteditems > aSuppliersCalc[oBid.supplier].quoteditems){ 
@@ -107,6 +108,7 @@ window.CheckBestBidPrice = function(oBid, aBids, aSuppliers) {
 window.CheckBestBidPriceIcon = function(oBid, aBids, aSuppliers) {
 	if (!oBid) { return ""; } 
 	if (oBid.bidprice == 0){ return ""; }
+	if (!aBids){ return ""; }
 	var bIsBidBest = false;
 	var map;
 	var aSuppliersCalc = []; 
@@ -129,19 +131,20 @@ window.CheckBestBidPriceIcon = function(oBid, aBids, aSuppliers) {
 		// Check if supplier surpass the current Bid check criteria
 		if (aBids[i].bidprice < oBid.bidprice) {
 			return ""; // 1. If current bid is not best price
-		} else if (aBids[i].bidprice == oBid.bidprice) {
-			if (aBids[i].deliverydate < oBid.deliverydate) {
-				return ""; // 2. If current bid is not the quickest
-			} else if (aBids[i].deliverydate == oBid.deliverydate) {
-				if(aSuppliersCalc[aBids[i].supplier].quoteditems > aSuppliersCalc[oBid.supplier].quoteditems){ 
-					return ""; //3. If current bid supplier has less quoteditems than comparison
-				} else if(aSuppliersCalc[aBids[i].supplier].quoteditems == aSuppliersCalc[oBid.supplier].quoteditems){
-					if(aSuppliersCalc[aBids[i].supplier].name.localeCompare(aSuppliersCalc[oBid.supplier].name) < 0){
-						return ""; //4. Alphabetically ordered
-					}
-				}
-			}
-		}
+		} 
+//		else if (aBids[i].bidprice == oBid.bidprice) {
+//			if (aBids[i].deliverydate < oBid.deliverydate) {
+//				return ""; // 2. If current bid is not the quickest
+//			} else if (aBids[i].deliverydate == oBid.deliverydate) {
+//				if(aSuppliersCalc[aBids[i].supplier].quoteditems > aSuppliersCalc[oBid.supplier].quoteditems){ 
+//					return ""; //3. If current bid supplier has less quoteditems than comparison
+//				} else if(aSuppliersCalc[aBids[i].supplier].quoteditems == aSuppliersCalc[oBid.supplier].quoteditems){
+//					if(aSuppliersCalc[aBids[i].supplier].name.localeCompare(aSuppliersCalc[oBid.supplier].name) < 0){
+//						return ""; //4. Alphabetically ordered
+//					}
+//				}
+//			}
+//		}
 	}
 	return "sap-icon://flag";
 };
