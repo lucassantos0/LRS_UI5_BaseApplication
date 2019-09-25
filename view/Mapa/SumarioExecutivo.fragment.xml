@@ -40,7 +40,7 @@
 			<Text text="{eventosSourcing>CondPagamento}" />
 		</f:content>
 	</f:SimpleForm>
-	<ScrollContainer width="100%">
+	<ScrollContainer width="100%"> 
 		<Table
 			id="tableSumario"
 			items="{eventosSourcing>sumario/item}">

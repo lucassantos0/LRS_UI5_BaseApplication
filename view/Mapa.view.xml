@@ -111,7 +111,7 @@
 							<blocks>
 								<core:Fragment
 									fragmentName="lrs.ui5.view.Mapa.SumarioExecutivo"
-									type="XML" />
+									type="XML" /> 
 							</blocks>
 						</ObjectPageSubSection>
 					</subSections>
