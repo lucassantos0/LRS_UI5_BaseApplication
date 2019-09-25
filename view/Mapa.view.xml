@@ -105,6 +105,17 @@
 						</ObjectPageSubSection>
 					</subSections>
 				</ObjectPageSection>
+				<ObjectPageSection title="Sumário executivo">
+					<subSections>
+						<ObjectPageSubSection title=" ">
+							<blocks>
+								<core:Fragment
+									fragmentName="lrs.ui5.view.Mapa.SumarioExecutivo"
+									type="XML" />
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
 			</sections>
 		</ObjectPageLayout>
 	</m:App>
