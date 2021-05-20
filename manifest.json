@@ -136,6 +136,11 @@
 			"mcdetails": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/MapaComparativo.json"
+			},
+			"itemAnalysis": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"preload": true
 			}
 		},
 		"resources": {

@@ -35,10 +35,12 @@ sap.ui.define(
 						}
 					};
 
-					/*
+
 					this._oControlModel = new sap.ui.model.json.JSONModel(
 						this._oControlModelData);
 					this.getView().setModel(this._oControlModel, "Control");
+
+					/*
 					//
 					var url_string = window.location.href;
 					var url = new URL(url_string);
@@ -152,8 +154,12 @@ sap.ui.define(
 					oEvent.getParameters().addHeaderParameter(oXRequestedWith);
 				},
 				FormatSavingField: function (nValue1, nValue2) {
-					return (100 - ((nValue2 / nValue1) * 100))
-						.toFixed(3);
+					if (nValue1 && nValue1 !== 0) {
+						return (100 - ((nValue2 / nValue1) * 100))
+							.toFixed(3);
+					}else{
+						return "0";
+					}
 				},
 				FormatSavingFieldStatus: function (nValue1, nValue2) {
 					return (100 - ((nValue2 / nValue1) * 100))
