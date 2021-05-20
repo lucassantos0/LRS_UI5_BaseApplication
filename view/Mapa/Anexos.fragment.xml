@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
+	<VBox>
+		<UploadCollection
+			id="UploadCollection"
+			multiple="false"
+			change="onChange"
+			fileDeleted="onFileDeleted"
+			selectionChange="onSelectionChange"
+			typeMissmatch="onTypeMissmatch"
+			uploadComplete="onUploadComplete"
+			beforeUploadStarts="onBeforeUploadStarts"
+			uploadTerminated="onUploadTerminated"
+			uploadUrl="/sap/opu/odata/sap/zariba_mapa_comparativo_srv/AttachmentSet"
+			items="{
+				path: 'mcMapHelpers>/AttachmentSet',
+				templateShareable: false
+			}"
+			uploadEnabled="true"
+			uploadButtonInvisible="false">
+			<items>
+				<UploadCollectionItem
+					documentId="{mcMapHelpers>Docid}"
+					fileName="{mcMapHelpers>Objdes}.{mcMapHelpers>FileExt}"
+					mimeType="{mcMapHelpers>MimeType}"
+					thumbnailUrl="{thumbnailUrl}"
+					url="/sap/opu/odata/sap/zariba_mapa_comparativo_srv/AttachmentSet(Docid='{mcMapHelpers>Docid}',Objtp='{mcMapHelpers>Objtp}',Objyr='{mcMapHelpers>Objyr}',Objno='{mcMapHelpers>Objno}')/$value"
+					enableEdit="false"
+					enableDelete="false"
+					visibleDelete="false"
+					visibleEdit="false">
+				</UploadCollectionItem>
+			</items>
+		</UploadCollection>				
+	</VBox>
+</core:FragmentDefinition>

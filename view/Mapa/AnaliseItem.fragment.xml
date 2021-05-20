@@ -1,51 +1,137 @@
-<core:FragmentDefinition
-	xmlns:m="sap.m"
-	xmlns:f="sap.ui.layout.form"
-	xmlns:core="sap.ui.core"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:t="sap.ui.table"
-	xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:l="sap.ui.layout">
-	<t:Table
-		id="TabelaItens"
-		enableColumnReordering="false"
-		fixedColumnCount="3"
-		alternateRowColors="true"
-		rows="{mcdetails>/items}"
-		columns="{
-			path: 'mcdetails>/ui5tableconf1',
-			factory: '.AnaliseItemColFactory'
-		}"
-		selectionMode="None"
-		visibleRowCount="14">
-		<t:extension>
-			<m:Toolbar class="sapMTBHeader-CTX">
-				<m:content>
-					<m:ToolbarSpacer />
-					<m:Label text="Exibir apenas divergências:" />
-					<m:CheckBox
-						selected="{Control>/AnaliseItem/ExibirApenasDivergencia}"
-						select="FilterTabelaItens" />
-					<m:Label text="Detalhes último preço:" />
-					<m:CheckBox
-						selected="{Control>/AnaliseItem/UltimoPrecoVisivel}" />
-					<m:Label text="Exibição" />
-					<m:Select
-						forceSelection="true"
-						change="FilterTabelaItens"
-						selectedKey="{Control>/AnaliseItem/Exibicao}">
-						<core:Item
-							key="0"
-							text="Todos os itens" />
-						<core:Item
-							key="1"
-							text="Itens comuns" />
-						<core:Item
-							key="2"
-							text="Itens não-comuns" />
-					</m:Select>
-				</m:content>
-			</m:Toolbar>
-		</t:extension>
-	</t:Table>
+<core:FragmentDefinition xmlns:m="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
+	<m:VBox>
+		<m:MessageStrip type="Information"
+			text="{i18n>Mapa_AnaliseItem_Ajuda}"/>
+<!-- 		<t:Table id="TabelaItens" enableBusyIndicator="true" enableColumnReordering="true" enableCellFilter="true" fixedColumnCount="3" alternateRowColors="true" rows="{mcdetails>/items}" -->
+<!-- 			columns="{ path: 'mcdetails>/ui5tableconf1', factory: '.AnaliseItemColFactory' }" selectionMode="None" visibleRowCount="8" enableColumnFreeze="true" > -->
+<!-- 			<t:extension> -->
+<!-- 				<m:Toolbar class="sapMTBHeader-CTX"> -->
+<!-- 					<m:content> -->
+<!-- 						<m:ToolbarSpacer/> -->
+<!-- 						<m:Label text="{i18n>Mapa_AnaliseItem_Divergencias}"/> -->
+<!-- 						<m:CheckBox selected="{Control>/AnaliseItem/ExibirApenasDivergencia}" select="FilterTabelaItens"/> -->
+<!-- 						<m:Label text="{i18n>Mapa_AnaliseItem_DetalhesUltimoPreco}"/> -->
+<!-- 						<m:CheckBox id="btnUltimoPreco" selected="{Control>/AnaliseItem/UltimoPrecoVisivel}"/> -->
+<!-- 						<m:Label text="{i18n>Mapa_AnaliseItem_Exibicao}"/> -->
+<!-- 						<m:Select forceSelection="true" change="FilterTabelaItens" selectedKey="{Control>/AnaliseItem/Exibicao}"> -->
+<!-- 							<core:Item key="0" text="{i18n>Mapa_AnaliseItem_TodosItens}"/> -->
+<!-- 							<core:Item key="1" text="{i18n>Mapa_AnaliseItem_ItensComuns}"/> -->
+<!-- 							<core:Item key="2" text="{i18n>Mapa_AnaliseItem_ItensNaoComuns}"/> -->
+<!-- 						</m:Select> -->
+<!-- 						<m:Button type="Transparent" icon="sap-icon://simulate" press="onCalcImpostos"/> -->
+<!-- 						<m:Button type="Transparent" icon="sap-icon://excel-attachment" press="onExportXLS"/> -->
+<!-- 						<m:Button type="Transparent" icon="sap-icon://pdf-attachment" press="onExportPDF"/> -->
+<!-- 					</m:content> -->
+<!-- 				</m:Toolbar> -->
+<!-- 			</t:extension> -->
+<!-- 		</t:Table> -->
+		<t:TreeTable id="treeItems" selectionMode="None" enableColumnReordering="false" expandFirstLevel="false"
+			rows="{ path : 'itemAnalysis>/items', parameters: {arrayNames:['children']}}" visibleRowCount="14" alternateRowColors="true">
+			<t:extension>
+				<m:Toolbar class="sapMTBHeader-CTX">
+					<m:content>
+						<m:ToolbarSpacer/>
+						<m:Label text="Exibir apenas divergências:"/>
+						<m:CheckBox selected="{Control>/AnaliseItem/ExibirApenasDivergencia}" select="FilterArvoreItens"/>
+						<m:Label text="Detalhes último preço:"/>
+						<m:CheckBox selected="{Control>/AnaliseItem/UltimoPrecoVisivel}"/>
+						<m:Label text="Exibição"/>
+						<m:Select forceSelection="true" change="FilterArvoreItens" selectedKey="{Control>/AnaliseItem/Exibicao}">
+							<core:Item key="0" text="Todos os itens"/>
+							<core:Item key="1" text="Itens comuns"/>
+							<core:Item key="2" text="Itens não-comuns"/>
+						</m:Select>
+						<m:Button id="messagePopoverBtn" icon="sap-icon://message-popup" type="Transparent" press="handleMessagePopoverPress" ariaHasPopup="Dialog"/>
+						<!--<m:Button press="MessagesShow" visible="true" type="Transparent" icon="sap-icon://simulate"/> -->
+						<m:Button type="Transparent" icon="sap-icon://simulate" press="onCalcImpostos"/>
+						<m:Button type="Transparent" icon="sap-icon://excel-attachment" press="onExportXLS"/>
+						<m:Button type="Transparent" icon="sap-icon://pdf-attachment" press="onExportPDF"/>						
+					</m:content>
+				</m:Toolbar>
+			</t:extension>
+			<t:columns>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_Item}" width="16rem">
+					<t:template>
+						<m:Text text="{itemAnalysis>nodeId}" wrapping="false"/>
+					</t:template>
+				</t:Column>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_CodigoMaterial}" width="6rem">
+					<t:template>
+						<m:Text text="{itemAnalysis>id}" wrapping="false" visible="{itemAnalysis>isItem}"/>
+					</t:template>
+				</t:Column>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_Descricao}" width="24rem">
+					<t:template>
+						<m:Text text="{itemAnalysis>name}" wrapping="false" visible="{itemAnalysis>isItem}"/>
+					</t:template>
+				</t:Column>
+<!-- 				<t:Column label="{i18n>Mapa_AnalisePorItem_IVA}" width="5rem"> -->
+<!-- 					<t:template> -->
+<!-- 						<m:Input value="{itemAnalysis>iva}" wrapping="false" visible="{itemAnalysis>isItem}"/> -->
+<!-- 					</t:template> -->
+<!-- 				</t:Column> -->
+				<t:Column label="{i18n>Mapa_AnalisePorItem_Centro}" width="4rem">
+					<t:template>
+						<m:Text
+							text="{itemAnalysis>werks}"
+							visible="{itemAnalysis>isItem}" wrapping="false"/>
+					</t:template>
+				</t:Column>		
+				<t:Column label="{i18n>Mapa_AnalisePorItem_Quantidade}" width="4rem">
+					<t:template>
+						<m:Text
+							text="{path: 'itemAnalysis>quantity', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}"
+							visible="{itemAnalysis>isItem}" wrapping="false"/>
+					</t:template>
+				</t:Column>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_UnidadeMedida}" width="4rem">
+					<t:template>
+						<m:Text text="{itemAnalysis>uom}" wrapping="false" visible="{itemAnalysis>isItem}"/>
+					</t:template>
+				</t:Column>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_UltimoPreco}" width="8rem" visible="{Control>/AnaliseItem/UltimoPrecoVisivel}">
+					<t:template>
+						<m:Text
+							text="{path: 'itemAnalysis>lastpoprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}"
+							visible="{itemAnalysis>isItem}" wrapping="false"/>
+					</t:template>
+				</t:Column>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_UltimoPrecoMoeda}" width="8rem" visible="{Control>/AnaliseItem/UltimoPrecoVisivel}">
+					<t:template>
+						<m:Text
+							text="{path: 'itemAnalysis>lastpocurrency'}"
+							visible="{itemAnalysis>isItem}" wrapping="false"/>
+					</t:template>
+				</t:Column>				
+				<t:Column label="{i18n>Mapa_AnalisePorItem_FornecedorUltimoPreco}" width="20rem" visible="{Control>/AnaliseItem/UltimoPrecoVisivel}">
+					<t:template>
+						<m:Text text="{itemAnalysis>lastposupplierid} {itemAnalysis>lastposuppliername}" visible="{itemAnalysis>isItem}"/>
+					</t:template>
+				</t:Column>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_Data}" width="8rem" visible="{Control>/AnaliseItem/UltimoPrecoVisivel}">
+					<t:template>
+						<m:Text
+							text="{path : 'itemAnalysis>lastpodate', type: 'sap.ui.model.type.Date', formatOptions: { source: { pattern: 'yyyyMMdd' }, pattern: 'dd/MM/yyyy' } }"
+							visible="{itemAnalysis>isItem}" wrapping="false"/>
+					</t:template>
+				</t:Column>
+				<t:Column label="{i18n>Mapa_AnalisePorItem_CodigoPedidoCompras}" width="10rem" visible="{Control>/AnaliseItem/UltimoPrecoVisivel}">
+					<t:template>
+						<m:Text
+							text="{itemAnalysis>lastpoid}"
+							visible="{itemAnalysis>isItem}" wrapping="false"/>
+					</t:template>
+				</t:Column>				
+				<t:Column label="{i18n>Mapa_AnalisePorItem_PorcentagemVariacao}" width="4rem" visible="true" hAlign="Center">
+					<t:template>
+						<m:ObjectStatus
+							text="{ parts: [ 'itemAnalysis>bids', 'itemAnalysis>lastpoprice', 'itemAnalysis>/suppliers' ], formatter: 'window.AnaliseItensVariacaoPreco' }"
+							state="{ parts: [ 'itemAnalysis>bids', 'itemAnalysis>lastpoprice', 'itemAnalysis>/suppliers' ] , formatter: 'window.AnaliseItensVariacaoPrecoState' }"
+							visible="{itemAnalysis>isItem}"/>
+					</t:template>
+				</t:Column>
+			</t:columns>
+		</t:TreeTable>				
+	</m:VBox>
 </core:FragmentDefinition>

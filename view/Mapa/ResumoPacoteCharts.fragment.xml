@@ -8,7 +8,7 @@
 	xmlns:l="sap.ui.layout">
 	<m:VBox>
 		<m:MessageStrip
-			text="Distribuição de valor para premiação"
+			text="{i18n>Mapa_ResumoPacoteCharts_Ajuda}"
 			type="Information"
 			showIcon="false"
 			class="sapUiMediumMarginBottom">
@@ -16,7 +16,7 @@
 		<m:HBox>
 			<m:VBox>
 				<m:Text
-					text="Itens geral"
+					text="{i18n>Mapa_ResumoPacoteCharts_ItensGeral}"
 					class="sapUiSmallMargin">
 					<m:layoutData>
 						<l:GridData span="XL12 L12 M12 S12" />
@@ -44,7 +44,7 @@
 			</m:VBox>
 			<m:VBox>
 				<m:Text
-					text="Itens comuns"
+					text="{i18n>Mapa_ResumoPacoteCharts_ItensComuns}"
 					class="sapUiSmallMargin">
 					<m:layoutData>
 						<l:GridData span="XL12 L12 M12 S12" />
@@ -72,7 +72,7 @@
 			</m:VBox>
 			<m:VBox>
 				<m:Text
-					text="Itens não-comuns"
+					text="{i18n>Mapa_ResumoPacoteCharts_ItensNaoComuns}"
 					class="sapUiSmallMargin">
 					<m:layoutData>
 						<l:GridData span="XL12 L12 M12 S12" />

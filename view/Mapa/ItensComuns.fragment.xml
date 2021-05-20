@@ -13,37 +13,37 @@
 		}">
 		<m:columns>
 			<m:Column width="20em">
-				<m:Text text="Fornecedor" />
+				<m:Text text="{i18n>Mapa_ItensComuns_Fornecedor}" />
 			</m:Column>
 			<m:Column
 				hAlign="End"
 				width="8em">
-				<m:Text text="Valor cotação" />
+				<m:Text text="{i18n>Mapa_ItensComuns_ValorCotacao}" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"
 				width="9em">
-				<m:Text text="Itens respondidos" />
+				<m:Text text="{i18n>Mapa_ItensComuns_ItensRespondidos}" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"
 				width="9em">
-				<m:Text text="Itens premiados" />
+				<m:Text text="{i18n>Mapa_ItensComuns_ItensPremiados}" />
 			</m:Column>
 			<m:Column
 				hAlign="End"
 				width="8em">
-				<m:Text text="Valor premiado" />
+				<m:Text text="{i18n>Mapa_ItensComuns_ValorPremiado}" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"
 				width="6em">
-				<m:Text text="% itens" />
+				<m:Text text="{i18n>Mapa_ItensComuns_PorcentagemItens}" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"
 				width="6em">
-				<m:Text text="% valor" />
+				<m:Text text="{i18n>Mapa_ItensComuns_PorcentagemValor}" />
 			</m:Column>
 		</m:columns>
 		<m:items>
@@ -55,11 +55,11 @@
 							formatter: '.TabelaConfiguracaoFornecedoresNome' 
 					}" />
 					<m:Text
-						visible="{mcdetails>applyCalc}"
+						visible="{= ${mcdetails>/rfpdata/status} === 'Completed' || ${mcdetails>/rfpdata/status} === 'Pending Selection' ? true : false }"
 						text="{
 							path: 'mcdetails>common/quoteprice',
 					    	type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}
-						}" />
+						}"/>
 					<m:Text
 						visible="{mcdetails>applyCalc}"
 						text="{mcdetails>common/quoteitems} / {Control>/AnaliseItem/CommonAwardedItems}" />
@@ -67,7 +67,7 @@
 						visible="{mcdetails>applyCalc}"
 						text="{mcdetails>common/awardeditems} / {Control>/AnaliseItem/CommonAwardedItems}" />
 					<m:Text
-						visible="{mcdetails>applyCalc}"
+						visible="{= ${mcdetails>/rfpdata/status} === 'Completed' || ${mcdetails>/rfpdata/status} === 'Pending Selection' ? true : false }"
 						text="{path: 'mcdetails>common/awardedprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}" />
 					<m:Text
 						visible="{mcdetails>applyCalc}"

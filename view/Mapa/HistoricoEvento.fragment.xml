@@ -1,0 +1,18 @@
+<core:FragmentDefinition 
+	xmlns:m="sap.m"
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout">
+	<m:List items="{mcdetails>/history}">
+		<m:NotificationListItem
+			title="{path: 'mcdetails>createddate', formatter: '.formatUnixTimestamp' }: {mcdetails>action}"
+			description="{mcdetails>details}"
+			showCloseButton="false"
+			truncate="false"
+			priority="None" 
+			authorName="{mcdetails>realuser}">
+		</m:NotificationListItem>
+	</m:List>
+</core:FragmentDefinition>

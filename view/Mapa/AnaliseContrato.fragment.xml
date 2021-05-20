@@ -33,12 +33,12 @@
 			<m:Column
 				hAlign="End"
 				width="8em">
-				<m:Text text="Valor cotação" />
+				<m:Text text="Valor cota??o" />
 			</m:Column>
 			<m:Column
 				hAlign="End"
 				width="10em">
-				<m:Text text="Valor histórico item cotação" />
+				<m:Text text="Valor hist?rico item cota??o" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"
@@ -53,7 +53,7 @@
 			<m:Column
 				hAlign="End"
 				width="10em">
-				<m:Text text="Valor histórico item premiado" />
+				<m:Text text="Valor hist?rico item premiado" />
 			</m:Column>
 			<m:Column
 				hAlign="Center"

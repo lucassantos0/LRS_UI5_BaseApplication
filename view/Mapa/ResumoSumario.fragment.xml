@@ -1,52 +1,156 @@
-<core:FragmentDefinition
-	xmlns:m="sap.m"
-	xmlns:f="sap.ui.layout.form"
-	xmlns:core="sap.ui.core"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:l="sap.ui.layout">
-	<m:VBox>
-		<f:SimpleForm
-			class="sapUiNoMargin"
-			editable="false"
-			layout="ResponsiveGridLayout"
-			columnsXL="3"
-			columnsL="3"
-			columnsM="3"
-			labelSpanXL="6"
-			labelSpanL="6"
-			labelSpanM="6"
-			labelSpanS="12">
-			<f:content>
-				<core:Title text="Geral" />
-				<m:Label
-					text="Valor últ. preço corrigido ({Control>/AnaliseItem/IndiceIGPM}%)" />
-				<m:Text
-					text="{
-					parts: [ { path: 'Control>/AnaliseItem/LastPOPricesSum' }, { path: 'Control>/AnaliseItem/IndiceIGPM' } ],
-					formatter: '.ValorUltimoPrecoCorrigido'
-				}" />
-				<m:Label text="Total premiado" />
-				<m:Text
-					text="{path: 'Control>/AnaliseItem/AwardedPrice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}" />
-				<m:Label text="Itens premiados" />
-				<m:Text
-					text="{Control>/AnaliseItem/AwardedItems} / {mcdetails>/quoteitems}" />
-				<core:Title text="Itens comuns" />
-				<m:Label text="Quantidade" />
-				<m:Text
-					text="{Control>/AnaliseItem/CommonAwardedItems} / {Control>/AnaliseItem/AwardedItems}" />
-				<m:Label text="Valor premiado" />
-				<m:Text
-					text="{path: 'Control>/AnaliseItem/CommonAwardedPrice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}" />
-				<core:Title text="Itens não-comuns" />
-				<m:Label text="Quantidade" />
-				<m:Text
-					text="{Control>/AnaliseItem/NotCommonAwardedItems} / {Control>/AnaliseItem/AwardedItems}" />
-				<m:Label text="Valor premiado" />
-				<m:Text
-					text="{path: 'Control>/AnaliseItem/NotCommonAwardedPrice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}" />
-			</f:content>
-		</f:SimpleForm>
-	</m:VBox>
+<core:FragmentDefinition xmlns:m="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
+	<m:Panel>
+		<m:headerToolbar>
+			<m:Toolbar>
+				<m:content>
+					<m:Title text="{i18n>Mapa_ResumoSumario_SumarioExecutivo}"/>
+					<m:ToolbarSpacer/>
+					<!-- <m:Button icon="sap-icon://pdf-attachment"/>
+					<m:Button icon="sap-icon://excel-attachment"/> -->
+				</m:content>
+			</m:Toolbar>
+		</m:headerToolbar>
+		<m:content>
+			<m:VBox>
+				<m:MessageStrip type="Information"
+					text="{i18n>Mapa_ResumoSumario_Ajuda}"/>
+				<f:SimpleForm class="sapUiNoMargin" editable="false" layout="ResponsiveGridLayout" columnsXL="3" columnsL="3" columnsM="3" labelSpanXL="6"
+					labelSpanL="6" labelSpanM="6" labelSpanS="12">
+					<f:content>
+						<core:Title text="{i18n>Mapa_ResumoSumario_Geral}"/>
+						<m:Label design="Bold" text="{i18n>Mapa_ResumoSumario_TotalPremiado}"/>
+						<m:Text
+							text="{path: 'Control>/AnaliseItem/AwardedPrice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}"
+							visible="{= ${mcdetails>/rfpdata/status} === 'Completed' || ${mcdetails>/rfpdata/status} === 'Pending Selection' ? true : false }"/>
+						<m:Label text="{i18n>Mapa_ResumoSumario_Baseline}"/>
+						<m:Text
+							text="{path: 'mcdetails>/rfpdata/budget', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}"/>
+						<m:Label design="Bold" text="{i18n>Mapa_ResumoSumario_SavingBaseline}"/>
+						<m:ObjectStatus
+							text="{ parts: [ { path: 'mcdetails>/rfpdata/budget' }, { path: 'Control>/AnaliseItem/AwardedPrice' } ], formatter: '.FormatSavingField' } %"
+							state="{ parts: [ { path: 'mcdetails>/rfpdata/budget' }, { path: 'Control>/AnaliseItem/AwardedPrice' } ], formatter: '.FormatSavingFieldStatus' }"/>									
+						<m:Label text="{i18n>Mapa_ResumoSumario_PrecoHistorico}" displayOnly="true"/>
+						<m:Input
+							value="{path: 'mcdetails>/rfpdata/referencePrice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}"/>
+						<m:Label design="Bold" text="{i18n>Mapa_ResumoSumario_SavingReferencia}"/>
+						<m:ObjectStatus
+							text="{ parts: [ { path: 'mcdetails>/rfpdata/referencePrice' }, { path: 'Control>/AnaliseItem/AwardedPrice' } ], formatter: '.FormatSavingField' } %"
+							state="{ parts: [ { path: 'mcdetails>/rfpdata/referencePrice' }, { path: 'Control>/AnaliseItem/AwardedPrice' } ], formatter: '.FormatSavingFieldStatus' }"/>
+						<core:Title/>
+						<m:Label text="{i18n>Mapa_ResumoSumario_StatusEvento}"/>
+						<m:Text text="{mcdetails>/rfpdata/status}"/>
+						<m:Label text="{i18n>Mapa_ResumoSumario_CompradorResponsavel}"/>
+						<m:Text text="{mcdetails>/owner/name}"/>
+						<m:Label text="{i18n>Mapa_ResumoSumario_ItensPremiados}"/>
+						<m:HBox alignItems="Start" justifyContent="Start">
+							<core:Icon src="sap-icon://message-warning" tooltip="{i18n>Mapa_ResumoSumario_ItensSemPremiacao}"
+								visible="{= ${Control>/AnaliseItem/AwardedItems} !== ${mcdetails>/quoteitems} ? true : false }"/>
+							<m:Text text="{Control>/AnaliseItem/AwardedItems} / {mcdetails>/quoteitems}"/>
+						</m:HBox>
+						<m:Label text="{i18n>Mapa_ResumoSumario_Centro}"/>
+						<m:Text text="{mcdetails>/werks}"/>						
+					</f:content>
+				</f:SimpleForm>
+				<m:Table class="sapUiSizeCompact" id="TabelaConfiguracaoFornecedores" inset="false" items="{ path: 'mcdetails>/suppliers' }">
+					<m:columns>
+						<m:Column hAlign="Begin" width="3em"/>
+						<m:Column width="14em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_Fornecedor}"/>
+						</m:Column>
+<!-- 						<m:Column width="2em"/> -->
+						<m:Column hAlign="End" width="7em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_ValorCotacao}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="8em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_ItensRespondidos}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="6em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_ItensPremiados}"/>
+						</m:Column>
+						<m:Column hAlign="End" width="8em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_ValorPremiado}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="5em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_PorcentagemItens}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="5em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_PorcentagemValor}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="6em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_ItensExclusivos}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="11em">
+							<m:Text text="{i18n>Mapa_ResumoSumario_Criterio}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="9em">
+							<m:Text text="{i18n>Mapa_AnalisePorItem_IncotermsPt01}"/>
+						</m:Column>
+						<m:Column hAlign="Center" width="6em">
+							<m:Text text="{i18n>Mapa_AnalisePorItem_IncotermsPt02}"/>
+						</m:Column>						
+						<m:Column hAlign="Center" width="9em">
+							<m:Text text="{i18n>Mapa_AnalisePorItem_PmntTrms}"/>
+						</m:Column>						
+					</m:columns>
+					<m:items>
+						<m:ColumnListItem>
+							<m:cells>
+								<m:CheckBox select="updateTabelaConfiguracaoFornecedores" selected="{mcdetails>applyCalc}"/>
+								<m:Text text="{ parts: [ { path: 'mcdetails>id' }, { path : 'mcdetails>name' } ], formatter: '.TabelaConfiguracaoFornecedoresNome' }"/>
+<!-- 								<m:Button press="MessagesShow" visible="{ path: 'mcdetails>messages', formatter: '.MessagesButtonVisible' }" -->
+<!-- 									type="{ path: 'mcdetails>messages', formatter: '.MessagesButtonColor' }" -->
+<!-- 									icon="{ path: 'mcdetails>messages', formatter: '.MessagesButtonIcon' }"/> -->
+								<m:Text
+									text="{path: 'mcdetails>somatoriorfp', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}"/>
+								<m:Text text="{mcdetails>quoteditems}/{mcdetails>/quoteitems}"/>
+								<m:Text text="{mcdetails>rfpitems}"/>
+								<m:HBox alignItems="Start" justifyContent="SpaceBetween" >
+									<core:Icon src="sap-icon://competitor" visible="{= ${mcdetails>awardprice} > 0 ? true : false }"/>
+									<m:Text visible="{= ${mcdetails>awardprice} > 0 ? true : false }"
+										text="{path: 'mcdetails>awardprice', type: 'sap.ui.model.type.Float', formatOptions: {groupingEnabled: true, groupingSeparator: '.', decimalSeparator: ',', minFractionDigits: 2, maxFractionDigits: 2}}"/>
+								</m:HBox>
+								<m:Text text="{mcdetails>distawarditems}"/>
+								<m:Text text="{mcdetails>distawardprice}"/>
+								<m:Text text="{mcdetails>exclusiveitems}"/>					
+								<m:Select forceSelection="true" enabled="true" selectedKey="{mcdetails>criterioescolha}">
+									<core:Item
+										key="0001"
+										text="{i18n>Mapa_ResumoSumario_MenorPreco}" />
+									<core:Item
+										key="0002"
+										text="{i18n>Mapa_ResumoSumario_Qualificacao}" />
+									<core:Item
+										key="0003"
+										text="{i18n>Mapa_ResumoSumario_AtendimentoItens}" />
+									<core:Item
+										key="0004"
+										text="{i18n>Mapa_ResumoSumario_PrazoEntrega}" />										
+								</m:Select>
+								<m:Select forceSelection="true" enabled="true" selectedKey="{mcdetails>inco1}"
+									items="{
+										path: 'mcMapHelpers>/IncotermsSet'
+									}">
+									<core:Item key="{mcMapHelpers>Key}" text="{mcMapHelpers>Key} - {mcMapHelpers>Value}" />									
+								</m:Select>
+								<m:Input value="{mcdetails>inco2}"/>
+								<m:Select forceSelection="true" enabled="true" selectedKey="{mcdetails>pmnttrms}"
+									items="{
+										path: 'mcMapHelpers>/PaymentTermSet'
+									}">
+									<core:Item key="{mcMapHelpers>Key}" text="{mcMapHelpers>Key} - {mcMapHelpers>Value}" />									
+								</m:Select>																
+							</m:cells>
+						</m:ColumnListItem>
+					</m:items>
+				</m:Table>
+				<m:Panel headerText="{i18n>Mapa_ResumoSumario_InfoAdicionais}">
+					<m:content>
+						<m:TextArea value="{mcdetails>/rfpdata/justificativa}" editable="true" placeholder="{i18n>Mapa_ResumoSumario_Justificativa}" growing="true" growingMaxLines="7" width="100%" maxLength="500"/>
+						<m:TextArea value="{mcdetails>/rfpdata/outrosdetalhes}" editable="true" placeholder="{i18n>Mapa_ResumoSumario_OutrosDetalhes}" growing="true" growingMaxLines="7" width="100%" maxLength="500"/>
+					</m:content>
+				</m:Panel>
+			</m:VBox>
+		</m:content>
+	</m:Panel>
 </core:FragmentDefinition>
