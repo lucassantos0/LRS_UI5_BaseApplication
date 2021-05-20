@@ -34,6 +34,8 @@ sap.ui.define(
 							"NotCommonAwardedItems": 0
 						}
 					};
+
+					/*
 					this._oControlModel = new sap.ui.model.json.JSONModel(
 						this._oControlModelData);
 					this.getView().setModel(this._oControlModel, "Control");
@@ -47,6 +49,7 @@ sap.ui.define(
 					this.getModel("mcMapHelpers").setHeaders({ "X-Requested-With": "X" });
 					this.byId("UploadCollection").setModel(this.getModel("mcMapHelpers"));
 					this.getModel("mcMapHelpers").setSizeLimit("20000");
+					*/
 				},
 				onRouteMatched: function (oEvent) {
 					this.sDocument = oEvent.getParameters().arguments.rfq;
