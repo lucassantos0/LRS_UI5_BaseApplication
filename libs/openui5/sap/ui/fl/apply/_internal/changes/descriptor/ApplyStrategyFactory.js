@@ -1,0 +1,6 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2020 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/fl/requireAsync","sap/ui/fl/apply/_internal/changes/descriptor/ApplyUtil","sap/base/Log"],function(r,A,L){"use strict";var B={registry:function(){return r("sap/ui/fl/apply/_internal/changes/descriptor/RegistrationBuild");},handleError:function(e){throw e;},processTexts:function(m,c){if(typeof m["sap.app"].i18n==="string"){m["sap.app"].i18n={bundleUrl:m["sap.app"].i18n};}if(!m["sap.app"].i18n.enhanceWith){m["sap.app"].i18n.enhanceWith=[];}var b=A.formatBundleName(m["sap.app"].id,c.i18n);var d=m["sap.app"].i18n.enhanceWith.some(function(e){return e.bundleName===b;});if(!d){m["sap.app"].i18n.enhanceWith.push({bundleName:b});}return m;}};var R={registry:function(){return r("sap/ui/fl/apply/_internal/changes/descriptor/Registration");},handleError:function(e){L.error(e);},processTexts:function(m,c){var M=JSON.stringify(m);Object.keys(c).forEach(function(t){if(c[t].value[""]){M=M.replace("{{"+t+"}}",c[t].value[""]);}else{L.error("Text change has to contain default language");}});return JSON.parse(M);}};var a={getBuildStrategy:function(){return Promise.resolve(B);},getRuntimeStrategy:function(){return Promise.resolve(R);}};return a;},true);

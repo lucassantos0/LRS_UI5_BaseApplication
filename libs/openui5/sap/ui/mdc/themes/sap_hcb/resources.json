@@ -1,0 +1,118 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "AdaptationFilterBar.less",
+			"size": 46,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FieldBase.less",
+			"size": 1477,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FilterBar.less",
+			"size": 683,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "GroupPanelBase.less",
+			"size": 1542,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "InfoPanel.less",
+			"size": 3787,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "PersonalizationDialog.less",
+			"size": 845,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "SelectionDialog.less",
+			"size": 139,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Table.less",
+			"size": 16,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ValueHelpDialog.less",
+			"size": 3713,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 441,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 240,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 81210,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 8202,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 122,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 8206,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 13305,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 542,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 8464,
+			"theme": "base"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 8468,
+			"theme": "base"
+		}
+	]
+}

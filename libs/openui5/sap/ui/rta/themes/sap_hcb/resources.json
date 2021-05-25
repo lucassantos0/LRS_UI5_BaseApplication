@@ -1,0 +1,88 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "Overlay.less",
+			"size": 936,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "Toolbar.base.less",
+			"size": 107,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "Toolbar.personalization.less",
+			"size": 119,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "Toolbar.standalone.less",
+			"size": 407,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 4938,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 77922,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 77622,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 26278,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 1976,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 26274,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 2209,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 385,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 27254,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 27250,
+			"theme": "sap_hcb"
+		}
+	]
+}

@@ -1,0 +1,236 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theme",
+			"size": 648,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": ".theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "BrowserScrollbar.less",
+			"size": 322,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "DatePicker.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "Icon.less",
+			"size": 258,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "base.less",
+			"size": 60934,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 175186,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 200419,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 200043,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "fonts/bluecrystal_icons.ttf",
+			"size": 7744,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "global.less",
+			"size": 78310,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/Busy.png",
+			"size": 824,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_DOWN.png",
+			"size": 108,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_DOWN_hover.png",
+			"size": 103,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_LEFT.png",
+			"size": 105,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_LEFT_hover.png",
+			"size": 105,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_RIGHT.png",
+			"size": 104,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_RIGHT_hover.png",
+			"size": 105,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_UP.png",
+			"size": 110,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/arrow_UP_hover.png",
+			"size": 110,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/scrollbar_grip_horizontal.png",
+			"size": 78,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/scrollbar_grip_vertical.png",
+			"size": 81,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/Busy.png",
+			"size": 218,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_DOWN.png",
+			"size": 108,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_DOWN_hover.png",
+			"size": 103,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_LEFT.png",
+			"size": 105,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_LEFT_hover.png",
+			"size": 105,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_RIGHT.png",
+			"size": 104,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_RIGHT_hover.png",
+			"size": 105,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_UP.png",
+			"size": 110,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/arrow_UP_hover.png",
+			"size": 110,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/scrollbar_grip_horizontal.png",
+			"size": 87,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/scrollbar_grip_vertical.png",
+			"size": 86,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 116107,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 66493,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.css",
+			"size": 116078,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.less",
+			"size": 17330,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.source.less",
+			"size": 372,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 28675,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 28646,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "parameterClasses.less",
+			"size": 653,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "shared.less",
+			"size": 15114,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		}
+	]
+}

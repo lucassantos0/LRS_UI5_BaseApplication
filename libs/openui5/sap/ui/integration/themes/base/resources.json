@@ -1,0 +1,112 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "CalendarContent.less",
+			"size": 3592,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CustomElementBase.less",
+			"size": 314,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CustomElementCard.less",
+			"size": 244,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ListContent.less",
+			"size": 424,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ListContentItem.less",
+			"size": 1007,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Microchart.less",
+			"size": 651,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "MicrochartLegend.less",
+			"size": 1052,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ObjectContent.less",
+			"size": 857,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 267,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 240,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 81013,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 7531,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 67,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 7531,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 9156,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 525,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 7752,
+			"theme": "base"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 7752,
+			"theme": "base"
+		}
+	]
+}

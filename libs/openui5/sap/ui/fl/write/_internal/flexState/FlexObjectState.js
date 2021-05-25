@@ -1,0 +1,6 @@
+/*
+ * ! OpenUI5
+ * (c) Copyright 2009-2020 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/base/util/restricted/_omit","sap/base/Log","sap/ui/fl/Layer","sap/ui/fl/LayerUtils","sap/ui/fl/Utils","sap/ui/fl/Change","sap/ui/fl/ChangePersistenceFactory","sap/ui/fl/write/_internal/flexState/compVariants/CompVariantState","sap/ui/fl/apply/_internal/flexState/ManifestUtils","sap/ui/fl/apply/_internal/flexState/FlexState","sap/ui/fl/apply/_internal/ChangesController"],function(_,L,a,b,U,C,c,d,M,F,e){"use strict";var f={};function i(p){p.reference=M.getFlexReferenceForControl(p.selector);return F.initialize({componentId:U.getAppComponentForControl(p.selector).getId(),reference:p.reference,componentData:{},manifest:{}});}function g(p){var m=F.getCompEntitiesByIdMap(p.reference);return Object.keys(m).map(function(k){return m[k];});}function h(p){if(!p.reference){var A=e.getAppComponentForSelector(p.selector);p.reference=M.getFlexReferenceForControl(A);}return c.getChangePersistenceForComponent(p.reference);}function j(p){var o=h(p);return o.getChangesForComponent(_(p,["invalidateCache","selector"]),p.invalidateCache);}f.getFlexObjects=function(p){return i(p).then(function(){var k=g(p);var l=j(p);return Promise.all([k,l]).then(function(E){return E[0].concat(E[1]);});});};return f;});

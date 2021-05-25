@@ -1,0 +1,434 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2020 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+
+@import "../../../../../../Base/baseLib/baseTheme/base.less"; /* ORIGINAL IMPORT PATH: "../../../../../sap/ui/core/themes/base/base.less" */
+
+@import "../../../../../sap/ui/core/themes/base/global.less";
+
+/* START "CalendarContent.less" */
+/* =========================================================== */
+/* CSS for control sap.ui.integration.controls/CalendarContent */
+/* Base theme                                                  */
+/* =========================================================== */
+
+.sapFCardCalendarContent .sapFCalCard {
+	padding: 1rem;
+	.sapUiCal:not(.sapUiCalInt) {
+		width: 100%;
+		padding: 0;
+		min-height: 16.5rem;
+		min-width: 16.5rem;
+	}
+	.sapUiCalMonthPicker,
+	.sapUiCalYearPicker {
+		width: auto;
+		left: 0;
+		margin-left: 0;
+	}
+	.sapUiCal .sapUiCalMonthView {
+		padding: 0;
+	}
+
+	.sapUiCalendarAppContainer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		box-sizing: border-box;
+		padding-right: 0;
+	}
+
+	.sapUiCalendarAppContainer > .sapUiCalendarAppContainerLeft {
+		padding: 0;
+		width: 15%;
+		.sapUiCalendarAppStart {
+			font-size: @sapMFontMediumSize;
+			color: @sapUiBaseText;
+			text-align: right;
+		}
+		.sapUiCalendarAppEnd {
+			font-size: @sapMFontSmallSize;
+			color: @sapUiContentLabelColor;
+			margin-top: 0.25rem;
+			text-align: right;
+		}
+	}
+	.sapUiCalendarAppContainer > .sapUiCalendarAppContainerRight {
+		flex: 1 1 auto;
+		margin-right: 0;
+		width: 70%;
+	}
+
+	.sapFCalCardRightSide {
+		display: flex;
+		flex-direction: column;
+		.sapFCalCardAppList{
+			width: 100%
+		}
+		.sapMBtn {
+			align-self: center;
+		}
+	}
+
+	.sapUiCalendarAppContainer.sapUiCalendarAppCurrent > .sapUiCalendarAppContainerRight {
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			border: 2px solid @sapUiLegendCurrentDateTime;
+			border-radius: 4px;
+			top: -4px;
+			left: -4px;
+			bottom: -4px;
+			right: -4px;
+			pointer-events: none;
+		}
+	}
+
+	.sapUiCalendarAppContainer > .sapUiCalendarAppContainerRight > .sapUiCalendarApp {
+		margin: 0;
+	}
+	.sapUiCalLegMoreText {
+		font-size: 0.9rem;
+		color: @sapUiLinkActive;
+		&>.sapUiUnifiedLegendSquare {
+			display: none;
+		}
+	}
+
+	.sapFCalCardNoItemsText {
+		line-height: 2rem;
+		text-align: center;
+		font-size: 0.9rem;
+	}
+
+	.sapUiCalendarApp:active {
+		background-color: transparent;
+	}
+}
+
+.sapUiSizeCompact {
+	.sapFCardCalendarContent .sapFCalCard {
+		.sapUiCalMonthPicker,
+		.sapUiCalYearPicker {
+			width: auto;
+			left: 0;
+			margin-left: 0;
+		}
+	}
+}
+
+.sapFCalCard .sapMTBStandard {
+	border-bottom: none;
+}
+
+.sapFCalCard .sapUiCalendarAppCont {
+	height: 100%;
+	display: flex;
+}
+
+// center vertically if it is title-only or text-only appointment
+.sapFCalCard .sapUiCalendarAppOneLine {
+	.sapUiCalendarAppIcon,
+	.sapUiCalendarAppTitle,
+	.sapUiCalendarAppText {
+		height: 3rem;
+		line-height: 3rem;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.sapUiCalendarAppIcon {
+		top: 0;
+	}
+}
+
+/* ======================================= */
+/* Two columns                             */
+/* ======================================= */
+
+.sapFCardCalendarContent.sapMPCInCardTwoColumns {
+	.sapFCalCardLayout {
+		display: flex;
+	}
+	.sapFCalCardLeftSide,
+	.sapFCalCardRightSide {
+		width: 50%;
+	}
+
+	.sapFCalCardRightSide {
+		display: flex;
+		flex-direction: column;
+		.sapFCalCardAppList{
+			width: 100%
+		}
+		.sapMBtn {
+			align-self: center;
+		}
+	}
+
+	// visualize the start and end on top of the appointment content
+	.sapUiCalendarAppContainer {
+		flex-direction: column;
+
+		.sapUiCalendarAppContainerLeft {
+			width: 100%;
+			margin: 0;
+			padding: 0 0 0.0625rem 0;
+
+			.sapUiCalendarAppStart,
+			.sapUiCalendarAppEnd {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+			}
+
+			.sapUiCalendarAppEnd {
+				margin-left: 0.25rem;
+			}
+		}
+
+		.sapUiCalendarAppContainerRight {
+			width: 100%;
+		}
+	}
+}
+/* END "CalendarContent.less" */
+
+/* START "CustomElementBase.less" */
+/* ======================================== */
+/* CSS for control sap.ui.integration/Base  */
+/* Base theme                               */
+/* ======================================== */
+
+ui-integration-card {
+	display: inline-block;
+	width: 100%;
+
+	& > div[data-sap-ui-area] {
+		height: 100%;
+		width: 100%;
+	}
+}
+/* END "CustomElementBase.less" */
+
+/* START "CustomElementCard.less" */
+/* ======================================== */
+/* CSS for control sap.ui.integration/Card  */
+/* Base theme                               */
+/* ======================================== */
+
+ui-integration-card {
+	.sapFCard {
+		height: 100%;
+	}
+}
+/* END "CustomElementCard.less" */
+
+/* START "ListContent.less" */
+
+/* ======================================================= */
+/* CSS for control sap.ui.integration.controls/ListContent */
+/* Base theme                                              */
+/* ======================================================= */
+
+.sapFCard .sapFCardContent .sapFCardContentHidden.sapUiIntegrationMicrochartLegend {
+	// use display none until loading animation for the legend is provided
+	display: none;
+}
+/* END "ListContent.less" */
+
+/* START "ListContentItem.less" */
+/* =========================================================== */
+/* CSS for control sap.ui.integration.controls/ListContentItem */
+/* Base theme                                                  */
+/* =========================================================== */
+
+@_sap_ui_integration_controls_ListContentItem_ChartHeight: 1rem;
+
+.sapMLIB.sapUiIntegrationLCI {
+	padding: 0 1rem 0 1rem;
+
+	&.sapUiIntegrationLCIWithChart .sapMLIBContent > .sapMSLIDiv {
+		flex-direction: column;
+	}
+
+	&.sapUiIntegrationLCIWithChart {
+		height: 5rem;
+	}
+
+	&.sapUiIntegrationLCIWithChart.sapMSLIWithDescription {
+		height: 5rem + @_sap_ui_integration_controls_ListContentItem_ChartHeight;
+	}
+
+	.sapFCardIcon {
+		flex-shrink: 0;
+	}
+
+	&.sapMLIBActive .sapFCardIcon.sapFAvatar .sapUiIcon {
+		color: @sapUiListActiveTextColor;
+	}
+}
+
+.sapUiIntegrationLCI:not(.sapMSLIThumbnail):not(.sapMSLIWithDescription).sapUiIntegrationLCIIconSize {
+	&XS {
+		height: 2.5625rem;
+	}
+
+	&S {
+		height: 3.5625rem;
+	}
+
+	&M {
+		height: 4.5625rem;
+	}
+}
+
+/* END "ListContentItem.less" */
+
+/* START "Microchart.less" */
+/* ====================================================== */
+/* CSS for control sap.ui.integration.controls/Microchart */
+/* Base theme                                             */
+/* ====================================================== */
+
+
+.sapUiIntegrationMicrochartValue {
+	&Neutral {
+		color: @sapUiNeutralText;
+	}
+
+	&Good {
+		color: @sapUiPositiveText;
+	}
+
+	&Error {
+		color: @sapUiNegativeText;
+	}
+
+	&Critical {
+		color: @sapUiCriticalText;
+	}
+}
+
+.sapUiIntegrationMicrochartChartWrapper {
+	height: 1rem;
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+
+	.sapUiIntegrationMicrochartChart {
+		flex-grow: 1;
+		height: 0.675rem;
+	}
+}
+/* END "Microchart.less" */
+
+/* START "MicrochartLegend.less" */
+/* ============================================================ */
+/* CSS for control sap.ui.integration.controls/MicrochartLegend */
+/* Base theme                                                   */
+/* ============================================================ */
+
+.sapUiIntegrationMicrochartLegend {
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+
+	.sapUiIntegrationMicrochartLegendItem {
+		display: inline-flex;
+		margin-right: 3rem;
+		margin-bottom: 0.5rem;
+		max-width: 100%;
+
+		// color segment
+		:first-child {
+			flex-shrink: 0;
+			width: 0.75rem;
+			height: 0.75rem;
+			margin-right: 0.5rem;
+		}
+
+		// title
+		:nth-child(2) {
+			height: 0.75rem;
+			font-size: 0.75rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+	}
+}
+
+.sapUiIntegrationMicrochartLegendItem {
+	&Neutral {
+		background: @sapUiChartPaletteSemanticNeutral;
+	}
+
+	&Good {
+		background: @sapUiChartPaletteSemanticGood;
+	}
+
+	&Error {
+		background: @sapUiChartPaletteSemanticBad;
+	}
+
+	&Critical {
+		background: @sapUiChartPaletteSemanticCritical;
+	}
+}
+
+/* END "MicrochartLegend.less" */
+
+/* START "ObjectContent.less" */
+/* ====================================================== */
+/* CSS for control sap.ui.integration.cards/ObjectContent */
+/* Base theme                                             */
+/* ====================================================== */
+
+.sapFCardObjectContent {
+	padding: 1rem 1rem 0 1rem;
+}
+
+.sapFCardObjectGroup {
+	padding-bottom: 1.75rem;
+
+	& .sapFCardObjectItemTitle {
+		margin-bottom: 0.5rem;
+	}
+
+	& .sapFCardObjectItemLabel {
+		margin-top: 1rem;
+	}
+
+	& .sapFCardObjectItemText {
+		margin-top: 0.25rem;
+	}
+
+	& .sapFCardObjectItemAvatar {
+		margin-right: 0.5rem;
+	}
+}
+
+.sapFCardObjectGroup.sapFCardObjectGroupLastInColumn {
+	padding-bottom: 1rem;
+}
+
+.sapFCardObjectSpaceBetweenGroup {
+	margin-right: 2rem;
+}
+
+.sapFCard .sapFCardContent {
+	.sapFCardObjectContent .sapUiAFLayout .sapUiAFLayoutItem.sapFCardInvisibleContent {
+		display: none;
+	}
+}
+
+/* END "ObjectContent.less" */
+

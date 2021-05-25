@@ -1,0 +1,139 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theme",
+			"size": 632,
+			"theme": "sap_belize"
+		},
+		{
+			"name": ".theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "DatePicker.less",
+			"size": 252,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "base.less",
+			"size": 58129,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 209767,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 169055,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 168689,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Bold-full.woff",
+			"size": 65960,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Bold-full.woff2",
+			"size": 57472,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Bold.woff",
+			"size": 37584,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Bold.woff2",
+			"size": 26732,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Regular-full.woff",
+			"size": 68984,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Regular-full.woff2",
+			"size": 57136,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Regular.woff",
+			"size": 38944,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "fonts/72-Regular.woff2",
+			"size": 27844,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "global.less",
+			"size": 50506,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 159648,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 91562,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.css",
+			"size": 159630,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.less",
+			"size": 8357,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.source.less",
+			"size": 318,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 39413,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 39396,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "parameterClasses.less",
+			"size": 207,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "shared.less",
+			"size": 7293,
+			"designtime": true,
+			"theme": "sap_belize"
+		}
+	]
+}
