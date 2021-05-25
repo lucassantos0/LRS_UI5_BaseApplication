@@ -45,7 +45,7 @@
 						<m:Button id="messagePopoverBtn" icon="sap-icon://message-popup" type="Transparent" press="handleMessagePopoverPress" ariaHasPopup="Dialog"/>
 						<!--<m:Button press="MessagesShow" visible="true" type="Transparent" icon="sap-icon://simulate"/> -->
 						<m:Button type="Transparent" icon="sap-icon://simulate" press="onCalcImpostos"/>
-						<m:Button type="Transparent" icon="sap-icon://excel-attachment" press="onExportXLS"/>
+						<!--<m:Button type="Transparent" icon="sap-icon://excel-attachment" press="onExportXLS"/>-->
 						<m:Button type="Transparent" icon="sap-icon://pdf-attachment" press="onExportPDF"/>						
 					</m:content>
 				</m:Toolbar>

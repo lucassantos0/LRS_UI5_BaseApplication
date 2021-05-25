@@ -7,12 +7,13 @@ sap.ui.define(
 		"sap/ui/core/Fragment",
 		"sap/m/Dialog",
 		"sap/m/Label",
-		"sap/ui/export/Spreadsheet",
+		//"sap/ui/export/Spreadsheet",
 		"sap/m/MessageToast",
 		"sap/m/Text",
 		"sap/m/MessagePopover",
 		"sap/m/MessageItem"],
-	function (BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label, Spreadsheet, MessageToast, Text, MessagePopover, MessageItem) {
+	//function (BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label, Spreadsheet, MessageToast, Text, MessagePopover, MessageItem) {
+		function (BaseController, JSONModel, formatter, MessageBox, Fragment, Dialog, Label, MessageToast, Text, MessagePopover, MessageItem) {
 		"use strict";
 		return BaseController.extend("lrs.ui5.controller.Mapa",
 			{

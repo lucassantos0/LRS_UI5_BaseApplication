@@ -46,6 +46,7 @@
  						</ObjectPageSubSection>
 					</subSections> 
  				</ObjectPageSection> 
+				 <!-- 
  				<ObjectPageSection title="{i18n>Mapa_Distribuicao}">
  					<subSections>
  						<ObjectPageSubSection title=" "> 
@@ -55,6 +56,7 @@
  						</ObjectPageSubSection> 
  					</subSections> 
  				</ObjectPageSection> 
+				 -->
 				<ObjectPageSection title="{i18n>Mapa_AnalisePorItem}"> 
 					<subSections>
 						<ObjectPageSubSection title=" ">
